@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbysmalCore", "AbysmalCore\AbysmalCore.csproj", "{42F4F59F-56CE-4D1A-84A6-B88FD3A6BA70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsymalCoreTest", "AbsymalCoreTest\AbsymalCoreTest.csproj", "{CC39F1AA-F9D0-4D5D-8AE4-999AC38CD65F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F4F59F-56CE-4D1A-84A6-B88FD3A6BA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F4F59F-56CE-4D1A-84A6-B88FD3A6BA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F4F59F-56CE-4D1A-84A6-B88FD3A6BA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F4F59F-56CE-4D1A-84A6-B88FD3A6BA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC39F1AA-F9D0-4D5D-8AE4-999AC38CD65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC39F1AA-F9D0-4D5D-8AE4-999AC38CD65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC39F1AA-F9D0-4D5D-8AE4-999AC38CD65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC39F1AA-F9D0-4D5D-8AE4-999AC38CD65F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D4F08D9-0A11-428E-9AAC-5F66105C6093}
+	EndGlobalSection
+EndGlobal
