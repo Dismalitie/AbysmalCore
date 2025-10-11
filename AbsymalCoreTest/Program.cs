@@ -10,19 +10,13 @@ internal class Program
     {
         UserInterface ui = new();
 
-        ui.AddElement(new Button("button", new(10))
-        {
-            Name = "btn",
-            StyleMap = new(true)
-        });
+        //ui.AddElement(new Button("button", new(10))
+        //{
+        //    Name = "btn",
+        //    StyleMap = new(true)
+        //});
 
-        ui.AddElement(new Toggle(new(10, 70), new(20), new()
-        {
-            FillColor = new SolidBrush(new Color(245, 101, 101)),
-            BorderColor = new SolidBrush(new Color(129, 52, 52)),
-            BorderWeight = 2,
-            BorderRadius = 5
-        }, false)
+        ui.AddElement(new Toggle(new(0, 0), new(20), false)
         {
             Name = "tgl",
             StyleMap = new(true)
@@ -34,10 +28,19 @@ internal class Program
 
         ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
 
+        ui.GetElement("tgl").OnClicked += Program_OnClicked;
+
         UserInterface.BeginDrawingWindowIcon(new(20));
-        UserInterface.GlobalTheme.DefaultStyleMap.Normal?.FillColor.DrawRectangleRounded(new(0), new(20), 5);
+        ui.GetElement("tgl").Draw();
         UserInterface.EndDrawingWindowIcon();
 
         ui.Init();
+    }
+
+    private static void Program_OnClicked(UIElement sender, AbysmalCore.Vector2Int mouse, int frame)
+    {
+        UserInterface.BeginDrawingWindowIcon(new(20));
+        sender.Draw();
+        UserInterface.EndDrawingWindowIcon();
     }
 }

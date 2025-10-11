@@ -22,18 +22,15 @@ namespace AbysmalCore.UI.Controls
         /// value without this mirror, we blow up the stack
         private bool _state;
 
-        public Style Toggled;
         public string Text;
         public int FontSize;
-        public Toggle(Vector2Int position, Vector2Int size, Style? toggled = null, bool state = false, string label = "", int fontSize = 18)
+        public Toggle(Vector2Int position, Vector2Int size, bool state = false, string label = "", int fontSize = 18)
         {
             Position = position;
             Size = size;
             State = state;
             Text = label;
             FontSize = fontSize;
-            if (toggled == null) Toggled = new();
-            else Toggled = toggled;
 
             /// we can just use the base OnClicked func
             /// to toggle the state, subsequently triggering
@@ -46,7 +43,8 @@ namespace AbysmalCore.UI.Controls
         public override void _draw()
         {
             Style current = CurrentStyle;
-            if (State) current = Toggled;
+            if (State && Hovered) current = StyleMap.HoveredActivated!;
+            else if (State) current = StyleMap.Activated!;
 
             current.ValidateBrushes(SupportedBrushes[StyleMap.ControlStyle], this);
 

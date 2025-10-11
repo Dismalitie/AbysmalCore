@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AbysmalCore.UI.Styling
+﻿namespace AbysmalCore.UI.Styling
 {
     public struct StyleMap
     {
@@ -19,6 +13,9 @@ namespace AbysmalCore.UI.Styling
         public Style? Clicked;
         public Style? Normal;
         public Style? Disabled;
+        public Style? HoveredDisabled;
+        public Style? Activated;
+        public Style? HoveredActivated;
 
         public StyleMap(bool useGlobalTheme = false)
         {
@@ -29,6 +26,9 @@ namespace AbysmalCore.UI.Styling
                 Normal ??= UserInterface.GlobalTheme.DefaultStyleMap.Normal;
                 Disabled ??= UserInterface.GlobalTheme.DefaultStyleMap.Disabled;
                 ControlStyle = UserInterface.GlobalTheme.DefaultStyleMap.ControlStyle;
+                Activated ??= UserInterface.GlobalTheme.DefaultStyleMap.Activated;
+                HoveredDisabled ??= UserInterface.GlobalTheme.DefaultStyleMap.HoveredDisabled;
+                HoveredActivated ??= UserInterface.GlobalTheme.DefaultStyleMap.HoveredActivated;
             }
         }
 

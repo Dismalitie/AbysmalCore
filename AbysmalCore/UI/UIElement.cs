@@ -1,7 +1,4 @@
 ﻿using AbysmalCore.UI.Styling;
-using AbysmalCore.UI.Styling.Brushes;
-using System.Runtime.InteropServices.Marshalling;
-using System.Xml.Linq;
 
 namespace AbysmalCore.UI
 {
@@ -16,7 +13,7 @@ namespace AbysmalCore.UI
 
         public Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]> SupportedBrushes = new()
         {
-            { StyleMap.ControlStyleType.Sharp, 
+            { StyleMap.ControlStyleType.Sharp,
             [
                 IBrush.BrushType.ImageBrush,
                 IBrush.BrushType.LinearGradientBrush,
@@ -24,8 +21,8 @@ namespace AbysmalCore.UI
                 IBrush.BrushType.ShaderBrush,
                 IBrush.BrushType.SolidBrush,
                 IBrush.BrushType.NineSliceBrush,
-            ]}, 
-            { StyleMap.ControlStyleType.Rounded, 
+            ]},
+            { StyleMap.ControlStyleType.Rounded,
             [
                 IBrush.BrushType.SolidBrush,
                 IBrush.BrushType.ShaderBrush,
@@ -97,7 +94,8 @@ namespace AbysmalCore.UI
         {
             get
             {
-                if (!Enabled) return StyleMap.Disabled!;
+                if (!Enabled && Hovered) return StyleMap.HoveredDisabled!;
+                else if (!Enabled) return StyleMap.Disabled!;
                 else if (Hovered)
                 {
                     if (Clicked) return StyleMap.Clicked!;

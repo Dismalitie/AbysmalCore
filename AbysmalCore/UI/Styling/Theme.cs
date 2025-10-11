@@ -34,6 +34,12 @@ namespace AbysmalCore.UI.Styling
                 Disabled = new()
                 {
                     FillColor = new SolidBrush(core),
+                    BorderColor = new SolidBrush(Color.Gray),
+                    TextColor = new SolidBrush(Color.Gray),
+                },
+                HoveredDisabled = new()
+                {
+                    FillColor = new SolidBrush(core),
                     BorderColor = new SolidBrush(Color.DarkGray),
                     TextColor = new SolidBrush(Color.DarkGray),
                 },
@@ -45,6 +51,20 @@ namespace AbysmalCore.UI.Styling
                     BorderColor = new SolidBrush(accent),
                     FillColor = new SolidBrush(layer),
                 },
+                Activated = new()
+                {
+                    FillColor = new SolidBrush(accent),
+                    BorderColor = new SolidBrush(layer),
+                    BorderWeight = 2,
+                    BorderRadius = 5
+                },
+                HoveredActivated = new()
+                {
+                    FillColor = new SolidBrush(accent),
+                    BorderColor = new SolidBrush(layer),
+                    BorderWeight = 3,
+                    BorderRadius = 5
+                }
             };
         }
 
@@ -73,8 +93,8 @@ namespace AbysmalCore.UI.Styling
                 Disabled = new()
                 {
                     FillColor = core,
-                    BorderColor = new SolidBrush(Color.DarkGray),
-                    TextColor = new SolidBrush(Color.DarkGray),
+                    BorderColor = new SolidBrush(Color.Gray),
+                    TextColor = new SolidBrush(Color.Gray),
                 },
                 Clicked = new()
                 {
@@ -84,6 +104,26 @@ namespace AbysmalCore.UI.Styling
                     BorderColor = accent,
                     FillColor = layer,
                 },
+                Activated = new()
+                {
+                    FillColor = accent,
+                    BorderColor = layer,
+                    BorderWeight = 2,
+                    BorderRadius = 5
+                },
+                HoveredActivated = new()
+                {
+                    FillColor = accent,
+                    BorderColor = layer,
+                    BorderWeight = 3,
+                    BorderRadius = 5
+                },
+                HoveredDisabled = new()
+                {
+                    FillColor = core,
+                    BorderColor = new SolidBrush(Color.DarkGray),
+                    TextColor = new SolidBrush(Color.DarkGray),
+                }
             };
         }
     }

@@ -83,7 +83,11 @@ namespace AbysmalCore.UI
             EndTextureMode();
             Image img = LoadImageFromTexture(_icon.Texture);
             SetWindowIcon(img);
-            TextureUnloadList.Add(_icon.Texture);
+            /// we can actually unload it immediately
+            /// since this is the only occasion we use
+            /// it for and the icon references img, not
+            /// _icon.Texture
+            UnloadTexture(_icon.Texture);
         }
 
         public void Init(Color? bg = null)
