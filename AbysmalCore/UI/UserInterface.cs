@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AbysmalCore.UI.Styling;
+using AbysmalCore.UI.Styling.Brushes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +11,40 @@ namespace AbysmalCore.UI
     public class UserInterface
     {
         public List<UIElement> Elements;
+
+        public static Theme GlobalTheme = new()
+        {
+            Background = new SolidBrush(new Color(40, 16, 16)),
+            DefaultStyleMap = new()
+            {
+                ControlStyle = StyleMap.ControlStyleType.Rounded,
+                Normal = new()
+                {
+                    BorderRadius = 5,
+                    BorderWeight = 2,
+                    TextColor = new SolidBrush(Color.White),
+                    BorderColor = new SolidBrush(new Color(245, 101, 101)),
+                    FillColor = new SolidBrush(new Color(129, 52, 52)),
+                },
+                Hovered = new()
+                {
+                    BorderRadius = 5,
+                    BorderWeight = 2,
+                    TextColor = new SolidBrush(new Color(245, 101, 101)),
+                    FillColor = new SolidBrush(new Color(40, 16, 16)),
+                    BorderColor = new SolidBrush(new Color(245, 101, 101)),
+                },
+                Disabled = new(),
+                Clicked = new()
+                {
+                    BorderRadius = 5,
+                    BorderWeight = 2,
+                    TextColor = new SolidBrush(Color.White),
+                    BorderColor = new SolidBrush(new Color(245, 101, 101)),
+                    FillColor = new SolidBrush(new Color(129, 52, 52)),
+                },
+            }
+        };
 
         /// unload lists (gpu mem)
         public static List<Texture2D> TextureUnloadList = new();
@@ -35,6 +71,8 @@ namespace AbysmalCore.UI
 
         public void DrawUI()
         {
+            if (GlobalTheme.Background != null) GlobalTheme.Background.DrawRectangle(new(0, 0), new(GetRenderWidth(), GetRenderHeight()));
+
             Frame++;
             foreach (UIElement element in Elements)
             {

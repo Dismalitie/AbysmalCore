@@ -37,10 +37,10 @@ namespace AbysmalCore.UI.Styling.Brushes
             EndShaderMode();
         }
 
-        public void DrawText(string text, Vector2Int position, int fontSize)
+        public void DrawText(Font font, string text, Vector2Int position, int fontSize)
         {
             BeginShaderMode(Shader);
-            Raylib.DrawText(text, position.X, position.Y, fontSize, fallback);
+            DrawTextEx(font, text, position.ToSys(), fontSize, 3f, fallback);
             EndShaderMode();
         }
 

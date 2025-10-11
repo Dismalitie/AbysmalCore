@@ -21,8 +21,8 @@ namespace AbysmalCore.UI.Styling.Brushes
         public void DrawRectangleRounded(Vector2Int position, Vector2Int size, int radius) =>
                     Raylib.DrawRectangleRounded(new(position.ToSys(), size.ToSys()), (float)radius / 10, 100, Color);
 
-        public void DrawText(string text, Vector2Int position, int fontSize) =>
-             Raylib.DrawText(text, position.X, position.Y, fontSize, Color);
+        public void DrawText(Font font, string text, Vector2Int position, int fontSize) =>
+                    DrawTextEx(font, text, position.ToSys(), fontSize, 3f, Color);
 
         /// this is actually redundant since every style supports
         /// solid colors but we do it to satisfy the compiler as

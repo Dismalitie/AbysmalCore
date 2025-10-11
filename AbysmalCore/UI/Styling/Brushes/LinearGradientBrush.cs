@@ -44,7 +44,7 @@ namespace AbysmalCore.UI.Styling.Brushes
                     ColorLerp(Color1, Color2, 0.5f));
         }
 
-        public void DrawText(string text, Vector2Int position, int fontSize) => throw new NotSupportedException();
+        public void DrawText(Font font, string text, Vector2Int position, int fontSize) => throw new NotSupportedException();
         public void DrawRectangleRounded(Vector2Int position, Vector2Int size, int radius) => throw new NotSupportedException();
 
         public Color Fallback() => Color1;

@@ -27,7 +27,7 @@ namespace AbysmalCore.UI.Controls
         public override void _draw()
         {
             /// simple
-            try { CurrentStyle.TextColor.DrawText(Text, Position, FontSize); }
+            try { CurrentStyle.TextColor.DrawText(CurrentStyle.Font, Text, Position, FontSize); }
             catch { DrawText(Text, Position.X, Position.Y, FontSize, CurrentStyle.TextColor.Fallback()); }
         }
     }

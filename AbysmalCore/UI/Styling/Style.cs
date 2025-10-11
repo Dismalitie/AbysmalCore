@@ -1,15 +1,15 @@
 ﻿using AbysmalCore.UI.Styling.Brushes;
-using Raylib_cs;
 
 namespace AbysmalCore.UI.Styling
 {
     public class Style
     {
         public IBrush BorderColor = new SolidBrush(Color.DarkGray);
-        public int BorderWeight = 5;
-        public int BorderRadius = 2;
+        public int BorderWeight = 2;
+        public int BorderRadius = 5;
         public IBrush FillColor = new SolidBrush(Color.Gray);
         public SolidBrush TextColor = new(Color.White);
+        public Font Font = GetFontDefault();
 
         public void ValidateBrushes(IBrush.BrushType[] supported, UIElement control)
         {

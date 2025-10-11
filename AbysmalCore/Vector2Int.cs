@@ -13,7 +13,9 @@ namespace AbysmalCore
         public int X;
         public int Y;
         public Vector2Int(int x, int y) { X = x; Y = y; }
+        public Vector2Int(float x, float y) { X = (int)x; Y = (int)y; }
         public Vector2Int(int n) { X = n; Y = n; }
+        public Vector2Int(float n) { X = (int)n; Y = (int)n; }
 
         /// raylib uses Sys numerics vectors a lot
         /// so this is useful

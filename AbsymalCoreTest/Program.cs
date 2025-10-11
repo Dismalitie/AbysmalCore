@@ -1,9 +1,7 @@
 ﻿using AbysmalCore.UI;
 using AbysmalCore.UI.Controls;
 using AbysmalCore.UI.Styling.Brushes;
-using AbysmalCore;
-using Raylib_cs;
-using System.Security.Cryptography;
+using static Raylib_cs.Raylib;
 
 internal class Program
 {
@@ -11,79 +9,29 @@ internal class Program
     {
         UserInterface ui = new();
 
-        //ui.AddElement(new Panel(new(10), new(100))
-        //{
-        //    Name = "radialSwatch",
-        //    StyleMap =
-        //    {
-        //        Hovered =
-        //        {
-        //            FillColor = new RadialGradientBrush(1.4f, Color.Blue, Color.Red),
-        //            BorderWeight = 0
-        //        },
-        //        Normal =
-        //        {
-        //            FillColor = new RadialGradientBrush(1.4f, Color.Red, Color.Blue),
-        //            BorderWeight = 0
-        //        }
-        //    }
-        //});
-
-        //ui.AddElement(new Panel(new(120, 10), new(100))
-        //{
-        //    Name = "linearSwatch",
-        //    StyleMap =
-        //    {
-        //        Hovered =
-        //        {
-        //            FillColor = new LinearGradientBrush(LinearGradientBrush.GradientDirection.DiagonalRight, Color.Blue, Color.Red),
-        //            BorderWeight = 0
-        //        },
-        //        Normal =
-        //        {
-        //            FillColor = new LinearGradientBrush(LinearGradientBrush.GradientDirection.DiagonalRight, Color.Red, Color.Blue),
-        //            BorderWeight = 0
-        //        }
-        //    }
-        //});
-
-        //ui.AddElement(new Panel(new(230, 10), new(100))
-        //{
-        //    Name = "solidSwatch",
-        //    StyleMap =
-        //        {
-        //            Hovered =
-        //            {
-        //                FillColor = new SolidBrush(Color.Red),
-        //                BorderWeight = 0
-        //            },
-        //            Normal =
-        //            {
-        //                FillColor = new SolidBrush(Color.Blue),
-        //                BorderWeight = 0
-        //            }
-        //        }
-        //});
-
-        ui.AddElement(new Button("text", new(10))
+        ui.AddElement(new Button("AbysmalCore.UI.Controls.Button", new(10), new(400, 50))
         {
             Name = "btn",
-            StyleMap =
-            {
-                ControlStyle = AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded,
-                Normal =
-                {
-                    BorderRadius = 20,
-                    FillColor = new SolidBrush(Color.Red)
-                }
-            }
+            StyleMap = new(true)
+        });
+
+        ui.AddElement(new Toggle(new(10, 70), new(20), new()
+        {
+            FillColor = new SolidBrush(new Raylib_cs.Color(245, 101, 101)),
+            BorderColor = new SolidBrush(new Raylib_cs.Color(129, 52, 52)),
+            BorderWeight = 2,
+            BorderRadius = 5
+        }, false, "AbysmalCore.UI.Controls.Toggle")
+        {
+            Name = "tgl",
+            StyleMap = new(true)
         });
 
         ui.GetElement("radialSwatch")?.AddChild(new Label("radialSwatch", new(10), 15));
         ui.GetElement("linearSwatch")?.AddChild(new Label("linearSwatch", new(10), 15));
         ui.GetElement("solidSwatch")?.AddChild(new Label("solidSwatch", new(10), 15));
 
-        ui.BootstrapWindow(new(500), "title");
+        ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
         ui.Init();
     }
 }

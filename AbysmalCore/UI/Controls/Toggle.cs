@@ -1,4 +1,5 @@
 ﻿using AbysmalCore.UI.Styling;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -22,13 +23,18 @@ namespace AbysmalCore.UI.Controls
         /// value without this mirror, we blow up the stack
         private bool _state;
 
-        public Style ToggledStyle;
-        public Toggle(Vector2Int position, Vector2Int size, Style toggledStyle, bool state = false)
+        public Style Toggled;
+        public string Text;
+        public int FontSize;
+        public Toggle(Vector2Int position, Vector2Int size, Style? toggled = null, bool state = false, string label = "", int fontSize = 18)
         {
             Position = position;
             Size = size;
             State = state;
-            ToggledStyle = toggledStyle;
+            Text = label;
+            FontSize = fontSize;
+            if (toggled == null) Toggled = new();
+            else Toggled = toggled;
 
             /// we can just use the base OnClicked func
             /// to toggle the state, subsequently triggering
@@ -41,17 +47,41 @@ namespace AbysmalCore.UI.Controls
         public override void _draw()
         {
             Style current = CurrentStyle;
-            if (State) current = ToggledStyle;
+            if (State) current = Toggled;
 
             current.ValidateBrushes(SupportedBrushes[StyleMap.ControlStyle], this);
 
-            try { current.BorderColor.DrawRectangle(Position, Size); }
-            catch { DrawRectangle(Position.X, Position.Y, Size.X, Size.Y, current.BorderColor.Fallback()); }
+            if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Rounded)
+            {
+                try { CurrentStyle.TextColor.DrawText(CurrentStyle.Font, Text, new(Position.X + Size.X + 7, Position.Y + (Size.Y / 3)), FontSize); }
+                catch { DrawText(Text, Position.X, Position.Y, FontSize, CurrentStyle.TextColor.Fallback()); }
 
-            Vector2Int nonBorderPos = new(Position.X + current.BorderWeight, Position.Y + current.BorderWeight);
-            Vector2Int nonBorderSz = new(Size.X - current.BorderWeight * 2, Size.Y - current.BorderWeight * 2);
-            try { current.FillColor.DrawRectangle(nonBorderPos, nonBorderSz); }
-            catch { DrawRectangle(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y, current.FillColor.Fallback()); }
+                try { current.BorderColor.DrawRectangleRounded(Position, Size, current.BorderRadius); }
+                catch
+                {
+                    DrawRectangleRounded(new(Position.X, Position.Y, Size.X, Size.Y),
+                    (float)current.BorderRadius / 10, 1,
+                    current.BorderColor.Fallback());
+                }
+                Vector2Int nonBorderPos = new(Position.X + current.BorderWeight, Position.Y + current.BorderWeight);
+                Vector2Int nonBorderSz = new(Size.X - current.BorderWeight * 2, Size.Y - current.BorderWeight * 2);
+                try { current.FillColor.DrawRectangleRounded(nonBorderPos, nonBorderSz, current.BorderRadius); }
+                catch
+                {
+                    DrawRectangleRounded(new(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y),
+                    current.BorderRadius / 10, 1,
+                    current.FillColor.Fallback());
+                }
+            }
+            else if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Sharp)
+            {
+                try { current.BorderColor.DrawRectangle(Position, Size); }
+                catch { DrawRectangle(Position.X, Position.Y, Size.X, Size.Y, current.BorderColor.Fallback()); }
+                Vector2Int nonBorderPos = new(Position.X + current.BorderWeight, Position.Y + current.BorderWeight);
+                Vector2Int nonBorderSz = new(Size.X - current.BorderWeight * 2, Size.Y - current.BorderWeight * 2);
+                try { current.FillColor.DrawRectangle(nonBorderPos, nonBorderSz); }
+                catch { DrawRectangle(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y, current.FillColor.Fallback()); }
+            }
         }
     }
 }

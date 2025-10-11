@@ -1,11 +1,5 @@
-﻿using AbysmalCore.UI;
-using AbysmalCore.UI.Styling;
-using AbysmalCore.UI.Styling.Brushes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AbysmalCore.UI.Styling;
+using System.Numerics;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -34,30 +28,45 @@ namespace AbysmalCore.UI.Controls
             if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Rounded)
             {
                 try { CurrentStyle.BorderColor.DrawRectangleRounded(Position, Size, CurrentStyle.BorderRadius); }
-                catch { DrawRectangleRounded(new(Position.X, Position.Y, Size.X, Size.Y), 
-                    (float)CurrentStyle.BorderRadius / 10, 1, 
-                    CurrentStyle.BorderColor.Fallback()); }
+                catch
+                {
+                    DrawRectangleRounded(new(Position.X, Position.Y, Size.X, Size.Y),
+                    (float)CurrentStyle.BorderRadius / 10, 1,
+                    CurrentStyle.BorderColor.Fallback());
+                }
 
                 try { CurrentStyle.FillColor.DrawRectangleRounded(nonBorderPos, nonBorderSz, CurrentStyle.BorderRadius); }
-                catch { DrawRectangleRounded(new(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y), 
-                    CurrentStyle.BorderRadius / 10, 1, 
-                    CurrentStyle.FillColor.Fallback()); }
+                catch
+                {
+                    DrawRectangleRounded(new(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y),
+                    CurrentStyle.BorderRadius / 10, 1,
+                    CurrentStyle.FillColor.Fallback());
+                }
             }
             else if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Sharp)
             {
                 try { CurrentStyle.BorderColor.DrawRectangle(Position, Size); }
                 catch { DrawRectangle(Position.X, Position.Y, Size.X, Size.Y, CurrentStyle.BorderColor.Fallback()); }
-                
+
                 try { CurrentStyle.FillColor.DrawRectangle(nonBorderPos, nonBorderSz); }
                 catch { DrawRectangle(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y, CurrentStyle.FillColor.Fallback()); }
             }
 
             /// / 2 because we need roughly the middle
-            int len = MeasureText(Text, FontSize) / 2;
+            int sz = MeasureText(Text, FontSize);
 
-            DrawText(Text,
-                Position.X + Size.X / 2 - len, Position.Y + Size.Y / 2 - FontSize / 2,
+            try
+            {
+                CurrentStyle.TextColor.DrawText(CurrentStyle.Font, Text,
+                    new((Size.X / 2) - (sz / 2) + Position.X, Size.Y / 3 + Position.Y),
+                    FontSize);
+            }
+            catch
+            {
+                DrawText(Text,
+                (int)(Position.X + Size.X / 2 - sz), Position.Y + Size.Y / 2 - FontSize / 2,
                 FontSize, CurrentStyle.TextColor.Fallback());
+            }
         }
     }
 }
