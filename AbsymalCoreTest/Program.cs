@@ -1,6 +1,7 @@
 ﻿using AbysmalCore.UI;
 using AbysmalCore.UI.Controls;
 using AbysmalCore.UI.Styling.Brushes;
+using Raylib_cs;
 using static Raylib_cs.Raylib;
 
 internal class Program
@@ -9,7 +10,7 @@ internal class Program
     {
         UserInterface ui = new();
 
-        ui.AddElement(new Button("AbysmalCore.UI.Controls.Button", new(10), new(400, 50))
+        ui.AddElement(new Button("button", new(10))
         {
             Name = "btn",
             StyleMap = new(true)
@@ -17,11 +18,11 @@ internal class Program
 
         ui.AddElement(new Toggle(new(10, 70), new(20), new()
         {
-            FillColor = new SolidBrush(new Raylib_cs.Color(245, 101, 101)),
-            BorderColor = new SolidBrush(new Raylib_cs.Color(129, 52, 52)),
+            FillColor = new SolidBrush(new Color(245, 101, 101)),
+            BorderColor = new SolidBrush(new Color(129, 52, 52)),
             BorderWeight = 2,
             BorderRadius = 5
-        }, false, "AbysmalCore.UI.Controls.Toggle")
+        }, false)
         {
             Name = "tgl",
             StyleMap = new(true)
@@ -32,6 +33,11 @@ internal class Program
         ui.GetElement("solidSwatch")?.AddChild(new Label("solidSwatch", new(10), 15));
 
         ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
+
+        UserInterface.BeginDrawingWindowIcon(new(20));
+        UserInterface.GlobalTheme.DefaultStyleMap.Normal.FillColor.DrawRectangleRounded(new(0), new(20), 5);
+        UserInterface.EndDrawingWindowIcon();
+
         ui.Init();
     }
 }

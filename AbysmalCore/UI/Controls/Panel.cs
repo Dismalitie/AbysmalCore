@@ -1,9 +1,4 @@
 ﻿using AbysmalCore.UI.Styling;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -15,7 +10,7 @@ namespace AbysmalCore.UI.Controls
             Size = size;
 
             /// cant normally assign because the children
-            /// are readonly, so we manuall add them
+            /// are readonly, so we manually add them
             if (children != null)
                 foreach (UIElement child in children)
                     AddChild(child);

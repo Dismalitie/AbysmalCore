@@ -1,5 +1,4 @@
 ﻿using AbysmalCore.UI.Styling;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -53,8 +52,11 @@ namespace AbysmalCore.UI.Controls
 
             if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Rounded)
             {
-                try { CurrentStyle.TextColor.DrawText(CurrentStyle.Font, Text, new(Position.X + Size.X + 7, Position.Y + (Size.Y / 3)), FontSize); }
-                catch { DrawText(Text, Position.X, Position.Y, FontSize, CurrentStyle.TextColor.Fallback()); }
+                if (Text != "")
+                {
+                    try { CurrentStyle.TextColor.DrawText(CurrentStyle.Font, Text, new(Position.X + Size.X + 7, Position.Y + (Size.Y / 3)), FontSize); }
+                    catch { DrawText(Text, Position.X, Position.Y, FontSize, CurrentStyle.TextColor.Fallback()); }
+                }
 
                 try { current.BorderColor.DrawRectangleRounded(Position, Size, current.BorderRadius); }
                 catch

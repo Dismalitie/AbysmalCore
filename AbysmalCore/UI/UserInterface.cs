@@ -1,10 +1,4 @@
 ﻿using AbysmalCore.UI.Styling;
-using AbysmalCore.UI.Styling.Brushes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbysmalCore.UI
 {
@@ -12,39 +6,12 @@ namespace AbysmalCore.UI
     {
         public List<UIElement> Elements;
 
-        public static Theme GlobalTheme = new()
-        {
-            Background = new SolidBrush(new Color(40, 16, 16)),
-            DefaultStyleMap = new()
-            {
-                ControlStyle = StyleMap.ControlStyleType.Rounded,
-                Normal = new()
-                {
-                    BorderRadius = 5,
-                    BorderWeight = 2,
-                    TextColor = new SolidBrush(Color.White),
-                    BorderColor = new SolidBrush(new Color(245, 101, 101)),
-                    FillColor = new SolidBrush(new Color(129, 52, 52)),
-                },
-                Hovered = new()
-                {
-                    BorderRadius = 5,
-                    BorderWeight = 2,
-                    TextColor = new SolidBrush(new Color(245, 101, 101)),
-                    FillColor = new SolidBrush(new Color(40, 16, 16)),
-                    BorderColor = new SolidBrush(new Color(245, 101, 101)),
-                },
-                Disabled = new(),
-                Clicked = new()
-                {
-                    BorderRadius = 5,
-                    BorderWeight = 2,
-                    TextColor = new SolidBrush(Color.White),
-                    BorderColor = new SolidBrush(new Color(245, 101, 101)),
-                    FillColor = new SolidBrush(new Color(129, 52, 52)),
-                },
-            }
-        };
+        public static Theme GlobalTheme = new(
+            new Color(40, 16, 16),    /// core
+            new Color(129, 52, 52),   /// layer
+            new Color(245, 101, 101), /// accent
+            Color.White
+        );
 
         /// unload lists (gpu mem)
         public static List<Texture2D> TextureUnloadList = new();
@@ -100,6 +67,23 @@ namespace AbysmalCore.UI
         {
             InitWindow(size.X, size.Y, title);
             SetTargetFPS(60);
+        }
+
+        private static RenderTexture2D _icon;
+        public static void BeginDrawingWindowIcon(Vector2Int sz)
+        {
+            RenderTexture2D rt = LoadRenderTexture(sz.X, sz.Y);
+            BeginTextureMode(rt);
+            ClearBackground(Color.Blank);
+            _icon = rt;
+        }
+
+        public static void EndDrawingWindowIcon()
+        {
+            EndTextureMode();
+            Image img = LoadImageFromTexture(_icon.Texture);
+            SetWindowIcon(img);
+            TextureUnloadList.Add(_icon.Texture);
         }
 
         public void Init(Color? bg = null)

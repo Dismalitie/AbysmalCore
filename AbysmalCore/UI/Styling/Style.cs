@@ -8,7 +8,7 @@ namespace AbysmalCore.UI.Styling
         public int BorderWeight = 2;
         public int BorderRadius = 5;
         public IBrush FillColor = new SolidBrush(Color.Gray);
-        public SolidBrush TextColor = new(Color.White);
+        public IBrush TextColor = new SolidBrush(Color.White);
         public Font Font = GetFontDefault();
 
         public void ValidateBrushes(IBrush.BrushType[] supported, UIElement control)
