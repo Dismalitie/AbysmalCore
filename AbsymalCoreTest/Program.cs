@@ -28,10 +28,10 @@ internal class Program
 
         ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
 
-        ui.GetElement("tgl").OnClicked += Program_OnClicked;
+        ui.GetElement("tgl")!.OnClicked += Program_OnClicked;
 
         UserInterface.BeginDrawingWindowIcon(new(20));
-        ui.GetElement("tgl").Draw();
+        ui.GetElement("tgl")?.Draw();
         UserInterface.EndDrawingWindowIcon();
 
         ui.Init();
