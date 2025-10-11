@@ -15,10 +15,10 @@ namespace AbysmalCore.UI.Styling
         }
 
         public ControlStyleType ControlStyle = ControlStyleType.Sharp;
-        public Style Hovered;
-        public Style Clicked;
-        public Style Normal;
-        public Style Disabled;
+        public Style? Hovered;
+        public Style? Clicked;
+        public Style? Normal;
+        public Style? Disabled;
 
         public StyleMap(bool useGlobalTheme = false)
         {
@@ -34,10 +34,10 @@ namespace AbysmalCore.UI.Styling
 
         public void ValidateBrushes(Dictionary<ControlStyleType, IBrush.BrushType[]> supported, UIElement control)
         {
-            Hovered.ValidateBrushes(supported[ControlStyle], control);
-            Clicked.ValidateBrushes(supported[ControlStyle], control);
-            Normal.ValidateBrushes(supported[ControlStyle], control);
-            Disabled.ValidateBrushes(supported[ControlStyle], control);
+            Hovered?.ValidateBrushes(supported[ControlStyle], control);
+            Clicked?.ValidateBrushes(supported[ControlStyle], control);
+            Normal?.ValidateBrushes(supported[ControlStyle], control);
+            Disabled?.ValidateBrushes(supported[ControlStyle], control);
         }
     }
 }

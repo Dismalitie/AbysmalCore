@@ -34,8 +34,8 @@
             /// we keep track of the source width and height
             /// so we can get the full image and squash it to
             /// scale with the dest size
-            DrawTexturePro((Texture2D)gradient,
-                new Rectangle(0, 0, (float)srcWidth, (float)srcHeight),
+            DrawTexturePro((Texture2D)gradient!,
+                new Rectangle(0, 0, (float)srcWidth!, (float)srcHeight!),
                 new Rectangle(position.ToSys(), size.ToSys()),
                 new(0), 0, Color.White);
         }

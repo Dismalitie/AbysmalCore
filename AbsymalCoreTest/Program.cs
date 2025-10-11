@@ -35,7 +35,7 @@ internal class Program
         ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
 
         UserInterface.BeginDrawingWindowIcon(new(20));
-        UserInterface.GlobalTheme.DefaultStyleMap.Normal.FillColor.DrawRectangleRounded(new(0), new(20), 5);
+        UserInterface.GlobalTheme.DefaultStyleMap.Normal?.FillColor.DrawRectangleRounded(new(0), new(20), 5);
         UserInterface.EndDrawingWindowIcon();
 
         ui.Init();

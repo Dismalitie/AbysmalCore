@@ -97,13 +97,13 @@ namespace AbysmalCore.UI
         {
             get
             {
-                if (!Enabled) return StyleMap.Disabled;
+                if (!Enabled) return StyleMap.Disabled!;
                 else if (Hovered)
                 {
-                    if (Clicked) return StyleMap.Clicked;
-                    else return StyleMap.Hovered;
+                    if (Clicked) return StyleMap.Clicked!;
+                    else return StyleMap.Hovered!;
                 }
-                else return StyleMap.Normal;
+                else return StyleMap.Normal!;
             }
         }
 

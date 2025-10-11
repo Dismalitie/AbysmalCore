@@ -5,7 +5,7 @@ namespace AbysmalCore.UI.Styling
     public struct Theme
     {
         public StyleMap DefaultStyleMap;
-        public IBrush Background;
+        public IBrush Background = new SolidBrush(Color.White);
 
         public Theme() { }
 
