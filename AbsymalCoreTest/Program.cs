@@ -38,8 +38,8 @@ internal class Program
 
     private static void Program_OnClicked(UIElement sender, Vector2Int mouse, int frame)
     {
-        UserInterface.Instance.BeginDrawingWindowIcon(new(20));
+        UserInterface.Instance?.BeginDrawingWindowIcon(new(20));
         sender.Draw();
-        UserInterface.Instance.EndDrawingWindowIcon();
+        UserInterface.Instance?.EndDrawingWindowIcon();
     }
 }
