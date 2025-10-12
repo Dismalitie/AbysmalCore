@@ -1,7 +1,9 @@
-﻿using AbysmalCore.UI.Styling;
+﻿using AbysmalCore.Debugging;
+using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
+    [DebugInfo("AbysmalCore toggle control")]
     public class Toggle : UIElement
     {
         public delegate void StateChangedEventHandler(UIElement sender, bool state, Vector2Int mouse, int frame);
@@ -40,7 +42,7 @@ namespace AbysmalCore.UI.Controls
 
         private void Toggle_OnClicked(UIElement sender, Vector2Int mouse, int frame) => State = !State;
 
-        public override void _draw()
+        protected override void _draw()
         {
             Style current = CurrentStyle;
             if (State && Hovered) current = StyleMap.HoveredActivated!;

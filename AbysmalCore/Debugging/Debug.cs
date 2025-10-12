@@ -2,20 +2,23 @@
 
 namespace AbysmalCore.Debugging
 {
+    [DebugInfo("AbysmalCore standard debug lib")]
     public class Debug
     {
         public static bool Enabled = false;
 
         public static void Error(object @this, string msg, bool fatal = false)
         {
+            if (!Enabled) return;
+
             Type t = @this.GetType();
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             ConsoleColor cc = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Red;
 
-            if (info != null) Console.WriteLine($"[{t.FullName}] (!) {msg.Replace("{name}", info.Name)}");
-            else Console.WriteLine($"[{t.FullName}] (!) {msg.Replace("{name}", t.Name)}");
+            if (info != null) Console.WriteLine($"[{t.Name}:({info.Name})] (!) {msg.Replace("{name}", info.Name)}");
+            else Console.WriteLine($"[{t.Name}] (!) {msg.Replace("{name}", t.Name)}");
 
             Console.ForegroundColor = cc;
 
@@ -24,48 +27,56 @@ namespace AbysmalCore.Debugging
 
         public static void Log(object @this, string msg)
         {
+            if (!Enabled) return;
+
             Type t = @this.GetType();
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             ConsoleColor cc = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
-            if (info != null) Console.WriteLine($"[{t.FullName}] (i) {msg.Replace("{name}", info.Name)}");
-            else Console.WriteLine($"[{t.FullName}] (i) {msg.Replace("{name}", t.Name)}");
+            if (info != null) Console.WriteLine($"[{t.Name}:({info.Name})] (i) {msg.Replace("{name}", info.Name)}");
+            else Console.WriteLine($"[{t.Name}] (i) {msg.Replace("{name}", t.Name)}");
 
             Console.ForegroundColor = cc;
         }
 
         public static void Warn(object @this, string msg)
         {
+            if (!Enabled) return;
+
             Type t = @this.GetType();
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             ConsoleColor cc = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Yellow;
 
-            if (info != null) Console.WriteLine($"[{t.FullName}] /!\\ {msg.Replace("{name}", info.Name)}");
-            else Console.WriteLine($"[{t.FullName}] /!\\ {msg.Replace("{name}", t.Name)}");
+            if (info != null) Console.WriteLine($"[{t.Name}:({info.Name})] /!\\ {msg.Replace("{name}", info.Name)}");
+            else Console.WriteLine($"[{t.Name}] /!\\ {msg.Replace("{name}", t.Name)}");
 
             Console.ForegroundColor = cc;
         }
 
         public static void Success(object @this, string msg)
         {
+            if (!Enabled) return;
+
             Type t = @this.GetType();
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             ConsoleColor cc = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Green;
 
-            if (info != null) Console.WriteLine($"[{t.FullName}] (+) {msg.Replace("{name}", info.Name)}");
-            else Console.WriteLine($"[{t.FullName}] (+) {msg.Replace("{name}", t.Name)}");
+            if (info != null) Console.WriteLine($"[{t.Name}:({info.Name})] (+) {msg.Replace("{name}", info.Name)}");
+            else Console.WriteLine($"[{t.Name}] (+) {msg.Replace("{name}", t.Name)}");
 
             Console.ForegroundColor = cc;
         }
 
         public static void Pause(bool value = false, bool expected = true, string msg = "manually invoked")
         {
+            if (!Enabled) return;
+
             if (value != expected)
             {
                 ConsoleColor cc = Console.ForegroundColor;
@@ -82,6 +93,8 @@ namespace AbysmalCore.Debugging
 
         public static void Stop(bool value = false, bool expected = true, string msg = "manually invoked")
         {
+            if (!Enabled) return;
+
             if (value != expected)
             {
                 ConsoleColor cc = Console.ForegroundColor;

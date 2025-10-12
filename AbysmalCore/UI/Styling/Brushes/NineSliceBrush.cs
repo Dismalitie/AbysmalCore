@@ -24,7 +24,7 @@ namespace AbysmalCore.UI.Styling.Brushes
 
             tex = LoadTextureFromImage(Texture);
             /// tex2ds on gpu, unload
-            UserInterface.TextureUnloadList.Add(tex);
+            UserInterface.UnloadList.Add(tex);
         }
 
         public void DrawRectangle(Vector2Int position, Vector2Int size) =>

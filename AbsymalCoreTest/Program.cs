@@ -2,12 +2,15 @@
 using AbysmalCore.Debugging;
 using AbysmalCore.UI;
 using AbysmalCore.UI.Controls;
+using AbysmalCore.UI.Styling.Brushes;
+using Raylib_cs;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
         UserInterface ui = new();
+        Debug.Enabled = true;
 
         //ui.AddElement(new Button("button", new(10))
         //{
@@ -21,9 +24,17 @@ internal class Program
             StyleMap = new(true)
         });
 
-        ui.GetElement("radialSwatch")?.AddChild(new Label("radialSwatch", new(10), 15));
-        ui.GetElement("linearSwatch")?.AddChild(new Label("linearSwatch", new(10), 15));
-        ui.GetElement("solidSwatch")?.AddChild(new Label("solidSwatch", new(10), 15));
+        ui.AddElement(new Panel(new(100), new(100), null)
+        {
+            Name = "radialSwatch",
+            StyleMap = new(false)
+            {
+                Normal = new()
+                {
+                    FillColor = new RadialGradientBrush(3, Color.Red, Color.Blue),
+                }
+            }
+        });
 
         ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
 

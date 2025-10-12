@@ -9,13 +9,13 @@
         }
 
         public ControlStyleType ControlStyle = ControlStyleType.Sharp;
-        public Style? Hovered;
-        public Style? Clicked;
-        public Style? Normal;
-        public Style? Disabled;
-        public Style? HoveredDisabled;
-        public Style? Activated;
-        public Style? HoveredActivated;
+        public Style Hovered;
+        public Style Clicked;
+        public Style Normal;
+        public Style Disabled;
+        public Style HoveredDisabled;
+        public Style Activated;
+        public Style HoveredActivated;
 
         public StyleMap(bool useGlobalTheme = false)
         {
@@ -29,6 +29,17 @@
                 Activated ??= UserInterface.GlobalTheme.DefaultStyleMap.Activated;
                 HoveredDisabled ??= UserInterface.GlobalTheme.DefaultStyleMap.HoveredDisabled;
                 HoveredActivated ??= UserInterface.GlobalTheme.DefaultStyleMap.HoveredActivated;
+            }
+            else
+            {
+                Hovered ??= new();
+                Clicked ??= new();
+                Normal ??= new();
+                Disabled ??= new();
+                ControlStyle = ControlStyleType.Sharp;
+                Activated ??= new();
+                HoveredDisabled ??= new();
+                HoveredActivated ??= new();
             }
         }
 

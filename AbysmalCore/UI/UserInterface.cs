@@ -3,6 +3,7 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI
 {
+    [DebugInfo("AbysmalCore ui manager")]
     public class UserInterface
     {
         public List<UIElement> Elements;
@@ -16,9 +17,9 @@ namespace AbysmalCore.UI
             Color.White
         );
 
-        /// unload lists (gpu mem)
-        public static List<Texture2D> TextureUnloadList = new();
-        public static List<Shader> ShaderUnloadList = new();
+        /// objects like tex2d, rendertextures, images
+        /// in this list will be unloaded upon exiting
+        public static List<object> UnloadList = new();
 
         public static int Frame;
 
@@ -93,6 +94,7 @@ namespace AbysmalCore.UI
             /// since this is the only occasion we use
             /// it for and the icon references img, not
             /// _icon
+            Debug.Log(this, "Freeing icon from memory");
             UnloadRenderTexture(_icon);
 
             Debug.Log(this, "Window icon draw ended");
@@ -110,8 +112,30 @@ namespace AbysmalCore.UI
                 EndDrawing();
             }
 
-            /// unload the gpu stuff here before exiting
-            foreach (Texture2D t2d in TextureUnloadList) UnloadTexture(t2d);
+            /// unload the gpu and cpu stuff here before exiting
+            foreach (object obj in UnloadList)
+            {
+                Debug.Log(this, $"Freeing {obj.GetType().Name} from memory");
+
+                switch (obj)
+                {
+                    case Texture2D tex:
+                        UnloadTexture(tex);
+                        break;
+                    case RenderTexture2D rt:
+                        UnloadRenderTexture(rt);
+                        break;
+                    case Image img:
+                        UnloadImage(img);
+                        break;
+                    case Shader sh:
+                        UnloadShader(sh);
+                        break;
+                    default:
+                        Debug.Warn(this, $"Tried to free {obj.GetType().Name}, couldnt validate type");
+                        break;
+                }
+            }
         }
     }
 }

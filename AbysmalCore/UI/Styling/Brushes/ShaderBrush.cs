@@ -14,7 +14,7 @@ namespace AbysmalCore.UI.Styling.Brushes
         public ShaderBrush(string fragPath, string vertPath, Color color, string[] args)
         {
             Shader = LoadShader(fragPath, vertPath);
-            UserInterface.ShaderUnloadList.Add(Shader);
+            UserInterface.UnloadList.Add(Shader);
 
             foreach (string arg in args) Arguments.Add(arg, GetShaderLocation(Shader, arg));
             fallback = color;

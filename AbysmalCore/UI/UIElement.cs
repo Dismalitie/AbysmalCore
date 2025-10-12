@@ -28,7 +28,7 @@ namespace AbysmalCore.UI
                 IBrush.BrushType.ShaderBrush,
             ]}
         };
-        public bool _UseFallbackForUnsupportedBrushes = false;
+        protected bool _UseFallbackForUnsupportedBrushes = false;
 
         public List<UIElement> Children { get => _children; }
         /// mirror because Children is get only and we need
@@ -101,11 +101,13 @@ namespace AbysmalCore.UI
                     if (Clicked) return StyleMap.Clicked!;
                     else return StyleMap.Hovered!;
                 }
-                else return StyleMap.Normal!;
+                else return StyleMap.Normal;
+
+                return new();
             }
         }
 
-        public abstract void _draw();
+        protected abstract void _draw();
         public void Draw()
         {
             if (_UseFallbackForUnsupportedBrushes == false) StyleMap.ValidateBrushes(SupportedBrushes, this);

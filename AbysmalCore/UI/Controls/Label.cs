@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AbysmalCore.Debugging;
 
 namespace AbysmalCore.UI.Controls
 {
+    [DebugInfo("AbysmalCore label control")]
     public class Label : UIElement
     {
         public string Text;
@@ -24,7 +21,7 @@ namespace AbysmalCore.UI.Controls
             Size = new(0);
         }
 
-        public override void _draw()
+        protected override void _draw()
         {
             /// simple
             try { CurrentStyle.TextColor.DrawText(CurrentStyle.Font, Text, Position, FontSize); }

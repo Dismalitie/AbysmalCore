@@ -1,7 +1,9 @@
-﻿using AbysmalCore.UI.Styling;
+﻿using AbysmalCore.Debugging;
+using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
+    [DebugInfo("AbysmalCore panel control")]
     public class Panel : UIElement
     {
         public Panel(Vector2Int position, Vector2Int size, List<UIElement>? children = null)
@@ -16,7 +18,7 @@ namespace AbysmalCore.UI.Controls
                     AddChild(child);
         }
 
-        public override void _draw()
+        protected override void _draw()
         {
             /// mostly just copied from <see cref="Button"/>
             if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Rounded)

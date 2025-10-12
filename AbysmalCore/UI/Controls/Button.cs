@@ -1,8 +1,9 @@
-﻿using AbysmalCore.UI.Styling;
-using System.Numerics;
+﻿using AbysmalCore.Debugging;
+using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
+    [DebugInfo("AbysmalCore button control")]
     public class Button : UIElement
     {
         public string Text;
@@ -18,7 +19,7 @@ namespace AbysmalCore.UI.Controls
             else Size = new(150, 50);
         }
 
-        public override void _draw()
+        protected override void _draw()
         {
             /// the actual button bit excluding the border
             Vector2Int nonBorderPos = new(Position.X + CurrentStyle.BorderWeight, Position.Y + CurrentStyle.BorderWeight);

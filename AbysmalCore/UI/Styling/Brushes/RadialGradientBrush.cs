@@ -1,10 +1,12 @@
-﻿namespace AbysmalCore.UI.Styling.Brushes
+﻿using AbysmalCore.Debugging;
+
+namespace AbysmalCore.UI.Styling.Brushes
 {
     public class RadialGradientBrush : IBrush
     {
         public IBrush.BrushType Type => IBrush.BrushType.RadialGradientBrush;
 
-        public float Density;
+        public float Blending;
         public Color Inner;
         public Color Outer;
 
@@ -14,7 +16,7 @@
 
         public RadialGradientBrush(float blending, Color inner, Color outer)
         {
-            Density = blending;
+            Blending = blending;
             Inner = inner; Outer = outer;
         }
 
@@ -23,17 +25,19 @@
             /// we only want to generate it once
             if (gradient == null)
             {
-                Image img = GenImageGradientRadial(size.X, size.Y, Density, Inner, Outer);
+                Debug.Log(this, $"Generating radial gradient texture ({size.X}x{size.Y}px)");
+                Image img = GenImageGradientRadial(size.X, size.Y, Blending, Inner, Outer);
                 srcWidth = img.Width;
                 srcHeight = img.Height;
 
                 gradient = LoadTextureFromImage(img);
-                UserInterface.TextureUnloadList.Add((Texture2D)gradient);
+                UserInterface.UnloadList.Add(gradient);
             }
 
             /// we keep track of the source width and height
             /// so we can get the full image and squash it to
             /// scale with the dest size
+            /// we also use ! here because we set it above
             DrawTexturePro((Texture2D)gradient!,
                 new Rectangle(0, 0, (float)srcWidth!, (float)srcHeight!),
                 new Rectangle(position.ToSys(), size.ToSys()),

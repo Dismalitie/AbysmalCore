@@ -25,7 +25,7 @@ namespace AbysmalCore.UI.Styling.Brushes
             tex = LoadTextureFromImage(Image);
             /// texture2ds are stored on the gpu, so we
             /// have to unload them upon exiting
-            UserInterface.TextureUnloadList.Add(tex);
+            UserInterface.UnloadList.Add(tex);
         }
 
         public void DrawRectangle(Vector2Int position, Vector2Int size) =>
