@@ -1,8 +1,7 @@
-﻿using AbysmalCore.UI;
+﻿using AbysmalCore;
+using AbysmalCore.Debugging;
+using AbysmalCore.UI;
 using AbysmalCore.UI.Controls;
-using AbysmalCore.UI.Styling.Brushes;
-using Raylib_cs;
-using static Raylib_cs.Raylib;
 
 internal class Program
 {
@@ -30,17 +29,17 @@ internal class Program
 
         ui.GetElement("tgl")!.OnClicked += Program_OnClicked;
 
-        UserInterface.BeginDrawingWindowIcon(new(20));
+        ui.BeginDrawingWindowIcon(new(20));
         ui.GetElement("tgl")?.Draw();
-        UserInterface.EndDrawingWindowIcon();
+        ui.EndDrawingWindowIcon();
 
         ui.Init();
     }
 
-    private static void Program_OnClicked(UIElement sender, AbysmalCore.Vector2Int mouse, int frame)
+    private static void Program_OnClicked(UIElement sender, Vector2Int mouse, int frame)
     {
-        UserInterface.BeginDrawingWindowIcon(new(20));
+        UserInterface.Instance.BeginDrawingWindowIcon(new(20));
         sender.Draw();
-        UserInterface.EndDrawingWindowIcon();
+        UserInterface.Instance.EndDrawingWindowIcon();
     }
 }

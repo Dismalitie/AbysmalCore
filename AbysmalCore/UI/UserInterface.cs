@@ -1,10 +1,13 @@
-﻿using AbysmalCore.UI.Styling;
+﻿using AbysmalCore.Debugging;
+using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI
 {
     public class UserInterface
     {
         public List<UIElement> Elements;
+
+        public static UserInterface Instance;
 
         public static Theme GlobalTheme = new(
             new Color(40, 16, 16),    /// core
@@ -24,6 +27,7 @@ namespace AbysmalCore.UI
 
         public UserInterface(List<UIElement>? elements = null)
         {
+            Instance = this;
             if (elements == null) Elements = new();
             else Elements = elements;
         }
@@ -70,15 +74,17 @@ namespace AbysmalCore.UI
         }
 
         private static RenderTexture2D _icon;
-        public static void BeginDrawingWindowIcon(Vector2Int sz)
+        public void BeginDrawingWindowIcon(Vector2Int sz)
         {
             RenderTexture2D rt = LoadRenderTexture(sz.X, sz.Y);
             BeginTextureMode(rt);
             ClearBackground(Color.Blank);
             _icon = rt;
+
+            Debug.Log(this, "Window icon draw started");
         }
 
-        public static void EndDrawingWindowIcon()
+        public void EndDrawingWindowIcon()
         {
             EndTextureMode();
             Image img = LoadImageFromTexture(_icon.Texture);
@@ -86,8 +92,10 @@ namespace AbysmalCore.UI
             /// we can actually unload it immediately
             /// since this is the only occasion we use
             /// it for and the icon references img, not
-            /// _icon.Texture
-            UnloadTexture(_icon.Texture);
+            /// _icon
+            UnloadRenderTexture(_icon);
+
+            Debug.Log(this, "Window icon draw ended");
         }
 
         public void Init(Color? bg = null)
