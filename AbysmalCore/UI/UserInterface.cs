@@ -7,7 +7,7 @@ namespace AbysmalCore.UI
     {
         public List<UIElement> Elements;
 
-        public static UserInterface Instance;
+        public static UserInterface? Instance;
 
         public static Theme GlobalTheme = new(
             new Color(40, 16, 16),    /// core
