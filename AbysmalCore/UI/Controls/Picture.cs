@@ -3,7 +3,7 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
-    [DebugInfo("AbysmalCore picture control")]
+    [DebugInfo("picture control")]
     public class Picture : UIElement
     {
         public Image Image;

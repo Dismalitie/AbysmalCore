@@ -1,5 +1,8 @@
-﻿namespace AbysmalCore.UI.Styling
+﻿using AbysmalCore.Debugging;
+
+namespace AbysmalCore.UI.Styling
 {
+    [DebugInfo("control specific state styles")]
     public struct StyleMap
     {
         public enum ControlStyleType

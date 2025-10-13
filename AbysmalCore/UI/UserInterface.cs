@@ -3,16 +3,21 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI
 {
-    [DebugInfo("AbysmalCore ui manager")]
+    [DebugInfo("ui manager")]
     public class UserInterface
     {
         public List<UIElement> Elements;
 
         public static UserInterface? Instance;
 
+        //public static Theme GlobalTheme = new(
+        //    new Color(40, 16, 16),    /// core
+        //    new Color(129, 52, 52),   /// layer
+        //    new Color(245, 101, 101), /// accent
+        //    Color.White
+        //);
+
         public static Theme GlobalTheme = new(
-            new Color(40, 16, 16),    /// core
-            new Color(129, 52, 52),   /// layer
             new Color(245, 101, 101), /// accent
             Color.White
         );

@@ -2,7 +2,7 @@
 
 namespace AbysmalCore.UI.Controls
 {
-    [DebugInfo("AbysmalCore label control")]
+    [DebugInfo("label control")]
     public class Label : UIElement
     {
         public string Text;

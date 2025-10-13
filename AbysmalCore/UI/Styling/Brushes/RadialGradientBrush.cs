@@ -2,6 +2,7 @@
 
 namespace AbysmalCore.UI.Styling.Brushes
 {
+    [DebugInfo("brush")]
     public class RadialGradientBrush : IBrush
     {
         public IBrush.BrushType Type => IBrush.BrushType.RadialGradientBrush;

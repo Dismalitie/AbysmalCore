@@ -3,7 +3,7 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
-    [DebugInfo("AbysmalCore panel control")]
+    [DebugInfo("panel control")]
     public class Panel : UIElement
     {
         public Panel(Vector2Int position, Vector2Int size, List<UIElement>? children = null)

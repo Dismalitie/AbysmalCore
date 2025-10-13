@@ -1,15 +1,11 @@
 ﻿namespace AbysmalCore.Debugging
 {
     [AttributeUsage(AttributeTargets.All, Inherited = false, AllowMultiple = false)]
+    [DebugInfo("info to display in a debug message")]
     public class DebugInfoAttribute : Attribute
     {
-        public readonly string Name;
         public readonly string Description;
 
-        public DebugInfoAttribute(string name, string desc = "")
-        {
-            Name = name;
-            Description = desc;
-        }
+        public DebugInfoAttribute(string desc) => Description = desc;
     }
 }

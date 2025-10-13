@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbysmalCore.Debugging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace AbysmalCore.UI.Styling.Brushes
 {
-    internal class NineSliceBrush : IBrush
+    [DebugInfo("brush")]
+    public class NineSliceBrush : IBrush
     {
         public IBrush.BrushType Type => IBrush.BrushType.NineSliceBrush;
 

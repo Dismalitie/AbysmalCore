@@ -3,11 +3,11 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
-    [DebugInfo("AbysmalCore toggle control")]
+    [DebugInfo("toggle control")]
     public class Toggle : UIElement
     {
         public delegate void StateChangedEventHandler(UIElement sender, bool state, Vector2Int mouse, int frame);
-        public event StateChangedEventHandler? OnStateChanged;
+        public event StateChangedEventHandler? OnToggleStateChanged;
 
         public bool State
         {
@@ -15,7 +15,7 @@ namespace AbysmalCore.UI.Controls
             get => _state;
             set
             {
-                OnStateChanged?.Invoke(this, _state, UserInterface.Mouse, UserInterface.Frame);
+                OnToggleStateChanged?.Invoke(this, _state, UserInterface.Mouse, UserInterface.Frame);
                 _state = value;
             }
         }

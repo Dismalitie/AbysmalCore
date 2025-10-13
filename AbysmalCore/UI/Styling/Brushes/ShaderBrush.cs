@@ -1,8 +1,10 @@
-﻿using Raylib_cs;
+﻿using AbysmalCore.Debugging;
+using Raylib_cs;
 
 namespace AbysmalCore.UI.Styling.Brushes
 {
-    internal class ShaderBrush : IBrush
+    [DebugInfo("brush")]
+    public class ShaderBrush : IBrush
     {
         public IBrush.BrushType Type => IBrush.BrushType.ShaderBrush;
 

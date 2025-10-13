@@ -3,7 +3,7 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
-    [DebugInfo("AbysmalCore button control")]
+    [DebugInfo("button control")]
     public class Button : UIElement
     {
         public string Text;

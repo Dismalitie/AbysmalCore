@@ -1,7 +1,9 @@
-﻿using AbysmalCore.UI.Styling.Brushes;
+﻿using AbysmalCore.Debugging;
+using AbysmalCore.UI.Styling.Brushes;
 
 namespace AbysmalCore.UI.Styling
 {
+    [DebugInfo("control specific style")]
     public class Style
     {
         public IBrush BorderColor = new SolidBrush(Color.DarkGray);

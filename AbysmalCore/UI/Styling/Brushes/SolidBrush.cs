@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbysmalCore.Debugging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace AbysmalCore.UI.Styling.Brushes
 {
+    [DebugInfo("brush")]
     public class SolidBrush : IBrush
     {
         public IBrush.BrushType Type => IBrush.BrushType.SolidBrush;

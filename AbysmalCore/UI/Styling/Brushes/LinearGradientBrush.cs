@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbysmalCore.Debugging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace AbysmalCore.UI.Styling.Brushes
 {
+    [DebugInfo("brush")]
     public class LinearGradientBrush : IBrush
     {
         public IBrush.BrushType Type => IBrush.BrushType.LinearGradientBrush;

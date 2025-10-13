@@ -7,7 +7,6 @@ namespace AbysmalCore.Debugging
     {
         public static bool Enabled = false;
         private static List<string> _logs = new();
-        private static List<Trace> _traces = new();
 
         public static void WriteLog(string path)
         {
@@ -17,9 +16,6 @@ namespace AbysmalCore.Debugging
         }
 
         public static void ClearLog() => _logs.Clear();
-
-        public static void AddTrace(object @this, object obj, string desc = "No description") => _traces.Add(new(@this, obj, desc));
-        public static void GetTrace(object obj) => _traces.First(t => t.Object.Equals(obj));
 
         private static void write(ConsoleColor c, string msg)
         {
@@ -39,7 +35,7 @@ namespace AbysmalCore.Debugging
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
-            if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Name})] (!) {msg.Replace("{name}", info.Name)}";
+            if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Description})] (!) {msg.Replace("{name}", info.Description)}";
 
             write(ConsoleColor.Red, message);
             _logs.Add(message);
@@ -55,7 +51,7 @@ namespace AbysmalCore.Debugging
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
-            if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Name})] (i) {msg.Replace("{name}", info.Name)}";
+            if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Description})] (i) {msg.Replace("{name}", info.Description)}";
 
             write(ConsoleColor.DarkGray, message);
             _logs.Add(message);
@@ -69,7 +65,7 @@ namespace AbysmalCore.Debugging
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
-            if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Name})] /!\\ {msg.Replace("{name}", info.Name)}";
+            if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Description})] /!\\ {msg.Replace("{name}", info.Description)}";
 
             write(ConsoleColor.Yellow, message);
             _logs.Add(message);

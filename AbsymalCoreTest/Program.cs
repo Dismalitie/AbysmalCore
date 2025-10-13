@@ -9,8 +9,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        UserInterface ui = new();
         Debug.Enabled = true;
+        UserInterface ui = new();
 
         //ui.AddElement(new Button("button", new(10))
         //{

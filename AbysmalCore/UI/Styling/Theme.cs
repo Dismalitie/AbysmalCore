@@ -1,7 +1,9 @@
-﻿using AbysmalCore.UI.Styling.Brushes;
+﻿using AbysmalCore.Debugging;
+using AbysmalCore.UI.Styling.Brushes;
 
 namespace AbysmalCore.UI.Styling
 {
+    [DebugInfo("ui global style")]
     public struct Theme
     {
         public StyleMap DefaultStyleMap;
@@ -80,7 +82,7 @@ namespace AbysmalCore.UI.Styling
                     BorderWeight = 2,
                     TextColor = text,
                     BorderColor = accent,
-                    FillColor = layer   
+                    FillColor = layer
                 },
                 Hovered = new()
                 {
@@ -125,6 +127,21 @@ namespace AbysmalCore.UI.Styling
                     TextColor = new SolidBrush(Color.DarkGray),
                 }
             };
+        }
+
+        public Theme(Color c, Color text)
+        {
+            int layerDivisor = 3;
+            int coreDivisor = 5;
+
+            Color layer = new(c.R / layerDivisor, c.G / layerDivisor, c.B / layerDivisor);
+            Debug.Log(this, $"Generated layer color {layer} from {c}");
+            Color core = new(c.R / coreDivisor, c.G / coreDivisor, c.B / coreDivisor);
+            Debug.Log(this, $"Generated base color {core} from {c}");
+
+            Theme t = new(core, layer, c, text);
+            DefaultStyleMap = t.DefaultStyleMap;
+            Background = t.Background;
         }
     }
 }

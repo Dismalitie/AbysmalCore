@@ -51,13 +51,13 @@ namespace AbysmalCore.UI
             {
                 if (_hovered != value)
                 {
-                    OnStateChanged?.Invoke(this, "hovered", value);
-
                     OnHovered?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                     if (value == true) OnMouseEnter?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                     else OnMouseExit?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
 
                     _hovered = value;
+
+                    OnStateChanged?.Invoke(this, "hovered", value);
                 }
             }
         }
@@ -69,12 +69,12 @@ namespace AbysmalCore.UI
             get => _clicked;
             set
             {
-                if (value != Clicked) OnStateChanged?.Invoke(this, "clicked", value);
-
                 /// we do this so OnClicked on fires once
                 if (_clicked != value && Enabled && Clicked)
                     OnClicked?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                 _clicked = value;
+
+                if (value != Clicked) OnStateChanged?.Invoke(this, "clicked", value);
             }
         }
         /// same here
@@ -98,8 +98,8 @@ namespace AbysmalCore.UI
             {
                 if (_enabled != value)
                 {
-                    OnStateChanged?.Invoke(this, "enabled", value);
                     _enabled = value;
+                    OnStateChanged?.Invoke(this, "enabled", value);
                 }
             }
         }
@@ -111,8 +111,8 @@ namespace AbysmalCore.UI
             {
                 if (_visible != value)
                 {
-                    OnStateChanged?.Invoke(this, "visible", value);
                     _visible = value;
+                    OnStateChanged?.Invoke(this, "visible", value);
                 }
             }
         }
