@@ -51,11 +51,14 @@ namespace AbysmalCore.UI
             {
                 if (_hovered != value)
                 {
+                    OnStateChanged?.Invoke(this, "hovered", value);
+
                     OnHovered?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                     if (value == true) OnMouseEnter?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                     else OnMouseExit?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
+
+                    _hovered = value;
                 }
-                _hovered = value;
             }
         }
         /// mirror to prevent recursive setting
@@ -66,6 +69,8 @@ namespace AbysmalCore.UI
             get => _clicked;
             set
             {
+                if (value != Clicked) OnStateChanged?.Invoke(this, "clicked", value);
+
                 /// we do this so OnClicked on fires once
                 if (_clicked != value && Enabled && Clicked)
                     OnClicked?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
@@ -77,15 +82,41 @@ namespace AbysmalCore.UI
 
         public delegate void OnClickedEventArgs(UIElement sender, Vector2Int mouse, int frame);
         public delegate void OnHoveredEventArgs(UIElement sender, Vector2Int mouse, int frame);
+        public delegate void OnStateChangedEventArgs(UIElement sender, string state, object newState);
         public event OnClickedEventArgs? OnClicked;
+        public event OnStateChangedEventArgs? OnStateChanged;
         public event OnHoveredEventArgs? OnHovered;
 
         public delegate void OnMouseEnterExitEventArgs(UIElement sender, Vector2Int mouse, int frame);
         public event OnMouseEnterExitEventArgs? OnMouseEnter;
         public event OnMouseEnterExitEventArgs? OnMouseExit;
 
-        public bool Enabled = true;
-        public bool Visible = true;
+        public bool Enabled
+        {
+            get => _enabled;
+            set
+            {
+                if (_enabled != value)
+                {
+                    OnStateChanged?.Invoke(this, "enabled", value);
+                    _enabled = value;
+                }
+            }
+        }
+        public bool _enabled = true;
+        public bool Visible
+        {
+            get => _visible;
+            set
+            {
+                if (_visible != value)
+                {
+                    OnStateChanged?.Invoke(this, "visible", value);
+                    _visible = value;
+                }
+            }
+        }
+        private bool _visible = true;
 
         public StyleMap StyleMap = new();
         /// dynamic accessor to make drawing
@@ -102,8 +133,6 @@ namespace AbysmalCore.UI
                     else return StyleMap.Hovered!;
                 }
                 else return StyleMap.Normal;
-
-                return new();
             }
         }
 

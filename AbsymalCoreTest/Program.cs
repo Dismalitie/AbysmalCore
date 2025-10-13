@@ -38,7 +38,7 @@ internal class Program
 
         ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
 
-        ui.GetElement("tgl")!.OnClicked += Program_OnClicked;
+        ui.GetElement("tgl")!.OnStateChanged += Program_OnStateChanged;
 
         ui.BeginDrawingWindowIcon(new(20));
         ui.GetElement("tgl")?.Draw();
@@ -47,7 +47,7 @@ internal class Program
         ui.Init();
     }
 
-    private static void Program_OnClicked(UIElement sender, Vector2Int mouse, int frame)
+    private static void Program_OnStateChanged(UIElement sender, string state, object newState)
     {
         UserInterface.Instance?.BeginDrawingWindowIcon(new(20));
         sender.Draw();
