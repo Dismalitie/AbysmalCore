@@ -10,6 +10,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Debug.Enabled = true;
+        DebugInfoAttribute.ImportanceAction = DebugInfoAttribute.ImportanceActionType.Pause;
         UserInterface ui = new();
 
         //ui.AddElement(new Button("button", new(10))
@@ -43,6 +44,8 @@ internal class Program
         ui.BeginDrawingWindowIcon(new(20));
         ui.GetElement("tgl")?.Draw();
         ui.EndDrawingWindowIcon();
+
+        Debug.WriteLogs(".\\test");
 
         ui.Init();
     }

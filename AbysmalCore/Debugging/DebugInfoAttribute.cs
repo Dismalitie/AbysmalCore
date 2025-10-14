@@ -5,7 +5,15 @@
     public class DebugInfoAttribute : Attribute
     {
         public readonly string Description;
+        public readonly bool Important;
 
-        public DebugInfoAttribute(string desc) => Description = desc;
+        public enum ImportanceActionType { Highlight, Pause }
+        public static ImportanceActionType ImportanceAction = ImportanceActionType.Highlight;
+
+        public DebugInfoAttribute(string desc, bool important = false)
+        {
+            Description = desc;
+            Important = important;
+        }
     }
 }
