@@ -1,5 +1,4 @@
 ﻿using AbysmalCore.Debugging;
-using Raylib_cs;
 
 namespace AbysmalCore.UI.Styling.Brushes
 {
@@ -9,21 +8,19 @@ namespace AbysmalCore.UI.Styling.Brushes
         public IBrush.BrushType Type => IBrush.BrushType.ShaderBrush;
 
         public Shader Shader;
-        public Dictionary<string, int> Arguments = new(); /// i called them arguments because
-                                                          /// i wanted to, and it represents
-                                                          /// what they actually are
         private Color fallback;
-        public ShaderBrush(string fragPath, string vertPath, Color color, string[] args)
+        public ShaderBrush(string fragPath, string vertPath, Color color)
         {
-            Shader = LoadShader(fragPath, vertPath);
+            Shader = LoadShader(vertPath, fragPath);
             UserInterface.UnloadList.Add(Shader);
 
-            foreach (string arg in args) Arguments.Add(arg, GetShaderLocation(Shader, arg));
             fallback = color;
         }
 
-        public void SetShaderValue<T>(string arg, T value, ShaderUniformDataType type) where T : unmanaged =>
-             Raylib.SetShaderValue(Shader, Arguments[arg], value, type);
+        public int GetShaderUniform(string name) => GetShaderLocation(Shader, name);
+
+        public void SetShaderValue<T>(int loc, T value, ShaderUniformDataType type) where T : unmanaged =>
+             Raylib.SetShaderValue(Shader, loc, value, type);
 
         public void DrawRectangle(Vector2Int position, Vector2Int size)
         {

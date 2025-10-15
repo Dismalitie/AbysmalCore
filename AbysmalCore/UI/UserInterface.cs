@@ -44,6 +44,8 @@ namespace AbysmalCore.UI
             try { return Elements.First(c => c.Name == name); } catch { }
             return null;
         }
+
+        public UIElement[] GetElements() => Elements.ToArray();
         public void AddElement(UIElement element) => Elements.Add(element);
 
         public void DrawUI()
