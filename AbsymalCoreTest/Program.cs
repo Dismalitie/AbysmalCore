@@ -4,14 +4,16 @@ using AbysmalCore.UI;
 using AbysmalCore.UI.Controls;
 using AbysmalCore.UI.Styling.Brushes;
 using Raylib_cs;
-using System.Reflection;
 
 internal class Program
 {
+    static UserInterface ui;
+    static Window w = new(new(500, 500), typeof(Window).FullName!);
+
     private static void Main(string[] args)
     {
         Debug.Enabled = true;
-        UserInterface ui = new();
+        ui = new();
 
         ui.AddElement(new Button("random theme", new(200), new(200, 50))
         {
@@ -43,13 +45,15 @@ internal class Program
             StyleMap = new(true)
         });
 
-        ui.BootstrapWindow(new(500), "AbysmalCore.UI.Window");
-
         ui.GetElement("btn")!.OnClicked += Program_OnClicked;
+        ((Toggle)ui.GetElement("tgl")!).OnToggleStateChanged += Program_OnToggleStateChanged;
+        w.Init(ui);
+    }
 
-        Debug.WriteLogs(".\\test");
-
-        ui.Init();
+    private static void Program_OnToggleStateChanged(UIElement sender, bool state, Vector2Int mouse, int frame)
+    {
+        if (state) w.State = Window.WindowState.Fullscreen;
+        else w.State = Window.WindowState.Normal;
     }
 
     private static void Program_OnClicked(UIElement sender, Vector2Int mouse, int frame)
@@ -77,8 +81,8 @@ internal class Program
         int idx = Random.Shared.Next(0, colors.Count);
 
         UserInterface.GlobalTheme = new AbysmalCore.UI.Styling.Theme(colors[idx].c, Color.White);
-        foreach (UIElement e in UserInterface.Instance!.GetElements()) e.StyleMap = new(true);
+        foreach (UIElement e in ui.GetElements()) e.StyleMap = new(true);
 
-        ((Label)UserInterface.Instance!.GetElement("theme")!).Text = "theme: " + colors[idx].n;
+        ((Label)ui.GetElement("theme")!).Text = "theme: " + colors[idx].n;
     }
 }

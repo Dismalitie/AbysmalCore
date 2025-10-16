@@ -15,8 +15,8 @@ namespace AbysmalCore.UI.Controls
             get => _state;
             set
             {
-                OnToggleStateChanged?.Invoke(this, _state, UserInterface.Mouse, UserInterface.Frame);
                 _state = value;
+                OnToggleStateChanged?.Invoke(this, _state, UserInterface.Mouse, UserInterface.Frame);
             }
         }
         /// use a mirror here because we update the value

@@ -7,8 +7,7 @@ namespace AbysmalCore.UI
     public class UserInterface
     {
         public List<UIElement> Elements;
-
-        public static UserInterface? Instance;
+        //public static UserInterface? Instance;
 
         //public static Theme GlobalTheme = new(
         //    new Color(40, 16, 16),    /// core
@@ -33,7 +32,7 @@ namespace AbysmalCore.UI
 
         public UserInterface(List<UIElement>? elements = null)
         {
-            Instance = this;
+            //Instance = this;
             if (elements == null) Elements = new();
             else Elements = elements;
         }
@@ -72,76 +71,6 @@ namespace AbysmalCore.UI
                 else element.Hovered = false;
 
                 element.Draw();
-            }
-        }
-
-        public void BootstrapWindow(Vector2Int size, string title)
-        {
-            InitWindow(size.X, size.Y, title);
-            SetTargetFPS(60);
-        }
-
-        private static RenderTexture2D _icon;
-        public void BeginDrawingWindowIcon(Vector2Int sz)
-        {
-            RenderTexture2D rt = LoadRenderTexture(sz.X, sz.Y);
-            BeginTextureMode(rt);
-            ClearBackground(Color.Blank);
-            _icon = rt;
-
-            Debug.Log(this, "Window icon draw started");
-        }
-
-        public void EndDrawingWindowIcon()
-        {
-            EndTextureMode();
-            Image img = LoadImageFromTexture(_icon.Texture);
-            SetWindowIcon(img);
-            /// we can actually unload it immediately
-            /// since this is the only occasion we use
-            /// it for and the icon references img, not
-            /// _icon
-            Debug.Log(this, "Freeing icon from memory");
-            UnloadRenderTexture(_icon);
-
-            Debug.Log(this, "Window icon draw ended");
-        }
-
-        public void Init(Color? bg = null)
-        {
-            if (bg == null) bg = Color.White;
-
-            while (!WindowShouldClose())
-            {
-                BeginDrawing();
-                ClearBackground((Color)bg);
-                DrawUI();
-                EndDrawing();
-            }
-
-            /// unload the gpu and cpu stuff here before exiting
-            foreach (object obj in UnloadList)
-            {
-                Debug.Log(this, $"Freeing {obj.GetType().Name} from memory");
-
-                switch (obj)
-                {
-                    case Texture2D tex:
-                        UnloadTexture(tex);
-                        break;
-                    case RenderTexture2D rt:
-                        UnloadRenderTexture(rt);
-                        break;
-                    case Image img:
-                        UnloadImage(img);
-                        break;
-                    case Shader sh:
-                        UnloadShader(sh);
-                        break;
-                    default:
-                        Debug.Warn(this, $"Tried to free {obj.GetType().Name}, couldnt validate type");
-                        break;
-                }
             }
         }
     }

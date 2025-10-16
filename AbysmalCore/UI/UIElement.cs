@@ -43,6 +43,7 @@ namespace AbysmalCore.UI
         public void RemoveChild(UIElement element) => _children.Remove(element);
         public void RemoveChild(string name) => _children.RemoveAll(c => c.Name == name);
         public UIElement GetChild(string name) => _children.First(c => c.Name == name);
+        public UIElement[] GetChildren() => _children.ToArray();
 
         public bool Hovered
         {
