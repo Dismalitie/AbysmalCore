@@ -8,11 +8,20 @@ namespace AbysmalCore.UI.Styling
     {
         public StyleMap DefaultStyleMap;
         public IBrush Background = new SolidBrush(Color.White);
+        public Color Layer;
+        public Color Core;
+        public Color Accent;
+        public Color Text;
 
         public Theme() { }
 
         public Theme(Color core, Color layer, Color accent, Color text, StyleMap.ControlStyleType style = StyleMap.ControlStyleType.Rounded)
         {
+            Core = core;
+            Layer = layer;
+            Accent = accent;
+            Text = text;
+
             Background = new SolidBrush(core);
             DefaultStyleMap = new()
             {
@@ -72,6 +81,11 @@ namespace AbysmalCore.UI.Styling
 
         public Theme(IBrush core, IBrush layer, IBrush accent, IBrush text, StyleMap.ControlStyleType style = StyleMap.ControlStyleType.Rounded)
         {
+            Core = core.Fallback();
+            Layer = layer.Fallback();
+            Accent = accent.Fallback();
+            Text = text.Fallback();
+
             Background = core;
             DefaultStyleMap = new()
             {
@@ -131,6 +145,8 @@ namespace AbysmalCore.UI.Styling
 
         public Theme(Color c, Color text)
         {
+            Text = text;
+
             int layerDivisor = 3;
             int coreDivisor = 5;
 
@@ -138,6 +154,10 @@ namespace AbysmalCore.UI.Styling
             Debug.Log(this, $"Generated layer color {layer} from {c}");
             Color core = new(c.R / coreDivisor, c.G / coreDivisor, c.B / coreDivisor);
             Debug.Log(this, $"Generated base color {core} from {c}");
+
+            Core = core;
+            Layer = layer;
+            Accent = c;
 
             Theme t = new(core, layer, c, text);
             DefaultStyleMap = t.DefaultStyleMap;

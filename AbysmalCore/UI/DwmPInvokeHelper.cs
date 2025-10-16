@@ -3,38 +3,108 @@ using System.Runtime.InteropServices;
 
 namespace AbysmalCore.UI
 {
+    [DebugInfo("windows dwm api helper", true)]
     public class DwmPInvokeHelper
     {
+        private enum DWMWINDOWATTRIBUTE : uint
+        {
+            DWMWA_BORDER_COLOR = 34,
+            DWMWA_CAPTION_COLOR = 35,
+            DWMWA_TEXT_COLOR = 36,
+            DWMWA_USE_IMMERSIVE_DARK_MODE = 20, /// unused, kept for reference
+            DWMWA_SYSTEMBACKDROP_TYPE = 38 /// used for backdrop material (mica/acrylic)
+        }
+
+        /// pinvoke
         [DllImport("dwmapi.dll", PreserveSig = true)]
         private static extern int DwmSetWindowAttribute(
             IntPtr hwnd,
-            int attr,
-            ref bool attrValue,
-            int attrSize
-        );
+            DWMWINDOWATTRIBUTE dwAttribute,
+            ref int pvAttribute,
+            uint cbAttribute);
 
-        public static void SetWindowTheme(IntPtr hWnd, bool darkmode = true)
+        /// convert to colorref fmt (0x00BBGGRR)
+        private static int ColorToCOLORREF(Color color)
         {
-            if (hWnd == IntPtr.Zero)
+            return color.R | (color.G << 8) | (color.B << 16);
+        }
+
+        public enum MaterialType : int
+        {
+            None = 1,
+            Mica = 2,
+            Acrylic = 3,
+            Tabbed = 4
+        }
+        public static void SetMaterial(IntPtr hWnd, MaterialType material)
+        {
+            int n = (int)material;
+            int hresult = DwmSetWindowAttribute(hWnd, DWMWINDOWATTRIBUTE.DWMWA_SYSTEMBACKDROP_TYPE, ref n, (uint)Marshal.SizeOf<int>());
+
+            if (hresult != 0)
             {
+                Debug.Warn(new DwmPInvokeHelper(), $"Failed to set material type {material} on hwnd {hWnd}, error code: {hresult}");
+            }
+        }
+
+        public static void Mica(IntPtr hWnd)
+        {
+            int n = 4;
+            DwmSetWindowAttribute(hWnd, DWMWINDOWATTRIBUTE.DWMWA_SYSTEMBACKDROP_TYPE, ref n, (uint)Marshal.SizeOf<int>());
+        }
+
+        public static void SetNonClientColor(IntPtr hWnd, int r, int g, int b)
+        {
+            if (Environment.OSVersion.Platform != PlatformID.Win32NT)
+            {
+                Debug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionColor), aborted");
                 return;
             }
 
-            bool attribute = darkmode;
-            int sizeOfAttribute = sizeof(bool); // Note: BOOL is often 4 bytes, but for this specific attribute `bool` in C# often works for Win32 BOOL.
+            int colorRef = ColorToCOLORREF(new Color(r,g,b));
+            uint sizeOfInt = (uint)Marshal.SizeOf(typeof(int));
 
-            /// 20 = DWMWA_USE_IMMERSIVE_DARK_MODE
-            int result = DwmSetWindowAttribute(
+            DwmSetWindowAttribute(
                 hWnd,
-                20,
-                ref attribute,
-                sizeOfAttribute
-            );
+                DWMWINDOWATTRIBUTE.DWMWA_CAPTION_COLOR,
+                ref colorRef,
+                sizeOfInt);
+        }
 
-            if (result != 0)
+        public static void SetNonClientTextColor(IntPtr hWnd, int r, int g, int b)
+        {
+            if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
-                Debug.Error(new DwmPInvokeHelper(), "Failed to set window attribute. HRESULT: " + result, true);
+                Debug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionTextColor), aborted");
+                return;
             }
+
+            int colorRef = ColorToCOLORREF(new Color(r, g, b));
+            uint sizeOfInt = (uint)Marshal.SizeOf(typeof(int));
+
+            DwmSetWindowAttribute(
+                hWnd,
+                DWMWINDOWATTRIBUTE.DWMWA_TEXT_COLOR,
+                ref colorRef,
+                sizeOfInt);
+        }
+
+        public static void SetBorderColor(IntPtr hWnd, int r, int g, int b)
+        {
+            if (Environment.OSVersion.Platform != PlatformID.Win32NT)
+            {
+                Debug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetBorderColor), aborted");
+                return;
+            }
+
+            int colorRef = ColorToCOLORREF(new Color(r, g, b));
+            uint sizeOfInt = (uint)Marshal.SizeOf(typeof(int));
+
+            DwmSetWindowAttribute(
+                hWnd,
+                DWMWINDOWATTRIBUTE.DWMWA_BORDER_COLOR,
+                ref colorRef,
+                sizeOfInt);
         }
     }
 }

@@ -2,6 +2,7 @@
 
 namespace AbysmalCore.UI
 {
+    [DebugInfo("window instance")]
     public class Window
     {
         public Vector2Int Size
@@ -41,11 +42,19 @@ namespace AbysmalCore.UI
             _title = title;
 
             if (resizeable) SetWindowState(ConfigFlags.ResizableWindow);
+
+            SetTitleBarColor(UserInterface.GlobalTheme.Core);
         }
 
         public void Exit() => CloseWindow();
         public void Hide() => SetWindowState(ConfigFlags.HiddenWindow);
         public void Show() => ClearWindowState(ConfigFlags.HiddenWindow);
+
+        public unsafe void SetTitleBarColor(Color c)
+        {
+            IntPtr hwnd = (nint)GetWindowHandle();
+            DwmPInvokeHelper.SetNonClientColor(hwnd, c.R, c.G, c.B);
+        }
 
         public enum WindowState
         {

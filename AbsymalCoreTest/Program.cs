@@ -7,7 +7,7 @@ using Raylib_cs;
 
 internal class Program
 {
-    static UserInterface ui;
+    static UserInterface? ui;
     static Window w = new(new(500, 500), typeof(Window).FullName!);
 
     private static void Main(string[] args)
@@ -81,7 +81,9 @@ internal class Program
         int idx = Random.Shared.Next(0, colors.Count);
 
         UserInterface.GlobalTheme = new AbysmalCore.UI.Styling.Theme(colors[idx].c, Color.White);
-        foreach (UIElement e in ui.GetElements()) e.StyleMap = new(true);
+        foreach (UIElement e in ui!.GetElements()) e.StyleMap = new(true);
+
+        w.SetTitleBarColor(UserInterface.GlobalTheme.Layer);
 
         ((Label)ui.GetElement("theme")!).Text = "theme: " + colors[idx].n;
     }
