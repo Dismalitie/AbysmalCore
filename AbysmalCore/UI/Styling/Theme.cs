@@ -7,7 +7,6 @@ namespace AbysmalCore.UI.Styling
     public struct Theme
     {
         public StyleMap DefaultStyleMap;
-        public IBrush Background = new SolidBrush(Color.White);
         public Color Layer;
         public Color Core;
         public Color Accent;
@@ -22,7 +21,6 @@ namespace AbysmalCore.UI.Styling
             Accent = accent;
             Text = text;
 
-            Background = new SolidBrush(core);
             DefaultStyleMap = new()
             {
                 ControlStyle = StyleMap.ControlStyleType.Rounded,
@@ -86,7 +84,6 @@ namespace AbysmalCore.UI.Styling
             Accent = accent.Fallback();
             Text = text.Fallback();
 
-            Background = core;
             DefaultStyleMap = new()
             {
                 ControlStyle = StyleMap.ControlStyleType.Rounded,
@@ -161,7 +158,6 @@ namespace AbysmalCore.UI.Styling
 
             Theme t = new(core, layer, c, text);
             DefaultStyleMap = t.DefaultStyleMap;
-            Background = t.Background;
         }
     }
 }

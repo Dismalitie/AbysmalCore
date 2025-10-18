@@ -39,7 +39,7 @@ internal class Program
             }
         });
 
-        ui.AddElement(new Label("theme: ct_LucideRed", new(150, 20))
+        ui.AddElement(new Label("theme: t_LucideRed", new(150, 20))
         {
             Name = "theme",
             StyleMap = new(true)
@@ -75,15 +75,15 @@ internal class Program
             (Color.SkyBlue, "t_SkyBlue"),
             (Color.Violet, "t_Violet"),
             (Color.Yellow, "t_Yellow"),
-            (new Color(245, 101, 101), "ct_LucideRed")
+            (new Color(245, 101, 101), "t_LucideRed")
         };
 
         int idx = Random.Shared.Next(0, colors.Count);
 
-        UserInterface.GlobalTheme = new AbysmalCore.UI.Styling.Theme(colors[idx].c, Color.White);
+        Window.GlobalTheme = new AbysmalCore.UI.Styling.Theme(colors[idx].c, Color.White);
         foreach (UIElement e in ui!.GetElements()) e.StyleMap = new(true);
 
-        w.SetTitleBarColor(UserInterface.GlobalTheme.Layer);
+        //w.SetTitleBarColor(Window.GlobalTheme.Core);
 
         ((Label)ui.GetElement("theme")!).Text = "theme: " + colors[idx].n;
     }

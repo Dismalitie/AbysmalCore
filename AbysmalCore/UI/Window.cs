@@ -1,4 +1,5 @@
 ﻿using AbysmalCore.Debugging;
+using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI
 {
@@ -36,25 +37,52 @@ namespace AbysmalCore.UI
             }
         }
 
-        public Window(Vector2Int size, string title, bool resizeable = true)
+        public static Theme GlobalTheme
         {
+            get => _gTheme;
+            set
+            {
+                Color c = value.Core;
+                Color t = value.Text;
+                unsafe
+                {
+                    IntPtr hwnd = (nint)GetWindowHandle();
+                    DwmPInvokeHelper.SetNonClientColor(hwnd, c.R, c.G, c.B);
+                    DwmPInvokeHelper.SetNonClientTextColor(hwnd, t.R, t.G, t.B);
+                }
+                _bg = c;
+                _gTheme = value;
+            }
+        }
+        private static Theme _gTheme;
+
+        public Window(Vector2Int size, string title, Theme? theme = null, bool resizeable = true)
+        {
+            /// we could make window methods static since you can only have
+            /// one window, but then it would allow functions to be called
+            /// before the window is actually created.
+
             InitWindow(size.X, size.Y, title);
             _title = title;
 
             if (resizeable) SetWindowState(ConfigFlags.ResizableWindow);
 
-            SetTitleBarColor(UserInterface.GlobalTheme.Core);
+            GlobalTheme = theme ?? new Theme(new Color(245, 101, 101), Color.White);
+            Color c = GlobalTheme.Core;
+            Color t = GlobalTheme.Text;
+            unsafe
+            {
+                /// update window colors manually since it doesnt do
+                /// it automatically on the first set
+                IntPtr hwnd = (nint)GetWindowHandle();
+                DwmPInvokeHelper.SetNonClientColor(hwnd, c.R, c.G, c.B);
+                DwmPInvokeHelper.SetNonClientTextColor(hwnd, t.R, t.G, t.B);
+            }
         }
 
         public void Exit() => CloseWindow();
         public void Hide() => SetWindowState(ConfigFlags.HiddenWindow);
         public void Show() => ClearWindowState(ConfigFlags.HiddenWindow);
-
-        public unsafe void SetTitleBarColor(Color c)
-        {
-            IntPtr hwnd = (nint)GetWindowHandle();
-            DwmPInvokeHelper.SetNonClientColor(hwnd, c.R, c.G, c.B);
-        }
 
         public enum WindowState
         {
@@ -113,14 +141,15 @@ namespace AbysmalCore.UI
             Debug.Log(this, "Window icon draw ended");
         }
 
-        public void Init(UserInterface ui, Color? bg = null)
+        private static Color? _bg = GlobalTheme.Core;
+        public void Init(UserInterface ui)
         {
-            bg ??= Color.White;
+            _bg ??= Color.White;
 
             while (!WindowShouldClose())
             {
                 BeginDrawing();
-                ClearBackground((Color)bg);
+                ClearBackground((Color)_bg);
                 ui.DrawUI();
                 EndDrawing();
             }

@@ -7,19 +7,6 @@ namespace AbysmalCore.UI
     public class UserInterface
     {
         public List<UIElement> Elements;
-        //public static UserInterface? Instance;
-
-        //public static Theme GlobalTheme = new(
-        //    new Color(40, 16, 16),    /// core
-        //    new Color(129, 52, 52),   /// layer
-        //    new Color(245, 101, 101), /// accent
-        //    Color.White
-        //);
-
-        public static Theme GlobalTheme = new(
-            new Color(245, 101, 101), /// accent
-            Color.White
-        );
 
         /// objects like tex2d, rendertextures, images
         /// in this list will be unloaded upon exiting
@@ -49,8 +36,6 @@ namespace AbysmalCore.UI
 
         public void DrawUI()
         {
-            if (GlobalTheme.Background != null) GlobalTheme.Background.DrawRectangle(new(0, 0), new(GetRenderWidth(), GetRenderHeight()));
-
             Frame++;
             foreach (UIElement element in Elements)
             {

@@ -24,14 +24,14 @@ namespace AbysmalCore.UI.Styling
         {
             if (useGlobalTheme)
             {
-                Hovered ??= UserInterface.GlobalTheme.DefaultStyleMap.Hovered;
-                Clicked ??= UserInterface.GlobalTheme.DefaultStyleMap.Clicked;
-                Normal ??= UserInterface.GlobalTheme.DefaultStyleMap.Normal;
-                Disabled ??= UserInterface.GlobalTheme.DefaultStyleMap.Disabled;
-                ControlStyle = UserInterface.GlobalTheme.DefaultStyleMap.ControlStyle;
-                Activated ??= UserInterface.GlobalTheme.DefaultStyleMap.Activated;
-                HoveredDisabled ??= UserInterface.GlobalTheme.DefaultStyleMap.HoveredDisabled;
-                HoveredActivated ??= UserInterface.GlobalTheme.DefaultStyleMap.HoveredActivated;
+                Hovered ??= Window.GlobalTheme.DefaultStyleMap.Hovered;
+                Clicked ??= Window.GlobalTheme.DefaultStyleMap.Clicked;
+                Normal ??= Window.GlobalTheme.DefaultStyleMap.Normal;
+                Disabled ??= Window.GlobalTheme.DefaultStyleMap.Disabled;
+                ControlStyle = Window.GlobalTheme.DefaultStyleMap.ControlStyle;
+                Activated ??= Window.GlobalTheme.DefaultStyleMap.Activated;
+                HoveredDisabled ??= Window.GlobalTheme.DefaultStyleMap.HoveredDisabled;
+                HoveredActivated ??= Window.GlobalTheme.DefaultStyleMap.HoveredActivated;
             }
             else
             {

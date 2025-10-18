@@ -23,23 +23,23 @@ namespace AbysmalCore.UI.Controls
             /// mostly just copied from <see cref="Button"/>
             if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Rounded)
             {
-                try { CurrentStyle.BorderColor.DrawRectangleRounded(Position, Size, CurrentStyle.BorderRadius); }
-                catch { DrawRectangleRounded(new(Position.X, Position.Y, Size.X, Size.Y), (float)CurrentStyle.BorderRadius / 10, 1, CurrentStyle.BorderColor.Fallback()); }
+                try { StyleMap.Normal.BorderColor.DrawRectangleRounded(Position, Size, StyleMap.Normal.BorderRadius); }
+                catch { DrawRectangleRounded(new(Position.X, Position.Y, Size.X, Size.Y), (float)StyleMap.Normal.BorderRadius / 10, 1, StyleMap.Normal.BorderColor.Fallback()); }
 
-                Vector2Int nonBorderPos = new(Position.X + CurrentStyle.BorderWeight, Position.Y + CurrentStyle.BorderWeight);
-                Vector2Int nonBorderSz = new(Size.X - CurrentStyle.BorderWeight * 2, Size.Y - CurrentStyle.BorderWeight * 2);
-                try { CurrentStyle.FillColor.DrawRectangleRounded(nonBorderPos, nonBorderSz, CurrentStyle.BorderRadius); }
-                catch { DrawRectangleRounded(new(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y), CurrentStyle.BorderRadius / 10, 1, CurrentStyle.FillColor.Fallback()); }
+                Vector2Int nonBorderPos = new(Position.X + StyleMap.Normal.BorderWeight, Position.Y + StyleMap.Normal.BorderWeight);
+                Vector2Int nonBorderSz = new(Size.X - StyleMap.Normal.BorderWeight * 2, Size.Y - StyleMap.Normal.BorderWeight * 2);
+                try { StyleMap.Normal.FillColor.DrawRectangleRounded(nonBorderPos, nonBorderSz, StyleMap.Normal.BorderRadius); }
+                catch { DrawRectangleRounded(new(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y), StyleMap.Normal.BorderRadius / 10, 1, StyleMap.Normal.FillColor.Fallback()); }
             }
             else if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Sharp)
             {
-                try { CurrentStyle.BorderColor.DrawRectangle(Position, Size); }
-                catch { DrawRectangle(Position.X, Position.Y, Size.X, Size.Y, CurrentStyle.BorderColor.Fallback()); }
+                try { StyleMap.Normal.BorderColor.DrawRectangle(Position, Size); }
+                catch { DrawRectangle(Position.X, Position.Y, Size.X, Size.Y, StyleMap.Normal.BorderColor.Fallback()); }
 
-                Vector2Int nonBorderPos = new(Position.X + CurrentStyle.BorderWeight, Position.Y + CurrentStyle.BorderWeight);
-                Vector2Int nonBorderSz = new(Size.X - CurrentStyle.BorderWeight * 2, Size.Y - CurrentStyle.BorderWeight * 2);
-                try { CurrentStyle.FillColor.DrawRectangle(nonBorderPos, nonBorderSz); }
-                catch { DrawRectangle(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y, CurrentStyle.FillColor.Fallback()); }
+                Vector2Int nonBorderPos = new(Position.X + StyleMap.Normal.BorderWeight, Position.Y + StyleMap.Normal.BorderWeight);
+                Vector2Int nonBorderSz = new(Size.X - StyleMap.Normal.BorderWeight * 2, Size.Y - StyleMap.Normal.BorderWeight * 2);
+                try { StyleMap.Normal.FillColor.DrawRectangle(nonBorderPos, nonBorderSz); }
+                catch { DrawRectangle(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y, StyleMap.Normal.FillColor.Fallback()); }
             }
         }
     }
