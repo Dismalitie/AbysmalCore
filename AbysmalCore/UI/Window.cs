@@ -66,6 +66,8 @@ namespace AbysmalCore.UI
             _title = title;
 
             if (resizeable) SetWindowState(ConfigFlags.ResizableWindow);
+            SetWindowState(ConfigFlags.VSyncHint); /// prevent flickering when drawing on large sizes
+            SetWindowState(ConfigFlags.AlwaysRunWindow);
 
             GlobalTheme = theme ?? new Theme(new Color(245, 101, 101), Color.White);
             Color c = GlobalTheme.Core;
