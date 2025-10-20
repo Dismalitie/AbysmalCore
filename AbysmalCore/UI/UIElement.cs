@@ -1,16 +1,33 @@
 ﻿using AbysmalCore.UI.Styling;
+using System.Xml.Linq;
 
 namespace AbysmalCore.UI
 {
+    /// <summary>
+    /// Represents an abstraction of a user interface element
+    /// </summary>
     public abstract class UIElement
     {
         /// default name is * because when
         /// using GetChild you can do
         /// GetChild("*")
+        /// 
+        /// <summary>
+        /// Unique identifier of this <see cref="UIElement"/> (used for retrieval with <see cref="GetChild(string)"/>)
+        /// </summary>
         public string Name = "*";
+        /// <summary>
+        /// Position of this <see cref="UIElement"/> relative to the top left of its parent
+        /// </summary>
         public Vector2Int Position;
+        /// <summary>
+        /// Size of this <see cref="UIElement"/> in pixels
+        /// </summary>
         public Vector2Int Size;
 
+        /// <summary>
+        /// Dictionary of supported brushes for each style type (used for validation)
+        /// </summary>
         public Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]> SupportedBrushes = new()
         {
             { StyleMap.ControlStyleType.Sharp,
@@ -28,23 +45,57 @@ namespace AbysmalCore.UI
                 IBrush.BrushType.ShaderBrush,
             ]}
         };
+        /// <summary>
+        /// If true, unsupported brushes will use their fallback color instead of throwing an exception
+        /// </summary>
         protected bool _UseFallbackForUnsupportedBrushes = false;
 
+        /// <summary>
+        /// Child controls of this <see cref="UIElement"/>
+        /// </summary>
         public List<UIElement> Children { get => _children; }
         /// mirror because Children is get only and we need
         /// to manipulate the list internally with AddChild
         /// GetChild and RemoveChild
         private List<UIElement> _children = new();
+        /// <summary>
+        /// Adds a child <see cref="UIElement"/>
+        /// </summary>
+        /// <param name="element"></param>Instance of the element to add
         public void AddChild(UIElement element)
         {
             element.Position = new(element.Position.X + Position.X, element.Position.Y + Position.Y);
             _children.Add(element);
         }
+        /// <summary>
+        /// Removes a child <see cref="UIElement"/>
+        /// </summary>
+        /// <param name="element"></param>Instance of the element to remove
         public void RemoveChild(UIElement element) => _children.Remove(element);
+        /// <summary>
+        /// Removes the first child <see cref="UIElement"/> with the specified name
+        /// </summary>
+        /// <param name="name"></param>Name of the element to remove
         public void RemoveChild(string name) => _children.RemoveAll(c => c.Name == name);
-        public UIElement GetChild(string name) => _children.First(c => c.Name == name);
+        /// <summary>
+        /// Returns the first child <see cref="UIElement"/> with the specified name
+        /// </summary>
+        /// <param name="name"></param>Name of the element to retrieve
+        /// <returns>First instance of <see cref="UIElement"/> with <paramref name="name"/>, else null</returns>
+        public UIElement? GetChild(string name)
+        {
+            try { return Children.First(c => c.Name == name); } catch { }
+            return null;
+        }
+        /// <summary>
+        /// Returns every child <see cref="UIElement"/>
+        /// </summary>
+        /// <returns><see cref="UIElement"/>[]</returns>
         public UIElement[] GetChildren() => _children.ToArray();
 
+        /// <summary>
+        /// Whether the mouse is currently hovering over this <see cref="UIElement"/>
+        /// </summary>
         public bool Hovered
         {
             get => _hovered;
@@ -58,13 +109,16 @@ namespace AbysmalCore.UI
 
                     _hovered = value;
 
-                    OnStateChanged?.Invoke(this, "hovered", value);
+                    OnStateChanged?.Invoke(this, StateChangeType.Hovered, value);
                 }
             }
         }
         /// mirror to prevent recursive setting
         /// which crashes the stack
         private bool _hovered = false;
+        /// <summary>
+        /// Determines whether the mouse is over this <see cref="UIElement"/> and the left mouse button is held down
+        /// </summary>
         public bool Clicked
         {
             get => _clicked;
@@ -75,7 +129,7 @@ namespace AbysmalCore.UI
                     OnClicked?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                 _clicked = value;
 
-                if (value != Clicked) OnStateChanged?.Invoke(this, "clicked", value);
+                if (value != Clicked) OnStateChanged?.Invoke(this, StateChangeType.Clicked, value);
             }
         }
         /// same here
@@ -83,15 +137,34 @@ namespace AbysmalCore.UI
 
         public delegate void OnClickedEventArgs(UIElement sender, Vector2Int mouse, int frame);
         public delegate void OnHoveredEventArgs(UIElement sender, Vector2Int mouse, int frame);
-        public delegate void OnStateChangedEventArgs(UIElement sender, string state, object newState);
+        public enum StateChangeType { Enabled, Visible, Hovered, Clicked }
+        public delegate void OnStateChangedEventArgs(UIElement sender, StateChangeType state, object newState);
+        /// <summary>
+        /// Fired when this <see cref="UIElement"/> is clicked
+        /// </summary>
         public event OnClickedEventArgs? OnClicked;
+        /// <summary>
+        /// Fired when a state of this <see cref="UIElement"/> changes
+        /// </summary>
         public event OnStateChangedEventArgs? OnStateChanged;
+        /// <summary>
+        /// Fired once upon hovering over this <see cref="UIElement"/>
+        /// </summary>
         public event OnHoveredEventArgs? OnHovered;
 
         public delegate void OnMouseEnterExitEventArgs(UIElement sender, Vector2Int mouse, int frame);
+        /// <summary>
+        /// Fired once when the mouse enters the bounds of this <see cref="UIElement"/>
+        /// </summary>
         public event OnMouseEnterExitEventArgs? OnMouseEnter;
+        /// <summary>
+        /// Fired once when the mouse exits the bounds of this <see cref="UIElement"/>
+        /// </summary>
         public event OnMouseEnterExitEventArgs? OnMouseExit;
 
+        /// <summary>
+        /// Determines whether this <see cref="UIElement"/> is enabled (can be interacted with)
+        /// </summary>
         public bool Enabled
         {
             get => _enabled;
@@ -100,11 +173,15 @@ namespace AbysmalCore.UI
                 if (_enabled != value)
                 {
                     _enabled = value;
-                    OnStateChanged?.Invoke(this, "enabled", value);
+                    OnStateChanged?.Invoke(this, StateChangeType.Enabled, value);
                 }
             }
         }
         public bool _enabled = true;
+
+        /// <summary>
+        /// Determines whether this <see cref="UIElement"/> is visible (drawn)
+        /// </summary>
         public bool Visible
         {
             get => _visible;
@@ -113,15 +190,22 @@ namespace AbysmalCore.UI
                 if (_visible != value)
                 {
                     _visible = value;
-                    OnStateChanged?.Invoke(this, "visible", value);
+                    OnStateChanged?.Invoke(this, StateChangeType.Visible, value);
                 }
             }
         }
         private bool _visible = true;
 
+        /// <summary>
+        /// Style map containing styles for different states of this <see cref="UIElement"/>
+        /// </summary>
         public StyleMap StyleMap = new();
         /// dynamic accessor to make drawing
         /// a fucktonne easier
+        /// 
+        /// <summary>
+        /// Returns the current <see cref="Style"/> based on the state of this <see cref="UIElement"/>
+        /// </summary>
         public Style CurrentStyle
         {
             get
@@ -138,6 +222,9 @@ namespace AbysmalCore.UI
         }
 
         protected abstract void _draw();
+        /// <summary>
+        /// Draws this <see cref="UIElement"/> and its children
+        /// </summary>
         public void Draw()
         {
             if (_UseFallbackForUnsupportedBrushes == false) StyleMap.ValidateBrushes(SupportedBrushes, this);
@@ -175,10 +262,22 @@ namespace AbysmalCore.UI
             }
         }
 
+        /// <summary>
+        /// Disables interaction with this <see cref="UIElement"/>
+        /// </summary>
         public virtual void Disable() => Enabled = false;
+        /// <summary>
+        /// Enables interaction with this <see cref="UIElement"/>
+        /// </summary>
         public virtual void Enable() => Enabled = true;
 
+        /// <summary>
+        /// Hides this <see cref="UIElement"/>
+        /// </summary>
         public virtual void Hide() => Visible = false;
+        /// <summary>
+        /// Unhides this <see cref="UIElement"/>
+        /// </summary>
         public virtual void Show() => Visible = true;
     }
 }

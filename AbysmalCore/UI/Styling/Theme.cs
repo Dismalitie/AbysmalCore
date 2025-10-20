@@ -3,6 +3,9 @@ using AbysmalCore.UI.Styling.Brushes;
 
 namespace AbysmalCore.UI.Styling
 {
+    /// <summary>
+    /// Represents a global theme for the user interface including palette colors and default styles
+    /// </summary>
     [DebugInfo("ui global style")]
     public struct Theme
     {

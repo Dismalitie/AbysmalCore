@@ -2,6 +2,9 @@
 
 namespace AbysmalCore.UI.Controls
 {
+    /// <summary>
+    /// A simple text label control
+    /// </summary>
     [DebugInfo("label control")]
     public class Label : UIElement
     {

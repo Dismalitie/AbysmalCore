@@ -1,5 +1,8 @@
 ﻿namespace AbysmalCore.Debugging
 {
+    /// <summary>
+    /// Attribute for adding debug information to classes like names and importance
+    /// </summary>
     [AttributeUsage(AttributeTargets.All, Inherited = false, AllowMultiple = false)]
     [DebugInfo("info to display in a debug message")]
     public class DebugInfoAttribute : Attribute

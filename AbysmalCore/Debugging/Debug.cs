@@ -2,12 +2,19 @@
 
 namespace AbysmalCore.Debugging
 {
+    /// <summary>
+    /// Standard debugging class for logging messages, warnings and errors to the console
+    /// </summary>
     [DebugInfo("standard debug lib", true)]
     public class Debug
     {
         public static bool Enabled = false;
         private static List<string> _logs = new();
 
+        /// <summary>
+        /// Writes the current logs to a file
+        /// </summary>
+        /// <param name="path"></param>Path to write logs to
         public static void WriteLogs(string path)
         {
             Log(new Debug(), $"Writing logs to {path}");
@@ -16,6 +23,9 @@ namespace AbysmalCore.Debugging
             File.WriteAllText(path, string.Join('\n', _logs));
         }
 
+        /// <summary>
+        /// Clears the current log buffer
+        /// </summary>
         public static void ClearLog() => _logs.Clear();
 
         private static void write(ConsoleColor c, string msg)
@@ -28,6 +38,12 @@ namespace AbysmalCore.Debugging
             Console.ForegroundColor = cc;
         }
 
+        /// <summary>
+        /// Logs an error message to the console
+        /// </summary>
+        /// <param name="this"></param>Instance of the calling class
+        /// <param name="msg"></param>Message to log
+        /// <param name="fatal"></param>Determines whether to throw an exception after logging
         public static void Error(object @this, string msg, bool fatal = false)
         {
             if (!Enabled) return;
@@ -44,6 +60,11 @@ namespace AbysmalCore.Debugging
             if (fatal) throw new Exception();
         }
 
+        /// <summary>
+        /// Logs a standard message to the console
+        /// </summary>
+        /// <param name="this"></param>Instance of the calling class
+        /// <param name="msg"></param>Message to log
         public static void Log(object @this, string msg)
         {
             if (!Enabled) return;
@@ -71,6 +92,11 @@ namespace AbysmalCore.Debugging
                 Pause(false, true, "paused by important log");
         }
 
+        /// <summary>
+        /// Logs a standard warning to the console
+        /// </summary>
+        /// <param name="this"></param>Instance of the calling class
+        /// <param name="msg"></param>Message to log
         public static void Warn(object @this, string msg)
         {
             if (!Enabled) return;
@@ -85,7 +111,13 @@ namespace AbysmalCore.Debugging
             _logs.Add(message);
         }
 
-        public static void Pause(bool value = false, bool expected = true, string msg = "unconditional")
+        /// <summary>
+        /// Pauses execution until a key is pressed if <paramref name="value"/> does not equal <paramref name="expected"/>
+        /// </summary>
+        /// <param name="value"></param>The value to check
+        /// <param name="expected"></param>The expected value
+        /// <param name="reason"></param>The pause reason
+        public static void Pause(bool value = false, bool expected = true, string reason = "unconditional")
         {
             if (!Enabled) return;
 
@@ -94,7 +126,7 @@ namespace AbysmalCore.Debugging
                 ConsoleColor cc = Console.ForegroundColor;
                 Console.ForegroundColor = ConsoleColor.Yellow;
 
-                Console.WriteLine($"[Debug] Execution paused ({msg})");
+                Console.WriteLine($"[Debug] Execution paused ({reason})");
                 Console.WriteLine($"(press any key to continue)");
                 Console.ReadKey();
                 Console.WriteLine("[Debug] Execution resumed");
@@ -103,7 +135,13 @@ namespace AbysmalCore.Debugging
             }
         }
 
-        public static void Stop(bool value = false, bool expected = true, string msg = "unconditional")
+        /// <summary>
+        /// Stops execution indefinitely if <paramref name="value"/> does not equal <paramref name="expected"/>
+        /// </summary>
+        /// <param name="value"></param>The value to check
+        /// <param name="expected"></param>The expected value
+        /// <param name="reason"></param>The reason for stopping
+        public static void Stop(bool value = false, bool expected = true, string reason = "unconditional")
         {
             if (!Enabled) return;
 
@@ -112,7 +150,7 @@ namespace AbysmalCore.Debugging
                 ConsoleColor cc = Console.ForegroundColor;
                 Console.ForegroundColor = ConsoleColor.Red;
 
-                Console.WriteLine($"[Debug] Execution stopped ({msg})");
+                Console.WriteLine($"[Debug] Execution stopped ({reason})");
                 while (true) { }
             }
         }

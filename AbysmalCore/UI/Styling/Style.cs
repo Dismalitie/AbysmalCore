@@ -3,6 +3,9 @@ using AbysmalCore.UI.Styling.Brushes;
 
 namespace AbysmalCore.UI.Styling
 {
+    /// <summary>
+    /// Contains style information for a specific control
+    /// </summary>
     [DebugInfo("control specific style")]
     public class Style
     {
@@ -13,6 +16,11 @@ namespace AbysmalCore.UI.Styling
         public IBrush TextColor = new SolidBrush(Color.White);
         public Font Font = GetFontDefault();
 
+        /// <summary>
+        /// Checks if the brushes used in this style are supported by the given control
+        /// </summary>
+        /// <param name="supported"></param>Array of supported brush types
+        /// <param name="control"></param>Control to validate against
         public void ValidateBrushes(IBrush.BrushType[] supported, UIElement control)
         {
             if (!supported.Contains(BorderColor.Type))

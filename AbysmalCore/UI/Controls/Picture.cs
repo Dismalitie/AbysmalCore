@@ -3,6 +3,9 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
+    /// <summary>
+    /// A control for displaying a picture/image
+    /// </summary>
     [DebugInfo("picture control")]
     public class Picture : UIElement
     {

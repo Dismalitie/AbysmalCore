@@ -3,6 +3,9 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
+    /// <summary>
+    /// A container panel control
+    /// </summary>
     [DebugInfo("panel control")]
     public class Panel : UIElement
     {

@@ -2,6 +2,9 @@
 
 namespace AbysmalCore.UI.Styling
 {
+    /// <summary>
+    /// Contains style information for a specific control states
+    /// </summary>
     [DebugInfo("control specific state styles")]
     public struct StyleMap
     {

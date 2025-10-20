@@ -3,6 +3,9 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
+    /// <summary>
+    /// A button-like control with 2 states: on and off
+    /// </summary>
     [DebugInfo("toggle control")]
     public class Toggle : UIElement
     {

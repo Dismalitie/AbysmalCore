@@ -3,19 +3,31 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI
 {
+    /// <summary>
+    /// Contains methods and properties for managing the application window
+    /// </summary>
     [DebugInfo("window instance")]
     public class Window
     {
+        /// <summary>
+        /// Size of the window in pixels
+        /// </summary>
         public Vector2Int Size
         {
             get => new(GetRenderWidth(), GetRenderHeight());
             set => SetWindowSize(value.X, value.Y);
         }
+        /// <summary>
+        /// The position of the window relative to the top left of the screen
+        /// </summary>
         public Vector2Int Position
         {
             get => new(GetWindowPosition());
             set => SetWindowPosition(value.X, value.Y);
         }
+        /// <summary>
+        /// Text caption displayed in the window title bar
+        /// </summary>
         public string Title
         {
             get => _title;
@@ -27,6 +39,9 @@ namespace AbysmalCore.UI
         }
         private string _title;
 
+        /// <summary>
+        /// Determines if window resize handles and maximize button are available
+        /// </summary>
         public bool Resizable
         {
             get => IsWindowState(ConfigFlags.ResizableWindow);
@@ -37,6 +52,9 @@ namespace AbysmalCore.UI
             }
         }
 
+        /// <summary>
+        /// Global theme of colors to use by default across the GUI
+        /// </summary>
         public static Theme GlobalTheme
         {
             get => _gTheme;
@@ -82,8 +100,17 @@ namespace AbysmalCore.UI
             }
         }
 
+        /// <summary>
+        /// Closes the window
+        /// </summary>
         public void Exit() => CloseWindow();
+        /// <summary>
+        /// Hides the window
+        /// </summary>
         public void Hide() => SetWindowState(ConfigFlags.HiddenWindow);
+        /// <summary>
+        /// Unhides the window
+        /// </summary>
         public void Show() => ClearWindowState(ConfigFlags.HiddenWindow);
 
         public enum WindowState
@@ -93,6 +120,10 @@ namespace AbysmalCore.UI
             Maximized,
             Fullscreen
         }
+
+        /// <summary>
+        /// The current state of the window (e.g. minimized, maximized, fullscreen, normal)
+        /// </summary>
         public WindowState State
         {
             get => _wState;
@@ -121,6 +152,12 @@ namespace AbysmalCore.UI
         private WindowState _wState = WindowState.Normal;
 
         private RenderTexture2D _icon;
+
+        /// <summary>
+        /// Draws and sets the window icon using the provided lambda function
+        /// </summary>
+        /// <param name="sz"></param>Size of the icon
+        /// <param name="draw"></param>Lamba function that draws the icon
         public void SetIcon(Vector2Int sz, Func<object?> draw)
         {
             RenderTexture2D rt = LoadRenderTexture(sz.X, sz.Y);
@@ -144,6 +181,11 @@ namespace AbysmalCore.UI
         }
 
         private static Color? _bg = GlobalTheme.Core;
+
+        /// <summary>
+        /// Initializes the window loop with the provided <see cref="UserInterface"/>
+        /// </summary>
+        /// <param name="ui"></param>User interface to draw
         public void Init(UserInterface ui)
         {
             _bg ??= Color.White;

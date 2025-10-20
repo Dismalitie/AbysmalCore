@@ -1,12 +1,10 @@
 ﻿using AbysmalCore.Debugging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AbysmalCore.UI.Styling
 {
+    /// <summary>
+    /// Represents an abstraction of a brush used for drawing UI elements
+    /// </summary>
     [DebugInfo("brush parent class")]
     public interface IBrush
     {

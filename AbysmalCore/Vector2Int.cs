@@ -1,13 +1,10 @@
 ﻿using System.Numerics;
-using System.Runtime.InteropServices;
 
 namespace AbysmalCore
 {
-    /// this isnt really necessary as it
-    /// was to fix mem access violations
-    /// by making sure c# structs match
-    /// up with cpp bind structs
-    [StructLayout(LayoutKind.Sequential)]
+    /// <summary>
+    /// Represents a 2D vector with integer components
+    /// </summary>
     public struct Vector2Int
     {
         public int X;

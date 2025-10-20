@@ -3,6 +3,9 @@ using AbysmalCore.UI.Styling;
 
 namespace AbysmalCore.UI.Controls
 {
+    /// <summary>
+    /// A clickable button control
+    /// </summary>
     [DebugInfo("button control")]
     public class Button : UIElement
     {
