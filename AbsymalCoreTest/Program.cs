@@ -45,6 +45,12 @@ internal class Program
             StyleMap = new(true)
         });
 
+        AbysmalConsole c = new();
+        if ((bool)c.Ask("Should we stop the application?"))
+        {
+            Debug.Stop();
+        }
+
         ui.GetElement("btn")!.OnClicked += Program_OnClicked;
         ((Toggle)ui.GetElement("tgl")!).OnToggleStateChanged += Program_OnToggleStateChanged;
         w.Init(ui);
