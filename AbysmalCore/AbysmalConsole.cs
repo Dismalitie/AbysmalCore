@@ -102,5 +102,35 @@
                     return null;
             }
         }
+
+        /// <summary>
+        /// Asks the user for input and converts it to the specified type
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="msg"></param>The prompt message
+        /// <param name="type"></param>The string representation of the type (optional; defaults to typeof(T).Name.ToLower())
+        /// <param name="converter"></param>An optional converter function to convert the string input to type T
+        public T? Prompt<T>(string msg, string? type = null, Func<string, T>? converter = null)
+        {
+            type ??= typeof(T).Name.ToLower();
+
+            WriteColors([
+                (msg + " ", Console.ForegroundColor, null),
+                ("(", ConsoleColor.DarkGray, null),
+                (type, ConsoleColor.White, null),
+                (")", ConsoleColor.DarkGray, null)
+            ]);
+
+            Console.Write("\n> ");
+            string response = Console.ReadLine() ?? "";
+            _output.Add($"\n> {response}");
+
+            Console.WriteLine(); /// new line after input
+
+            if (response == "") return default;
+
+            if (converter != null) return converter(response);
+            else return (T)Convert.ChangeType(response, typeof(T));
+        }
     }
 }

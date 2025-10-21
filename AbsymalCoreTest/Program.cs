@@ -46,10 +46,17 @@ internal class Program
         });
 
         AbysmalConsole c = new();
-        if ((bool)c.Ask("Should we stop the application?"))
+        int s = c.Prompt("number", "int", (string s) =>
         {
-            Debug.Stop();
-        }
+            switch (s)
+            {
+                case "max": return int.MaxValue;
+                case "min": return int.MinValue;
+                default: return int.Parse(s);
+            }
+        });
+
+        Console.WriteLine($"you entered: {s}");
 
         ui.GetElement("btn")!.OnClicked += Program_OnClicked;
         ((Toggle)ui.GetElement("tgl")!).OnToggleStateChanged += Program_OnToggleStateChanged;
