@@ -181,6 +181,7 @@ namespace AbysmalCore.UI
         }
 
         private static Color? _bg = GlobalTheme.Core;
+        private static UserInterface? _ui;
 
         /// <summary>
         /// Initializes the window loop with the provided <see cref="UserInterface"/>
@@ -188,13 +189,14 @@ namespace AbysmalCore.UI
         /// <param name="ui"></param>User interface to draw
         public void Init(UserInterface ui)
         {
+            _ui = ui;
             _bg ??= Color.White;
 
             while (!WindowShouldClose())
             {
                 BeginDrawing();
                 ClearBackground((Color)_bg);
-                ui.DrawUI();
+                _ui.DrawUI();
                 EndDrawing();
             }
 
@@ -223,5 +225,11 @@ namespace AbysmalCore.UI
                 }
             }
         }
+
+        /// <summary>
+        /// Updates the user interface to draw in the window loop
+        /// </summary>
+        /// <param name="ui"></param>User Interface instance
+        public void SetUI(UserInterface ui) => _ui = ui;
     }
 }

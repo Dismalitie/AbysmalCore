@@ -1,13 +1,31 @@
-﻿namespace AbysmalCore
+﻿using AbysmalCore.Debugging;
+
+namespace AbysmalCore
 {
+    [DebugInfo("standard fmtd output and input")]
     public class AbysmalConsole
     {
         private List<string> _output;
 
-        public AbysmalConsole()
+        public AbysmalConsole() => _output = new();
+
+        /// <summary>
+        /// Returns console messages and inputs created and recieved by this instance
+        /// </summary>
+        public string GetOutput() => string.Join("", _output);
+        /// <summary>
+        /// Clears the console output buffer and the console screen
+        /// </summary>
+        public void Clear()
         {
-            _output = new();
+            _output.Clear();
+            Console.Clear();
         }
+        /// <summary>
+        /// Writes the console output buffer to a file
+        /// </summary>
+        /// <param name="path"></param>
+        public void WriteOutput(string path) => File.WriteAllText(path, GetOutput());
 
         /// <summary>
         /// Writes a colored string to the console

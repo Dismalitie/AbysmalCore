@@ -9,7 +9,7 @@ namespace AbysmalCore.Debugging
     public class Debug
     {
         public static bool Enabled = false;
-        private static List<string> _logs = new();
+        private static AbysmalConsole _c = new();
 
         /// <summary>
         /// Writes the current logs to a file
@@ -18,24 +18,8 @@ namespace AbysmalCore.Debugging
         public static void WriteLogs(string path)
         {
             Log(new Debug(), $"Writing logs to {path}");
-            if (_logs.Count == 0) return;
 
-            File.WriteAllText(path, string.Join('\n', _logs));
-        }
-
-        /// <summary>
-        /// Clears the current log buffer
-        /// </summary>
-        public static void ClearLog() => _logs.Clear();
-
-        private static void write(ConsoleColor c, string msg)
-        {
-            ConsoleColor cc = Console.ForegroundColor;
-            Console.ForegroundColor = c;
-
-            Console.WriteLine(msg);
-
-            Console.ForegroundColor = cc;
+            File.WriteAllText(path, _c.GetOutput());
         }
 
         /// <summary>
@@ -54,8 +38,7 @@ namespace AbysmalCore.Debugging
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
             if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Description})] (!) {msg.Replace("{name}", info.Description)}";
 
-            write(ConsoleColor.Red, message);
-            _logs.Add(message);
+            _c.WriteColorLn(message, ConsoleColor.Red);
 
             if (fatal) throw new Exception();
         }
@@ -85,8 +68,7 @@ namespace AbysmalCore.Debugging
                 }
             }
 
-            write(cc, message);
-            _logs.Add(message);
+            _c.WriteColorLn(message, cc);
 
             if (DebugInfoAttribute.ImportanceAction == DebugInfoAttribute.ImportanceActionType.Pause && important)
                 Pause(false, true, "paused by important log");
@@ -107,8 +89,7 @@ namespace AbysmalCore.Debugging
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
             if (info != null) message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Description})] /!\\ {msg.Replace("{name}", info.Description)}";
 
-            write(ConsoleColor.Yellow, message);
-            _logs.Add(message);
+            _c.WriteColorLn(message, ConsoleColor.Yellow);
         }
 
         /// <summary>
@@ -123,15 +104,13 @@ namespace AbysmalCore.Debugging
 
             if (value != expected)
             {
-                ConsoleColor cc = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                _c.WriteColorLns([
+                    ($"[Debug] Execution paused ({reason})", ConsoleColor.Yellow, null),
+                    ("(press any key to continue)", ConsoleColor.Yellow, null)
+                ]);
 
-                Console.WriteLine($"[Debug] Execution paused ({reason})");
-                Console.WriteLine($"(press any key to continue)");
                 Console.ReadKey();
-                Console.WriteLine("[Debug] Execution resumed");
-
-                Console.ForegroundColor = cc;
+                _c.WriteColorLn("[Debug] Execution resumed", ConsoleColor.Yellow);
             }
         }
 
@@ -147,10 +126,7 @@ namespace AbysmalCore.Debugging
 
             if (value != expected)
             {
-                ConsoleColor cc = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Red;
-
-                Console.WriteLine($"[Debug] Execution stopped ({reason})");
+                _c.WriteColorLn($"[Debug] Execution stopped ({reason})", ConsoleColor.Red);
                 while (true) { }
             }
         }
