@@ -115,3 +115,69 @@ None.
 | **`Type`** | `Type` | The data type of the wrapped property or field. |
 | **`IsPrivate`** | `bool` | Returns `true` if the wrapped member is a private field. |
 | **`Value`** | `object?` | The value of the wrapped property or field (read/write access). Logs if read-only or write-only checks fail. |
+
+---
+
+<div align="center">
+  <img width="256" height="256" alt="AbysmalCore.Debugging" src="https://github.com/user-attachments/assets/c5cf3611-4706-4c91-a724-4118096512d1" />
+</div>
+
+# AbysmalCore.Debugging
+
+This map outlines the public **static** methods and properties for the primary debugging class, `AbysmalDebug`.
+
+---
+
+## 1. `AbysmalDebug`
+
+A standard opionated formatter for debug messages.
+
+### Methods
+
+| Name | Signature | Description |
+| :--- | :--- | :--- |
+| **`WriteLogs`** | `public static void WriteLogs(string path)` | Writes the entire history of logged messages to the specified file `path`. |
+| **`Error`** | `public static void Error(object @this, string msg, bool fatal = false)` | Logs an **error message** (`msg`) to the console in **red**. If `fatal` is `true`, it throws an `Exception` after logging. |
+| **`Log`** | `public static void Log(object @this, string msg, bool important = false)` | Logs a **standard message** (`msg`). Uses **DarkGray** by default, or **Magenta** if `important` is `true` or if the calling class's `DebugInfoAttribute` is marked as important. |
+| **`Warn`** | `public static void Warn(object @this, string msg)` | Logs a **warning message** (`msg`) to the console in **yellow**. |
+| **`Pause`** | `public static void Pause(bool value = false, bool expected = true, string reason = "unconditional")` | **Pauses execution** and waits for a key press if `value` does **not** equal `expected`. Includes a `reason` for the pause in the output. |
+| **`Stop`** | `public static void Stop(bool value = false, bool expected = true, string reason = "unconditional")` | **Stops execution indefinitely** (enters an infinite loop) if `value` does **not** equal `expected`. Logs the stop `reason` in red. |
+
+### Properties
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **`Enabled`** | `public static bool` | A global flag to enable (`true`) or disable (`false`) all logging and execution control features. |
+
+> [!IMPORTANT]
+> `Enabled` is set to `true` by default, meaning logs will automatically be made.
+
+---
+
+## 2. `DebugInfoAttribute`
+
+This class is a custom attribute used to attach metadata (a description and an importance flag) to other classes, which the `AbysmalDebug` class uses when formatting log messages.
+
+### Methods
+
+None. (Attributes primarily use their constructors for initialization.)
+
+### Properties
+
+| Name | Type | Accessibility | Description |
+| :--- | :--- | :--- | :--- |
+| **`Description`** | `public readonly string` | Read-only | A descriptive string for the class being debugged (e.g., "standard debug lib"). This is included in the formatted log message. |
+| **`Important`** | `public readonly bool` | Read-only | A flag indicating whether logs originating from the decorated class should be treated as "important." |
+| **`ImportanceAction`** | `public static ImportanceActionType` | Read/Write (Static) | A **static** setting that determines the action taken when an "important" log is made. The default is `Highlight`. |
+
+### Enumeration
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **`ImportanceActionType`** | `public enum` | Defines the possible actions for important logs: **`Highlight`** (logs in Magenta) or **`Pause`** (pauses program execution). |
+
+### Constructor
+
+| Signature | Description |
+| :--- | :--- |
+| `public DebugInfoAttribute(string desc, bool important = false)` | Initializes the attribute with a required description (`desc`) and an optional `important` flag. |
