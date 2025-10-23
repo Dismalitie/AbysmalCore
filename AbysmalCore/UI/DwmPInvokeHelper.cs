@@ -43,7 +43,7 @@ namespace AbysmalCore.UI
 
             if (hresult != 0)
             {
-                Debug.Warn(new DwmPInvokeHelper(), $"Failed to set material type {material} on hwnd {hWnd}, error code: {hresult}");
+                AbysmalDebug.Warn(new DwmPInvokeHelper(), $"Failed to set material type {material} on hwnd {hWnd}, error code: {hresult}");
             }
         }
 
@@ -57,7 +57,7 @@ namespace AbysmalCore.UI
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
-                Debug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionColor), aborted");
+                AbysmalDebug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionColor), aborted");
                 return;
             }
 
@@ -75,7 +75,7 @@ namespace AbysmalCore.UI
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
-                Debug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionTextColor), aborted");
+                AbysmalDebug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionTextColor), aborted");
                 return;
             }
 
@@ -93,7 +93,7 @@ namespace AbysmalCore.UI
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
-                Debug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetBorderColor), aborted");
+                AbysmalDebug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetBorderColor), aborted");
                 return;
             }
 

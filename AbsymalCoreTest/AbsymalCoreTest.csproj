@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ExtensibilityTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AbysmalCore\AbysmalCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ExtensibilityTest.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

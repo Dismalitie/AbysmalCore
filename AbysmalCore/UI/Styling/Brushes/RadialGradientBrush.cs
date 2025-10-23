@@ -26,7 +26,7 @@ namespace AbysmalCore.UI.Styling.Brushes
             /// we only want to generate it once
             if (gradient == null)
             {
-                Debug.Log(this, $"Generating radial gradient texture ({size.X}x{size.Y}px)");
+                AbysmalDebug.Log(this, $"Generating radial gradient texture ({size.X}x{size.Y}px)");
                 Image img = GenImageGradientRadial(size.X, size.Y, Blending, Inner, Outer);
                 srcWidth = img.Width;
                 srcHeight = img.Height;

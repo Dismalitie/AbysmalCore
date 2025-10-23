@@ -15,7 +15,7 @@ namespace AbsymalCoreTest.Tests
         {
             w = ctx;
 
-            Debug.Enabled = true;
+            AbysmalDebug.Enabled = true;
             ui = new();
 
             ui.AddElement(new Button("random theme", new(200), new(200, 50))

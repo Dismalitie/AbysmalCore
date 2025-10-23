@@ -6,9 +6,9 @@ namespace AbysmalCore.Debugging
     /// Standard debugging class for logging messages, warnings and errors to the console
     /// </summary>
     [DebugInfo("standard debug lib", true)]
-    public class Debug
+    public class AbysmalDebug
     {
-        public static bool Enabled = false;
+        public static bool Enabled = true;
         private static AbysmalConsole _c = new();
 
         /// <summary>
@@ -17,7 +17,7 @@ namespace AbysmalCore.Debugging
         /// <param name="path"></param>Path to write logs to
         public static void WriteLogs(string path)
         {
-            Log(new Debug(), $"Writing logs to {path}");
+            Log(new AbysmalDebug(), $"Writing logs to {path}");
 
             File.WriteAllText(path, _c.GetOutput());
         }
@@ -48,7 +48,7 @@ namespace AbysmalCore.Debugging
         /// </summary>
         /// <param name="this"></param>Instance of the calling class
         /// <param name="msg"></param>Message to log
-        public static void Log(object @this, string msg)
+        public static void Log(object @this, string msg, bool important = false)
         {
             if (!Enabled) return;
 
@@ -57,15 +57,11 @@ namespace AbysmalCore.Debugging
 
             ConsoleColor cc = ConsoleColor.DarkGray;
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
-            bool important = false;
+            if (important) cc = ConsoleColor.Magenta;
             if (info != null)
             {
                 message = $"[{DateTime.Now.ToString()}][{t.Name}:({info.Description})] (i) {msg.Replace("{name}", info.Description)}";
-                if (info.Important)
-                {
-                    important = true;
-                    cc = ConsoleColor.Magenta;
-                }
+                if (info.Important) important = true;
             }
 
             _c.WriteColorLn(message, cc);

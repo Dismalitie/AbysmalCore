@@ -164,7 +164,7 @@ namespace AbysmalCore.UI
             BeginTextureMode(rt);
             ClearBackground(Color.Blank);
             _icon = rt;
-            Debug.Log(this, "Window icon draw started");
+            AbysmalDebug.Log(this, "Window icon draw started");
 
             draw?.Invoke();
 
@@ -175,9 +175,9 @@ namespace AbysmalCore.UI
             /// since this is the only occasion we use
             /// it for and the icon references img, not
             /// _icon
-            Debug.Log(this, "Freeing icon from memory");
+            AbysmalDebug.Log(this, "Freeing icon from memory");
             UnloadRenderTexture(_icon);
-            Debug.Log(this, "Window icon draw ended");
+            AbysmalDebug.Log(this, "Window icon draw ended");
         }
 
         private static Color? _bg = GlobalTheme.Core;
@@ -203,7 +203,7 @@ namespace AbysmalCore.UI
             /// unload the gpu and cpu stuff here before exiting
             foreach (object obj in UserInterface.UnloadList)
             {
-                Debug.Log(this, $"Freeing {obj.GetType().Name} from memory");
+                AbysmalDebug.Log(this, $"Freeing {obj.GetType().Name} from memory");
 
                 switch (obj)
                 {
@@ -220,7 +220,7 @@ namespace AbysmalCore.UI
                         UnloadShader(sh);
                         break;
                     default:
-                        Debug.Warn(this, $"Tried to free {obj.GetType().Name}, couldnt validate type");
+                        AbysmalDebug.Warn(this, $"Tried to free {obj.GetType().Name}, couldnt validate type");
                         break;
                 }
             }

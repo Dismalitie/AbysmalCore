@@ -151,9 +151,9 @@ namespace AbysmalCore.UI.Styling
             int coreDivisor = 5;
 
             Color layer = new(c.R / layerDivisor, c.G / layerDivisor, c.B / layerDivisor);
-            Debug.Log(this, $"Generated layer color {layer} from {c}");
+            AbysmalDebug.Log(this, $"Generated layer color {layer} from {c}");
             Color core = new(c.R / coreDivisor, c.G / coreDivisor, c.B / coreDivisor);
-            Debug.Log(this, $"Generated base color {core} from {c}");
+            AbysmalDebug.Log(this, $"Generated base color {core} from {c}");
 
             Core = core;
             Layer = layer;
