@@ -2,11 +2,17 @@
 
 namespace AbysmalCore
 {
+    /// <summary>
+    /// Standard formatted console input and output handler
+    /// </summary>
     [DebugInfo("standard fmtd output and input")]
     public class AbysmalConsole
     {
         private List<string> _output;
 
+        /// <summary>
+        /// Creates a new AbysmalConsole instance
+        /// </summary>
         public AbysmalConsole() => _output = new();
 
         /// <summary>
@@ -104,11 +110,11 @@ namespace AbysmalCore
             Console.Write("\n> ");
             ConsoleKeyInfo keyInf = Console.ReadKey();
 
-            /// normalize it
+            // normalize it
             char k = keyInf.KeyChar.ToString().ToLower()[0];
             _output.Add($"\n> {k}");
 
-            Console.WriteLine(); /// new line after input
+            Console.WriteLine(); // new line after input
 
             switch (k)
             {
@@ -143,7 +149,7 @@ namespace AbysmalCore
             string response = Console.ReadLine() ?? "";
             _output.Add($"\n> {response}");
 
-            Console.WriteLine(); /// new line after input
+            Console.WriteLine(); // new line after input
 
             if (response == "") return default;
 

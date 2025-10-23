@@ -48,6 +48,7 @@ namespace AbysmalCore.Debugging
         /// </summary>
         /// <param name="this"></param>Instance of the calling class
         /// <param name="msg"></param>Message to log
+        /// <param name="important"></param>Whether to highlight this message in the output
         public static void Log(object @this, string msg, bool important = false)
         {
             if (!Enabled) return;

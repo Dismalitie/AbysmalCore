@@ -3,8 +3,11 @@ using System.Reflection;
 
 namespace AbysmalCore.Extensibility
 {
+    /// <summary>
+    /// Defines a property or field in the Abysmal Extensibility Framework
+    /// </summary>
     [DebugInfo("abysmal extensibility framework property", false)]
-    public class ExtensibilityProperty
+    public class AbysmalExtensibilityProperty
     {
         private enum propertyType
         {
@@ -17,9 +20,21 @@ namespace AbysmalCore.Extensibility
         private object _instance;
         private propertyType _type;
 
+        /// <summary>
+        /// The name of the property or field
+        /// </summary>
         public string Name { get; }
+        /// <summary>
+        /// The type of the property or field
+        /// </summary>
         public Type Type { get; }
+        /// <summary>
+        /// Whether the property or field is private
+        /// </summary>
         public bool IsPrivate => _type == propertyType.privateMember;
+        /// <summary>
+        /// Gets and sets the value of the property or field
+        /// </summary>
         public object? Value
         {
             get
@@ -61,7 +76,12 @@ namespace AbysmalCore.Extensibility
             }
         }
 
-        public ExtensibilityProperty(PropertyInfo pi, object instance)
+        /// <summary>
+        /// Creates a new AbysmalExtensibilityProperty wrapping the specified PropertyInfo
+        /// </summary>
+        /// <param name="pi"></param>The PropertyInfo to wrap
+        /// <param name="instance"></param>The instance of the underlying class
+        public AbysmalExtensibilityProperty(PropertyInfo pi, object instance)
         {
             _type = propertyType.property;
             _instance = instance;
@@ -71,7 +91,12 @@ namespace AbysmalCore.Extensibility
             Type = pi.PropertyType;
         }
 
-        public ExtensibilityProperty(FieldInfo fi, object instance)
+        /// <summary>
+        /// Creates a new AbysmalExtensibilityProperty wrapping the specified FieldInfo
+        /// </summary>
+        /// <param name="fi"></param>The FieldInfo to wrap
+        /// <param name="instance"></param>The instance of the underlying class
+        public AbysmalExtensibilityProperty(FieldInfo fi, object instance)
         {
             if (fi.IsPublic) _type = propertyType.field;
             else _type = propertyType.privateMember;
@@ -84,17 +109,34 @@ namespace AbysmalCore.Extensibility
         }
     }
 
+    /// <summary>
+    /// Defines a method in the Abysmal Extensibility Framework
+    /// </summary>
     [DebugInfo("abysmal extensibility framework method", false)]
-    public class ExtensibilityMethod
+    public class AbysmalExtensibilityMethod
     {
         private MethodInfo _info;
         private object _instance;
 
+        /// <summary>
+        /// The name of the method
+        /// </summary>
         public string Name { get; }
+        /// <summary>
+        /// What type the method returns
+        /// </summary>
         public Type ReturnType { get; }
+        /// <summary>
+        /// The number of parameters the method takes
+        /// </summary>
         public int ParameterCount { get; }
 
-        public ExtensibilityMethod(MethodInfo mi, object instance)
+        /// <summary>
+        /// Creates a new AbysmalExtensibilityMethod wrapping the specified MethodInfo
+        /// </summary>
+        /// <param name="mi"></param>The MethodInfo to wrap
+        /// <param name="instance"></param>The instance of the underlying class
+        public AbysmalExtensibilityMethod(MethodInfo mi, object instance)
         {
             _info = mi;
             _instance = instance;
@@ -104,18 +146,38 @@ namespace AbysmalCore.Extensibility
             ParameterCount = mi.GetParameters().Length;
         }
 
+        /// <summary>
+        /// Returns the type of the parameter at the specified index
+        /// </summary>
+        /// <param name="index"></param>The index of the parameter
         public Type GetParameterType(int index) => _info.GetParameters()[index].ParameterType;
 
+        /// <summary>
+        /// Executes the method with the specified arguments
+        /// </summary>
+        /// <param name="args"></param>The arguments to pass to the method
         public object? Invoke(params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments");
             return _info.Invoke(_instance, args);
         }
+        /// <summary>
+        /// Invokes the method with the specified arguments and converts the result to the specified type
+        /// </summary>
+        /// <typeparam name="T"></typeparam>The type to convert the result to
+        /// <param name="args"></param>Arguments to pass to the method
+        /// <returns></returns>
         public T Invoke<T>(params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments and converting to {typeof(T).FullName}");
             return (T)_info.Invoke(_instance, args);
         }
+        /// <summary>
+        /// Invokes the method with the specified arguments and converts the result using the provided converter function
+        /// </summary>
+        /// <typeparam name="T"></typeparam>The type to convert the result to
+        /// <param name="converter"></param>Lambda function to convert the result
+        /// <param name="args"></param>Arguments to pass to the method
         public T Invoke<T>(Func<object?, T> converter, params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments and converting to {typeof(T).FullName} using custom converter");
@@ -123,23 +185,40 @@ namespace AbysmalCore.Extensibility
         }
     }
 
+    /// <summary>
+    /// A uniform wrapper for classes used in the Abysmal Extensibility Framework
+    /// </summary>
     [DebugInfo("abysmal extensibility framework class", false)]
-    public class ExtensibilityClass
+    public class AbysmalExtensibilityClass
     {
-        public Dictionary<string, ExtensibilityProperty> Properties { get; }
-        public Dictionary<string, ExtensibilityMethod> Methods { get; }
+        /// <summary>
+        /// Properties of the class
+        /// </summary>
+        public Dictionary<string, AbysmalExtensibilityProperty> Properties { get; }
+        /// <summary>
+        /// Methods of the class
+        /// </summary>
+        public Dictionary<string, AbysmalExtensibilityMethod> Methods { get; }
+        /// <summary>
+        /// The instance of the underlying class
+        /// </summary>
         public object Instance { get; }
 
-        public ExtensibilityClass(Type t, bool getPrivate = false)
+        /// <summary>
+        /// Creates a new AbysmalExtensibilityClass wrapping the specified type
+        /// </summary>
+        /// <param name="t"></param>The type to wrap
+        /// <param name="getPrivate"></param>Whether to include private members
+        public AbysmalExtensibilityClass(Type t, bool getPrivate = false)
         {
             Properties = new();
             Methods = new();
             Instance = Activator.CreateInstance(t)!;
 
-            /// always search for public instance members
+            // always search for public instance members
             BindingFlags flag = BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static;
 
-            /// only add NonPublic if getPrivate is true
+            // only add NonPublic if getPrivate is true
             if (getPrivate)
                 flag |= BindingFlags.NonPublic;
 
@@ -156,16 +235,21 @@ namespace AbysmalCore.Extensibility
             AbysmalDebug.Log(this, $"Found {Methods.Count} methods in class {Instance.GetType().FullName}");
         }
 
-        public ExtensibilityClass(object instance, bool getPrivate = false)
+        /// <summary>
+        /// Creates a new AbysmalExtensibilityClass wrapping the specified instance
+        /// </summary>
+        /// <param name="instance"></param>The instance to wrap
+        /// <param name="getPrivate"></param>Whether to include private members
+        public AbysmalExtensibilityClass(object instance, bool getPrivate = false)
         {
             Properties = new();
             Methods = new();
             Instance = instance;
 
-            /// always search for public instance members
+            // always search for public instance members
             BindingFlags flag = BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static;
 
-            /// only add NonPublic if getPrivate is true
+            // only add NonPublic if getPrivate is true
             if (getPrivate)
                 flag |= BindingFlags.NonPublic;
 
@@ -182,8 +266,22 @@ namespace AbysmalCore.Extensibility
             AbysmalDebug.Log(this, $"Found {Methods.Count} methods in class {Instance.GetType().FullName}");
         }
 
+        /// <summary>
+        /// Returns whether the class has a method with the specified name
+        /// </summary>
+        /// <param name="name"></param>The name of the method
+        /// <returns></returns>
         public bool HasMethod(string name) => Methods.ContainsKey(name);
+        /// <summary>
+        /// Returns whether the class has a property with the specified name
+        /// </summary>
+        /// <param name="name"></param>The name of the property
+        /// <returns></returns>
         public bool HasProperty(string name) => Properties.ContainsKey(name);
+        /// <summary>
+        /// Instantiates a new instance of the underlying class
+        /// </summary>
+        /// <returns></returns>
         public object New() => Activator.CreateInstance(Instance.GetType())!;
     }
 }

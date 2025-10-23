@@ -12,13 +12,15 @@ internal class Program
         //UserInterface ui = ThemeGenTest.GetUserInterface(w);
         //w.Init(ui);
 
+        /// compile the assembly and get the test class
         Assembly testAssembly = AbysmalExtensibility.CompileAssembly(File.ReadAllText(".\\ExtensibilityTest.cs"));
-        ExtensibilityClass testClass = AbysmalExtensibility.GetClass(testAssembly, "Tests.ExtensibilityTest", true);
+        AbysmalExtensibilityClass testClass = AbysmalExtensibility.GetClass(testAssembly, "Tests.ExtensibilityTest", true);
 
-        string outp = "";
+        string output = "";
+        /// check if the method exists, then invoke it
         if (testClass.HasMethod("TestWith1Arg"))
-            outp = testClass.Methods["TestWith1Arg"].Invoke<string>("Hello!");
+            output = testClass.Methods["TestWith1Arg"].Invoke<string>("Hello!");
 
-        AbysmalDebug.Log(new Program(), outp, true);
+        AbysmalDebug.Log(testClass.New(), output, true);
     }
 }

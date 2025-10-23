@@ -70,10 +70,10 @@ namespace AbysmalCore.Extensibility
         /// <param name="asm"></param>The host assembly
         /// <param name="cls"></param>The class name to instantiate
         /// <param name="getPrivate"></param>Whether to include private members
-        public static ExtensibilityClass GetClass(Assembly asm, string cls, bool getPrivate = false)
+        public static AbysmalExtensibilityClass GetClass(Assembly asm, string cls, bool getPrivate = false)
         {
             Type? type = asm.GetType(cls)!;
-            return new ExtensibilityClass(type, getPrivate);
+            return new(type, getPrivate);
         }
     }
 }
