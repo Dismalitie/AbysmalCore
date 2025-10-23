@@ -1,9 +1,12 @@
 # Your GitHub workflow file under .github/workflows/
 # Trigger the action on push to main
+name: docfx
+
 on:
   push:
-    branches:
-      - main
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
