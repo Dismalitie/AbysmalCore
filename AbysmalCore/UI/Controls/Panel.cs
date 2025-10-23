@@ -9,21 +9,28 @@ namespace AbysmalCore.UI.Controls
     [DebugInfo("panel control")]
     public class Panel : UIElement
     {
+        /// <summary>
+        /// Creates a panel
+        /// </summary>
+        /// <param name="position"></param>The position relative to the top left corner of the client area
+        /// <param name="size"></param>The size
+        /// <param name="children"></param>Any child controls to draw
         public Panel(Vector2Int position, Vector2Int size, List<UIElement>? children = null)
         {
             Position = position;
             Size = size;
 
-            /// cant normally assign because the children
-            /// are readonly, so we manually add them
+            // cant normally assign because the children
+            // are readonly, so we manually add them
             if (children != null)
                 foreach (UIElement child in children)
                     AddChild(child);
         }
 
+        /// <inheritdoc/>
         protected override void _draw()
         {
-            /// mostly just copied from <see cref="Button"/>
+            // mostly just copied from <see cref="Button"/>
             if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Rounded)
             {
                 try { StyleMap.Normal.BorderColor.DrawRectangleRounded(Position, Size, StyleMap.Normal.BorderRadius); }

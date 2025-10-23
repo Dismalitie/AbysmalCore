@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.UIElement.StateChangeType
+  commentId: T:AbysmalCore.UI.UIElement.StateChangeType
+  id: UIElement.StateChangeType
+  parent: AbysmalCore.UI
+  children:
+  - AbysmalCore.UI.UIElement.StateChangeType.Clicked
+  - AbysmalCore.UI.UIElement.StateChangeType.Enabled
+  - AbysmalCore.UI.UIElement.StateChangeType.Hovered
+  - AbysmalCore.UI.UIElement.StateChangeType.Visible
+  langs:
+  - csharp
+  - vb
+  name: UIElement.StateChangeType
+  nameWithType: UIElement.StateChangeType
+  fullName: AbysmalCore.UI.UIElement.StateChangeType
+  type: Enum
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: StateChangeType
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 153
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: The property that changed
+  example: []
+  syntax:
+    content: public enum UIElement.StateChangeType
+    content.vb: Public Enum UIElement.StateChangeType
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Enabled
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Enabled
+  id: Enabled
+  parent: AbysmalCore.UI.UIElement.StateChangeType
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: UIElement.StateChangeType.Enabled
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Enabled
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Enabled
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 158
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: The enabled property
+  example: []
+  syntax:
+    content: Enabled = 0
+    return:
+      type: AbysmalCore.UI.UIElement.StateChangeType
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Visible
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Visible
+  id: Visible
+  parent: AbysmalCore.UI.UIElement.StateChangeType
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: UIElement.StateChangeType.Visible
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Visible
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Visible
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 162
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: The visibility property
+  example: []
+  syntax:
+    content: Visible = 1
+    return:
+      type: AbysmalCore.UI.UIElement.StateChangeType
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Hovered
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Hovered
+  id: Hovered
+  parent: AbysmalCore.UI.UIElement.StateChangeType
+  langs:
+  - csharp
+  - vb
+  name: Hovered
+  nameWithType: UIElement.StateChangeType.Hovered
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Hovered
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Hovered
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 166
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: The hovered property
+  example: []
+  syntax:
+    content: Hovered = 2
+    return:
+      type: AbysmalCore.UI.UIElement.StateChangeType
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Clicked
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Clicked
+  id: Clicked
+  parent: AbysmalCore.UI.UIElement.StateChangeType
+  langs:
+  - csharp
+  - vb
+  name: Clicked
+  nameWithType: UIElement.StateChangeType.Clicked
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Clicked
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Clicked
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 170
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: The clicked property
+  example: []
+  syntax:
+    content: Clicked = 3
+    return:
+      type: AbysmalCore.UI.UIElement.StateChangeType
+references:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: AbysmalCore.UI.UIElement.StateChangeType
+  commentId: T:AbysmalCore.UI.UIElement.StateChangeType
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.StateChangeType
+  nameWithType: UIElement.StateChangeType
+  fullName: AbysmalCore.UI.UIElement.StateChangeType
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.StateChangeType
+    name: StateChangeType
+    href: AbysmalCore.UI.UIElement.StateChangeType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.StateChangeType
+    name: StateChangeType
+    href: AbysmalCore.UI.UIElement.StateChangeType.html

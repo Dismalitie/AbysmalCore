@@ -9,9 +9,22 @@ namespace AbysmalCore.UI.Controls
     [DebugInfo("button control")]
     public class Button : UIElement
     {
+        /// <summary>
+        /// The text in the button
+        /// </summary>
         public string Text;
+        /// <summary>
+        /// The size of the text
+        /// </summary>
         public int FontSize;
 
+        /// <summary>
+        /// Creates a new button
+        /// </summary>
+        /// <param name="text"></param>The text to display
+        /// <param name="position"></param>The button position
+        /// <param name="size"></param>The button size
+        /// <param name="fontSize"></param>The text size
         public Button(string text, Vector2Int position, Vector2Int? size = null, int fontSize = 20)
         {
             Text = text;
@@ -22,13 +35,14 @@ namespace AbysmalCore.UI.Controls
             else Size = new(150, 50);
         }
 
+        /// <inheritdoc/>
         protected override void _draw()
         {
-            /// the actual button bit excluding the border
+            // the actual button bit excluding the border
             Vector2Int nonBorderPos = new(Position.X + CurrentStyle.BorderWeight, Position.Y + CurrentStyle.BorderWeight);
             Vector2Int nonBorderSz = new(Size.X - CurrentStyle.BorderWeight * 2, Size.Y - CurrentStyle.BorderWeight * 2);
 
-            /// messy
+            // messy
             if (StyleMap.ControlStyle == StyleMap.ControlStyleType.Rounded)
             {
                 try { CurrentStyle.BorderColor.DrawRectangleRounded(Position, Size, CurrentStyle.BorderRadius); }
@@ -56,7 +70,7 @@ namespace AbysmalCore.UI.Controls
                 catch { DrawRectangle(nonBorderPos.X, nonBorderPos.Y, nonBorderSz.X, nonBorderSz.Y, CurrentStyle.FillColor.Fallback()); }
             }
 
-            /// / 2 because we need roughly the middle
+            // / 2 because we need roughly the middle
             int sz = MeasureText(Text, FontSize);
 
             try

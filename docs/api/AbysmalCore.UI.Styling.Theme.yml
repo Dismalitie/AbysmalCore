@@ -1,0 +1,675 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.Theme
+  commentId: T:AbysmalCore.UI.Styling.Theme
+  id: Theme
+  parent: AbysmalCore.UI.Styling
+  children:
+  - AbysmalCore.UI.Styling.Theme.#ctor
+  - AbysmalCore.UI.Styling.Theme.#ctor(AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  - AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color)
+  - AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  - AbysmalCore.UI.Styling.Theme.Accent
+  - AbysmalCore.UI.Styling.Theme.Core
+  - AbysmalCore.UI.Styling.Theme.DefaultStyleMap
+  - AbysmalCore.UI.Styling.Theme.Layer
+  - AbysmalCore.UI.Styling.Theme.Text
+  langs:
+  - csharp
+  - vb
+  name: Theme
+  nameWithType: Theme
+  fullName: AbysmalCore.UI.Styling.Theme
+  type: Struct
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Theme
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 8
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Represents a global theme for the user interface including palette colors and default styles
+  example: []
+  syntax:
+    content: >-
+      [DebugInfo("ui global style", false)]
+
+      public struct Theme
+    content.vb: >-
+      <DebugInfo("ui global style", False)>
+
+      Public Structure Theme
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: AbysmalCore.Debugging.DebugInfoAttribute
+    ctor: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: ui global style
+    - type: System.Boolean
+      value: false
+- uid: AbysmalCore.UI.Styling.Theme.DefaultStyleMap
+  commentId: F:AbysmalCore.UI.Styling.Theme.DefaultStyleMap
+  id: DefaultStyleMap
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: DefaultStyleMap
+  nameWithType: Theme.DefaultStyleMap
+  fullName: AbysmalCore.UI.Styling.Theme.DefaultStyleMap
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: DefaultStyleMap
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 14
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Stylemap to use when no brushes specified
+  example: []
+  syntax:
+    content: public StyleMap DefaultStyleMap
+    return:
+      type: AbysmalCore.UI.Styling.StyleMap
+    content.vb: Public DefaultStyleMap As StyleMap
+- uid: AbysmalCore.UI.Styling.Theme.Layer
+  commentId: F:AbysmalCore.UI.Styling.Theme.Layer
+  id: Layer
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Layer
+  nameWithType: Theme.Layer
+  fullName: AbysmalCore.UI.Styling.Theme.Layer
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Layer
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 18
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: The middle color
+  example: []
+  syntax:
+    content: public Color Layer
+    return:
+      type: Raylib_cs.Color
+    content.vb: Public Layer As Color
+- uid: AbysmalCore.UI.Styling.Theme.Core
+  commentId: F:AbysmalCore.UI.Styling.Theme.Core
+  id: Core
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Core
+  nameWithType: Theme.Core
+  fullName: AbysmalCore.UI.Styling.Theme.Core
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Core
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 22
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: The base color
+  example: []
+  syntax:
+    content: public Color Core
+    return:
+      type: Raylib_cs.Color
+    content.vb: Public Core As Color
+- uid: AbysmalCore.UI.Styling.Theme.Accent
+  commentId: F:AbysmalCore.UI.Styling.Theme.Accent
+  id: Accent
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Accent
+  nameWithType: Theme.Accent
+  fullName: AbysmalCore.UI.Styling.Theme.Accent
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Accent
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 26
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: The accent color
+  example: []
+  syntax:
+    content: public Color Accent
+    return:
+      type: Raylib_cs.Color
+    content.vb: Public Accent As Color
+- uid: AbysmalCore.UI.Styling.Theme.Text
+  commentId: F:AbysmalCore.UI.Styling.Theme.Text
+  id: Text
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: Theme.Text
+  fullName: AbysmalCore.UI.Styling.Theme.Text
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Text
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 30
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Color to use when drawing text
+  example: []
+  syntax:
+    content: public Color Text
+    return:
+      type: Raylib_cs.Color
+    content.vb: Public Text As Color
+- uid: AbysmalCore.UI.Styling.Theme.#ctor
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor
+  id: '#ctor'
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Theme()
+  nameWithType: Theme.Theme()
+  fullName: AbysmalCore.UI.Styling.Theme.Theme()
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 35
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Creates a new theme
+  example: []
+  syntax:
+    content: public Theme()
+    content.vb: Public Sub New()
+  overload: AbysmalCore.UI.Styling.Theme.#ctor*
+  nameWithType.vb: Theme.New()
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New()
+  name.vb: New()
+- uid: AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  id: '#ctor(Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)'
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Theme(Color, Color, Color, Color, ControlStyleType)
+  nameWithType: Theme.Theme(Color, Color, Color, Color, StyleMap.ControlStyleType)
+  fullName: AbysmalCore.UI.Styling.Theme.Theme(Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 45
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Creates a new theme from 3 colors and a control style
+  example: []
+  syntax:
+    content: public Theme(Color core, Color layer, Color accent, Color text, StyleMap.ControlStyleType style = ControlStyleType.Rounded)
+    parameters:
+    - id: core
+      type: Raylib_cs.Color
+      description: ''
+    - id: layer
+      type: Raylib_cs.Color
+      description: ''
+    - id: accent
+      type: Raylib_cs.Color
+      description: ''
+    - id: text
+      type: Raylib_cs.Color
+      description: ''
+    - id: style
+      type: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+      description: ''
+    content.vb: Public Sub New(core As Color, layer As Color, accent As Color, text As Color, style As StyleMap.ControlStyleType = ControlStyleType.Rounded)
+  overload: AbysmalCore.UI.Styling.Theme.#ctor*
+  nameWithType.vb: Theme.New(Color, Color, Color, Color, StyleMap.ControlStyleType)
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New(Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  name.vb: New(Color, Color, Color, Color, ControlStyleType)
+- uid: AbysmalCore.UI.Styling.Theme.#ctor(AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor(AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  id: '#ctor(AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)'
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Theme(IBrush, IBrush, IBrush, IBrush, ControlStyleType)
+  nameWithType: Theme.Theme(IBrush, IBrush, IBrush, IBrush, StyleMap.ControlStyleType)
+  fullName: AbysmalCore.UI.Styling.Theme.Theme(AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 116
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Creates a new theme from 3 brushes and a control style
+  example: []
+  syntax:
+    content: public Theme(IBrush core, IBrush layer, IBrush accent, IBrush text, StyleMap.ControlStyleType style = ControlStyleType.Rounded)
+    parameters:
+    - id: core
+      type: AbysmalCore.UI.Styling.IBrush
+      description: ''
+    - id: layer
+      type: AbysmalCore.UI.Styling.IBrush
+      description: ''
+    - id: accent
+      type: AbysmalCore.UI.Styling.IBrush
+      description: ''
+    - id: text
+      type: AbysmalCore.UI.Styling.IBrush
+      description: ''
+    - id: style
+      type: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+      description: ''
+    content.vb: Public Sub New(core As IBrush, layer As IBrush, accent As IBrush, text As IBrush, style As StyleMap.ControlStyleType = ControlStyleType.Rounded)
+  overload: AbysmalCore.UI.Styling.Theme.#ctor*
+  nameWithType.vb: Theme.New(IBrush, IBrush, IBrush, IBrush, StyleMap.ControlStyleType)
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New(AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  name.vb: New(IBrush, IBrush, IBrush, IBrush, ControlStyleType)
+- uid: AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color)
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color)
+  id: '#ctor(Raylib_cs.Color,Raylib_cs.Color)'
+  parent: AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: Theme(Color, Color)
+  nameWithType: Theme.Theme(Color, Color)
+  fullName: AbysmalCore.UI.Styling.Theme.Theme(Raylib_cs.Color, Raylib_cs.Color)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Theme.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/UI/Styling/Theme.cs
+    startLine: 184
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Dynamically creates a new theme from a single color
+  example: []
+  syntax:
+    content: public Theme(Color c, Color text)
+    parameters:
+    - id: c
+      type: Raylib_cs.Color
+      description: ''
+    - id: text
+      type: Raylib_cs.Color
+      description: ''
+    content.vb: Public Sub New(c As Color, text As Color)
+  overload: AbysmalCore.UI.Styling.Theme.#ctor*
+  nameWithType.vb: Theme.New(Color, Color)
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New(Raylib_cs.Color, Raylib_cs.Color)
+  name.vb: New(Color, Color)
+references:
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore.UI.Styling.StyleMap
+  commentId: T:AbysmalCore.UI.Styling.StyleMap
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.StyleMap.html
+  name: StyleMap
+  nameWithType: StyleMap
+  fullName: AbysmalCore.UI.Styling.StyleMap
+- uid: Raylib_cs.Color
+  commentId: T:Raylib_cs.Color
+  parent: Raylib_cs
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Raylib_cs.Color
+- uid: Raylib_cs
+  commentId: N:Raylib_cs
+  isExternal: true
+  name: Raylib_cs
+  nameWithType: Raylib_cs
+  fullName: Raylib_cs
+- uid: AbysmalCore.UI.Styling.Theme.#ctor*
+  commentId: Overload:AbysmalCore.UI.Styling.Theme.#ctor
+  href: AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme__ctor
+  name: Theme
+  nameWithType: Theme.Theme
+  fullName: AbysmalCore.UI.Styling.Theme.Theme
+  nameWithType.vb: Theme.New
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New
+  name.vb: New
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  commentId: T:AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.StyleMap.html
+  name: StyleMap.ControlStyleType
+  nameWithType: StyleMap.ControlStyleType
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+- uid: AbysmalCore.UI.Styling.IBrush
+  commentId: T:AbysmalCore.UI.Styling.IBrush
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.IBrush.html
+  name: IBrush
+  nameWithType: IBrush
+  fullName: AbysmalCore.UI.Styling.IBrush

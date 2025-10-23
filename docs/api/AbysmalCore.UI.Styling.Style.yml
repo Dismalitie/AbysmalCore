@@ -1,0 +1,628 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.Style
+  commentId: T:AbysmalCore.UI.Styling.Style
+  id: Style
+  parent: AbysmalCore.UI.Styling
+  children:
+  - AbysmalCore.UI.Styling.Style.BorderColor
+  - AbysmalCore.UI.Styling.Style.BorderRadius
+  - AbysmalCore.UI.Styling.Style.BorderWeight
+  - AbysmalCore.UI.Styling.Style.FillColor
+  - AbysmalCore.UI.Styling.Style.Font
+  - AbysmalCore.UI.Styling.Style.TextColor
+  - AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[],AbysmalCore.UI.UIElement)
+  langs:
+  - csharp
+  - vb
+  name: Style
+  nameWithType: Style
+  fullName: AbysmalCore.UI.Styling.Style
+  type: Class
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Style
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 8
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Contains style information for a specific control
+  example: []
+  syntax:
+    content: >-
+      [DebugInfo("control specific style", false)]
+
+      public class Style
+    content.vb: >-
+      <DebugInfo("control specific style", False)>
+
+      Public Class Style
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: AbysmalCore.Debugging.DebugInfoAttribute
+    ctor: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: control specific style
+    - type: System.Boolean
+      value: false
+- uid: AbysmalCore.UI.Styling.Style.BorderColor
+  commentId: F:AbysmalCore.UI.Styling.Style.BorderColor
+  id: BorderColor
+  parent: AbysmalCore.UI.Styling.Style
+  langs:
+  - csharp
+  - vb
+  name: BorderColor
+  nameWithType: Style.BorderColor
+  fullName: AbysmalCore.UI.Styling.Style.BorderColor
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: BorderColor
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 14
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: The color of the border on a control
+  example: []
+  syntax:
+    content: public IBrush BorderColor
+    return:
+      type: AbysmalCore.UI.Styling.IBrush
+    content.vb: Public BorderColor As IBrush
+- uid: AbysmalCore.UI.Styling.Style.BorderWeight
+  commentId: F:AbysmalCore.UI.Styling.Style.BorderWeight
+  id: BorderWeight
+  parent: AbysmalCore.UI.Styling.Style
+  langs:
+  - csharp
+  - vb
+  name: BorderWeight
+  nameWithType: Style.BorderWeight
+  fullName: AbysmalCore.UI.Styling.Style.BorderWeight
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: BorderWeight
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 18
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: How thick the border is
+  example: []
+  syntax:
+    content: public int BorderWeight
+    return:
+      type: System.Int32
+    content.vb: Public BorderWeight As Integer
+- uid: AbysmalCore.UI.Styling.Style.BorderRadius
+  commentId: F:AbysmalCore.UI.Styling.Style.BorderRadius
+  id: BorderRadius
+  parent: AbysmalCore.UI.Styling.Style
+  langs:
+  - csharp
+  - vb
+  name: BorderRadius
+  nameWithType: Style.BorderRadius
+  fullName: AbysmalCore.UI.Styling.Style.BorderRadius
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: BorderRadius
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 22
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: How rounded the border is
+  example: []
+  syntax:
+    content: public int BorderRadius
+    return:
+      type: System.Int32
+    content.vb: Public BorderRadius As Integer
+- uid: AbysmalCore.UI.Styling.Style.FillColor
+  commentId: F:AbysmalCore.UI.Styling.Style.FillColor
+  id: FillColor
+  parent: AbysmalCore.UI.Styling.Style
+  langs:
+  - csharp
+  - vb
+  name: FillColor
+  nameWithType: Style.FillColor
+  fullName: AbysmalCore.UI.Styling.Style.FillColor
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: FillColor
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 26
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Brush to use on the interior of the control
+  example: []
+  syntax:
+    content: public IBrush FillColor
+    return:
+      type: AbysmalCore.UI.Styling.IBrush
+    content.vb: Public FillColor As IBrush
+- uid: AbysmalCore.UI.Styling.Style.TextColor
+  commentId: F:AbysmalCore.UI.Styling.Style.TextColor
+  id: TextColor
+  parent: AbysmalCore.UI.Styling.Style
+  langs:
+  - csharp
+  - vb
+  name: TextColor
+  nameWithType: Style.TextColor
+  fullName: AbysmalCore.UI.Styling.Style.TextColor
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: TextColor
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 30
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Brush to use on the border of the brush
+  example: []
+  syntax:
+    content: public IBrush TextColor
+    return:
+      type: AbysmalCore.UI.Styling.IBrush
+    content.vb: Public TextColor As IBrush
+- uid: AbysmalCore.UI.Styling.Style.Font
+  commentId: F:AbysmalCore.UI.Styling.Style.Font
+  id: Font
+  parent: AbysmalCore.UI.Styling.Style
+  langs:
+  - csharp
+  - vb
+  name: Font
+  nameWithType: Style.Font
+  fullName: AbysmalCore.UI.Styling.Style.Font
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Font
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 34
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Font to use when drawing text
+  example: []
+  syntax:
+    content: public Font Font
+    return:
+      type: Raylib_cs.Font
+    content.vb: Public Font As Font
+- uid: AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[],AbysmalCore.UI.UIElement)
+  commentId: M:AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[],AbysmalCore.UI.UIElement)
+  id: ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[],AbysmalCore.UI.UIElement)
+  parent: AbysmalCore.UI.Styling.Style
+  langs:
+  - csharp
+  - vb
+  name: ValidateBrushes(BrushType[], UIElement)
+  nameWithType: Style.ValidateBrushes(IBrush.BrushType[], UIElement)
+  fullName: AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[], AbysmalCore.UI.UIElement)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Style.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ValidateBrushes
+    path: ../AbysmalCore/UI/Styling/Style.cs
+    startLine: 41
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Checks if the brushes used in this style are supported by the given control
+  example: []
+  syntax:
+    content: public void ValidateBrushes(IBrush.BrushType[] supported, UIElement control)
+    parameters:
+    - id: supported
+      type: AbysmalCore.UI.Styling.IBrush.BrushType[]
+      description: ''
+    - id: control
+      type: AbysmalCore.UI.UIElement
+      description: ''
+    content.vb: Public Sub ValidateBrushes(supported As IBrush.BrushType(), control As UIElement)
+  overload: AbysmalCore.UI.Styling.Style.ValidateBrushes*
+  nameWithType.vb: Style.ValidateBrushes(IBrush.BrushType(), UIElement)
+  fullName.vb: AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType(), AbysmalCore.UI.UIElement)
+  name.vb: ValidateBrushes(BrushType(), UIElement)
+references:
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore.UI.Styling.IBrush
+  commentId: T:AbysmalCore.UI.Styling.IBrush
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.IBrush.html
+  name: IBrush
+  nameWithType: IBrush
+  fullName: AbysmalCore.UI.Styling.IBrush
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Raylib_cs.Font
+  commentId: T:Raylib_cs.Font
+  parent: Raylib_cs
+  isExternal: true
+  name: Font
+  nameWithType: Font
+  fullName: Raylib_cs.Font
+- uid: Raylib_cs
+  commentId: N:Raylib_cs
+  isExternal: true
+  name: Raylib_cs
+  nameWithType: Raylib_cs
+  fullName: Raylib_cs
+- uid: AbysmalCore.UI.Styling.Style.ValidateBrushes*
+  commentId: Overload:AbysmalCore.UI.Styling.Style.ValidateBrushes
+  href: AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_ValidateBrushes_AbysmalCore_UI_Styling_IBrush_BrushType___AbysmalCore_UI_UIElement_
+  name: ValidateBrushes
+  nameWithType: Style.ValidateBrushes
+  fullName: AbysmalCore.UI.Styling.Style.ValidateBrushes
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType[]
+  isExternal: true
+  href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  name: BrushType[]
+  nameWithType: IBrush.BrushType[]
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType[]
+  nameWithType.vb: IBrush.BrushType()
+  fullName.vb: AbysmalCore.UI.Styling.IBrush.BrushType()
+  name.vb: BrushType()
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  - name: (
+  - name: )
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html

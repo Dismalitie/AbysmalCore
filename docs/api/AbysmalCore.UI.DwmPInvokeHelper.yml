@@ -1,0 +1,557 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.DwmPInvokeHelper
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper
+  id: DwmPInvokeHelper
+  parent: AbysmalCore.UI
+  children:
+  - AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  - AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(System.IntPtr,AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  - AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  - AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: DwmPInvokeHelper
+  nameWithType: DwmPInvokeHelper
+  fullName: AbysmalCore.UI.DwmPInvokeHelper
+  type: Class
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: DwmPInvokeHelper
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 8
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Windows-platform specific window helper
+  example: []
+  syntax:
+    content: >-
+      [DebugInfo("windows dwm api helper", true)]
+
+      public class DwmPInvokeHelper
+    content.vb: >-
+      <DebugInfo("windows dwm api helper", True)>
+
+      Public Class DwmPInvokeHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: AbysmalCore.Debugging.DebugInfoAttribute
+    ctor: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: windows dwm api helper
+    - type: System.Boolean
+      value: true
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(System.IntPtr,AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(System.IntPtr,AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  id: SetMaterial(System.IntPtr,AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  parent: AbysmalCore.UI.DwmPInvokeHelper
+  langs:
+  - csharp
+  - vb
+  name: SetMaterial(nint, MaterialType)
+  nameWithType: DwmPInvokeHelper.SetMaterial(nint, DwmPInvokeHelper.MaterialType)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(nint, AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: SetMaterial
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 62
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Sets the material of a window background
+  example: []
+  syntax:
+    content: public static void SetMaterial(nint hWnd, DwmPInvokeHelper.MaterialType material)
+    parameters:
+    - id: hWnd
+      type: System.IntPtr
+      description: ''
+    - id: material
+      type: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+      description: ''
+    content.vb: Public Shared Sub SetMaterial(hWnd As IntPtr, material As DwmPInvokeHelper.MaterialType)
+  overload: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial*
+  nameWithType.vb: DwmPInvokeHelper.SetMaterial(IntPtr, DwmPInvokeHelper.MaterialType)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(System.IntPtr, AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  name.vb: SetMaterial(IntPtr, MaterialType)
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  id: SetNonClientColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  parent: AbysmalCore.UI.DwmPInvokeHelper
+  langs:
+  - csharp
+  - vb
+  name: SetNonClientColor(nint, int, int, int)
+  nameWithType: DwmPInvokeHelper.SetNonClientColor(nint, int, int, int)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(nint, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: SetNonClientColor
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 80
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Sets the color of the titlebar
+  example: []
+  syntax:
+    content: public static void SetNonClientColor(nint hWnd, int r, int g, int b)
+    parameters:
+    - id: hWnd
+      type: System.IntPtr
+      description: ''
+    - id: r
+      type: System.Int32
+      description: ''
+    - id: g
+      type: System.Int32
+      description: ''
+    - id: b
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub SetNonClientColor(hWnd As IntPtr, r As Integer, g As Integer, b As Integer)
+  overload: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor*
+  nameWithType.vb: DwmPInvokeHelper.SetNonClientColor(IntPtr, Integer, Integer, Integer)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(System.IntPtr, Integer, Integer, Integer)
+  name.vb: SetNonClientColor(IntPtr, Integer, Integer, Integer)
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  id: SetNonClientTextColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  parent: AbysmalCore.UI.DwmPInvokeHelper
+  langs:
+  - csharp
+  - vb
+  name: SetNonClientTextColor(nint, int, int, int)
+  nameWithType: DwmPInvokeHelper.SetNonClientTextColor(nint, int, int, int)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(nint, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: SetNonClientTextColor
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 105
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Sets the text of the titlebar caption
+  example: []
+  syntax:
+    content: public static void SetNonClientTextColor(nint hWnd, int r, int g, int b)
+    parameters:
+    - id: hWnd
+      type: System.IntPtr
+      description: ''
+    - id: r
+      type: System.Int32
+      description: ''
+    - id: g
+      type: System.Int32
+      description: ''
+    - id: b
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub SetNonClientTextColor(hWnd As IntPtr, r As Integer, g As Integer, b As Integer)
+  overload: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor*
+  nameWithType.vb: DwmPInvokeHelper.SetNonClientTextColor(IntPtr, Integer, Integer, Integer)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(System.IntPtr, Integer, Integer, Integer)
+  name.vb: SetNonClientTextColor(IntPtr, Integer, Integer, Integer)
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  id: SetBorderColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  parent: AbysmalCore.UI.DwmPInvokeHelper
+  langs:
+  - csharp
+  - vb
+  name: SetBorderColor(nint, int, int, int)
+  nameWithType: DwmPInvokeHelper.SetBorderColor(nint, int, int, int)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(nint, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: SetBorderColor
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 130
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Sets the color of the window border
+  example: []
+  syntax:
+    content: public static void SetBorderColor(nint hWnd, int r, int g, int b)
+    parameters:
+    - id: hWnd
+      type: System.IntPtr
+      description: ''
+    - id: r
+      type: System.Int32
+      description: ''
+    - id: g
+      type: System.Int32
+      description: ''
+    - id: b
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub SetBorderColor(hWnd As IntPtr, r As Integer, g As Integer, b As Integer)
+  overload: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor*
+  nameWithType.vb: DwmPInvokeHelper.SetBorderColor(IntPtr, Integer, Integer, Integer)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(System.IntPtr, Integer, Integer, Integer)
+  name.vb: SetBorderColor(IntPtr, Integer, Integer, Integer)
+references:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial*
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetMaterial
+  href: AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetMaterial_System_IntPtr_AbysmalCore_UI_DwmPInvokeHelper_MaterialType_
+  name: SetMaterial
+  nameWithType: DwmPInvokeHelper.SetMaterial
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.DwmPInvokeHelper.html
+  name: DwmPInvokeHelper.MaterialType
+  nameWithType: DwmPInvokeHelper.MaterialType
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  spec.csharp:
+  - uid: AbysmalCore.UI.DwmPInvokeHelper
+    name: DwmPInvokeHelper
+    href: AbysmalCore.UI.DwmPInvokeHelper.html
+  - name: .
+  - uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+    name: MaterialType
+    href: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.DwmPInvokeHelper
+    name: DwmPInvokeHelper
+    href: AbysmalCore.UI.DwmPInvokeHelper.html
+  - name: .
+  - uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+    name: MaterialType
+    href: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor*
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor
+  href: AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetNonClientColor_System_IntPtr_System_Int32_System_Int32_System_Int32_
+  name: SetNonClientColor
+  nameWithType: DwmPInvokeHelper.SetNonClientColor
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor*
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor
+  href: AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetNonClientTextColor_System_IntPtr_System_Int32_System_Int32_System_Int32_
+  name: SetNonClientTextColor
+  nameWithType: DwmPInvokeHelper.SetNonClientTextColor
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor*
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor
+  href: AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetBorderColor_System_IntPtr_System_Int32_System_Int32_System_Int32_
+  name: SetBorderColor
+  nameWithType: DwmPInvokeHelper.SetBorderColor
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor

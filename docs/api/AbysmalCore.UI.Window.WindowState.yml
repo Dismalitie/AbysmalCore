@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Window.WindowState
+  commentId: T:AbysmalCore.UI.Window.WindowState
+  id: Window.WindowState
+  parent: AbysmalCore.UI
+  children:
+  - AbysmalCore.UI.Window.WindowState.Fullscreen
+  - AbysmalCore.UI.Window.WindowState.Maximized
+  - AbysmalCore.UI.Window.WindowState.Minimized
+  - AbysmalCore.UI.Window.WindowState.Normal
+  langs:
+  - csharp
+  - vb
+  name: Window.WindowState
+  nameWithType: Window.WindowState
+  fullName: AbysmalCore.UI.Window.WindowState
+  type: Enum
+  source:
+    remote:
+      path: AbysmalCore/UI/Window.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: WindowState
+    path: ../AbysmalCore/UI/Window.cs
+    startLine: 125
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Represents the current view of the window
+  example: []
+  syntax:
+    content: public enum Window.WindowState
+    content.vb: Public Enum Window.WindowState
+- uid: AbysmalCore.UI.Window.WindowState.Normal
+  commentId: F:AbysmalCore.UI.Window.WindowState.Normal
+  id: Normal
+  parent: AbysmalCore.UI.Window.WindowState
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: Window.WindowState.Normal
+  fullName: AbysmalCore.UI.Window.WindowState.Normal
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Window.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Normal
+    path: ../AbysmalCore/UI/Window.cs
+    startLine: 130
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: No other states applicable
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: AbysmalCore.UI.Window.WindowState
+- uid: AbysmalCore.UI.Window.WindowState.Minimized
+  commentId: F:AbysmalCore.UI.Window.WindowState.Minimized
+  id: Minimized
+  parent: AbysmalCore.UI.Window.WindowState
+  langs:
+  - csharp
+  - vb
+  name: Minimized
+  nameWithType: Window.WindowState.Minimized
+  fullName: AbysmalCore.UI.Window.WindowState.Minimized
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Window.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Minimized
+    path: ../AbysmalCore/UI/Window.cs
+    startLine: 134
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Not visible, still running
+  example: []
+  syntax:
+    content: Minimized = 1
+    return:
+      type: AbysmalCore.UI.Window.WindowState
+- uid: AbysmalCore.UI.Window.WindowState.Maximized
+  commentId: F:AbysmalCore.UI.Window.WindowState.Maximized
+  id: Maximized
+  parent: AbysmalCore.UI.Window.WindowState
+  langs:
+  - csharp
+  - vb
+  name: Maximized
+  nameWithType: Window.WindowState.Maximized
+  fullName: AbysmalCore.UI.Window.WindowState.Maximized
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Window.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Maximized
+    path: ../AbysmalCore/UI/Window.cs
+    startLine: 138
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Fully visible
+  example: []
+  syntax:
+    content: Maximized = 2
+    return:
+      type: AbysmalCore.UI.Window.WindowState
+- uid: AbysmalCore.UI.Window.WindowState.Fullscreen
+  commentId: F:AbysmalCore.UI.Window.WindowState.Fullscreen
+  id: Fullscreen
+  parent: AbysmalCore.UI.Window.WindowState
+  langs:
+  - csharp
+  - vb
+  name: Fullscreen
+  nameWithType: Window.WindowState.Fullscreen
+  fullName: AbysmalCore.UI.Window.WindowState.Fullscreen
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Window.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Fullscreen
+    path: ../AbysmalCore/UI/Window.cs
+    startLine: 142
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Fully visible, no titlebar
+  example: []
+  syntax:
+    content: Fullscreen = 3
+    return:
+      type: AbysmalCore.UI.Window.WindowState
+references:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: AbysmalCore.UI.Window.WindowState
+  commentId: T:AbysmalCore.UI.Window.WindowState
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.Window.html
+  name: Window.WindowState
+  nameWithType: Window.WindowState
+  fullName: AbysmalCore.UI.Window.WindowState
+  spec.csharp:
+  - uid: AbysmalCore.UI.Window
+    name: Window
+    href: AbysmalCore.UI.Window.html
+  - name: .
+  - uid: AbysmalCore.UI.Window.WindowState
+    name: WindowState
+    href: AbysmalCore.UI.Window.WindowState.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Window
+    name: Window
+    href: AbysmalCore.UI.Window.html
+  - name: .
+  - uid: AbysmalCore.UI.Window.WindowState
+    name: WindowState
+    href: AbysmalCore.UI.Window.WindowState.html

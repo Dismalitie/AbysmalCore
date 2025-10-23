@@ -1,0 +1,2975 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: AbysmalCore
+  name: AbysmalCore
+  href: api/AbysmalCore.html
+  commentId: N:AbysmalCore
+  fullName: AbysmalCore
+  nameWithType: AbysmalCore
+- uid: AbysmalCore.AbysmalConsole
+  name: AbysmalConsole
+  href: api/AbysmalCore.AbysmalConsole.html
+  commentId: T:AbysmalCore.AbysmalConsole
+  fullName: AbysmalCore.AbysmalConsole
+  nameWithType: AbysmalConsole
+- uid: AbysmalCore.AbysmalConsole.#ctor
+  name: AbysmalConsole()
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole__ctor
+  commentId: M:AbysmalCore.AbysmalConsole.#ctor
+  name.vb: New()
+  fullName: AbysmalCore.AbysmalConsole.AbysmalConsole()
+  fullName.vb: AbysmalCore.AbysmalConsole.New()
+  nameWithType: AbysmalConsole.AbysmalConsole()
+  nameWithType.vb: AbysmalConsole.New()
+- uid: AbysmalCore.AbysmalConsole.#ctor*
+  name: AbysmalConsole
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole__ctor_
+  commentId: Overload:AbysmalCore.AbysmalConsole.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.AbysmalConsole.AbysmalConsole
+  fullName.vb: AbysmalCore.AbysmalConsole.New
+  nameWithType: AbysmalConsole.AbysmalConsole
+  nameWithType.vb: AbysmalConsole.New
+- uid: AbysmalCore.AbysmalConsole.Ask(System.String)
+  name: Ask(string)
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Ask_System_String_
+  commentId: M:AbysmalCore.AbysmalConsole.Ask(System.String)
+  name.vb: Ask(String)
+  fullName: AbysmalCore.AbysmalConsole.Ask(string)
+  fullName.vb: AbysmalCore.AbysmalConsole.Ask(String)
+  nameWithType: AbysmalConsole.Ask(string)
+  nameWithType.vb: AbysmalConsole.Ask(String)
+- uid: AbysmalCore.AbysmalConsole.Ask*
+  name: Ask
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Ask_
+  commentId: Overload:AbysmalCore.AbysmalConsole.Ask
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.Ask
+  nameWithType: AbysmalConsole.Ask
+- uid: AbysmalCore.AbysmalConsole.Clear
+  name: Clear()
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Clear
+  commentId: M:AbysmalCore.AbysmalConsole.Clear
+  fullName: AbysmalCore.AbysmalConsole.Clear()
+  nameWithType: AbysmalConsole.Clear()
+- uid: AbysmalCore.AbysmalConsole.Clear*
+  name: Clear
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Clear_
+  commentId: Overload:AbysmalCore.AbysmalConsole.Clear
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.Clear
+  nameWithType: AbysmalConsole.Clear
+- uid: AbysmalCore.AbysmalConsole.GetOutput
+  name: GetOutput()
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_GetOutput
+  commentId: M:AbysmalCore.AbysmalConsole.GetOutput
+  fullName: AbysmalCore.AbysmalConsole.GetOutput()
+  nameWithType: AbysmalConsole.GetOutput()
+- uid: AbysmalCore.AbysmalConsole.GetOutput*
+  name: GetOutput
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_GetOutput_
+  commentId: Overload:AbysmalCore.AbysmalConsole.GetOutput
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.GetOutput
+  nameWithType: AbysmalConsole.GetOutput
+- uid: AbysmalCore.AbysmalConsole.Prompt*
+  name: Prompt
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Prompt_
+  commentId: Overload:AbysmalCore.AbysmalConsole.Prompt
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.Prompt
+  nameWithType: AbysmalConsole.Prompt
+- uid: AbysmalCore.AbysmalConsole.Prompt``1(System.String,System.String,System.Func{System.String,``0})
+  name: Prompt<T>(string, string?, Func<string, T>?)
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Prompt__1_System_String_System_String_System_Func_System_String___0__
+  commentId: M:AbysmalCore.AbysmalConsole.Prompt``1(System.String,System.String,System.Func{System.String,``0})
+  name.vb: Prompt(Of T)(String, String, Func(Of String, T))
+  fullName: AbysmalCore.AbysmalConsole.Prompt<T>(string, string?, System.Func<string, T>?)
+  fullName.vb: AbysmalCore.AbysmalConsole.Prompt(Of T)(String, String, System.Func(Of String, T))
+  nameWithType: AbysmalConsole.Prompt<T>(string, string?, Func<string, T>?)
+  nameWithType.vb: AbysmalConsole.Prompt(Of T)(String, String, Func(Of String, T))
+- uid: AbysmalCore.AbysmalConsole.WriteColor(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  name: WriteColor(string, ConsoleColor, ConsoleColor?)
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColor_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor__
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColor(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  name.vb: WriteColor(String, ConsoleColor, ConsoleColor?)
+  fullName: AbysmalCore.AbysmalConsole.WriteColor(string, System.ConsoleColor, System.ConsoleColor?)
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColor(String, System.ConsoleColor, System.ConsoleColor?)
+  nameWithType: AbysmalConsole.WriteColor(string, ConsoleColor, ConsoleColor?)
+  nameWithType.vb: AbysmalConsole.WriteColor(String, ConsoleColor, ConsoleColor?)
+- uid: AbysmalCore.AbysmalConsole.WriteColor*
+  name: WriteColor
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColor_
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColor
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.WriteColor
+  nameWithType: AbysmalConsole.WriteColor
+- uid: AbysmalCore.AbysmalConsole.WriteColorLn(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  name: WriteColorLn(string, ConsoleColor, ConsoleColor?)
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColorLn_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor__
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColorLn(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  name.vb: WriteColorLn(String, ConsoleColor, ConsoleColor?)
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLn(string, System.ConsoleColor, System.ConsoleColor?)
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColorLn(String, System.ConsoleColor, System.ConsoleColor?)
+  nameWithType: AbysmalConsole.WriteColorLn(string, ConsoleColor, ConsoleColor?)
+  nameWithType.vb: AbysmalConsole.WriteColorLn(String, ConsoleColor, ConsoleColor?)
+- uid: AbysmalCore.AbysmalConsole.WriteColorLn*
+  name: WriteColorLn
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColorLn_
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColorLn
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLn
+  nameWithType: AbysmalConsole.WriteColorLn
+- uid: AbysmalCore.AbysmalConsole.WriteColorLns(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  name: WriteColorLns((string s, ConsoleColor fore, ConsoleColor? back)[])
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColorLns_System_ValueTuple_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor_____
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColorLns(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  name.vb: WriteColorLns((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLns((string s, System.ConsoleColor fore, System.ConsoleColor? back)[])
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColorLns((s As String, fore As System.ConsoleColor, back As System.ConsoleColor?)())
+  nameWithType: AbysmalConsole.WriteColorLns((string s, ConsoleColor fore, ConsoleColor? back)[])
+  nameWithType.vb: AbysmalConsole.WriteColorLns((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+- uid: AbysmalCore.AbysmalConsole.WriteColorLns*
+  name: WriteColorLns
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColorLns_
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColorLns
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLns
+  nameWithType: AbysmalConsole.WriteColorLns
+- uid: AbysmalCore.AbysmalConsole.WriteColors(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  name: WriteColors((string s, ConsoleColor fore, ConsoleColor? back)[])
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColors_System_ValueTuple_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor_____
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColors(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  name.vb: WriteColors((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+  fullName: AbysmalCore.AbysmalConsole.WriteColors((string s, System.ConsoleColor fore, System.ConsoleColor? back)[])
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColors((s As String, fore As System.ConsoleColor, back As System.ConsoleColor?)())
+  nameWithType: AbysmalConsole.WriteColors((string s, ConsoleColor fore, ConsoleColor? back)[])
+  nameWithType.vb: AbysmalConsole.WriteColors((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+- uid: AbysmalCore.AbysmalConsole.WriteColors*
+  name: WriteColors
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColors_
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColors
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.WriteColors
+  nameWithType: AbysmalConsole.WriteColors
+- uid: AbysmalCore.AbysmalConsole.WriteOutput(System.String)
+  name: WriteOutput(string)
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteOutput_System_String_
+  commentId: M:AbysmalCore.AbysmalConsole.WriteOutput(System.String)
+  name.vb: WriteOutput(String)
+  fullName: AbysmalCore.AbysmalConsole.WriteOutput(string)
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteOutput(String)
+  nameWithType: AbysmalConsole.WriteOutput(string)
+  nameWithType.vb: AbysmalConsole.WriteOutput(String)
+- uid: AbysmalCore.AbysmalConsole.WriteOutput*
+  name: WriteOutput
+  href: api/AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteOutput_
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteOutput
+  isSpec: "True"
+  fullName: AbysmalCore.AbysmalConsole.WriteOutput
+  nameWithType: AbysmalConsole.WriteOutput
+- uid: AbysmalCore.Debugging
+  name: AbysmalCore.Debugging
+  href: api/AbysmalCore.Debugging.html
+  commentId: N:AbysmalCore.Debugging
+  fullName: AbysmalCore.Debugging
+  nameWithType: AbysmalCore.Debugging
+- uid: AbysmalCore.Debugging.AbysmalDebug
+  name: AbysmalDebug
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html
+  commentId: T:AbysmalCore.Debugging.AbysmalDebug
+  fullName: AbysmalCore.Debugging.AbysmalDebug
+  nameWithType: AbysmalDebug
+- uid: AbysmalCore.Debugging.AbysmalDebug.Enabled
+  name: Enabled
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Enabled
+  commentId: F:AbysmalCore.Debugging.AbysmalDebug.Enabled
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Enabled
+  nameWithType: AbysmalDebug.Enabled
+- uid: AbysmalCore.Debugging.AbysmalDebug.Error(System.Object,System.String,System.Boolean)
+  name: Error(object, string, bool)
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Error_System_Object_System_String_System_Boolean_
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Error(System.Object,System.String,System.Boolean)
+  name.vb: Error(Object, String, Boolean)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Error(object, string, bool)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Error(Object, String, Boolean)
+  nameWithType: AbysmalDebug.Error(object, string, bool)
+  nameWithType.vb: AbysmalDebug.Error(Object, String, Boolean)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Error*
+  name: Error
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Error_
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Error
+  isSpec: "True"
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Error
+  nameWithType: AbysmalDebug.Error
+- uid: AbysmalCore.Debugging.AbysmalDebug.Log(System.Object,System.String,System.Boolean)
+  name: Log(object, string, bool)
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Log_System_Object_System_String_System_Boolean_
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Log(System.Object,System.String,System.Boolean)
+  name.vb: Log(Object, String, Boolean)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Log(object, string, bool)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Log(Object, String, Boolean)
+  nameWithType: AbysmalDebug.Log(object, string, bool)
+  nameWithType.vb: AbysmalDebug.Log(Object, String, Boolean)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Log*
+  name: Log
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Log_
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Log
+  isSpec: "True"
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Log
+  nameWithType: AbysmalDebug.Log
+- uid: AbysmalCore.Debugging.AbysmalDebug.Pause(System.Boolean,System.Boolean,System.String)
+  name: Pause(bool, bool, string)
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Pause_System_Boolean_System_Boolean_System_String_
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Pause(System.Boolean,System.Boolean,System.String)
+  name.vb: Pause(Boolean, Boolean, String)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Pause(bool, bool, string)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Pause(Boolean, Boolean, String)
+  nameWithType: AbysmalDebug.Pause(bool, bool, string)
+  nameWithType.vb: AbysmalDebug.Pause(Boolean, Boolean, String)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Pause*
+  name: Pause
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Pause_
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Pause
+  isSpec: "True"
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Pause
+  nameWithType: AbysmalDebug.Pause
+- uid: AbysmalCore.Debugging.AbysmalDebug.Stop(System.Boolean,System.Boolean,System.String)
+  name: Stop(bool, bool, string)
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Stop_System_Boolean_System_Boolean_System_String_
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Stop(System.Boolean,System.Boolean,System.String)
+  name.vb: Stop(Boolean, Boolean, String)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Stop(bool, bool, string)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Stop(Boolean, Boolean, String)
+  nameWithType: AbysmalDebug.Stop(bool, bool, string)
+  nameWithType.vb: AbysmalDebug.Stop(Boolean, Boolean, String)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Stop*
+  name: Stop
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Stop_
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Stop
+  isSpec: "True"
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Stop
+  nameWithType: AbysmalDebug.Stop
+- uid: AbysmalCore.Debugging.AbysmalDebug.Warn(System.Object,System.String)
+  name: Warn(object, string)
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Warn_System_Object_System_String_
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Warn(System.Object,System.String)
+  name.vb: Warn(Object, String)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Warn(object, string)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Warn(Object, String)
+  nameWithType: AbysmalDebug.Warn(object, string)
+  nameWithType.vb: AbysmalDebug.Warn(Object, String)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Warn*
+  name: Warn
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Warn_
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Warn
+  isSpec: "True"
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Warn
+  nameWithType: AbysmalDebug.Warn
+- uid: AbysmalCore.Debugging.AbysmalDebug.WriteLogs(System.String)
+  name: WriteLogs(string)
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_WriteLogs_System_String_
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.WriteLogs(System.String)
+  name.vb: WriteLogs(String)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.WriteLogs(string)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.WriteLogs(String)
+  nameWithType: AbysmalDebug.WriteLogs(string)
+  nameWithType.vb: AbysmalDebug.WriteLogs(String)
+- uid: AbysmalCore.Debugging.AbysmalDebug.WriteLogs*
+  name: WriteLogs
+  href: api/AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_WriteLogs_
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.WriteLogs
+  isSpec: "True"
+  fullName: AbysmalCore.Debugging.AbysmalDebug.WriteLogs
+  nameWithType: AbysmalDebug.WriteLogs
+- uid: AbysmalCore.Debugging.DebugInfoAttribute
+  name: DebugInfoAttribute
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.html
+  commentId: T:AbysmalCore.Debugging.DebugInfoAttribute
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute
+  nameWithType: DebugInfoAttribute
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+  name: DebugInfoAttribute(string, bool)
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.html#AbysmalCore_Debugging_DebugInfoAttribute__ctor_System_String_System_Boolean_
+  commentId: M:AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+  name.vb: New(String, Boolean)
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.DebugInfoAttribute(string, bool)
+  fullName.vb: AbysmalCore.Debugging.DebugInfoAttribute.New(String, Boolean)
+  nameWithType: DebugInfoAttribute.DebugInfoAttribute(string, bool)
+  nameWithType.vb: DebugInfoAttribute.New(String, Boolean)
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.#ctor*
+  name: DebugInfoAttribute
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.html#AbysmalCore_Debugging_DebugInfoAttribute__ctor_
+  commentId: Overload:AbysmalCore.Debugging.DebugInfoAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.DebugInfoAttribute
+  fullName.vb: AbysmalCore.Debugging.DebugInfoAttribute.New
+  nameWithType: DebugInfoAttribute.DebugInfoAttribute
+  nameWithType.vb: DebugInfoAttribute.New
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.Description
+  name: Description
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.html#AbysmalCore_Debugging_DebugInfoAttribute_Description
+  commentId: F:AbysmalCore.Debugging.DebugInfoAttribute.Description
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.Description
+  nameWithType: DebugInfoAttribute.Description
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceAction
+  name: ImportanceAction
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.html#AbysmalCore_Debugging_DebugInfoAttribute_ImportanceAction
+  commentId: F:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceAction
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceAction
+  nameWithType: DebugInfoAttribute.ImportanceAction
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  name: DebugInfoAttribute.ImportanceActionType
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html
+  commentId: T:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  nameWithType: DebugInfoAttribute.ImportanceActionType
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Highlight
+  name: Highlight
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html#AbysmalCore_Debugging_DebugInfoAttribute_ImportanceActionType_Highlight
+  commentId: F:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Highlight
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Highlight
+  nameWithType: DebugInfoAttribute.ImportanceActionType.Highlight
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Pause
+  name: Pause
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html#AbysmalCore_Debugging_DebugInfoAttribute_ImportanceActionType_Pause
+  commentId: F:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Pause
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Pause
+  nameWithType: DebugInfoAttribute.ImportanceActionType.Pause
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.Important
+  name: Important
+  href: api/AbysmalCore.Debugging.DebugInfoAttribute.html#AbysmalCore_Debugging_DebugInfoAttribute_Important
+  commentId: F:AbysmalCore.Debugging.DebugInfoAttribute.Important
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.Important
+  nameWithType: DebugInfoAttribute.Important
+- uid: AbysmalCore.Extensibility
+  name: AbysmalCore.Extensibility
+  href: api/AbysmalCore.Extensibility.html
+  commentId: N:AbysmalCore.Extensibility
+  fullName: AbysmalCore.Extensibility
+  nameWithType: AbysmalCore.Extensibility
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility
+  name: AbysmalExtensibility
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibility.html
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibility
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility
+  nameWithType: AbysmalExtensibility
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility.CompileAssembly(System.String)
+  name: CompileAssembly(string)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibility.html#AbysmalCore_Extensibility_AbysmalExtensibility_CompileAssembly_System_String_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibility.CompileAssembly(System.String)
+  name.vb: CompileAssembly(String)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility.CompileAssembly(string)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibility.CompileAssembly(String)
+  nameWithType: AbysmalExtensibility.CompileAssembly(string)
+  nameWithType.vb: AbysmalExtensibility.CompileAssembly(String)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility.CompileAssembly*
+  name: CompileAssembly
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibility.html#AbysmalCore_Extensibility_AbysmalExtensibility_CompileAssembly_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibility.CompileAssembly
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility.CompileAssembly
+  nameWithType: AbysmalExtensibility.CompileAssembly
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility.GetClass(System.Reflection.Assembly,System.String,System.Boolean)
+  name: GetClass(Assembly, string, bool)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibility.html#AbysmalCore_Extensibility_AbysmalExtensibility_GetClass_System_Reflection_Assembly_System_String_System_Boolean_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibility.GetClass(System.Reflection.Assembly,System.String,System.Boolean)
+  name.vb: GetClass(Assembly, String, Boolean)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility.GetClass(System.Reflection.Assembly, string, bool)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibility.GetClass(System.Reflection.Assembly, String, Boolean)
+  nameWithType: AbysmalExtensibility.GetClass(Assembly, string, bool)
+  nameWithType.vb: AbysmalExtensibility.GetClass(Assembly, String, Boolean)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility.GetClass*
+  name: GetClass
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibility.html#AbysmalCore_Extensibility_AbysmalExtensibility_GetClass_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibility.GetClass
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility.GetClass
+  nameWithType: AbysmalExtensibility.GetClass
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility.GetUniformClass*
+  name: GetUniformClass
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibility.html#AbysmalCore_Extensibility_AbysmalExtensibility_GetUniformClass_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibility.GetUniformClass
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility.GetUniformClass
+  nameWithType: AbysmalExtensibility.GetUniformClass
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility.GetUniformClass``1(System.Reflection.Assembly,System.String)
+  name: GetUniformClass<T>(Assembly, string)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibility.html#AbysmalCore_Extensibility_AbysmalExtensibility_GetUniformClass__1_System_Reflection_Assembly_System_String_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibility.GetUniformClass``1(System.Reflection.Assembly,System.String)
+  name.vb: GetUniformClass(Of T)(Assembly, String)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility.GetUniformClass<T>(System.Reflection.Assembly, string)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibility.GetUniformClass(Of T)(System.Reflection.Assembly, String)
+  nameWithType: AbysmalExtensibility.GetUniformClass<T>(Assembly, string)
+  nameWithType.vb: AbysmalExtensibility.GetUniformClass(Of T)(Assembly, String)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass
+  name: AbysmalExtensibilityClass
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibilityClass
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass
+  nameWithType: AbysmalExtensibilityClass
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.#ctor(System.Object,System.Boolean)
+  name: AbysmalExtensibilityClass(object, bool)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass__ctor_System_Object_System_Boolean_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityClass.#ctor(System.Object,System.Boolean)
+  name.vb: New(Object, Boolean)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.AbysmalExtensibilityClass(object, bool)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityClass.New(Object, Boolean)
+  nameWithType: AbysmalExtensibilityClass.AbysmalExtensibilityClass(object, bool)
+  nameWithType.vb: AbysmalExtensibilityClass.New(Object, Boolean)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.#ctor(System.Type,System.Boolean)
+  name: AbysmalExtensibilityClass(Type, bool)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass__ctor_System_Type_System_Boolean_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityClass.#ctor(System.Type,System.Boolean)
+  name.vb: New(Type, Boolean)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.AbysmalExtensibilityClass(System.Type, bool)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityClass.New(System.Type, Boolean)
+  nameWithType: AbysmalExtensibilityClass.AbysmalExtensibilityClass(Type, bool)
+  nameWithType.vb: AbysmalExtensibilityClass.New(Type, Boolean)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.#ctor*
+  name: AbysmalExtensibilityClass
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass__ctor_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityClass.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.AbysmalExtensibilityClass
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityClass.New
+  nameWithType: AbysmalExtensibilityClass.AbysmalExtensibilityClass
+  nameWithType.vb: AbysmalExtensibilityClass.New
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasMethod(System.String)
+  name: HasMethod(string)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_HasMethod_System_String_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasMethod(System.String)
+  name.vb: HasMethod(String)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasMethod(string)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasMethod(String)
+  nameWithType: AbysmalExtensibilityClass.HasMethod(string)
+  nameWithType.vb: AbysmalExtensibilityClass.HasMethod(String)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasMethod*
+  name: HasMethod
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_HasMethod_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasMethod
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasMethod
+  nameWithType: AbysmalExtensibilityClass.HasMethod
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasProperty(System.String)
+  name: HasProperty(string)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_HasProperty_System_String_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasProperty(System.String)
+  name.vb: HasProperty(String)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasProperty(string)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasProperty(String)
+  nameWithType: AbysmalExtensibilityClass.HasProperty(string)
+  nameWithType.vb: AbysmalExtensibilityClass.HasProperty(String)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasProperty*
+  name: HasProperty
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_HasProperty_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasProperty
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.HasProperty
+  nameWithType: AbysmalExtensibilityClass.HasProperty
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Instance
+  name: Instance
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_Instance
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityClass.Instance
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Instance
+  nameWithType: AbysmalExtensibilityClass.Instance
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Instance*
+  name: Instance
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_Instance_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityClass.Instance
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Instance
+  nameWithType: AbysmalExtensibilityClass.Instance
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Methods
+  name: Methods
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_Methods
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityClass.Methods
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Methods
+  nameWithType: AbysmalExtensibilityClass.Methods
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Methods*
+  name: Methods
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_Methods_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityClass.Methods
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Methods
+  nameWithType: AbysmalExtensibilityClass.Methods
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.New
+  name: New()
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_New
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityClass.New
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.New()
+  nameWithType: AbysmalExtensibilityClass.New()
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.New*
+  name: New
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_New_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityClass.New
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.New
+  nameWithType: AbysmalExtensibilityClass.New
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Properties
+  name: Properties
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_Properties
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityClass.Properties
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Properties
+  nameWithType: AbysmalExtensibilityClass.Properties
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Properties*
+  name: Properties
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html#AbysmalCore_Extensibility_AbysmalExtensibilityClass_Properties_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityClass.Properties
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass.Properties
+  nameWithType: AbysmalExtensibilityClass.Properties
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+  name: AbysmalExtensibilityMethod
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+  nameWithType: AbysmalExtensibilityMethod
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.#ctor(System.Reflection.MethodInfo,System.Object)
+  name: AbysmalExtensibilityMethod(MethodInfo, object)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod__ctor_System_Reflection_MethodInfo_System_Object_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.#ctor(System.Reflection.MethodInfo,System.Object)
+  name.vb: New(MethodInfo, Object)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.AbysmalExtensibilityMethod(System.Reflection.MethodInfo, object)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.New(System.Reflection.MethodInfo, Object)
+  nameWithType: AbysmalExtensibilityMethod.AbysmalExtensibilityMethod(MethodInfo, object)
+  nameWithType.vb: AbysmalExtensibilityMethod.New(MethodInfo, Object)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.#ctor*
+  name: AbysmalExtensibilityMethod
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod__ctor_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.AbysmalExtensibilityMethod
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.New
+  nameWithType: AbysmalExtensibilityMethod.AbysmalExtensibilityMethod
+  nameWithType.vb: AbysmalExtensibilityMethod.New
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.GetParameterType(System.Int32)
+  name: GetParameterType(int)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_GetParameterType_System_Int32_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.GetParameterType(System.Int32)
+  name.vb: GetParameterType(Integer)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.GetParameterType(int)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.GetParameterType(Integer)
+  nameWithType: AbysmalExtensibilityMethod.GetParameterType(int)
+  nameWithType.vb: AbysmalExtensibilityMethod.GetParameterType(Integer)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.GetParameterType*
+  name: GetParameterType
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_GetParameterType_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.GetParameterType
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.GetParameterType
+  nameWithType: AbysmalExtensibilityMethod.GetParameterType
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke(System.Object[])
+  name: Invoke(params object[])
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_Invoke_System_Object___
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke(System.Object[])
+  name.vb: Invoke(ParamArray Object())
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke(params object[])
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke(ParamArray Object())
+  nameWithType: AbysmalExtensibilityMethod.Invoke(params object[])
+  nameWithType.vb: AbysmalExtensibilityMethod.Invoke(ParamArray Object())
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke*
+  name: Invoke
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_Invoke_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke
+  nameWithType: AbysmalExtensibilityMethod.Invoke
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke``1(System.Func{System.Object,``0},System.Object[])
+  name: Invoke<T>(Func<object?, T>, params object[])
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_Invoke__1_System_Func_System_Object___0__System_Object___
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke``1(System.Func{System.Object,``0},System.Object[])
+  name.vb: Invoke(Of T)(Func(Of Object, T), ParamArray Object())
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke<T>(System.Func<object?, T>, params object[])
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke(Of T)(System.Func(Of Object, T), ParamArray Object())
+  nameWithType: AbysmalExtensibilityMethod.Invoke<T>(Func<object?, T>, params object[])
+  nameWithType.vb: AbysmalExtensibilityMethod.Invoke(Of T)(Func(Of Object, T), ParamArray Object())
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke``1(System.Object[])
+  name: Invoke<T>(params object[])
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_Invoke__1_System_Object___
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke``1(System.Object[])
+  name.vb: Invoke(Of T)(ParamArray Object())
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke<T>(params object[])
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Invoke(Of T)(ParamArray Object())
+  nameWithType: AbysmalExtensibilityMethod.Invoke<T>(params object[])
+  nameWithType.vb: AbysmalExtensibilityMethod.Invoke(Of T)(ParamArray Object())
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Name
+  name: Name
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_Name
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Name
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Name
+  nameWithType: AbysmalExtensibilityMethod.Name
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Name*
+  name: Name
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_Name_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Name
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.Name
+  nameWithType: AbysmalExtensibilityMethod.Name
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ParameterCount
+  name: ParameterCount
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_ParameterCount
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ParameterCount
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ParameterCount
+  nameWithType: AbysmalExtensibilityMethod.ParameterCount
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ParameterCount*
+  name: ParameterCount
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_ParameterCount_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ParameterCount
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ParameterCount
+  nameWithType: AbysmalExtensibilityMethod.ParameterCount
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ReturnType
+  name: ReturnType
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_ReturnType
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ReturnType
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ReturnType
+  nameWithType: AbysmalExtensibilityMethod.ReturnType
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ReturnType*
+  name: ReturnType
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html#AbysmalCore_Extensibility_AbysmalExtensibilityMethod_ReturnType_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ReturnType
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.ReturnType
+  nameWithType: AbysmalExtensibilityMethod.ReturnType
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+  name: AbysmalExtensibilityProperty
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+  nameWithType: AbysmalExtensibilityProperty
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.#ctor(System.Reflection.FieldInfo,System.Object)
+  name: AbysmalExtensibilityProperty(FieldInfo, object)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty__ctor_System_Reflection_FieldInfo_System_Object_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.#ctor(System.Reflection.FieldInfo,System.Object)
+  name.vb: New(FieldInfo, Object)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.AbysmalExtensibilityProperty(System.Reflection.FieldInfo, object)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.New(System.Reflection.FieldInfo, Object)
+  nameWithType: AbysmalExtensibilityProperty.AbysmalExtensibilityProperty(FieldInfo, object)
+  nameWithType.vb: AbysmalExtensibilityProperty.New(FieldInfo, Object)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.#ctor(System.Reflection.PropertyInfo,System.Object)
+  name: AbysmalExtensibilityProperty(PropertyInfo, object)
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty__ctor_System_Reflection_PropertyInfo_System_Object_
+  commentId: M:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.#ctor(System.Reflection.PropertyInfo,System.Object)
+  name.vb: New(PropertyInfo, Object)
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.AbysmalExtensibilityProperty(System.Reflection.PropertyInfo, object)
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.New(System.Reflection.PropertyInfo, Object)
+  nameWithType: AbysmalExtensibilityProperty.AbysmalExtensibilityProperty(PropertyInfo, object)
+  nameWithType.vb: AbysmalExtensibilityProperty.New(PropertyInfo, Object)
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.#ctor*
+  name: AbysmalExtensibilityProperty
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty__ctor_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.AbysmalExtensibilityProperty
+  fullName.vb: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.New
+  nameWithType: AbysmalExtensibilityProperty.AbysmalExtensibilityProperty
+  nameWithType.vb: AbysmalExtensibilityProperty.New
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.IsPrivate
+  name: IsPrivate
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_IsPrivate
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.IsPrivate
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.IsPrivate
+  nameWithType: AbysmalExtensibilityProperty.IsPrivate
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.IsPrivate*
+  name: IsPrivate
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_IsPrivate_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.IsPrivate
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.IsPrivate
+  nameWithType: AbysmalExtensibilityProperty.IsPrivate
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Name
+  name: Name
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_Name
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Name
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Name
+  nameWithType: AbysmalExtensibilityProperty.Name
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Name*
+  name: Name
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_Name_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Name
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Name
+  nameWithType: AbysmalExtensibilityProperty.Name
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Type
+  name: Type
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_Type
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Type
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Type
+  nameWithType: AbysmalExtensibilityProperty.Type
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Type*
+  name: Type
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_Type_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Type
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Type
+  nameWithType: AbysmalExtensibilityProperty.Type
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Value
+  name: Value
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_Value
+  commentId: P:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Value
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Value
+  nameWithType: AbysmalExtensibilityProperty.Value
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Value*
+  name: Value
+  href: api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html#AbysmalCore_Extensibility_AbysmalExtensibilityProperty_Value_
+  commentId: Overload:AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Value
+  isSpec: "True"
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.Value
+  nameWithType: AbysmalExtensibilityProperty.Value
+- uid: AbysmalCore.UI
+  name: AbysmalCore.UI
+  href: api/AbysmalCore.UI.html
+  commentId: N:AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+- uid: AbysmalCore.UI.Controls
+  name: AbysmalCore.UI.Controls
+  href: api/AbysmalCore.UI.Controls.html
+  commentId: N:AbysmalCore.UI.Controls
+  fullName: AbysmalCore.UI.Controls
+  nameWithType: AbysmalCore.UI.Controls
+- uid: AbysmalCore.UI.Controls.Button
+  name: Button
+  href: api/AbysmalCore.UI.Controls.Button.html
+  commentId: T:AbysmalCore.UI.Controls.Button
+  fullName: AbysmalCore.UI.Controls.Button
+  nameWithType: Button
+- uid: AbysmalCore.UI.Controls.Button.#ctor(System.String,AbysmalCore.Vector2Int,System.Nullable{AbysmalCore.Vector2Int},System.Int32)
+  name: Button(string, Vector2Int, Vector2Int?, int)
+  href: api/AbysmalCore.UI.Controls.Button.html#AbysmalCore_UI_Controls_Button__ctor_System_String_AbysmalCore_Vector2Int_System_Nullable_AbysmalCore_Vector2Int__System_Int32_
+  commentId: M:AbysmalCore.UI.Controls.Button.#ctor(System.String,AbysmalCore.Vector2Int,System.Nullable{AbysmalCore.Vector2Int},System.Int32)
+  name.vb: New(String, Vector2Int, Vector2Int?, Integer)
+  fullName: AbysmalCore.UI.Controls.Button.Button(string, AbysmalCore.Vector2Int, AbysmalCore.Vector2Int?, int)
+  fullName.vb: AbysmalCore.UI.Controls.Button.New(String, AbysmalCore.Vector2Int, AbysmalCore.Vector2Int?, Integer)
+  nameWithType: Button.Button(string, Vector2Int, Vector2Int?, int)
+  nameWithType.vb: Button.New(String, Vector2Int, Vector2Int?, Integer)
+- uid: AbysmalCore.UI.Controls.Button.#ctor*
+  name: Button
+  href: api/AbysmalCore.UI.Controls.Button.html#AbysmalCore_UI_Controls_Button__ctor_
+  commentId: Overload:AbysmalCore.UI.Controls.Button.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Controls.Button.Button
+  fullName.vb: AbysmalCore.UI.Controls.Button.New
+  nameWithType: Button.Button
+  nameWithType.vb: Button.New
+- uid: AbysmalCore.UI.Controls.Button.FontSize
+  name: FontSize
+  href: api/AbysmalCore.UI.Controls.Button.html#AbysmalCore_UI_Controls_Button_FontSize
+  commentId: F:AbysmalCore.UI.Controls.Button.FontSize
+  fullName: AbysmalCore.UI.Controls.Button.FontSize
+  nameWithType: Button.FontSize
+- uid: AbysmalCore.UI.Controls.Button.Text
+  name: Text
+  href: api/AbysmalCore.UI.Controls.Button.html#AbysmalCore_UI_Controls_Button_Text
+  commentId: F:AbysmalCore.UI.Controls.Button.Text
+  fullName: AbysmalCore.UI.Controls.Button.Text
+  nameWithType: Button.Text
+- uid: AbysmalCore.UI.Controls.Button._draw
+  name: _draw()
+  href: api/AbysmalCore.UI.Controls.Button.html#AbysmalCore_UI_Controls_Button__draw
+  commentId: M:AbysmalCore.UI.Controls.Button._draw
+  fullName: AbysmalCore.UI.Controls.Button._draw()
+  nameWithType: Button._draw()
+- uid: AbysmalCore.UI.Controls.Button._draw*
+  name: _draw
+  href: api/AbysmalCore.UI.Controls.Button.html#AbysmalCore_UI_Controls_Button__draw_
+  commentId: Overload:AbysmalCore.UI.Controls.Button._draw
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Controls.Button._draw
+  nameWithType: Button._draw
+- uid: AbysmalCore.UI.Controls.Label
+  name: Label
+  href: api/AbysmalCore.UI.Controls.Label.html
+  commentId: T:AbysmalCore.UI.Controls.Label
+  fullName: AbysmalCore.UI.Controls.Label
+  nameWithType: Label
+- uid: AbysmalCore.UI.Controls.Label.#ctor(System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: Label(string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Controls.Label.html#AbysmalCore_UI_Controls_Label__ctor_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Controls.Label.#ctor(System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: New(String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Controls.Label.Label(string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Controls.Label.New(String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: Label.Label(string, Vector2Int, int)
+  nameWithType.vb: Label.New(String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Controls.Label.#ctor*
+  name: Label
+  href: api/AbysmalCore.UI.Controls.Label.html#AbysmalCore_UI_Controls_Label__ctor_
+  commentId: Overload:AbysmalCore.UI.Controls.Label.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Controls.Label.Label
+  fullName.vb: AbysmalCore.UI.Controls.Label.New
+  nameWithType: Label.Label
+  nameWithType.vb: Label.New
+- uid: AbysmalCore.UI.Controls.Label.FontSize
+  name: FontSize
+  href: api/AbysmalCore.UI.Controls.Label.html#AbysmalCore_UI_Controls_Label_FontSize
+  commentId: F:AbysmalCore.UI.Controls.Label.FontSize
+  fullName: AbysmalCore.UI.Controls.Label.FontSize
+  nameWithType: Label.FontSize
+- uid: AbysmalCore.UI.Controls.Label.Text
+  name: Text
+  href: api/AbysmalCore.UI.Controls.Label.html#AbysmalCore_UI_Controls_Label_Text
+  commentId: F:AbysmalCore.UI.Controls.Label.Text
+  fullName: AbysmalCore.UI.Controls.Label.Text
+  nameWithType: Label.Text
+- uid: AbysmalCore.UI.Controls.Label._draw
+  name: _draw()
+  href: api/AbysmalCore.UI.Controls.Label.html#AbysmalCore_UI_Controls_Label__draw
+  commentId: M:AbysmalCore.UI.Controls.Label._draw
+  fullName: AbysmalCore.UI.Controls.Label._draw()
+  nameWithType: Label._draw()
+- uid: AbysmalCore.UI.Controls.Label._draw*
+  name: _draw
+  href: api/AbysmalCore.UI.Controls.Label.html#AbysmalCore_UI_Controls_Label__draw_
+  commentId: Overload:AbysmalCore.UI.Controls.Label._draw
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Controls.Label._draw
+  nameWithType: Label._draw
+- uid: AbysmalCore.UI.Controls.Panel
+  name: Panel
+  href: api/AbysmalCore.UI.Controls.Panel.html
+  commentId: T:AbysmalCore.UI.Controls.Panel
+  fullName: AbysmalCore.UI.Controls.Panel
+  nameWithType: Panel
+- uid: AbysmalCore.UI.Controls.Panel.#ctor(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Collections.Generic.List{AbysmalCore.UI.UIElement})
+  name: Panel(Vector2Int, Vector2Int, List<UIElement>?)
+  href: api/AbysmalCore.UI.Controls.Panel.html#AbysmalCore_UI_Controls_Panel__ctor_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Collections_Generic_List_AbysmalCore_UI_UIElement__
+  commentId: M:AbysmalCore.UI.Controls.Panel.#ctor(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Collections.Generic.List{AbysmalCore.UI.UIElement})
+  name.vb: New(Vector2Int, Vector2Int, List(Of UIElement))
+  fullName: AbysmalCore.UI.Controls.Panel.Panel(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, System.Collections.Generic.List<AbysmalCore.UI.UIElement>?)
+  fullName.vb: AbysmalCore.UI.Controls.Panel.New(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, System.Collections.Generic.List(Of AbysmalCore.UI.UIElement))
+  nameWithType: Panel.Panel(Vector2Int, Vector2Int, List<UIElement>?)
+  nameWithType.vb: Panel.New(Vector2Int, Vector2Int, List(Of UIElement))
+- uid: AbysmalCore.UI.Controls.Panel.#ctor*
+  name: Panel
+  href: api/AbysmalCore.UI.Controls.Panel.html#AbysmalCore_UI_Controls_Panel__ctor_
+  commentId: Overload:AbysmalCore.UI.Controls.Panel.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Controls.Panel.Panel
+  fullName.vb: AbysmalCore.UI.Controls.Panel.New
+  nameWithType: Panel.Panel
+  nameWithType.vb: Panel.New
+- uid: AbysmalCore.UI.Controls.Panel._draw
+  name: _draw()
+  href: api/AbysmalCore.UI.Controls.Panel.html#AbysmalCore_UI_Controls_Panel__draw
+  commentId: M:AbysmalCore.UI.Controls.Panel._draw
+  fullName: AbysmalCore.UI.Controls.Panel._draw()
+  nameWithType: Panel._draw()
+- uid: AbysmalCore.UI.Controls.Panel._draw*
+  name: _draw
+  href: api/AbysmalCore.UI.Controls.Panel.html#AbysmalCore_UI_Controls_Panel__draw_
+  commentId: Overload:AbysmalCore.UI.Controls.Panel._draw
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Controls.Panel._draw
+  nameWithType: Panel._draw
+- uid: AbysmalCore.UI.Controls.Picture
+  name: Picture
+  href: api/AbysmalCore.UI.Controls.Picture.html
+  commentId: T:AbysmalCore.UI.Controls.Picture
+  fullName: AbysmalCore.UI.Controls.Picture
+  nameWithType: Picture
+- uid: AbysmalCore.UI.Controls.Picture.#ctor(Raylib_cs.Image,System.Boolean)
+  name: Picture(Image, bool)
+  href: api/AbysmalCore.UI.Controls.Picture.html#AbysmalCore_UI_Controls_Picture__ctor_Raylib_cs_Image_System_Boolean_
+  commentId: M:AbysmalCore.UI.Controls.Picture.#ctor(Raylib_cs.Image,System.Boolean)
+  name.vb: New(Image, Boolean)
+  fullName: AbysmalCore.UI.Controls.Picture.Picture(Raylib_cs.Image, bool)
+  fullName.vb: AbysmalCore.UI.Controls.Picture.New(Raylib_cs.Image, Boolean)
+  nameWithType: Picture.Picture(Image, bool)
+  nameWithType.vb: Picture.New(Image, Boolean)
+- uid: AbysmalCore.UI.Controls.Picture.#ctor*
+  name: Picture
+  href: api/AbysmalCore.UI.Controls.Picture.html#AbysmalCore_UI_Controls_Picture__ctor_
+  commentId: Overload:AbysmalCore.UI.Controls.Picture.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Controls.Picture.Picture
+  fullName.vb: AbysmalCore.UI.Controls.Picture.New
+  nameWithType: Picture.Picture
+  nameWithType.vb: Picture.New
+- uid: AbysmalCore.UI.Controls.Picture.Image
+  name: Image
+  href: api/AbysmalCore.UI.Controls.Picture.html#AbysmalCore_UI_Controls_Picture_Image
+  commentId: F:AbysmalCore.UI.Controls.Picture.Image
+  fullName: AbysmalCore.UI.Controls.Picture.Image
+  nameWithType: Picture.Image
+- uid: AbysmalCore.UI.Controls.Picture.Tint
+  name: Tint
+  href: api/AbysmalCore.UI.Controls.Picture.html#AbysmalCore_UI_Controls_Picture_Tint
+  commentId: F:AbysmalCore.UI.Controls.Picture.Tint
+  fullName: AbysmalCore.UI.Controls.Picture.Tint
+  nameWithType: Picture.Tint
+- uid: AbysmalCore.UI.Controls.Picture._draw
+  name: _draw()
+  href: api/AbysmalCore.UI.Controls.Picture.html#AbysmalCore_UI_Controls_Picture__draw
+  commentId: M:AbysmalCore.UI.Controls.Picture._draw
+  fullName: AbysmalCore.UI.Controls.Picture._draw()
+  nameWithType: Picture._draw()
+- uid: AbysmalCore.UI.Controls.Picture._draw*
+  name: _draw
+  href: api/AbysmalCore.UI.Controls.Picture.html#AbysmalCore_UI_Controls_Picture__draw_
+  commentId: Overload:AbysmalCore.UI.Controls.Picture._draw
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Controls.Picture._draw
+  nameWithType: Picture._draw
+- uid: AbysmalCore.UI.Controls.Toggle
+  name: Toggle
+  href: api/AbysmalCore.UI.Controls.Toggle.html
+  commentId: T:AbysmalCore.UI.Controls.Toggle
+  fullName: AbysmalCore.UI.Controls.Toggle
+  nameWithType: Toggle
+- uid: AbysmalCore.UI.Controls.Toggle.#ctor(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Boolean,System.String,System.Int32)
+  name: Toggle(Vector2Int, Vector2Int, bool, string, int)
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle__ctor_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Boolean_System_String_System_Int32_
+  commentId: M:AbysmalCore.UI.Controls.Toggle.#ctor(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Boolean,System.String,System.Int32)
+  name.vb: New(Vector2Int, Vector2Int, Boolean, String, Integer)
+  fullName: AbysmalCore.UI.Controls.Toggle.Toggle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, bool, string, int)
+  fullName.vb: AbysmalCore.UI.Controls.Toggle.New(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Boolean, String, Integer)
+  nameWithType: Toggle.Toggle(Vector2Int, Vector2Int, bool, string, int)
+  nameWithType.vb: Toggle.New(Vector2Int, Vector2Int, Boolean, String, Integer)
+- uid: AbysmalCore.UI.Controls.Toggle.#ctor*
+  name: Toggle
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle__ctor_
+  commentId: Overload:AbysmalCore.UI.Controls.Toggle.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Controls.Toggle.Toggle
+  fullName.vb: AbysmalCore.UI.Controls.Toggle.New
+  nameWithType: Toggle.Toggle
+  nameWithType.vb: Toggle.New
+- uid: AbysmalCore.UI.Controls.Toggle.FontSize
+  name: FontSize
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle_FontSize
+  commentId: F:AbysmalCore.UI.Controls.Toggle.FontSize
+  fullName: AbysmalCore.UI.Controls.Toggle.FontSize
+  nameWithType: Toggle.FontSize
+- uid: AbysmalCore.UI.Controls.Toggle.OnToggleStateChanged
+  name: OnToggleStateChanged
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle_OnToggleStateChanged
+  commentId: E:AbysmalCore.UI.Controls.Toggle.OnToggleStateChanged
+  fullName: AbysmalCore.UI.Controls.Toggle.OnToggleStateChanged
+  nameWithType: Toggle.OnToggleStateChanged
+- uid: AbysmalCore.UI.Controls.Toggle.State
+  name: State
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle_State
+  commentId: P:AbysmalCore.UI.Controls.Toggle.State
+  fullName: AbysmalCore.UI.Controls.Toggle.State
+  nameWithType: Toggle.State
+- uid: AbysmalCore.UI.Controls.Toggle.State*
+  name: State
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle_State_
+  commentId: Overload:AbysmalCore.UI.Controls.Toggle.State
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Controls.Toggle.State
+  nameWithType: Toggle.State
+- uid: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  name: Toggle.StateChangedEventHandler
+  href: api/AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler.html
+  commentId: T:AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  fullName: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  nameWithType: Toggle.StateChangedEventHandler
+- uid: AbysmalCore.UI.Controls.Toggle.Text
+  name: Text
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle_Text
+  commentId: F:AbysmalCore.UI.Controls.Toggle.Text
+  fullName: AbysmalCore.UI.Controls.Toggle.Text
+  nameWithType: Toggle.Text
+- uid: AbysmalCore.UI.Controls.Toggle._draw
+  name: _draw()
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle__draw
+  commentId: M:AbysmalCore.UI.Controls.Toggle._draw
+  fullName: AbysmalCore.UI.Controls.Toggle._draw()
+  nameWithType: Toggle._draw()
+- uid: AbysmalCore.UI.Controls.Toggle._draw*
+  name: _draw
+  href: api/AbysmalCore.UI.Controls.Toggle.html#AbysmalCore_UI_Controls_Toggle__draw_
+  commentId: Overload:AbysmalCore.UI.Controls.Toggle._draw
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Controls.Toggle._draw
+  nameWithType: Toggle._draw
+- uid: AbysmalCore.UI.DwmPInvokeHelper
+  name: DwmPInvokeHelper
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper
+  fullName: AbysmalCore.UI.DwmPInvokeHelper
+  nameWithType: DwmPInvokeHelper
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  name: DwmPInvokeHelper.MaterialType
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  nameWithType: DwmPInvokeHelper.MaterialType
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Acrylic
+  name: Acrylic
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html#AbysmalCore_UI_DwmPInvokeHelper_MaterialType_Acrylic
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Acrylic
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Acrylic
+  nameWithType: DwmPInvokeHelper.MaterialType.Acrylic
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Mica
+  name: Mica
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html#AbysmalCore_UI_DwmPInvokeHelper_MaterialType_Mica
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Mica
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Mica
+  nameWithType: DwmPInvokeHelper.MaterialType.Mica
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.None
+  name: None
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html#AbysmalCore_UI_DwmPInvokeHelper_MaterialType_None
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.None
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.None
+  nameWithType: DwmPInvokeHelper.MaterialType.None
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Tabbed
+  name: Tabbed
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html#AbysmalCore_UI_DwmPInvokeHelper_MaterialType_Tabbed
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Tabbed
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Tabbed
+  nameWithType: DwmPInvokeHelper.MaterialType.Tabbed
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  name: SetBorderColor(nint, int, int, int)
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetBorderColor_System_IntPtr_System_Int32_System_Int32_System_Int32_
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  name.vb: SetBorderColor(IntPtr, Integer, Integer, Integer)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(nint, int, int, int)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor(System.IntPtr, Integer, Integer, Integer)
+  nameWithType: DwmPInvokeHelper.SetBorderColor(nint, int, int, int)
+  nameWithType.vb: DwmPInvokeHelper.SetBorderColor(IntPtr, Integer, Integer, Integer)
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor*
+  name: SetBorderColor
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetBorderColor_
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor
+  isSpec: "True"
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetBorderColor
+  nameWithType: DwmPInvokeHelper.SetBorderColor
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(System.IntPtr,AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  name: SetMaterial(nint, MaterialType)
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetMaterial_System_IntPtr_AbysmalCore_UI_DwmPInvokeHelper_MaterialType_
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(System.IntPtr,AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  name.vb: SetMaterial(IntPtr, MaterialType)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(nint, AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial(System.IntPtr, AbysmalCore.UI.DwmPInvokeHelper.MaterialType)
+  nameWithType: DwmPInvokeHelper.SetMaterial(nint, DwmPInvokeHelper.MaterialType)
+  nameWithType.vb: DwmPInvokeHelper.SetMaterial(IntPtr, DwmPInvokeHelper.MaterialType)
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial*
+  name: SetMaterial
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetMaterial_
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetMaterial
+  isSpec: "True"
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetMaterial
+  nameWithType: DwmPInvokeHelper.SetMaterial
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  name: SetNonClientColor(nint, int, int, int)
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetNonClientColor_System_IntPtr_System_Int32_System_Int32_System_Int32_
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  name.vb: SetNonClientColor(IntPtr, Integer, Integer, Integer)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(nint, int, int, int)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor(System.IntPtr, Integer, Integer, Integer)
+  nameWithType: DwmPInvokeHelper.SetNonClientColor(nint, int, int, int)
+  nameWithType.vb: DwmPInvokeHelper.SetNonClientColor(IntPtr, Integer, Integer, Integer)
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor*
+  name: SetNonClientColor
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetNonClientColor_
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor
+  isSpec: "True"
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientColor
+  nameWithType: DwmPInvokeHelper.SetNonClientColor
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  name: SetNonClientTextColor(nint, int, int, int)
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetNonClientTextColor_System_IntPtr_System_Int32_System_Int32_System_Int32_
+  commentId: M:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(System.IntPtr,System.Int32,System.Int32,System.Int32)
+  name.vb: SetNonClientTextColor(IntPtr, Integer, Integer, Integer)
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(nint, int, int, int)
+  fullName.vb: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor(System.IntPtr, Integer, Integer, Integer)
+  nameWithType: DwmPInvokeHelper.SetNonClientTextColor(nint, int, int, int)
+  nameWithType.vb: DwmPInvokeHelper.SetNonClientTextColor(IntPtr, Integer, Integer, Integer)
+- uid: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor*
+  name: SetNonClientTextColor
+  href: api/AbysmalCore.UI.DwmPInvokeHelper.html#AbysmalCore_UI_DwmPInvokeHelper_SetNonClientTextColor_
+  commentId: Overload:AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor
+  isSpec: "True"
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.SetNonClientTextColor
+  nameWithType: DwmPInvokeHelper.SetNonClientTextColor
+- uid: AbysmalCore.UI.Styling
+  name: AbysmalCore.UI.Styling
+  href: api/AbysmalCore.UI.Styling.html
+  commentId: N:AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+- uid: AbysmalCore.UI.Styling.Brushes
+  name: AbysmalCore.UI.Styling.Brushes
+  href: api/AbysmalCore.UI.Styling.Brushes.html
+  commentId: N:AbysmalCore.UI.Styling.Brushes
+  fullName: AbysmalCore.UI.Styling.Brushes
+  nameWithType: AbysmalCore.UI.Styling.Brushes
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush
+  name: ImageBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html
+  commentId: T:AbysmalCore.UI.Styling.Brushes.ImageBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush
+  nameWithType: ImageBrush
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.#ctor(Raylib_cs.Image,System.Nullable{Raylib_cs.Color})
+  name: ImageBrush(Image, Color?)
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush__ctor_Raylib_cs_Image_System_Nullable_Raylib_cs_Color__
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ImageBrush.#ctor(Raylib_cs.Image,System.Nullable{Raylib_cs.Color})
+  name.vb: New(Image, Color?)
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.ImageBrush(Raylib_cs.Image, Raylib_cs.Color?)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ImageBrush.New(Raylib_cs.Image, Raylib_cs.Color?)
+  nameWithType: ImageBrush.ImageBrush(Image, Color?)
+  nameWithType.vb: ImageBrush.New(Image, Color?)
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.#ctor*
+  name: ImageBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ImageBrush.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.ImageBrush
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ImageBrush.New
+  nameWithType: ImageBrush.ImageBrush
+  nameWithType.vb: ImageBrush.New
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  nameWithType: ImageBrush.DrawRectangle(Vector2Int, Vector2Int)
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangle*
+  name: DrawRectangle
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_DrawRectangle_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangle
+  nameWithType: ImageBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  nameWithType: ImageBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType.vb: ImageBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangleRounded*
+  name: DrawRectangleRounded
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_DrawRectangleRounded_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangleRounded
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawRectangleRounded
+  nameWithType: ImageBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawText(Font, string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: ImageBrush.DrawText(Font, string, Vector2Int, int)
+  nameWithType.vb: ImageBrush.DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawText*
+  name: DrawText
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_DrawText_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawText
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.DrawText
+  nameWithType: ImageBrush.DrawText
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.Fallback
+  name: Fallback()
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_Fallback
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ImageBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.Fallback()
+  nameWithType: ImageBrush.Fallback()
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.Fallback*
+  name: Fallback
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_Fallback_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ImageBrush.Fallback
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.Fallback
+  nameWithType: ImageBrush.Fallback
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.Image
+  name: Image
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_Image
+  commentId: F:AbysmalCore.UI.Styling.Brushes.ImageBrush.Image
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.Image
+  nameWithType: ImageBrush.Image
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.Type
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_Type
+  commentId: P:AbysmalCore.UI.Styling.Brushes.ImageBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.Type
+  nameWithType: ImageBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush.Type*
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html#AbysmalCore_UI_Styling_Brushes_ImageBrush_Type_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ImageBrush.Type
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush.Type
+  nameWithType: ImageBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+  name: LinearGradientBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  commentId: T:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+  nameWithType: LinearGradientBrush
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.#ctor(AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection,Raylib_cs.Color,Raylib_cs.Color)
+  name: LinearGradientBrush(GradientDirection, Color, Color)
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush__ctor_AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_GradientDirection_Raylib_cs_Color_Raylib_cs_Color_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.#ctor(AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection,Raylib_cs.Color,Raylib_cs.Color)
+  name.vb: New(GradientDirection, Color, Color)
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.LinearGradientBrush(AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection, Raylib_cs.Color, Raylib_cs.Color)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.New(AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection, Raylib_cs.Color, Raylib_cs.Color)
+  nameWithType: LinearGradientBrush.LinearGradientBrush(LinearGradientBrush.GradientDirection, Color, Color)
+  nameWithType.vb: LinearGradientBrush.New(LinearGradientBrush.GradientDirection, Color, Color)
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.#ctor*
+  name: LinearGradientBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.LinearGradientBrush
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.New
+  nameWithType: LinearGradientBrush.LinearGradientBrush
+  nameWithType.vb: LinearGradientBrush.New
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Color1
+  name: Color1
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_Color1
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Color1
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Color1
+  nameWithType: LinearGradientBrush.Color1
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Color2
+  name: Color2
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_Color2
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Color2
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Color2
+  nameWithType: LinearGradientBrush.Color2
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Direction
+  name: Direction
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_Direction
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Direction
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Direction
+  nameWithType: LinearGradientBrush.Direction
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  nameWithType: LinearGradientBrush.DrawRectangle(Vector2Int, Vector2Int)
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangle*
+  name: DrawRectangle
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_DrawRectangle_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangle
+  nameWithType: LinearGradientBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  nameWithType: LinearGradientBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType.vb: LinearGradientBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangleRounded*
+  name: DrawRectangleRounded
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_DrawRectangleRounded_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangleRounded
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawRectangleRounded
+  nameWithType: LinearGradientBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawText(Font, string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: LinearGradientBrush.DrawText(Font, string, Vector2Int, int)
+  nameWithType.vb: LinearGradientBrush.DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawText*
+  name: DrawText
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_DrawText_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawText
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.DrawText
+  nameWithType: LinearGradientBrush.DrawText
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Fallback
+  name: Fallback()
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_Fallback
+  commentId: M:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Fallback()
+  nameWithType: LinearGradientBrush.Fallback()
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Fallback*
+  name: Fallback
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_Fallback_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Fallback
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Fallback
+  nameWithType: LinearGradientBrush.Fallback
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  name: LinearGradientBrush.GradientDirection
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html
+  commentId: T:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  nameWithType: LinearGradientBrush.GradientDirection
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalLeft
+  name: DiagonalLeft
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_GradientDirection_DiagonalLeft
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalLeft
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalLeft
+  nameWithType: LinearGradientBrush.GradientDirection.DiagonalLeft
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalRight
+  name: DiagonalRight
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_GradientDirection_DiagonalRight
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalRight
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalRight
+  nameWithType: LinearGradientBrush.GradientDirection.DiagonalRight
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Horizontal
+  name: Horizontal
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_GradientDirection_Horizontal
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Horizontal
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Horizontal
+  nameWithType: LinearGradientBrush.GradientDirection.Horizontal
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Vertical
+  name: Vertical
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_GradientDirection_Vertical
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Vertical
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Vertical
+  nameWithType: LinearGradientBrush.GradientDirection.Vertical
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Type
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_Type
+  commentId: P:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Type
+  nameWithType: LinearGradientBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Type*
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html#AbysmalCore_UI_Styling_Brushes_LinearGradientBrush_Type_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Type
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.Type
+  nameWithType: LinearGradientBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+  name: NineSliceBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html
+  commentId: T:AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+  nameWithType: NineSliceBrush
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.#ctor(Raylib_cs.Image,Raylib_cs.NPatchInfo)
+  name: NineSliceBrush(Image, NPatchInfo)
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush__ctor_Raylib_cs_Image_Raylib_cs_NPatchInfo_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.#ctor(Raylib_cs.Image,Raylib_cs.NPatchInfo)
+  name.vb: New(Image, NPatchInfo)
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.NineSliceBrush(Raylib_cs.Image, Raylib_cs.NPatchInfo)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.New(Raylib_cs.Image, Raylib_cs.NPatchInfo)
+  nameWithType: NineSliceBrush.NineSliceBrush(Image, NPatchInfo)
+  nameWithType.vb: NineSliceBrush.New(Image, NPatchInfo)
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.#ctor*
+  name: NineSliceBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.NineSliceBrush
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.New
+  nameWithType: NineSliceBrush.NineSliceBrush
+  nameWithType.vb: NineSliceBrush.New
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  nameWithType: NineSliceBrush.DrawRectangle(Vector2Int, Vector2Int)
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangle*
+  name: DrawRectangle
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_DrawRectangle_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangle
+  nameWithType: NineSliceBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  nameWithType: NineSliceBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType.vb: NineSliceBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangleRounded*
+  name: DrawRectangleRounded
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_DrawRectangleRounded_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangleRounded
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawRectangleRounded
+  nameWithType: NineSliceBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawText(Font, string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: NineSliceBrush.DrawText(Font, string, Vector2Int, int)
+  nameWithType.vb: NineSliceBrush.DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawText*
+  name: DrawText
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_DrawText_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawText
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.DrawText
+  nameWithType: NineSliceBrush.DrawText
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Fallback
+  name: Fallback()
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_Fallback
+  commentId: M:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Fallback()
+  nameWithType: NineSliceBrush.Fallback()
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Fallback*
+  name: Fallback
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_Fallback_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Fallback
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Fallback
+  nameWithType: NineSliceBrush.Fallback
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.NineSliceInfo
+  name: NineSliceInfo
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_NineSliceInfo
+  commentId: F:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.NineSliceInfo
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.NineSliceInfo
+  nameWithType: NineSliceBrush.NineSliceInfo
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Texture
+  name: Texture
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_Texture
+  commentId: F:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Texture
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Texture
+  nameWithType: NineSliceBrush.Texture
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Type
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_Type
+  commentId: P:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Type
+  nameWithType: NineSliceBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Type*
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html#AbysmalCore_UI_Styling_Brushes_NineSliceBrush_Type_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Type
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.Type
+  nameWithType: NineSliceBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+  name: RadialGradientBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html
+  commentId: T:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+  nameWithType: RadialGradientBrush
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.#ctor(System.Single,Raylib_cs.Color,Raylib_cs.Color)
+  name: RadialGradientBrush(float, Color, Color)
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush__ctor_System_Single_Raylib_cs_Color_Raylib_cs_Color_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.#ctor(System.Single,Raylib_cs.Color,Raylib_cs.Color)
+  name.vb: New(Single, Color, Color)
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.RadialGradientBrush(float, Raylib_cs.Color, Raylib_cs.Color)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.New(Single, Raylib_cs.Color, Raylib_cs.Color)
+  nameWithType: RadialGradientBrush.RadialGradientBrush(float, Color, Color)
+  nameWithType.vb: RadialGradientBrush.New(Single, Color, Color)
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.#ctor*
+  name: RadialGradientBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.RadialGradientBrush
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.New
+  nameWithType: RadialGradientBrush.RadialGradientBrush
+  nameWithType.vb: RadialGradientBrush.New
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Blending
+  name: Blending
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_Blending
+  commentId: F:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Blending
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Blending
+  nameWithType: RadialGradientBrush.Blending
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  nameWithType: RadialGradientBrush.DrawRectangle(Vector2Int, Vector2Int)
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangle*
+  name: DrawRectangle
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_DrawRectangle_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangle
+  nameWithType: RadialGradientBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  nameWithType: RadialGradientBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType.vb: RadialGradientBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangleRounded*
+  name: DrawRectangleRounded
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_DrawRectangleRounded_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangleRounded
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawRectangleRounded
+  nameWithType: RadialGradientBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawText(Font, string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: RadialGradientBrush.DrawText(Font, string, Vector2Int, int)
+  nameWithType.vb: RadialGradientBrush.DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawText*
+  name: DrawText
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_DrawText_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawText
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.DrawText
+  nameWithType: RadialGradientBrush.DrawText
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Fallback
+  name: Fallback()
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_Fallback
+  commentId: M:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Fallback()
+  nameWithType: RadialGradientBrush.Fallback()
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Fallback*
+  name: Fallback
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_Fallback_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Fallback
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Fallback
+  nameWithType: RadialGradientBrush.Fallback
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Inner
+  name: Inner
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_Inner
+  commentId: F:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Inner
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Inner
+  nameWithType: RadialGradientBrush.Inner
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Outer
+  name: Outer
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_Outer
+  commentId: F:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Outer
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Outer
+  nameWithType: RadialGradientBrush.Outer
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Type
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_Type
+  commentId: P:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Type
+  nameWithType: RadialGradientBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Type*
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html#AbysmalCore_UI_Styling_Brushes_RadialGradientBrush_Type_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Type
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.Type
+  nameWithType: RadialGradientBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush
+  name: ShaderBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html
+  commentId: T:AbysmalCore.UI.Styling.Brushes.ShaderBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush
+  nameWithType: ShaderBrush
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.#ctor(System.String,System.String,Raylib_cs.Color)
+  name: ShaderBrush(string, string, Color)
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush__ctor_System_String_System_String_Raylib_cs_Color_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ShaderBrush.#ctor(System.String,System.String,Raylib_cs.Color)
+  name.vb: New(String, String, Color)
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.ShaderBrush(string, string, Raylib_cs.Color)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ShaderBrush.New(String, String, Raylib_cs.Color)
+  nameWithType: ShaderBrush.ShaderBrush(string, string, Color)
+  nameWithType.vb: ShaderBrush.New(String, String, Color)
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.#ctor*
+  name: ShaderBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.ShaderBrush
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ShaderBrush.New
+  nameWithType: ShaderBrush.ShaderBrush
+  nameWithType.vb: ShaderBrush.New
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  nameWithType: ShaderBrush.DrawRectangle(Vector2Int, Vector2Int)
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangle*
+  name: DrawRectangle
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_DrawRectangle_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangle
+  nameWithType: ShaderBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  nameWithType: ShaderBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType.vb: ShaderBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangleRounded*
+  name: DrawRectangleRounded
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_DrawRectangleRounded_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangleRounded
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawRectangleRounded
+  nameWithType: ShaderBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawText(Font, string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: ShaderBrush.DrawText(Font, string, Vector2Int, int)
+  nameWithType.vb: ShaderBrush.DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawText*
+  name: DrawText
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_DrawText_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawText
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.DrawText
+  nameWithType: ShaderBrush.DrawText
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Fallback
+  name: Fallback()
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_Fallback
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ShaderBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Fallback()
+  nameWithType: ShaderBrush.Fallback()
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Fallback*
+  name: Fallback
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_Fallback_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.Fallback
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Fallback
+  nameWithType: ShaderBrush.Fallback
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.GetShaderUniform(System.String)
+  name: GetShaderUniform(string)
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_GetShaderUniform_System_String_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ShaderBrush.GetShaderUniform(System.String)
+  name.vb: GetShaderUniform(String)
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.GetShaderUniform(string)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ShaderBrush.GetShaderUniform(String)
+  nameWithType: ShaderBrush.GetShaderUniform(string)
+  nameWithType.vb: ShaderBrush.GetShaderUniform(String)
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.GetShaderUniform*
+  name: GetShaderUniform
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_GetShaderUniform_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.GetShaderUniform
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.GetShaderUniform
+  nameWithType: ShaderBrush.GetShaderUniform
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.SetShaderValue*
+  name: SetShaderValue
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_SetShaderValue_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.SetShaderValue
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.SetShaderValue
+  nameWithType: ShaderBrush.SetShaderValue
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.SetShaderValue``1(System.Int32,``0,Raylib_cs.ShaderUniformDataType)
+  name: SetShaderValue<T>(int, T, ShaderUniformDataType)
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_SetShaderValue__1_System_Int32___0_Raylib_cs_ShaderUniformDataType_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.ShaderBrush.SetShaderValue``1(System.Int32,``0,Raylib_cs.ShaderUniformDataType)
+  name.vb: SetShaderValue(Of T)(Integer, T, ShaderUniformDataType)
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.SetShaderValue<T>(int, T, Raylib_cs.ShaderUniformDataType)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.ShaderBrush.SetShaderValue(Of T)(Integer, T, Raylib_cs.ShaderUniformDataType)
+  nameWithType: ShaderBrush.SetShaderValue<T>(int, T, ShaderUniformDataType)
+  nameWithType.vb: ShaderBrush.SetShaderValue(Of T)(Integer, T, ShaderUniformDataType)
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Shader
+  name: Shader
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_Shader
+  commentId: F:AbysmalCore.UI.Styling.Brushes.ShaderBrush.Shader
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Shader
+  nameWithType: ShaderBrush.Shader
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Type
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_Type
+  commentId: P:AbysmalCore.UI.Styling.Brushes.ShaderBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Type
+  nameWithType: ShaderBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Type*
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html#AbysmalCore_UI_Styling_Brushes_ShaderBrush_Type_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.ShaderBrush.Type
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush.Type
+  nameWithType: ShaderBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  name: SolidBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html
+  commentId: T:AbysmalCore.UI.Styling.Brushes.SolidBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  nameWithType: SolidBrush
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor(Raylib_cs.Color)
+  name: SolidBrush(Color)
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush__ctor_Raylib_cs_Color_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor(Raylib_cs.Color)
+  name.vb: New(Color)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.SolidBrush(Raylib_cs.Color)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.New(Raylib_cs.Color)
+  nameWithType: SolidBrush.SolidBrush(Color)
+  nameWithType.vb: SolidBrush.New(Color)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor*
+  name: SolidBrush
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.SolidBrush
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.New
+  nameWithType: SolidBrush.SolidBrush
+  nameWithType.vb: SolidBrush.New
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Color
+  name: Color
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_Color
+  commentId: F:AbysmalCore.UI.Styling.Brushes.SolidBrush.Color
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Color
+  nameWithType: SolidBrush.Color
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  nameWithType: SolidBrush.DrawRectangle(Vector2Int, Vector2Int)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle*
+  name: DrawRectangle
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawRectangle_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle
+  nameWithType: SolidBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  nameWithType: SolidBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType.vb: SolidBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded*
+  name: DrawRectangleRounded
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawRectangleRounded_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded
+  nameWithType: SolidBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawText(Font, string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: SolidBrush.DrawText(Font, string, Vector2Int, int)
+  nameWithType.vb: SolidBrush.DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText*
+  name: DrawText
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawText_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText
+  nameWithType: SolidBrush.DrawText
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  name: Fallback()
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_Fallback
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback()
+  nameWithType: SolidBrush.Fallback()
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback*
+  name: Fallback
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_Fallback_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  nameWithType: SolidBrush.Fallback
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_Type
+  commentId: P:AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  nameWithType: SolidBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type*
+  name: Type
+  href: api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_Type_
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  nameWithType: SolidBrush.Type
+- uid: AbysmalCore.UI.Styling.IBrush
+  name: IBrush
+  href: api/AbysmalCore.UI.Styling.IBrush.html
+  commentId: T:AbysmalCore.UI.Styling.IBrush
+  fullName: AbysmalCore.UI.Styling.IBrush
+  nameWithType: IBrush
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType
+  name: IBrush.BrushType
+  href: api/AbysmalCore.UI.Styling.IBrush.BrushType.html
+  commentId: T:AbysmalCore.UI.Styling.IBrush.BrushType
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType
+  nameWithType: IBrush.BrushType
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.ImageBrush
+  name: ImageBrush
+  href: api/AbysmalCore.UI.Styling.IBrush.BrushType.html#AbysmalCore_UI_Styling_IBrush_BrushType_ImageBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.ImageBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.ImageBrush
+  nameWithType: IBrush.BrushType.ImageBrush
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.LinearGradientBrush
+  name: LinearGradientBrush
+  href: api/AbysmalCore.UI.Styling.IBrush.BrushType.html#AbysmalCore_UI_Styling_IBrush_BrushType_LinearGradientBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.LinearGradientBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.LinearGradientBrush
+  nameWithType: IBrush.BrushType.LinearGradientBrush
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.NineSliceBrush
+  name: NineSliceBrush
+  href: api/AbysmalCore.UI.Styling.IBrush.BrushType.html#AbysmalCore_UI_Styling_IBrush_BrushType_NineSliceBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.NineSliceBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.NineSliceBrush
+  nameWithType: IBrush.BrushType.NineSliceBrush
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.RadialGradientBrush
+  name: RadialGradientBrush
+  href: api/AbysmalCore.UI.Styling.IBrush.BrushType.html#AbysmalCore_UI_Styling_IBrush_BrushType_RadialGradientBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.RadialGradientBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.RadialGradientBrush
+  nameWithType: IBrush.BrushType.RadialGradientBrush
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.ShaderBrush
+  name: ShaderBrush
+  href: api/AbysmalCore.UI.Styling.IBrush.BrushType.html#AbysmalCore_UI_Styling_IBrush_BrushType_ShaderBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.ShaderBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.ShaderBrush
+  nameWithType: IBrush.BrushType.ShaderBrush
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.SolidBrush
+  name: SolidBrush
+  href: api/AbysmalCore.UI.Styling.IBrush.BrushType.html#AbysmalCore_UI_Styling_IBrush_BrushType_SolidBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.SolidBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.SolidBrush
+  nameWithType: IBrush.BrushType.SolidBrush
+- uid: AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  commentId: M:AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  nameWithType: IBrush.DrawRectangle(Vector2Int, Vector2Int)
+- uid: AbysmalCore.UI.Styling.IBrush.DrawRectangle*
+  name: DrawRectangle
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangle_
+  commentId: Overload:AbysmalCore.UI.Styling.IBrush.DrawRectangle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawRectangle
+  nameWithType: IBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  nameWithType: IBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType.vb: IBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded*
+  name: DrawRectangleRounded
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangleRounded_
+  commentId: Overload:AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded
+  nameWithType: IBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name: DrawText(Font, string, Vector2Int, int)
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  commentId: M:AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  fullName.vb: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  nameWithType: IBrush.DrawText(Font, string, Vector2Int, int)
+  nameWithType.vb: IBrush.DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.IBrush.DrawText*
+  name: DrawText
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawText_
+  commentId: Overload:AbysmalCore.UI.Styling.IBrush.DrawText
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawText
+  nameWithType: IBrush.DrawText
+- uid: AbysmalCore.UI.Styling.IBrush.Fallback
+  name: Fallback()
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Fallback
+  commentId: M:AbysmalCore.UI.Styling.IBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.IBrush.Fallback()
+  nameWithType: IBrush.Fallback()
+- uid: AbysmalCore.UI.Styling.IBrush.Fallback*
+  name: Fallback
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Fallback_
+  commentId: Overload:AbysmalCore.UI.Styling.IBrush.Fallback
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.IBrush.Fallback
+  nameWithType: IBrush.Fallback
+- uid: AbysmalCore.UI.Styling.IBrush.Type
+  name: Type
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Type
+  commentId: P:AbysmalCore.UI.Styling.IBrush.Type
+  fullName: AbysmalCore.UI.Styling.IBrush.Type
+  nameWithType: IBrush.Type
+- uid: AbysmalCore.UI.Styling.IBrush.Type*
+  name: Type
+  href: api/AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Type_
+  commentId: Overload:AbysmalCore.UI.Styling.IBrush.Type
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.IBrush.Type
+  nameWithType: IBrush.Type
+- uid: AbysmalCore.UI.Styling.Style
+  name: Style
+  href: api/AbysmalCore.UI.Styling.Style.html
+  commentId: T:AbysmalCore.UI.Styling.Style
+  fullName: AbysmalCore.UI.Styling.Style
+  nameWithType: Style
+- uid: AbysmalCore.UI.Styling.Style.BorderColor
+  name: BorderColor
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_BorderColor
+  commentId: F:AbysmalCore.UI.Styling.Style.BorderColor
+  fullName: AbysmalCore.UI.Styling.Style.BorderColor
+  nameWithType: Style.BorderColor
+- uid: AbysmalCore.UI.Styling.Style.BorderRadius
+  name: BorderRadius
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_BorderRadius
+  commentId: F:AbysmalCore.UI.Styling.Style.BorderRadius
+  fullName: AbysmalCore.UI.Styling.Style.BorderRadius
+  nameWithType: Style.BorderRadius
+- uid: AbysmalCore.UI.Styling.Style.BorderWeight
+  name: BorderWeight
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_BorderWeight
+  commentId: F:AbysmalCore.UI.Styling.Style.BorderWeight
+  fullName: AbysmalCore.UI.Styling.Style.BorderWeight
+  nameWithType: Style.BorderWeight
+- uid: AbysmalCore.UI.Styling.Style.FillColor
+  name: FillColor
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_FillColor
+  commentId: F:AbysmalCore.UI.Styling.Style.FillColor
+  fullName: AbysmalCore.UI.Styling.Style.FillColor
+  nameWithType: Style.FillColor
+- uid: AbysmalCore.UI.Styling.Style.Font
+  name: Font
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_Font
+  commentId: F:AbysmalCore.UI.Styling.Style.Font
+  fullName: AbysmalCore.UI.Styling.Style.Font
+  nameWithType: Style.Font
+- uid: AbysmalCore.UI.Styling.Style.TextColor
+  name: TextColor
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_TextColor
+  commentId: F:AbysmalCore.UI.Styling.Style.TextColor
+  fullName: AbysmalCore.UI.Styling.Style.TextColor
+  nameWithType: Style.TextColor
+- uid: AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[],AbysmalCore.UI.UIElement)
+  name: ValidateBrushes(BrushType[], UIElement)
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_ValidateBrushes_AbysmalCore_UI_Styling_IBrush_BrushType___AbysmalCore_UI_UIElement_
+  commentId: M:AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[],AbysmalCore.UI.UIElement)
+  name.vb: ValidateBrushes(BrushType(), UIElement)
+  fullName: AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType[], AbysmalCore.UI.UIElement)
+  fullName.vb: AbysmalCore.UI.Styling.Style.ValidateBrushes(AbysmalCore.UI.Styling.IBrush.BrushType(), AbysmalCore.UI.UIElement)
+  nameWithType: Style.ValidateBrushes(IBrush.BrushType[], UIElement)
+  nameWithType.vb: Style.ValidateBrushes(IBrush.BrushType(), UIElement)
+- uid: AbysmalCore.UI.Styling.Style.ValidateBrushes*
+  name: ValidateBrushes
+  href: api/AbysmalCore.UI.Styling.Style.html#AbysmalCore_UI_Styling_Style_ValidateBrushes_
+  commentId: Overload:AbysmalCore.UI.Styling.Style.ValidateBrushes
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.Style.ValidateBrushes
+  nameWithType: Style.ValidateBrushes
+- uid: AbysmalCore.UI.Styling.StyleMap
+  name: StyleMap
+  href: api/AbysmalCore.UI.Styling.StyleMap.html
+  commentId: T:AbysmalCore.UI.Styling.StyleMap
+  fullName: AbysmalCore.UI.Styling.StyleMap
+  nameWithType: StyleMap
+- uid: AbysmalCore.UI.Styling.StyleMap.#ctor(System.Boolean)
+  name: StyleMap(bool)
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap__ctor_System_Boolean_
+  commentId: M:AbysmalCore.UI.Styling.StyleMap.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: AbysmalCore.UI.Styling.StyleMap.StyleMap(bool)
+  fullName.vb: AbysmalCore.UI.Styling.StyleMap.New(Boolean)
+  nameWithType: StyleMap.StyleMap(bool)
+  nameWithType.vb: StyleMap.New(Boolean)
+- uid: AbysmalCore.UI.Styling.StyleMap.#ctor*
+  name: StyleMap
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.StyleMap.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.StyleMap.StyleMap
+  fullName.vb: AbysmalCore.UI.Styling.StyleMap.New
+  nameWithType: StyleMap.StyleMap
+  nameWithType.vb: StyleMap.New
+- uid: AbysmalCore.UI.Styling.StyleMap.Activated
+  name: Activated
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_Activated
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Activated
+  fullName: AbysmalCore.UI.Styling.StyleMap.Activated
+  nameWithType: StyleMap.Activated
+- uid: AbysmalCore.UI.Styling.StyleMap.Clicked
+  name: Clicked
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_Clicked
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Clicked
+  fullName: AbysmalCore.UI.Styling.StyleMap.Clicked
+  nameWithType: StyleMap.Clicked
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyle
+  name: ControlStyle
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_ControlStyle
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.ControlStyle
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyle
+  nameWithType: StyleMap.ControlStyle
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  name: StyleMap.ControlStyleType
+  href: api/AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  commentId: T:AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  nameWithType: StyleMap.ControlStyleType
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded
+  name: Rounded
+  href: api/AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html#AbysmalCore_UI_Styling_StyleMap_ControlStyleType_Rounded
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded
+  nameWithType: StyleMap.ControlStyleType.Rounded
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Sharp
+  name: Sharp
+  href: api/AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html#AbysmalCore_UI_Styling_StyleMap_ControlStyleType_Sharp
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Sharp
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Sharp
+  nameWithType: StyleMap.ControlStyleType.Sharp
+- uid: AbysmalCore.UI.Styling.StyleMap.Disabled
+  name: Disabled
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_Disabled
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Disabled
+  fullName: AbysmalCore.UI.Styling.StyleMap.Disabled
+  nameWithType: StyleMap.Disabled
+- uid: AbysmalCore.UI.Styling.StyleMap.Hovered
+  name: Hovered
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_Hovered
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Hovered
+  fullName: AbysmalCore.UI.Styling.StyleMap.Hovered
+  nameWithType: StyleMap.Hovered
+- uid: AbysmalCore.UI.Styling.StyleMap.HoveredActivated
+  name: HoveredActivated
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_HoveredActivated
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.HoveredActivated
+  fullName: AbysmalCore.UI.Styling.StyleMap.HoveredActivated
+  nameWithType: StyleMap.HoveredActivated
+- uid: AbysmalCore.UI.Styling.StyleMap.HoveredDisabled
+  name: HoveredDisabled
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_HoveredDisabled
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.HoveredDisabled
+  fullName: AbysmalCore.UI.Styling.StyleMap.HoveredDisabled
+  nameWithType: StyleMap.HoveredDisabled
+- uid: AbysmalCore.UI.Styling.StyleMap.Normal
+  name: Normal
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_Normal
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Normal
+  fullName: AbysmalCore.UI.Styling.StyleMap.Normal
+  nameWithType: StyleMap.Normal
+- uid: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]},AbysmalCore.UI.UIElement)
+  name: ValidateBrushes(Dictionary<ControlStyleType, BrushType[]>, UIElement)
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_ValidateBrushes_System_Collections_Generic_Dictionary_AbysmalCore_UI_Styling_StyleMap_ControlStyleType_AbysmalCore_UI_Styling_IBrush_BrushType____AbysmalCore_UI_UIElement_
+  commentId: M:AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]},AbysmalCore.UI.UIElement)
+  name.vb: ValidateBrushes(Dictionary(Of ControlStyleType, BrushType()), UIElement)
+  fullName: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary<AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType[]>, AbysmalCore.UI.UIElement)
+  fullName.vb: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary(Of AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType()), AbysmalCore.UI.UIElement)
+  nameWithType: StyleMap.ValidateBrushes(Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]>, UIElement)
+  nameWithType.vb: StyleMap.ValidateBrushes(Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType()), UIElement)
+- uid: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes*
+  name: ValidateBrushes
+  href: api/AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_ValidateBrushes_
+  commentId: Overload:AbysmalCore.UI.Styling.StyleMap.ValidateBrushes
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes
+  nameWithType: StyleMap.ValidateBrushes
+- uid: AbysmalCore.UI.Styling.Theme
+  name: Theme
+  href: api/AbysmalCore.UI.Styling.Theme.html
+  commentId: T:AbysmalCore.UI.Styling.Theme
+  fullName: AbysmalCore.UI.Styling.Theme
+  nameWithType: Theme
+- uid: AbysmalCore.UI.Styling.Theme.#ctor
+  name: Theme()
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme__ctor
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor
+  name.vb: New()
+  fullName: AbysmalCore.UI.Styling.Theme.Theme()
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New()
+  nameWithType: Theme.Theme()
+  nameWithType.vb: Theme.New()
+- uid: AbysmalCore.UI.Styling.Theme.#ctor(AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  name: Theme(IBrush, IBrush, IBrush, IBrush, ControlStyleType)
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme__ctor_AbysmalCore_UI_Styling_IBrush_AbysmalCore_UI_Styling_IBrush_AbysmalCore_UI_Styling_IBrush_AbysmalCore_UI_Styling_IBrush_AbysmalCore_UI_Styling_StyleMap_ControlStyleType_
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor(AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.IBrush,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  name.vb: New(IBrush, IBrush, IBrush, IBrush, ControlStyleType)
+  fullName: AbysmalCore.UI.Styling.Theme.Theme(AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New(AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.IBrush, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  nameWithType: Theme.Theme(IBrush, IBrush, IBrush, IBrush, StyleMap.ControlStyleType)
+  nameWithType.vb: Theme.New(IBrush, IBrush, IBrush, IBrush, StyleMap.ControlStyleType)
+- uid: AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color)
+  name: Theme(Color, Color)
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme__ctor_Raylib_cs_Color_Raylib_cs_Color_
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color)
+  name.vb: New(Color, Color)
+  fullName: AbysmalCore.UI.Styling.Theme.Theme(Raylib_cs.Color, Raylib_cs.Color)
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New(Raylib_cs.Color, Raylib_cs.Color)
+  nameWithType: Theme.Theme(Color, Color)
+  nameWithType.vb: Theme.New(Color, Color)
+- uid: AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  name: Theme(Color, Color, Color, Color, ControlStyleType)
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme__ctor_Raylib_cs_Color_Raylib_cs_Color_Raylib_cs_Color_Raylib_cs_Color_AbysmalCore_UI_Styling_StyleMap_ControlStyleType_
+  commentId: M:AbysmalCore.UI.Styling.Theme.#ctor(Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,Raylib_cs.Color,AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  name.vb: New(Color, Color, Color, Color, ControlStyleType)
+  fullName: AbysmalCore.UI.Styling.Theme.Theme(Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New(Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, Raylib_cs.Color, AbysmalCore.UI.Styling.StyleMap.ControlStyleType)
+  nameWithType: Theme.Theme(Color, Color, Color, Color, StyleMap.ControlStyleType)
+  nameWithType.vb: Theme.New(Color, Color, Color, Color, StyleMap.ControlStyleType)
+- uid: AbysmalCore.UI.Styling.Theme.#ctor*
+  name: Theme
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme__ctor_
+  commentId: Overload:AbysmalCore.UI.Styling.Theme.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Styling.Theme.Theme
+  fullName.vb: AbysmalCore.UI.Styling.Theme.New
+  nameWithType: Theme.Theme
+  nameWithType.vb: Theme.New
+- uid: AbysmalCore.UI.Styling.Theme.Accent
+  name: Accent
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme_Accent
+  commentId: F:AbysmalCore.UI.Styling.Theme.Accent
+  fullName: AbysmalCore.UI.Styling.Theme.Accent
+  nameWithType: Theme.Accent
+- uid: AbysmalCore.UI.Styling.Theme.Core
+  name: Core
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme_Core
+  commentId: F:AbysmalCore.UI.Styling.Theme.Core
+  fullName: AbysmalCore.UI.Styling.Theme.Core
+  nameWithType: Theme.Core
+- uid: AbysmalCore.UI.Styling.Theme.DefaultStyleMap
+  name: DefaultStyleMap
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme_DefaultStyleMap
+  commentId: F:AbysmalCore.UI.Styling.Theme.DefaultStyleMap
+  fullName: AbysmalCore.UI.Styling.Theme.DefaultStyleMap
+  nameWithType: Theme.DefaultStyleMap
+- uid: AbysmalCore.UI.Styling.Theme.Layer
+  name: Layer
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme_Layer
+  commentId: F:AbysmalCore.UI.Styling.Theme.Layer
+  fullName: AbysmalCore.UI.Styling.Theme.Layer
+  nameWithType: Theme.Layer
+- uid: AbysmalCore.UI.Styling.Theme.Text
+  name: Text
+  href: api/AbysmalCore.UI.Styling.Theme.html#AbysmalCore_UI_Styling_Theme_Text
+  commentId: F:AbysmalCore.UI.Styling.Theme.Text
+  fullName: AbysmalCore.UI.Styling.Theme.Text
+  nameWithType: Theme.Text
+- uid: AbysmalCore.UI.UIElement
+  name: UIElement
+  href: api/AbysmalCore.UI.UIElement.html
+  commentId: T:AbysmalCore.UI.UIElement
+  fullName: AbysmalCore.UI.UIElement
+  nameWithType: UIElement
+- uid: AbysmalCore.UI.UIElement.AddChild(AbysmalCore.UI.UIElement)
+  name: AddChild(UIElement)
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_AddChild_AbysmalCore_UI_UIElement_
+  commentId: M:AbysmalCore.UI.UIElement.AddChild(AbysmalCore.UI.UIElement)
+  fullName: AbysmalCore.UI.UIElement.AddChild(AbysmalCore.UI.UIElement)
+  nameWithType: UIElement.AddChild(UIElement)
+- uid: AbysmalCore.UI.UIElement.AddChild*
+  name: AddChild
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_AddChild_
+  commentId: Overload:AbysmalCore.UI.UIElement.AddChild
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.AddChild
+  nameWithType: UIElement.AddChild
+- uid: AbysmalCore.UI.UIElement.Children
+  name: Children
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Children
+  commentId: P:AbysmalCore.UI.UIElement.Children
+  fullName: AbysmalCore.UI.UIElement.Children
+  nameWithType: UIElement.Children
+- uid: AbysmalCore.UI.UIElement.Children*
+  name: Children
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Children_
+  commentId: Overload:AbysmalCore.UI.UIElement.Children
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Children
+  nameWithType: UIElement.Children
+- uid: AbysmalCore.UI.UIElement.Clicked
+  name: Clicked
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Clicked
+  commentId: P:AbysmalCore.UI.UIElement.Clicked
+  fullName: AbysmalCore.UI.UIElement.Clicked
+  nameWithType: UIElement.Clicked
+- uid: AbysmalCore.UI.UIElement.Clicked*
+  name: Clicked
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Clicked_
+  commentId: Overload:AbysmalCore.UI.UIElement.Clicked
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Clicked
+  nameWithType: UIElement.Clicked
+- uid: AbysmalCore.UI.UIElement.CurrentStyle
+  name: CurrentStyle
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_CurrentStyle
+  commentId: P:AbysmalCore.UI.UIElement.CurrentStyle
+  fullName: AbysmalCore.UI.UIElement.CurrentStyle
+  nameWithType: UIElement.CurrentStyle
+- uid: AbysmalCore.UI.UIElement.CurrentStyle*
+  name: CurrentStyle
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_CurrentStyle_
+  commentId: Overload:AbysmalCore.UI.UIElement.CurrentStyle
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.CurrentStyle
+  nameWithType: UIElement.CurrentStyle
+- uid: AbysmalCore.UI.UIElement.Disable
+  name: Disable()
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Disable
+  commentId: M:AbysmalCore.UI.UIElement.Disable
+  fullName: AbysmalCore.UI.UIElement.Disable()
+  nameWithType: UIElement.Disable()
+- uid: AbysmalCore.UI.UIElement.Disable*
+  name: Disable
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Disable_
+  commentId: Overload:AbysmalCore.UI.UIElement.Disable
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Disable
+  nameWithType: UIElement.Disable
+- uid: AbysmalCore.UI.UIElement.Draw
+  name: Draw()
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Draw
+  commentId: M:AbysmalCore.UI.UIElement.Draw
+  fullName: AbysmalCore.UI.UIElement.Draw()
+  nameWithType: UIElement.Draw()
+- uid: AbysmalCore.UI.UIElement.Draw*
+  name: Draw
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Draw_
+  commentId: Overload:AbysmalCore.UI.UIElement.Draw
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Draw
+  nameWithType: UIElement.Draw
+- uid: AbysmalCore.UI.UIElement.Enable
+  name: Enable()
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Enable
+  commentId: M:AbysmalCore.UI.UIElement.Enable
+  fullName: AbysmalCore.UI.UIElement.Enable()
+  nameWithType: UIElement.Enable()
+- uid: AbysmalCore.UI.UIElement.Enable*
+  name: Enable
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Enable_
+  commentId: Overload:AbysmalCore.UI.UIElement.Enable
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Enable
+  nameWithType: UIElement.Enable
+- uid: AbysmalCore.UI.UIElement.Enabled
+  name: Enabled
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Enabled
+  commentId: P:AbysmalCore.UI.UIElement.Enabled
+  fullName: AbysmalCore.UI.UIElement.Enabled
+  nameWithType: UIElement.Enabled
+- uid: AbysmalCore.UI.UIElement.Enabled*
+  name: Enabled
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Enabled_
+  commentId: Overload:AbysmalCore.UI.UIElement.Enabled
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Enabled
+  nameWithType: UIElement.Enabled
+- uid: AbysmalCore.UI.UIElement.GetChild(System.String)
+  name: GetChild(string)
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChild_System_String_
+  commentId: M:AbysmalCore.UI.UIElement.GetChild(System.String)
+  name.vb: GetChild(String)
+  fullName: AbysmalCore.UI.UIElement.GetChild(string)
+  fullName.vb: AbysmalCore.UI.UIElement.GetChild(String)
+  nameWithType: UIElement.GetChild(string)
+  nameWithType.vb: UIElement.GetChild(String)
+- uid: AbysmalCore.UI.UIElement.GetChild*
+  name: GetChild
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChild_
+  commentId: Overload:AbysmalCore.UI.UIElement.GetChild
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.GetChild
+  nameWithType: UIElement.GetChild
+- uid: AbysmalCore.UI.UIElement.GetChildren
+  name: GetChildren()
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChildren
+  commentId: M:AbysmalCore.UI.UIElement.GetChildren
+  fullName: AbysmalCore.UI.UIElement.GetChildren()
+  nameWithType: UIElement.GetChildren()
+- uid: AbysmalCore.UI.UIElement.GetChildren*
+  name: GetChildren
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChildren_
+  commentId: Overload:AbysmalCore.UI.UIElement.GetChildren
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.GetChildren
+  nameWithType: UIElement.GetChildren
+- uid: AbysmalCore.UI.UIElement.Hide
+  name: Hide()
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Hide
+  commentId: M:AbysmalCore.UI.UIElement.Hide
+  fullName: AbysmalCore.UI.UIElement.Hide()
+  nameWithType: UIElement.Hide()
+- uid: AbysmalCore.UI.UIElement.Hide*
+  name: Hide
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Hide_
+  commentId: Overload:AbysmalCore.UI.UIElement.Hide
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Hide
+  nameWithType: UIElement.Hide
+- uid: AbysmalCore.UI.UIElement.Hovered
+  name: Hovered
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Hovered
+  commentId: P:AbysmalCore.UI.UIElement.Hovered
+  fullName: AbysmalCore.UI.UIElement.Hovered
+  nameWithType: UIElement.Hovered
+- uid: AbysmalCore.UI.UIElement.Hovered*
+  name: Hovered
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Hovered_
+  commentId: Overload:AbysmalCore.UI.UIElement.Hovered
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Hovered
+  nameWithType: UIElement.Hovered
+- uid: AbysmalCore.UI.UIElement.Name
+  name: Name
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Name
+  commentId: F:AbysmalCore.UI.UIElement.Name
+  fullName: AbysmalCore.UI.UIElement.Name
+  nameWithType: UIElement.Name
+- uid: AbysmalCore.UI.UIElement.OnClicked
+  name: OnClicked
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_OnClicked
+  commentId: E:AbysmalCore.UI.UIElement.OnClicked
+  fullName: AbysmalCore.UI.UIElement.OnClicked
+  nameWithType: UIElement.OnClicked
+- uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+  name: UIElement.OnClickedEventArgs
+  href: api/AbysmalCore.UI.UIElement.OnClickedEventArgs.html
+  commentId: T:AbysmalCore.UI.UIElement.OnClickedEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnClickedEventArgs
+  nameWithType: UIElement.OnClickedEventArgs
+- uid: AbysmalCore.UI.UIElement.OnHovered
+  name: OnHovered
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_OnHovered
+  commentId: E:AbysmalCore.UI.UIElement.OnHovered
+  fullName: AbysmalCore.UI.UIElement.OnHovered
+  nameWithType: UIElement.OnHovered
+- uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  name: UIElement.OnHoveredEventArgs
+  href: api/AbysmalCore.UI.UIElement.OnHoveredEventArgs.html
+  commentId: T:AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  nameWithType: UIElement.OnHoveredEventArgs
+- uid: AbysmalCore.UI.UIElement.OnMouseEnter
+  name: OnMouseEnter
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_OnMouseEnter
+  commentId: E:AbysmalCore.UI.UIElement.OnMouseEnter
+  fullName: AbysmalCore.UI.UIElement.OnMouseEnter
+  nameWithType: UIElement.OnMouseEnter
+- uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  name: UIElement.OnMouseEnterExitEventArgs
+  href: api/AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.html
+  commentId: T:AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  nameWithType: UIElement.OnMouseEnterExitEventArgs
+- uid: AbysmalCore.UI.UIElement.OnMouseExit
+  name: OnMouseExit
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_OnMouseExit
+  commentId: E:AbysmalCore.UI.UIElement.OnMouseExit
+  fullName: AbysmalCore.UI.UIElement.OnMouseExit
+  nameWithType: UIElement.OnMouseExit
+- uid: AbysmalCore.UI.UIElement.OnStateChanged
+  name: OnStateChanged
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_OnStateChanged
+  commentId: E:AbysmalCore.UI.UIElement.OnStateChanged
+  fullName: AbysmalCore.UI.UIElement.OnStateChanged
+  nameWithType: UIElement.OnStateChanged
+- uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  name: UIElement.OnStateChangedEventArgs
+  href: api/AbysmalCore.UI.UIElement.OnStateChangedEventArgs.html
+  commentId: T:AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  nameWithType: UIElement.OnStateChangedEventArgs
+- uid: AbysmalCore.UI.UIElement.Position
+  name: Position
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Position
+  commentId: F:AbysmalCore.UI.UIElement.Position
+  fullName: AbysmalCore.UI.UIElement.Position
+  nameWithType: UIElement.Position
+- uid: AbysmalCore.UI.UIElement.RemoveChild(AbysmalCore.UI.UIElement)
+  name: RemoveChild(UIElement)
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_RemoveChild_AbysmalCore_UI_UIElement_
+  commentId: M:AbysmalCore.UI.UIElement.RemoveChild(AbysmalCore.UI.UIElement)
+  fullName: AbysmalCore.UI.UIElement.RemoveChild(AbysmalCore.UI.UIElement)
+  nameWithType: UIElement.RemoveChild(UIElement)
+- uid: AbysmalCore.UI.UIElement.RemoveChild(System.String)
+  name: RemoveChild(string)
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_RemoveChild_System_String_
+  commentId: M:AbysmalCore.UI.UIElement.RemoveChild(System.String)
+  name.vb: RemoveChild(String)
+  fullName: AbysmalCore.UI.UIElement.RemoveChild(string)
+  fullName.vb: AbysmalCore.UI.UIElement.RemoveChild(String)
+  nameWithType: UIElement.RemoveChild(string)
+  nameWithType.vb: UIElement.RemoveChild(String)
+- uid: AbysmalCore.UI.UIElement.RemoveChild*
+  name: RemoveChild
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_RemoveChild_
+  commentId: Overload:AbysmalCore.UI.UIElement.RemoveChild
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.RemoveChild
+  nameWithType: UIElement.RemoveChild
+- uid: AbysmalCore.UI.UIElement.Show
+  name: Show()
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Show
+  commentId: M:AbysmalCore.UI.UIElement.Show
+  fullName: AbysmalCore.UI.UIElement.Show()
+  nameWithType: UIElement.Show()
+- uid: AbysmalCore.UI.UIElement.Show*
+  name: Show
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Show_
+  commentId: Overload:AbysmalCore.UI.UIElement.Show
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Show
+  nameWithType: UIElement.Show
+- uid: AbysmalCore.UI.UIElement.Size
+  name: Size
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Size
+  commentId: F:AbysmalCore.UI.UIElement.Size
+  fullName: AbysmalCore.UI.UIElement.Size
+  nameWithType: UIElement.Size
+- uid: AbysmalCore.UI.UIElement.StateChangeType
+  name: UIElement.StateChangeType
+  href: api/AbysmalCore.UI.UIElement.StateChangeType.html
+  commentId: T:AbysmalCore.UI.UIElement.StateChangeType
+  fullName: AbysmalCore.UI.UIElement.StateChangeType
+  nameWithType: UIElement.StateChangeType
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Clicked
+  name: Clicked
+  href: api/AbysmalCore.UI.UIElement.StateChangeType.html#AbysmalCore_UI_UIElement_StateChangeType_Clicked
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Clicked
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Clicked
+  nameWithType: UIElement.StateChangeType.Clicked
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Enabled
+  name: Enabled
+  href: api/AbysmalCore.UI.UIElement.StateChangeType.html#AbysmalCore_UI_UIElement_StateChangeType_Enabled
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Enabled
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Enabled
+  nameWithType: UIElement.StateChangeType.Enabled
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Hovered
+  name: Hovered
+  href: api/AbysmalCore.UI.UIElement.StateChangeType.html#AbysmalCore_UI_UIElement_StateChangeType_Hovered
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Hovered
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Hovered
+  nameWithType: UIElement.StateChangeType.Hovered
+- uid: AbysmalCore.UI.UIElement.StateChangeType.Visible
+  name: Visible
+  href: api/AbysmalCore.UI.UIElement.StateChangeType.html#AbysmalCore_UI_UIElement_StateChangeType_Visible
+  commentId: F:AbysmalCore.UI.UIElement.StateChangeType.Visible
+  fullName: AbysmalCore.UI.UIElement.StateChangeType.Visible
+  nameWithType: UIElement.StateChangeType.Visible
+- uid: AbysmalCore.UI.UIElement.StyleMap
+  name: StyleMap
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_StyleMap
+  commentId: F:AbysmalCore.UI.UIElement.StyleMap
+  fullName: AbysmalCore.UI.UIElement.StyleMap
+  nameWithType: UIElement.StyleMap
+- uid: AbysmalCore.UI.UIElement.SupportedBrushes
+  name: SupportedBrushes
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_SupportedBrushes
+  commentId: F:AbysmalCore.UI.UIElement.SupportedBrushes
+  fullName: AbysmalCore.UI.UIElement.SupportedBrushes
+  nameWithType: UIElement.SupportedBrushes
+- uid: AbysmalCore.UI.UIElement.Visible
+  name: Visible
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Visible
+  commentId: P:AbysmalCore.UI.UIElement.Visible
+  fullName: AbysmalCore.UI.UIElement.Visible
+  nameWithType: UIElement.Visible
+- uid: AbysmalCore.UI.UIElement.Visible*
+  name: Visible
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Visible_
+  commentId: Overload:AbysmalCore.UI.UIElement.Visible
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement.Visible
+  nameWithType: UIElement.Visible
+- uid: AbysmalCore.UI.UIElement._UseFallbackForUnsupportedBrushes
+  name: _UseFallbackForUnsupportedBrushes
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement__UseFallbackForUnsupportedBrushes
+  commentId: F:AbysmalCore.UI.UIElement._UseFallbackForUnsupportedBrushes
+  fullName: AbysmalCore.UI.UIElement._UseFallbackForUnsupportedBrushes
+  nameWithType: UIElement._UseFallbackForUnsupportedBrushes
+- uid: AbysmalCore.UI.UIElement._draw
+  name: _draw()
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement__draw
+  commentId: M:AbysmalCore.UI.UIElement._draw
+  fullName: AbysmalCore.UI.UIElement._draw()
+  nameWithType: UIElement._draw()
+- uid: AbysmalCore.UI.UIElement._draw*
+  name: _draw
+  href: api/AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement__draw_
+  commentId: Overload:AbysmalCore.UI.UIElement._draw
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UIElement._draw
+  nameWithType: UIElement._draw
+- uid: AbysmalCore.UI.UserInterface
+  name: UserInterface
+  href: api/AbysmalCore.UI.UserInterface.html
+  commentId: T:AbysmalCore.UI.UserInterface
+  fullName: AbysmalCore.UI.UserInterface
+  nameWithType: UserInterface
+- uid: AbysmalCore.UI.UserInterface.#ctor(System.Collections.Generic.List{AbysmalCore.UI.UIElement})
+  name: UserInterface(List<UIElement>?)
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface__ctor_System_Collections_Generic_List_AbysmalCore_UI_UIElement__
+  commentId: M:AbysmalCore.UI.UserInterface.#ctor(System.Collections.Generic.List{AbysmalCore.UI.UIElement})
+  name.vb: New(List(Of UIElement))
+  fullName: AbysmalCore.UI.UserInterface.UserInterface(System.Collections.Generic.List<AbysmalCore.UI.UIElement>?)
+  fullName.vb: AbysmalCore.UI.UserInterface.New(System.Collections.Generic.List(Of AbysmalCore.UI.UIElement))
+  nameWithType: UserInterface.UserInterface(List<UIElement>?)
+  nameWithType.vb: UserInterface.New(List(Of UIElement))
+- uid: AbysmalCore.UI.UserInterface.#ctor*
+  name: UserInterface
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface__ctor_
+  commentId: Overload:AbysmalCore.UI.UserInterface.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.UserInterface.UserInterface
+  fullName.vb: AbysmalCore.UI.UserInterface.New
+  nameWithType: UserInterface.UserInterface
+  nameWithType.vb: UserInterface.New
+- uid: AbysmalCore.UI.UserInterface.AddElement(AbysmalCore.UI.UIElement)
+  name: AddElement(UIElement)
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_AddElement_AbysmalCore_UI_UIElement_
+  commentId: M:AbysmalCore.UI.UserInterface.AddElement(AbysmalCore.UI.UIElement)
+  fullName: AbysmalCore.UI.UserInterface.AddElement(AbysmalCore.UI.UIElement)
+  nameWithType: UserInterface.AddElement(UIElement)
+- uid: AbysmalCore.UI.UserInterface.AddElement*
+  name: AddElement
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_AddElement_
+  commentId: Overload:AbysmalCore.UI.UserInterface.AddElement
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.AddElement
+  nameWithType: UserInterface.AddElement
+- uid: AbysmalCore.UI.UserInterface.DrawUI
+  name: DrawUI()
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_DrawUI
+  commentId: M:AbysmalCore.UI.UserInterface.DrawUI
+  fullName: AbysmalCore.UI.UserInterface.DrawUI()
+  nameWithType: UserInterface.DrawUI()
+- uid: AbysmalCore.UI.UserInterface.DrawUI*
+  name: DrawUI
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_DrawUI_
+  commentId: Overload:AbysmalCore.UI.UserInterface.DrawUI
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.DrawUI
+  nameWithType: UserInterface.DrawUI
+- uid: AbysmalCore.UI.UserInterface.Elements
+  name: Elements
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_Elements
+  commentId: P:AbysmalCore.UI.UserInterface.Elements
+  fullName: AbysmalCore.UI.UserInterface.Elements
+  nameWithType: UserInterface.Elements
+- uid: AbysmalCore.UI.UserInterface.Elements*
+  name: Elements
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_Elements_
+  commentId: Overload:AbysmalCore.UI.UserInterface.Elements
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.Elements
+  nameWithType: UserInterface.Elements
+- uid: AbysmalCore.UI.UserInterface.Frame
+  name: Frame
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_Frame
+  commentId: P:AbysmalCore.UI.UserInterface.Frame
+  fullName: AbysmalCore.UI.UserInterface.Frame
+  nameWithType: UserInterface.Frame
+- uid: AbysmalCore.UI.UserInterface.Frame*
+  name: Frame
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_Frame_
+  commentId: Overload:AbysmalCore.UI.UserInterface.Frame
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.Frame
+  nameWithType: UserInterface.Frame
+- uid: AbysmalCore.UI.UserInterface.GetElement(System.String)
+  name: GetElement(string)
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_GetElement_System_String_
+  commentId: M:AbysmalCore.UI.UserInterface.GetElement(System.String)
+  name.vb: GetElement(String)
+  fullName: AbysmalCore.UI.UserInterface.GetElement(string)
+  fullName.vb: AbysmalCore.UI.UserInterface.GetElement(String)
+  nameWithType: UserInterface.GetElement(string)
+  nameWithType.vb: UserInterface.GetElement(String)
+- uid: AbysmalCore.UI.UserInterface.GetElement*
+  name: GetElement
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_GetElement_
+  commentId: Overload:AbysmalCore.UI.UserInterface.GetElement
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.GetElement
+  nameWithType: UserInterface.GetElement
+- uid: AbysmalCore.UI.UserInterface.GetElements
+  name: GetElements()
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_GetElements
+  commentId: M:AbysmalCore.UI.UserInterface.GetElements
+  fullName: AbysmalCore.UI.UserInterface.GetElements()
+  nameWithType: UserInterface.GetElements()
+- uid: AbysmalCore.UI.UserInterface.GetElements*
+  name: GetElements
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_GetElements_
+  commentId: Overload:AbysmalCore.UI.UserInterface.GetElements
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.GetElements
+  nameWithType: UserInterface.GetElements
+- uid: AbysmalCore.UI.UserInterface.Mouse
+  name: Mouse
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_Mouse
+  commentId: P:AbysmalCore.UI.UserInterface.Mouse
+  fullName: AbysmalCore.UI.UserInterface.Mouse
+  nameWithType: UserInterface.Mouse
+- uid: AbysmalCore.UI.UserInterface.Mouse*
+  name: Mouse
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_Mouse_
+  commentId: Overload:AbysmalCore.UI.UserInterface.Mouse
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.Mouse
+  nameWithType: UserInterface.Mouse
+- uid: AbysmalCore.UI.UserInterface.RemoveElement(AbysmalCore.UI.UIElement)
+  name: RemoveElement(UIElement)
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_RemoveElement_AbysmalCore_UI_UIElement_
+  commentId: M:AbysmalCore.UI.UserInterface.RemoveElement(AbysmalCore.UI.UIElement)
+  fullName: AbysmalCore.UI.UserInterface.RemoveElement(AbysmalCore.UI.UIElement)
+  nameWithType: UserInterface.RemoveElement(UIElement)
+- uid: AbysmalCore.UI.UserInterface.RemoveElement(System.String)
+  name: RemoveElement(string)
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_RemoveElement_System_String_
+  commentId: M:AbysmalCore.UI.UserInterface.RemoveElement(System.String)
+  name.vb: RemoveElement(String)
+  fullName: AbysmalCore.UI.UserInterface.RemoveElement(string)
+  fullName.vb: AbysmalCore.UI.UserInterface.RemoveElement(String)
+  nameWithType: UserInterface.RemoveElement(string)
+  nameWithType.vb: UserInterface.RemoveElement(String)
+- uid: AbysmalCore.UI.UserInterface.RemoveElement*
+  name: RemoveElement
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_RemoveElement_
+  commentId: Overload:AbysmalCore.UI.UserInterface.RemoveElement
+  isSpec: "True"
+  fullName: AbysmalCore.UI.UserInterface.RemoveElement
+  nameWithType: UserInterface.RemoveElement
+- uid: AbysmalCore.UI.UserInterface.UnloadList
+  name: UnloadList
+  href: api/AbysmalCore.UI.UserInterface.html#AbysmalCore_UI_UserInterface_UnloadList
+  commentId: F:AbysmalCore.UI.UserInterface.UnloadList
+  fullName: AbysmalCore.UI.UserInterface.UnloadList
+  nameWithType: UserInterface.UnloadList
+- uid: AbysmalCore.UI.Window
+  name: Window
+  href: api/AbysmalCore.UI.Window.html
+  commentId: T:AbysmalCore.UI.Window
+  fullName: AbysmalCore.UI.Window
+  nameWithType: Window
+- uid: AbysmalCore.UI.Window.#ctor(AbysmalCore.Vector2Int,System.String,System.Nullable{AbysmalCore.UI.Styling.Theme},System.Boolean)
+  name: Window(Vector2Int, string, Theme?, bool)
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window__ctor_AbysmalCore_Vector2Int_System_String_System_Nullable_AbysmalCore_UI_Styling_Theme__System_Boolean_
+  commentId: M:AbysmalCore.UI.Window.#ctor(AbysmalCore.Vector2Int,System.String,System.Nullable{AbysmalCore.UI.Styling.Theme},System.Boolean)
+  name.vb: New(Vector2Int, String, Theme?, Boolean)
+  fullName: AbysmalCore.UI.Window.Window(AbysmalCore.Vector2Int, string, AbysmalCore.UI.Styling.Theme?, bool)
+  fullName.vb: AbysmalCore.UI.Window.New(AbysmalCore.Vector2Int, String, AbysmalCore.UI.Styling.Theme?, Boolean)
+  nameWithType: Window.Window(Vector2Int, string, Theme?, bool)
+  nameWithType.vb: Window.New(Vector2Int, String, Theme?, Boolean)
+- uid: AbysmalCore.UI.Window.#ctor*
+  name: Window
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window__ctor_
+  commentId: Overload:AbysmalCore.UI.Window.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.UI.Window.Window
+  fullName.vb: AbysmalCore.UI.Window.New
+  nameWithType: Window.Window
+  nameWithType.vb: Window.New
+- uid: AbysmalCore.UI.Window.Exit
+  name: Exit()
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Exit
+  commentId: M:AbysmalCore.UI.Window.Exit
+  fullName: AbysmalCore.UI.Window.Exit()
+  nameWithType: Window.Exit()
+- uid: AbysmalCore.UI.Window.Exit*
+  name: Exit
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Exit_
+  commentId: Overload:AbysmalCore.UI.Window.Exit
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Exit
+  nameWithType: Window.Exit
+- uid: AbysmalCore.UI.Window.GlobalTheme
+  name: GlobalTheme
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_GlobalTheme
+  commentId: P:AbysmalCore.UI.Window.GlobalTheme
+  fullName: AbysmalCore.UI.Window.GlobalTheme
+  nameWithType: Window.GlobalTheme
+- uid: AbysmalCore.UI.Window.GlobalTheme*
+  name: GlobalTheme
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_GlobalTheme_
+  commentId: Overload:AbysmalCore.UI.Window.GlobalTheme
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.GlobalTheme
+  nameWithType: Window.GlobalTheme
+- uid: AbysmalCore.UI.Window.Hide
+  name: Hide()
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Hide
+  commentId: M:AbysmalCore.UI.Window.Hide
+  fullName: AbysmalCore.UI.Window.Hide()
+  nameWithType: Window.Hide()
+- uid: AbysmalCore.UI.Window.Hide*
+  name: Hide
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Hide_
+  commentId: Overload:AbysmalCore.UI.Window.Hide
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Hide
+  nameWithType: Window.Hide
+- uid: AbysmalCore.UI.Window.Init(AbysmalCore.UI.UserInterface)
+  name: Init(UserInterface)
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Init_AbysmalCore_UI_UserInterface_
+  commentId: M:AbysmalCore.UI.Window.Init(AbysmalCore.UI.UserInterface)
+  fullName: AbysmalCore.UI.Window.Init(AbysmalCore.UI.UserInterface)
+  nameWithType: Window.Init(UserInterface)
+- uid: AbysmalCore.UI.Window.Init*
+  name: Init
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Init_
+  commentId: Overload:AbysmalCore.UI.Window.Init
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Init
+  nameWithType: Window.Init
+- uid: AbysmalCore.UI.Window.Position
+  name: Position
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Position
+  commentId: P:AbysmalCore.UI.Window.Position
+  fullName: AbysmalCore.UI.Window.Position
+  nameWithType: Window.Position
+- uid: AbysmalCore.UI.Window.Position*
+  name: Position
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Position_
+  commentId: Overload:AbysmalCore.UI.Window.Position
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Position
+  nameWithType: Window.Position
+- uid: AbysmalCore.UI.Window.Resizable
+  name: Resizable
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Resizable
+  commentId: P:AbysmalCore.UI.Window.Resizable
+  fullName: AbysmalCore.UI.Window.Resizable
+  nameWithType: Window.Resizable
+- uid: AbysmalCore.UI.Window.Resizable*
+  name: Resizable
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Resizable_
+  commentId: Overload:AbysmalCore.UI.Window.Resizable
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Resizable
+  nameWithType: Window.Resizable
+- uid: AbysmalCore.UI.Window.SetIcon(AbysmalCore.Vector2Int,System.Func{System.Object})
+  name: SetIcon(Vector2Int, Func<object?>)
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_SetIcon_AbysmalCore_Vector2Int_System_Func_System_Object__
+  commentId: M:AbysmalCore.UI.Window.SetIcon(AbysmalCore.Vector2Int,System.Func{System.Object})
+  name.vb: SetIcon(Vector2Int, Func(Of Object))
+  fullName: AbysmalCore.UI.Window.SetIcon(AbysmalCore.Vector2Int, System.Func<object?>)
+  fullName.vb: AbysmalCore.UI.Window.SetIcon(AbysmalCore.Vector2Int, System.Func(Of Object))
+  nameWithType: Window.SetIcon(Vector2Int, Func<object?>)
+  nameWithType.vb: Window.SetIcon(Vector2Int, Func(Of Object))
+- uid: AbysmalCore.UI.Window.SetIcon*
+  name: SetIcon
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_SetIcon_
+  commentId: Overload:AbysmalCore.UI.Window.SetIcon
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.SetIcon
+  nameWithType: Window.SetIcon
+- uid: AbysmalCore.UI.Window.SetUI(AbysmalCore.UI.UserInterface)
+  name: SetUI(UserInterface)
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_SetUI_AbysmalCore_UI_UserInterface_
+  commentId: M:AbysmalCore.UI.Window.SetUI(AbysmalCore.UI.UserInterface)
+  fullName: AbysmalCore.UI.Window.SetUI(AbysmalCore.UI.UserInterface)
+  nameWithType: Window.SetUI(UserInterface)
+- uid: AbysmalCore.UI.Window.SetUI*
+  name: SetUI
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_SetUI_
+  commentId: Overload:AbysmalCore.UI.Window.SetUI
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.SetUI
+  nameWithType: Window.SetUI
+- uid: AbysmalCore.UI.Window.Show
+  name: Show()
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Show
+  commentId: M:AbysmalCore.UI.Window.Show
+  fullName: AbysmalCore.UI.Window.Show()
+  nameWithType: Window.Show()
+- uid: AbysmalCore.UI.Window.Show*
+  name: Show
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Show_
+  commentId: Overload:AbysmalCore.UI.Window.Show
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Show
+  nameWithType: Window.Show
+- uid: AbysmalCore.UI.Window.Size
+  name: Size
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Size
+  commentId: P:AbysmalCore.UI.Window.Size
+  fullName: AbysmalCore.UI.Window.Size
+  nameWithType: Window.Size
+- uid: AbysmalCore.UI.Window.Size*
+  name: Size
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Size_
+  commentId: Overload:AbysmalCore.UI.Window.Size
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Size
+  nameWithType: Window.Size
+- uid: AbysmalCore.UI.Window.State
+  name: State
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_State
+  commentId: P:AbysmalCore.UI.Window.State
+  fullName: AbysmalCore.UI.Window.State
+  nameWithType: Window.State
+- uid: AbysmalCore.UI.Window.State*
+  name: State
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_State_
+  commentId: Overload:AbysmalCore.UI.Window.State
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.State
+  nameWithType: Window.State
+- uid: AbysmalCore.UI.Window.Title
+  name: Title
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Title
+  commentId: P:AbysmalCore.UI.Window.Title
+  fullName: AbysmalCore.UI.Window.Title
+  nameWithType: Window.Title
+- uid: AbysmalCore.UI.Window.Title*
+  name: Title
+  href: api/AbysmalCore.UI.Window.html#AbysmalCore_UI_Window_Title_
+  commentId: Overload:AbysmalCore.UI.Window.Title
+  isSpec: "True"
+  fullName: AbysmalCore.UI.Window.Title
+  nameWithType: Window.Title
+- uid: AbysmalCore.UI.Window.WindowState
+  name: Window.WindowState
+  href: api/AbysmalCore.UI.Window.WindowState.html
+  commentId: T:AbysmalCore.UI.Window.WindowState
+  fullName: AbysmalCore.UI.Window.WindowState
+  nameWithType: Window.WindowState
+- uid: AbysmalCore.UI.Window.WindowState.Fullscreen
+  name: Fullscreen
+  href: api/AbysmalCore.UI.Window.WindowState.html#AbysmalCore_UI_Window_WindowState_Fullscreen
+  commentId: F:AbysmalCore.UI.Window.WindowState.Fullscreen
+  fullName: AbysmalCore.UI.Window.WindowState.Fullscreen
+  nameWithType: Window.WindowState.Fullscreen
+- uid: AbysmalCore.UI.Window.WindowState.Maximized
+  name: Maximized
+  href: api/AbysmalCore.UI.Window.WindowState.html#AbysmalCore_UI_Window_WindowState_Maximized
+  commentId: F:AbysmalCore.UI.Window.WindowState.Maximized
+  fullName: AbysmalCore.UI.Window.WindowState.Maximized
+  nameWithType: Window.WindowState.Maximized
+- uid: AbysmalCore.UI.Window.WindowState.Minimized
+  name: Minimized
+  href: api/AbysmalCore.UI.Window.WindowState.html#AbysmalCore_UI_Window_WindowState_Minimized
+  commentId: F:AbysmalCore.UI.Window.WindowState.Minimized
+  fullName: AbysmalCore.UI.Window.WindowState.Minimized
+  nameWithType: Window.WindowState.Minimized
+- uid: AbysmalCore.UI.Window.WindowState.Normal
+  name: Normal
+  href: api/AbysmalCore.UI.Window.WindowState.html#AbysmalCore_UI_Window_WindowState_Normal
+  commentId: F:AbysmalCore.UI.Window.WindowState.Normal
+  fullName: AbysmalCore.UI.Window.WindowState.Normal
+  nameWithType: Window.WindowState.Normal
+- uid: AbysmalCore.Vector2Int
+  name: Vector2Int
+  href: api/AbysmalCore.Vector2Int.html
+  commentId: T:AbysmalCore.Vector2Int
+  fullName: AbysmalCore.Vector2Int
+  nameWithType: Vector2Int
+- uid: AbysmalCore.Vector2Int.#ctor(System.Int32)
+  name: Vector2Int(int)
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int__ctor_System_Int32_
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(int)
+  fullName.vb: AbysmalCore.Vector2Int.New(Integer)
+  nameWithType: Vector2Int.Vector2Int(int)
+  nameWithType.vb: Vector2Int.New(Integer)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Int32,System.Int32)
+  name: Vector2Int(int, int)
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int__ctor_System_Int32_System_Int32_
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(int, int)
+  fullName.vb: AbysmalCore.Vector2Int.New(Integer, Integer)
+  nameWithType: Vector2Int.Vector2Int(int, int)
+  nameWithType.vb: Vector2Int.New(Integer, Integer)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Numerics.Vector2)
+  name: Vector2Int(Vector2)
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int__ctor_System_Numerics_Vector2_
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Numerics.Vector2)
+  name.vb: New(Vector2)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(System.Numerics.Vector2)
+  fullName.vb: AbysmalCore.Vector2Int.New(System.Numerics.Vector2)
+  nameWithType: Vector2Int.Vector2Int(Vector2)
+  nameWithType.vb: Vector2Int.New(Vector2)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Single)
+  name: Vector2Int(float)
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int__ctor_System_Single_
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Single)
+  name.vb: New(Single)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(float)
+  fullName.vb: AbysmalCore.Vector2Int.New(Single)
+  nameWithType: Vector2Int.Vector2Int(float)
+  nameWithType.vb: Vector2Int.New(Single)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Single,System.Single)
+  name: Vector2Int(float, float)
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int__ctor_System_Single_System_Single_
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Single,System.Single)
+  name.vb: New(Single, Single)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(float, float)
+  fullName.vb: AbysmalCore.Vector2Int.New(Single, Single)
+  nameWithType: Vector2Int.Vector2Int(float, float)
+  nameWithType.vb: Vector2Int.New(Single, Single)
+- uid: AbysmalCore.Vector2Int.#ctor*
+  name: Vector2Int
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int__ctor_
+  commentId: Overload:AbysmalCore.Vector2Int.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AbysmalCore.Vector2Int.Vector2Int
+  fullName.vb: AbysmalCore.Vector2Int.New
+  nameWithType: Vector2Int.Vector2Int
+  nameWithType.vb: Vector2Int.New
+- uid: AbysmalCore.Vector2Int.ToSys
+  name: ToSys()
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int_ToSys
+  commentId: M:AbysmalCore.Vector2Int.ToSys
+  fullName: AbysmalCore.Vector2Int.ToSys()
+  nameWithType: Vector2Int.ToSys()
+- uid: AbysmalCore.Vector2Int.ToSys*
+  name: ToSys
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int_ToSys_
+  commentId: Overload:AbysmalCore.Vector2Int.ToSys
+  isSpec: "True"
+  fullName: AbysmalCore.Vector2Int.ToSys
+  nameWithType: Vector2Int.ToSys
+- uid: AbysmalCore.Vector2Int.X
+  name: X
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int_X
+  commentId: F:AbysmalCore.Vector2Int.X
+  fullName: AbysmalCore.Vector2Int.X
+  nameWithType: Vector2Int.X
+- uid: AbysmalCore.Vector2Int.Y
+  name: Y
+  href: api/AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int_Y
+  commentId: F:AbysmalCore.Vector2Int.Y
+  fullName: AbysmalCore.Vector2Int.Y
+  nameWithType: Vector2Int.Y

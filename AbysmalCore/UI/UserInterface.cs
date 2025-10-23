@@ -38,9 +38,13 @@ namespace AbysmalCore.UI
         /// </summary>
         public static Vector2Int Mouse => new(GetMouseX(), GetMouseY());
 
+        /// <summary>
+        /// Creates a new user interface
+        /// </summary>
+        /// <param name="elements"></param>Inital children
         public UserInterface(List<UIElement>? elements = null)
         {
-            //Instance = this;
+            //Instance = this; 
             if (elements == null) Elements = new();
             else Elements = elements;
         }

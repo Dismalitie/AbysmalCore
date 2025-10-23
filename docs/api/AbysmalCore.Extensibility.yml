@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.Extensibility
+  commentId: N:AbysmalCore.Extensibility
+  id: AbysmalCore.Extensibility
+  children:
+  - AbysmalCore.Extensibility.AbysmalExtensibility
+  - AbysmalCore.Extensibility.AbysmalExtensibilityClass
+  - AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+  - AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+  langs:
+  - csharp
+  - vb
+  name: AbysmalCore.Extensibility
+  nameWithType: AbysmalCore.Extensibility
+  fullName: AbysmalCore.Extensibility
+  type: Namespace
+  assemblies:
+  - AbysmalCore
+references:
+- uid: AbysmalCore.Extensibility.AbysmalExtensibility
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibility
+  href: AbysmalCore.Extensibility.AbysmalExtensibility.html
+  name: AbysmalExtensibility
+  nameWithType: AbysmalExtensibility
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibility
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+  href: AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html
+  name: AbysmalExtensibilityProperty
+  nameWithType: AbysmalExtensibilityProperty
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+  href: AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html
+  name: AbysmalExtensibilityMethod
+  nameWithType: AbysmalExtensibilityMethod
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+- uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass
+  commentId: T:AbysmalCore.Extensibility.AbysmalExtensibilityClass
+  parent: AbysmalCore.Extensibility
+  href: AbysmalCore.Extensibility.AbysmalExtensibilityClass.html
+  name: AbysmalExtensibilityClass
+  nameWithType: AbysmalExtensibilityClass
+  fullName: AbysmalCore.Extensibility.AbysmalExtensibilityClass
+- uid: AbysmalCore.Extensibility
+  commentId: N:AbysmalCore.Extensibility
+  href: AbysmalCore.html
+  name: AbysmalCore.Extensibility
+  nameWithType: AbysmalCore.Extensibility
+  fullName: AbysmalCore.Extensibility
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Extensibility
+    name: Extensibility
+    href: AbysmalCore.Extensibility.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Extensibility
+    name: Extensibility
+    href: AbysmalCore.Extensibility.html

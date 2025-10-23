@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.Brushes
+  commentId: N:AbysmalCore.UI.Styling.Brushes
+  id: AbysmalCore.UI.Styling.Brushes
+  children:
+  - AbysmalCore.UI.Styling.Brushes.ImageBrush
+  - AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+  - AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  - AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+  - AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+  - AbysmalCore.UI.Styling.Brushes.ShaderBrush
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: AbysmalCore.UI.Styling.Brushes
+  nameWithType: AbysmalCore.UI.Styling.Brushes
+  fullName: AbysmalCore.UI.Styling.Brushes
+  type: Namespace
+  assemblies:
+  - AbysmalCore
+references:
+- uid: AbysmalCore.UI.Styling.Brushes.ImageBrush
+  commentId: T:AbysmalCore.UI.Styling.Brushes.ImageBrush
+  href: AbysmalCore.UI.Styling.Brushes.ImageBrush.html
+  name: ImageBrush
+  nameWithType: ImageBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.ImageBrush
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+  commentId: T:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+  href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  name: LinearGradientBrush
+  nameWithType: LinearGradientBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  commentId: T:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  parent: AbysmalCore.UI.Styling.Brushes
+  href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  name: LinearGradientBrush.GradientDirection
+  nameWithType: LinearGradientBrush.GradientDirection
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+    name: LinearGradientBrush
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+    name: GradientDirection
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+    name: LinearGradientBrush
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+    name: GradientDirection
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html
+- uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+  commentId: T:AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+  href: AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html
+  name: NineSliceBrush
+  nameWithType: NineSliceBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+- uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+  commentId: T:AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+  href: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html
+  name: RadialGradientBrush
+  nameWithType: RadialGradientBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+- uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush
+  commentId: T:AbysmalCore.UI.Styling.Brushes.ShaderBrush
+  href: AbysmalCore.UI.Styling.Brushes.ShaderBrush.html
+  name: ShaderBrush
+  nameWithType: ShaderBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.ShaderBrush
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  commentId: T:AbysmalCore.UI.Styling.Brushes.SolidBrush
+  href: AbysmalCore.UI.Styling.Brushes.SolidBrush.html
+  name: SolidBrush
+  nameWithType: SolidBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush
+- uid: AbysmalCore.UI.Styling.Brushes
+  commentId: N:AbysmalCore.UI.Styling.Brushes
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling.Brushes
+  nameWithType: AbysmalCore.UI.Styling.Brushes
+  fullName: AbysmalCore.UI.Styling.Brushes
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes
+    name: Brushes
+    href: AbysmalCore.UI.Styling.Brushes.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes
+    name: Brushes
+    href: AbysmalCore.UI.Styling.Brushes.html

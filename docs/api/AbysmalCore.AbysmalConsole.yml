@@ -1,0 +1,989 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.AbysmalConsole
+  commentId: T:AbysmalCore.AbysmalConsole
+  id: AbysmalConsole
+  parent: AbysmalCore
+  children:
+  - AbysmalCore.AbysmalConsole.#ctor
+  - AbysmalCore.AbysmalConsole.Ask(System.String)
+  - AbysmalCore.AbysmalConsole.Clear
+  - AbysmalCore.AbysmalConsole.GetOutput
+  - AbysmalCore.AbysmalConsole.Prompt``1(System.String,System.String,System.Func{System.String,``0})
+  - AbysmalCore.AbysmalConsole.WriteColor(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  - AbysmalCore.AbysmalConsole.WriteColorLn(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  - AbysmalCore.AbysmalConsole.WriteColorLns(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  - AbysmalCore.AbysmalConsole.WriteColors(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  - AbysmalCore.AbysmalConsole.WriteOutput(System.String)
+  langs:
+  - csharp
+  - vb
+  name: AbysmalConsole
+  nameWithType: AbysmalConsole
+  fullName: AbysmalCore.AbysmalConsole
+  type: Class
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: AbysmalConsole
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 7
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Standard formatted console input and output handler
+  example: []
+  syntax:
+    content: >-
+      [DebugInfo("standard fmtd output and input", false)]
+
+      public class AbysmalConsole
+    content.vb: >-
+      <DebugInfo("standard fmtd output and input", False)>
+
+      Public Class AbysmalConsole
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: AbysmalCore.Debugging.DebugInfoAttribute
+    ctor: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: standard fmtd output and input
+    - type: System.Boolean
+      value: false
+- uid: AbysmalCore.AbysmalConsole.#ctor
+  commentId: M:AbysmalCore.AbysmalConsole.#ctor
+  id: '#ctor'
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: AbysmalConsole()
+  nameWithType: AbysmalConsole.AbysmalConsole()
+  fullName: AbysmalCore.AbysmalConsole.AbysmalConsole()
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 15
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Creates a new AbysmalConsole instance
+  example: []
+  syntax:
+    content: public AbysmalConsole()
+    content.vb: Public Sub New()
+  overload: AbysmalCore.AbysmalConsole.#ctor*
+  nameWithType.vb: AbysmalConsole.New()
+  fullName.vb: AbysmalCore.AbysmalConsole.New()
+  name.vb: New()
+- uid: AbysmalCore.AbysmalConsole.GetOutput
+  commentId: M:AbysmalCore.AbysmalConsole.GetOutput
+  id: GetOutput
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: GetOutput()
+  nameWithType: AbysmalConsole.GetOutput()
+  fullName: AbysmalCore.AbysmalConsole.GetOutput()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: GetOutput
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 20
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Returns console messages and inputs created and recieved by this instance
+  example: []
+  syntax:
+    content: public string GetOutput()
+    return:
+      type: System.String
+    content.vb: Public Function GetOutput() As String
+  overload: AbysmalCore.AbysmalConsole.GetOutput*
+- uid: AbysmalCore.AbysmalConsole.Clear
+  commentId: M:AbysmalCore.AbysmalConsole.Clear
+  id: Clear
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: AbysmalConsole.Clear()
+  fullName: AbysmalCore.AbysmalConsole.Clear()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Clear
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 24
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Clears the console output buffer and the console screen
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: AbysmalCore.AbysmalConsole.Clear*
+- uid: AbysmalCore.AbysmalConsole.WriteOutput(System.String)
+  commentId: M:AbysmalCore.AbysmalConsole.WriteOutput(System.String)
+  id: WriteOutput(System.String)
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: WriteOutput(string)
+  nameWithType: AbysmalConsole.WriteOutput(string)
+  fullName: AbysmalCore.AbysmalConsole.WriteOutput(string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: WriteOutput
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 33
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Writes the console output buffer to a file
+  example: []
+  syntax:
+    content: public void WriteOutput(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: ''
+    content.vb: Public Sub WriteOutput(path As String)
+  overload: AbysmalCore.AbysmalConsole.WriteOutput*
+  nameWithType.vb: AbysmalConsole.WriteOutput(String)
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteOutput(String)
+  name.vb: WriteOutput(String)
+- uid: AbysmalCore.AbysmalConsole.WriteColor(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColor(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  id: WriteColor(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: WriteColor(string, ConsoleColor, ConsoleColor?)
+  nameWithType: AbysmalConsole.WriteColor(string, ConsoleColor, ConsoleColor?)
+  fullName: AbysmalCore.AbysmalConsole.WriteColor(string, System.ConsoleColor, System.ConsoleColor?)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: WriteColor
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 41
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Writes a colored string to the console
+  example: []
+  syntax:
+    content: public void WriteColor(string s, ConsoleColor fore, ConsoleColor? back = null)
+    parameters:
+    - id: s
+      type: System.String
+      description: ''
+    - id: fore
+      type: System.ConsoleColor
+      description: ''
+    - id: back
+      type: System.Nullable{System.ConsoleColor}
+      description: ''
+    content.vb: Public Sub WriteColor(s As String, fore As ConsoleColor, back As ConsoleColor? = Nothing)
+  overload: AbysmalCore.AbysmalConsole.WriteColor*
+  nameWithType.vb: AbysmalConsole.WriteColor(String, ConsoleColor, ConsoleColor?)
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColor(String, System.ConsoleColor, System.ConsoleColor?)
+  name.vb: WriteColor(String, ConsoleColor, ConsoleColor?)
+- uid: AbysmalCore.AbysmalConsole.WriteColors(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColors(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  id: WriteColors(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: WriteColors((string s, ConsoleColor fore, ConsoleColor? back)[])
+  nameWithType: AbysmalConsole.WriteColors((string s, ConsoleColor fore, ConsoleColor? back)[])
+  fullName: AbysmalCore.AbysmalConsole.WriteColors((string s, System.ConsoleColor fore, System.ConsoleColor? back)[])
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: WriteColors
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 58
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Writes multiple colors in the same string to the console
+  example: []
+  syntax:
+    content: public void WriteColors((string s, ConsoleColor fore, ConsoleColor? back)[] colors)
+    parameters:
+    - id: colors
+      type: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[]
+      description: ''
+    content.vb: Public Sub WriteColors(colors As (s As String, fore As ConsoleColor, back As ConsoleColor?)())
+  overload: AbysmalCore.AbysmalConsole.WriteColors*
+  nameWithType.vb: AbysmalConsole.WriteColors((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColors((s As String, fore As System.ConsoleColor, back As System.ConsoleColor?)())
+  name.vb: WriteColors((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+- uid: AbysmalCore.AbysmalConsole.WriteColorLn(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColorLn(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  id: WriteColorLn(System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor})
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: WriteColorLn(string, ConsoleColor, ConsoleColor?)
+  nameWithType: AbysmalConsole.WriteColorLn(string, ConsoleColor, ConsoleColor?)
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLn(string, System.ConsoleColor, System.ConsoleColor?)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: WriteColorLn
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 70
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Writes a colored string to the console with a newline
+  example: []
+  syntax:
+    content: public void WriteColorLn(string s, ConsoleColor fore, ConsoleColor? back = null)
+    parameters:
+    - id: s
+      type: System.String
+      description: ''
+    - id: fore
+      type: System.ConsoleColor
+      description: ''
+    - id: back
+      type: System.Nullable{System.ConsoleColor}
+      description: ''
+    content.vb: Public Sub WriteColorLn(s As String, fore As ConsoleColor, back As ConsoleColor? = Nothing)
+  overload: AbysmalCore.AbysmalConsole.WriteColorLn*
+  nameWithType.vb: AbysmalConsole.WriteColorLn(String, ConsoleColor, ConsoleColor?)
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColorLn(String, System.ConsoleColor, System.ConsoleColor?)
+  name.vb: WriteColorLn(String, ConsoleColor, ConsoleColor?)
+- uid: AbysmalCore.AbysmalConsole.WriteColorLns(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  commentId: M:AbysmalCore.AbysmalConsole.WriteColorLns(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  id: WriteColorLns(System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[])
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: WriteColorLns((string s, ConsoleColor fore, ConsoleColor? back)[])
+  nameWithType: AbysmalConsole.WriteColorLns((string s, ConsoleColor fore, ConsoleColor? back)[])
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLns((string s, System.ConsoleColor fore, System.ConsoleColor? back)[])
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: WriteColorLns
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 87
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Writes multiple single-colored lines to the console
+  example: []
+  syntax:
+    content: public void WriteColorLns((string s, ConsoleColor fore, ConsoleColor? back)[] lines)
+    parameters:
+    - id: lines
+      type: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[]
+      description: ''
+    content.vb: Public Sub WriteColorLns(lines As (s As String, fore As ConsoleColor, back As ConsoleColor?)())
+  overload: AbysmalCore.AbysmalConsole.WriteColorLns*
+  nameWithType.vb: AbysmalConsole.WriteColorLns((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+  fullName.vb: AbysmalCore.AbysmalConsole.WriteColorLns((s As String, fore As System.ConsoleColor, back As System.ConsoleColor?)())
+  name.vb: WriteColorLns((s As String, fore As ConsoleColor, back As ConsoleColor?)())
+- uid: AbysmalCore.AbysmalConsole.Ask(System.String)
+  commentId: M:AbysmalCore.AbysmalConsole.Ask(System.String)
+  id: Ask(System.String)
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: Ask(string)
+  nameWithType: AbysmalConsole.Ask(string)
+  fullName: AbysmalCore.AbysmalConsole.Ask(string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Ask
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 98
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Prompts the user with a yes/no question and returns their response
+  example: []
+  syntax:
+    content: public bool? Ask(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: ''
+    return:
+      type: System.Nullable{System.Boolean}
+      description: null if key is not y/n
+    content.vb: Public Function Ask(msg As String) As Boolean?
+  overload: AbysmalCore.AbysmalConsole.Ask*
+  nameWithType.vb: AbysmalConsole.Ask(String)
+  fullName.vb: AbysmalCore.AbysmalConsole.Ask(String)
+  name.vb: Ask(String)
+- uid: AbysmalCore.AbysmalConsole.Prompt``1(System.String,System.String,System.Func{System.String,``0})
+  commentId: M:AbysmalCore.AbysmalConsole.Prompt``1(System.String,System.String,System.Func{System.String,``0})
+  id: Prompt``1(System.String,System.String,System.Func{System.String,``0})
+  parent: AbysmalCore.AbysmalConsole
+  langs:
+  - csharp
+  - vb
+  name: Prompt<T>(string, string?, Func<string, T>?)
+  nameWithType: AbysmalConsole.Prompt<T>(string, string?, Func<string, T>?)
+  fullName: AbysmalCore.AbysmalConsole.Prompt<T>(string, string?, System.Func<string, T>?)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/AbysmalConsole.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Prompt
+    path: ../AbysmalCore/AbysmalConsole.cs
+    startLine: 136
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Asks the user for input and converts it to the specified type
+  example: []
+  syntax:
+    content: public T? Prompt<T>(string msg, string? type = null, Func<string, T>? converter = null)
+    parameters:
+    - id: msg
+      type: System.String
+      description: ''
+    - id: type
+      type: System.String
+      description: ''
+    - id: converter
+      type: System.Func{System.String,{T}}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+    content.vb: Public Function Prompt(Of T)(msg As String, type As String = Nothing, converter As Func(Of String, T) = Nothing) As T
+  overload: AbysmalCore.AbysmalConsole.Prompt*
+  nameWithType.vb: AbysmalConsole.Prompt(Of T)(String, String, Func(Of String, T))
+  fullName.vb: AbysmalCore.AbysmalConsole.Prompt(Of T)(String, String, System.Func(Of String, T))
+  name.vb: Prompt(Of T)(String, String, Func(Of String, T))
+references:
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  href: AbysmalCore.html
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore.AbysmalConsole.#ctor*
+  commentId: Overload:AbysmalCore.AbysmalConsole.#ctor
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole__ctor
+  name: AbysmalConsole
+  nameWithType: AbysmalConsole.AbysmalConsole
+  fullName: AbysmalCore.AbysmalConsole.AbysmalConsole
+  nameWithType.vb: AbysmalConsole.New
+  fullName.vb: AbysmalCore.AbysmalConsole.New
+  name.vb: New
+- uid: AbysmalCore.AbysmalConsole.GetOutput*
+  commentId: Overload:AbysmalCore.AbysmalConsole.GetOutput
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_GetOutput
+  name: GetOutput
+  nameWithType: AbysmalConsole.GetOutput
+  fullName: AbysmalCore.AbysmalConsole.GetOutput
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AbysmalCore.AbysmalConsole.Clear*
+  commentId: Overload:AbysmalCore.AbysmalConsole.Clear
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Clear
+  name: Clear
+  nameWithType: AbysmalConsole.Clear
+  fullName: AbysmalCore.AbysmalConsole.Clear
+- uid: AbysmalCore.AbysmalConsole.WriteOutput*
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteOutput
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteOutput_System_String_
+  name: WriteOutput
+  nameWithType: AbysmalConsole.WriteOutput
+  fullName: AbysmalCore.AbysmalConsole.WriteOutput
+- uid: AbysmalCore.AbysmalConsole.WriteColor*
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColor
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColor_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor__
+  name: WriteColor
+  nameWithType: AbysmalConsole.WriteColor
+  fullName: AbysmalCore.AbysmalConsole.WriteColor
+- uid: System.ConsoleColor
+  commentId: T:System.ConsoleColor
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  name: ConsoleColor
+  nameWithType: ConsoleColor
+  fullName: System.ConsoleColor
+- uid: System.Nullable{System.ConsoleColor}
+  commentId: T:System.Nullable{System.ConsoleColor}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  name: ConsoleColor?
+  nameWithType: ConsoleColor?
+  fullName: System.ConsoleColor?
+  spec.csharp:
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: '?'
+  spec.vb:
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AbysmalCore.AbysmalConsole.WriteColors*
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColors
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColors_System_ValueTuple_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor_____
+  name: WriteColors
+  nameWithType: AbysmalConsole.WriteColors
+  fullName: AbysmalCore.AbysmalConsole.WriteColors
+- uid: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string s, ConsoleColor fore, ConsoleColor? back)[]
+  nameWithType: (string s, ConsoleColor fore, ConsoleColor? back)[]
+  fullName: (string s, System.ConsoleColor fore, System.ConsoleColor? back)[]
+  nameWithType.vb: (s As String, fore As ConsoleColor, back As ConsoleColor?)()
+  fullName.vb: (s As String, fore As System.ConsoleColor, back As System.ConsoleColor?)()
+  name.vb: (s As String, fore As ConsoleColor, back As ConsoleColor?)()
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}.s
+    name: s
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.consolecolor,system.nullable-system.consolecolor--.s
+  - name: ','
+  - name: " "
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}.fore
+    name: fore
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.consolecolor,system.nullable-system.consolecolor--.fore
+  - name: ','
+  - name: " "
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: '?'
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}.back
+    name: back
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.consolecolor,system.nullable-system.consolecolor--.back
+  - name: )
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}.s
+    name: s
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.consolecolor,system.nullable-system.consolecolor--.s
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}.fore
+    name: fore
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.consolecolor,system.nullable-system.consolecolor--.fore
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.ConsoleColor,System.Nullable{System.ConsoleColor}}.back
+    name: back
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.consolecolor,system.nullable-system.consolecolor--.back
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.ConsoleColor
+    name: ConsoleColor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  - name: '?'
+  - name: )
+  - name: (
+  - name: )
+- uid: AbysmalCore.AbysmalConsole.WriteColorLn*
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColorLn
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColorLn_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor__
+  name: WriteColorLn
+  nameWithType: AbysmalConsole.WriteColorLn
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLn
+- uid: AbysmalCore.AbysmalConsole.WriteColorLns*
+  commentId: Overload:AbysmalCore.AbysmalConsole.WriteColorLns
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_WriteColorLns_System_ValueTuple_System_String_System_ConsoleColor_System_Nullable_System_ConsoleColor_____
+  name: WriteColorLns
+  nameWithType: AbysmalConsole.WriteColorLns
+  fullName: AbysmalCore.AbysmalConsole.WriteColorLns
+- uid: AbysmalCore.AbysmalConsole.Ask*
+  commentId: Overload:AbysmalCore.AbysmalConsole.Ask
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Ask_System_String_
+  name: Ask
+  nameWithType: AbysmalConsole.Ask
+  fullName: AbysmalCore.AbysmalConsole.Ask
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: AbysmalCore.AbysmalConsole.Prompt*
+  commentId: Overload:AbysmalCore.AbysmalConsole.Prompt
+  href: AbysmalCore.AbysmalConsole.html#AbysmalCore_AbysmalConsole_Prompt__1_System_String_System_String_System_Func_System_String___0__
+  name: Prompt
+  nameWithType: AbysmalConsole.Prompt
+  fullName: AbysmalCore.AbysmalConsole.Prompt
+- uid: System.Func{System.String,{T}}
+  commentId: T:System.Func{System.String,``0}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, T>
+  nameWithType: Func<string, T>
+  fullName: System.Func<string, T>
+  nameWithType.vb: Func(Of String, T)
+  fullName.vb: System.Func(Of String, T)
+  name.vb: Func(Of String, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

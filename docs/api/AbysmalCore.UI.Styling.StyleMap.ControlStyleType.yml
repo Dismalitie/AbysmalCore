@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  commentId: T:AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  id: StyleMap.ControlStyleType
+  parent: AbysmalCore.UI.Styling
+  children:
+  - AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded
+  - AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Sharp
+  langs:
+  - csharp
+  - vb
+  name: StyleMap.ControlStyleType
+  nameWithType: StyleMap.ControlStyleType
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  type: Enum
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ControlStyleType
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 13
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: The shape style of the control
+  example: []
+  syntax:
+    content: public enum StyleMap.ControlStyleType
+    content.vb: Public Enum StyleMap.ControlStyleType
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded
+  id: Rounded
+  parent: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  langs:
+  - csharp
+  - vb
+  name: Rounded
+  nameWithType: StyleMap.ControlStyleType.Rounded
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Rounded
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Rounded
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 18
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A control with rounded corners
+  example: []
+  syntax:
+    content: Rounded = 0
+    return:
+      type: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Sharp
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Sharp
+  id: Sharp
+  parent: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  langs:
+  - csharp
+  - vb
+  name: Sharp
+  nameWithType: StyleMap.ControlStyleType.Sharp
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.Sharp
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Sharp
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 22
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A control with square corners
+  example: []
+  syntax:
+    content: Sharp = 1
+    return:
+      type: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+references:
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  commentId: T:AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.StyleMap.html
+  name: StyleMap.ControlStyleType
+  nameWithType: StyleMap.ControlStyleType
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html

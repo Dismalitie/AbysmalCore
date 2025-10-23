@@ -74,17 +74,24 @@ namespace AbysmalCore.UI
         }
         private static Theme _gTheme;
 
+        /// <summary>
+        /// Creates a window
+        /// </summary>
+        /// <param name="size"></param>The size
+        /// <param name="title"></param>The caption in the titlebar
+        /// <param name="theme"></param>The defualt theme
+        /// <param name="resizeable"></param>Whether the window is resizable
         public Window(Vector2Int size, string title, Theme? theme = null, bool resizeable = true)
         {
-            /// we could make window methods static since you can only have
-            /// one window, but then it would allow functions to be called
-            /// before the window is actually created.
+            // we could make window methods static since you can only have
+            // one window, but then it would allow functions to be called
+            // before the window is actually created.
 
             InitWindow(size.X, size.Y, title);
             _title = title;
 
             if (resizeable) SetWindowState(ConfigFlags.ResizableWindow);
-            SetWindowState(ConfigFlags.VSyncHint); /// prevent flickering when drawing on large sizes
+            SetWindowState(ConfigFlags.VSyncHint); // prevent flickering when drawing on large sizes
             SetWindowState(ConfigFlags.AlwaysRunWindow);
 
             GlobalTheme = theme ?? new Theme(new Color(245, 101, 101), Color.White);
@@ -92,8 +99,8 @@ namespace AbysmalCore.UI
             Color t = GlobalTheme.Text;
             unsafe
             {
-                /// update window colors manually since it doesnt do
-                /// it automatically on the first set
+                // update window colors manually since it doesnt do
+                // it automatically on the first set
                 IntPtr hwnd = (nint)GetWindowHandle();
                 DwmPInvokeHelper.SetNonClientColor(hwnd, c.R, c.G, c.B);
                 DwmPInvokeHelper.SetNonClientTextColor(hwnd, t.R, t.G, t.B);
@@ -113,11 +120,26 @@ namespace AbysmalCore.UI
         /// </summary>
         public void Show() => ClearWindowState(ConfigFlags.HiddenWindow);
 
+        /// <summary>
+        /// Represents the current view of the window
+        /// </summary>
         public enum WindowState
         {
+            /// <summary>
+            /// No other states applicable
+            /// </summary>
             Normal,
+            /// <summary>
+            /// Not visible, still running
+            /// </summary>
             Minimized,
+            /// <summary>
+            /// Fully visible
+            /// </summary>
             Maximized,
+            /// <summary>
+            /// Fully visible, no titlebar
+            /// </summary>
             Fullscreen
         }
 
@@ -171,10 +193,10 @@ namespace AbysmalCore.UI
             EndTextureMode();
             Image img = LoadImageFromTexture(_icon.Texture);
             SetWindowIcon(img);
-            /// we can actually unload it immediately
-            /// since this is the only occasion we use
-            /// it for and the icon references img, not
-            /// _icon
+            // we can actually unload it immediately
+            // since this is the only occasion we use
+            // it for and the icon references img, not
+            // _icon
             AbysmalDebug.Log(this, "Freeing icon from memory");
             UnloadRenderTexture(_icon);
             AbysmalDebug.Log(this, "Window icon draw ended");
@@ -200,7 +222,7 @@ namespace AbysmalCore.UI
                 EndDrawing();
             }
 
-            /// unload the gpu and cpu stuff here before exiting
+            // unload the gpu and cpu stuff here before exiting
             foreach (object obj in UserInterface.UnloadList)
             {
                 AbysmalDebug.Log(this, $"Freeing {obj.GetType().Name} from memory");

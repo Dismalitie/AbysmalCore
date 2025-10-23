@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  id: DwmPInvokeHelper.MaterialType
+  parent: AbysmalCore.UI
+  children:
+  - AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Acrylic
+  - AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Mica
+  - AbysmalCore.UI.DwmPInvokeHelper.MaterialType.None
+  - AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Tabbed
+  langs:
+  - csharp
+  - vb
+  name: DwmPInvokeHelper.MaterialType
+  nameWithType: DwmPInvokeHelper.MaterialType
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  type: Enum
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: MaterialType
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 37
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Type of window material
+  example: []
+  syntax:
+    content: public enum DwmPInvokeHelper.MaterialType
+    content.vb: Public Enum DwmPInvokeHelper.MaterialType
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.None
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.None
+  id: None
+  parent: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DwmPInvokeHelper.MaterialType.None
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.None
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: None
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 42
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: No material
+  example: []
+  syntax:
+    content: None = 1
+    return:
+      type: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Mica
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Mica
+  id: Mica
+  parent: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  langs:
+  - csharp
+  - vb
+  name: Mica
+  nameWithType: DwmPInvokeHelper.MaterialType.Mica
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Mica
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Mica
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 46
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Slightly translucent material
+  example: []
+  syntax:
+    content: Mica = 2
+    return:
+      type: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Acrylic
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Acrylic
+  id: Acrylic
+  parent: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  langs:
+  - csharp
+  - vb
+  name: Acrylic
+  nameWithType: DwmPInvokeHelper.MaterialType.Acrylic
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Acrylic
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Acrylic
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 50
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Semi-transparent material
+  example: []
+  syntax:
+    content: Acrylic = 3
+    return:
+      type: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Tabbed
+  commentId: F:AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Tabbed
+  id: Tabbed
+  parent: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  langs:
+  - csharp
+  - vb
+  name: Tabbed
+  nameWithType: DwmPInvokeHelper.MaterialType.Tabbed
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.Tabbed
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/DwmPInvokeHelper.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Tabbed
+    path: ../AbysmalCore/UI/DwmPInvokeHelper.cs
+    startLine: 54
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Translucent material
+  example: []
+  syntax:
+    content: Tabbed = 4
+    return:
+      type: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+references:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.DwmPInvokeHelper.html
+  name: DwmPInvokeHelper.MaterialType
+  nameWithType: DwmPInvokeHelper.MaterialType
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  spec.csharp:
+  - uid: AbysmalCore.UI.DwmPInvokeHelper
+    name: DwmPInvokeHelper
+    href: AbysmalCore.UI.DwmPInvokeHelper.html
+  - name: .
+  - uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+    name: MaterialType
+    href: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.DwmPInvokeHelper
+    name: DwmPInvokeHelper
+    href: AbysmalCore.UI.DwmPInvokeHelper.html
+  - name: .
+  - uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+    name: MaterialType
+    href: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html

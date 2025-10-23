@@ -9,12 +9,25 @@ namespace AbysmalCore.UI.Controls
     [DebugInfo("toggle control")]
     public class Toggle : UIElement
     {
+        /// <summary>
+        /// Delegate used when a toggle is clicked
+        /// </summary>
+        /// <param name="sender"></param>The toggle
+        /// <param name="state"></param>The new state
+        /// <param name="mouse"></param>The mouses position
+        /// <param name="frame"></param>The current frame
         public delegate void StateChangedEventHandler(UIElement sender, bool state, Vector2Int mouse, int frame);
+        /// <summary>
+        /// Event fired when toggled
+        /// </summary>
         public event StateChangedEventHandler? OnToggleStateChanged;
 
+        /// <summary>
+        /// Whether the toggle is checked or unchecked
+        /// </summary>
         public bool State
         {
-            /// reflect the mirror
+            // reflect the mirror
             get => _state;
             set
             {
@@ -27,8 +40,23 @@ namespace AbysmalCore.UI.Controls
         /// value without this mirror, we blow up the stack
         private bool _state;
 
+        /// <summary>
+        /// The optional label next to the toggle
+        /// </summary>
         public string Text;
+        /// <summary>
+        /// The size of the label
+        /// </summary>
         public int FontSize;
+
+        /// <summary>
+        /// Creates a new toggle
+        /// </summary>
+        /// <param name="position"></param>The position relative to the top left corner of the client area
+        /// <param name="size"></param>The size
+        /// <param name="state"></param>The default state
+        /// <param name="label"></param>Optional label text
+        /// <param name="fontSize"></param>Size of the optional label
         public Toggle(Vector2Int position, Vector2Int size, bool state = false, string label = "", int fontSize = 18)
         {
             Position = position;
@@ -37,14 +65,15 @@ namespace AbysmalCore.UI.Controls
             Text = label;
             FontSize = fontSize;
 
-            /// we can just use the base OnClicked func
-            /// to toggle the state, subsequently triggering
-            /// OnStateChanged
+            // we can just use the base OnClicked func
+            // to toggle the state, subsequently triggering
+            // OnStateChanged
             OnClicked += Toggle_OnClicked;
         }
 
         private void Toggle_OnClicked(UIElement sender, Vector2Int mouse, int frame) => State = !State;
 
+        /// <inheritdoc/>
         protected override void _draw()
         {
             Style current = CurrentStyle;

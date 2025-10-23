@@ -8,6 +8,9 @@ using System.Runtime.Loader;
 
 namespace AbysmalCore.Extensibility
 {
+    /// <summary>
+    /// Compiler and wrapper initializer
+    /// </summary>
     [DebugInfo("abysmal extensibility framework", false)]
     public class AbysmalExtensibility
     {
@@ -20,7 +23,7 @@ namespace AbysmalCore.Extensibility
             SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(src);
             string assemblyName = Path.GetRandomFileName();
 
-            /// get references from host assembly
+            // get references from host assembly
             List<PortableExecutableReference> references = AppDomain.CurrentDomain.GetAssemblies()
                 .Where(a => !a.IsDynamic && !string.IsNullOrEmpty(a.Location))
                 .Select(a => MetadataReference.CreateFromFile(a.Location))
@@ -34,7 +37,7 @@ namespace AbysmalCore.Extensibility
                 references,
                 new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
 
-            /// compile to memory stream
+            // compile to memory stream
             using MemoryStream ms = new();
             EmitResult result = compilation.Emit(ms);
             sw.Stop();
@@ -43,10 +46,10 @@ namespace AbysmalCore.Extensibility
             if (!result.Success)
                 AbysmalDebug.Error(new AbysmalExtensibility(), "Compilation failed.", true);
 
-            /// go to beginning of stream
+            // go to beginning of stream
             ms.Seek(0, SeekOrigin.Begin);
 
-            /// load the assembly and return it
+            // load the assembly and return it
             Assembly asm = AssemblyLoadContext.Default.LoadFromStream(ms);
 
             return asm;

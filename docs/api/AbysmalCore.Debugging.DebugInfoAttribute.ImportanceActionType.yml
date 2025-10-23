@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  commentId: T:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  id: DebugInfoAttribute.ImportanceActionType
+  parent: AbysmalCore.Debugging
+  children:
+  - AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Highlight
+  - AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Pause
+  langs:
+  - csharp
+  - vb
+  name: DebugInfoAttribute.ImportanceActionType
+  nameWithType: DebugInfoAttribute.ImportanceActionType
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  type: Enum
+  source:
+    remote:
+      path: AbysmalCore/Debugging/DebugInfoAttribute.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ImportanceActionType
+    path: ../AbysmalCore/Debugging/DebugInfoAttribute.cs
+    startLine: 21
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Determines what to do upon logging an important message
+  example: []
+  syntax:
+    content: public enum DebugInfoAttribute.ImportanceActionType
+    content.vb: Public Enum DebugInfoAttribute.ImportanceActionType
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Highlight
+  commentId: F:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Highlight
+  id: Highlight
+  parent: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  langs:
+  - csharp
+  - vb
+  name: Highlight
+  nameWithType: DebugInfoAttribute.ImportanceActionType.Highlight
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Highlight
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/Debugging/DebugInfoAttribute.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Highlight
+    path: ../AbysmalCore/Debugging/DebugInfoAttribute.cs
+    startLine: 26
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Highlights the message in magenta
+  example: []
+  syntax:
+    content: Highlight = 0
+    return:
+      type: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Pause
+  commentId: F:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Pause
+  id: Pause
+  parent: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  langs:
+  - csharp
+  - vb
+  name: Pause
+  nameWithType: DebugInfoAttribute.ImportanceActionType.Pause
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.Pause
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/Debugging/DebugInfoAttribute.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Pause
+    path: ../AbysmalCore/Debugging/DebugInfoAttribute.cs
+    startLine: 30
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Pauses application execution until console input is provided
+  example: []
+  syntax:
+    content: Pause = 1
+    return:
+      type: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+references:
+- uid: AbysmalCore.Debugging
+  commentId: N:AbysmalCore.Debugging
+  href: AbysmalCore.html
+  name: AbysmalCore.Debugging
+  nameWithType: AbysmalCore.Debugging
+  fullName: AbysmalCore.Debugging
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Debugging
+    name: Debugging
+    href: AbysmalCore.Debugging.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Debugging
+    name: Debugging
+    href: AbysmalCore.Debugging.html
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  commentId: T:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  parent: AbysmalCore.Debugging
+  href: AbysmalCore.Debugging.DebugInfoAttribute.html
+  name: DebugInfoAttribute.ImportanceActionType
+  nameWithType: DebugInfoAttribute.ImportanceActionType
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  spec.csharp:
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute
+    name: DebugInfoAttribute
+    href: AbysmalCore.Debugging.DebugInfoAttribute.html
+  - name: .
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+    name: ImportanceActionType
+    href: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html
+  spec.vb:
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute
+    name: DebugInfoAttribute
+    href: AbysmalCore.Debugging.DebugInfoAttribute.html
+  - name: .
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+    name: ImportanceActionType
+    href: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html

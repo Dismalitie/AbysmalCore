@@ -1,0 +1,148 @@
+### YamlMime:TableOfContent
+items:
+- uid: AbysmalCore
+  name: AbysmalCore
+  type: Namespace
+  items:
+  - uid: AbysmalCore.AbysmalConsole
+    name: AbysmalConsole
+    type: Class
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    type: Struct
+- uid: AbysmalCore.Debugging
+  name: AbysmalCore.Debugging
+  type: Namespace
+  items:
+  - uid: AbysmalCore.Debugging.AbysmalDebug
+    name: AbysmalDebug
+    type: Class
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute
+    name: DebugInfoAttribute
+    type: Class
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+    name: DebugInfoAttribute.ImportanceActionType
+    type: Enum
+- uid: AbysmalCore.Extensibility
+  name: AbysmalCore.Extensibility
+  type: Namespace
+  items:
+  - uid: AbysmalCore.Extensibility.AbysmalExtensibility
+    name: AbysmalExtensibility
+    type: Class
+  - uid: AbysmalCore.Extensibility.AbysmalExtensibilityClass
+    name: AbysmalExtensibilityClass
+    type: Class
+  - uid: AbysmalCore.Extensibility.AbysmalExtensibilityMethod
+    name: AbysmalExtensibilityMethod
+    type: Class
+  - uid: AbysmalCore.Extensibility.AbysmalExtensibilityProperty
+    name: AbysmalExtensibilityProperty
+    type: Class
+- uid: AbysmalCore.UI
+  name: AbysmalCore.UI
+  type: Namespace
+  items:
+  - uid: AbysmalCore.UI.DwmPInvokeHelper
+    name: DwmPInvokeHelper
+    type: Class
+  - uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+    name: DwmPInvokeHelper.MaterialType
+    type: Enum
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    type: Class
+  - uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+    name: UIElement.OnClickedEventArgs
+    type: Delegate
+  - uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+    name: UIElement.OnHoveredEventArgs
+    type: Delegate
+  - uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+    name: UIElement.OnMouseEnterExitEventArgs
+    type: Delegate
+  - uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+    name: UIElement.OnStateChangedEventArgs
+    type: Delegate
+  - uid: AbysmalCore.UI.UIElement.StateChangeType
+    name: UIElement.StateChangeType
+    type: Enum
+  - uid: AbysmalCore.UI.UserInterface
+    name: UserInterface
+    type: Class
+  - uid: AbysmalCore.UI.Window
+    name: Window
+    type: Class
+  - uid: AbysmalCore.UI.Window.WindowState
+    name: Window.WindowState
+    type: Enum
+- uid: AbysmalCore.UI.Controls
+  name: AbysmalCore.UI.Controls
+  type: Namespace
+  items:
+  - uid: AbysmalCore.UI.Controls.Button
+    name: Button
+    type: Class
+  - uid: AbysmalCore.UI.Controls.Label
+    name: Label
+    type: Class
+  - uid: AbysmalCore.UI.Controls.Panel
+    name: Panel
+    type: Class
+  - uid: AbysmalCore.UI.Controls.Picture
+    name: Picture
+    type: Class
+  - uid: AbysmalCore.UI.Controls.Toggle
+    name: Toggle
+    type: Class
+  - uid: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+    name: Toggle.StateChangedEventHandler
+    type: Delegate
+- uid: AbysmalCore.UI.Styling
+  name: AbysmalCore.UI.Styling
+  type: Namespace
+  items:
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    type: Interface
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: IBrush.BrushType
+    type: Enum
+  - uid: AbysmalCore.UI.Styling.Style
+    name: Style
+    type: Class
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    type: Struct
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: StyleMap.ControlStyleType
+    type: Enum
+  - uid: AbysmalCore.UI.Styling.Theme
+    name: Theme
+    type: Struct
+- uid: AbysmalCore.UI.Styling.Brushes
+  name: AbysmalCore.UI.Styling.Brushes
+  type: Namespace
+  items:
+  - uid: AbysmalCore.UI.Styling.Brushes.ImageBrush
+    name: ImageBrush
+    type: Class
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+    name: LinearGradientBrush
+    type: Class
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+    name: LinearGradientBrush.GradientDirection
+    type: Enum
+  - uid: AbysmalCore.UI.Styling.Brushes.NineSliceBrush
+    name: NineSliceBrush
+    type: Class
+  - uid: AbysmalCore.UI.Styling.Brushes.RadialGradientBrush
+    name: RadialGradientBrush
+    type: Class
+  - uid: AbysmalCore.UI.Styling.Brushes.ShaderBrush
+    name: ShaderBrush
+    type: Class
+  - uid: AbysmalCore.UI.Styling.Brushes.SolidBrush
+    name: SolidBrush
+    type: Class
+memberLayout: SamePage

@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  id: UIElement.OnMouseEnterExitEventArgs
+  parent: AbysmalCore.UI
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: UIElement.OnMouseEnterExitEventArgs
+  nameWithType: UIElement.OnMouseEnterExitEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  type: Delegate
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: OnMouseEnterExitEventArgs
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 198
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Delegate used when the mouse enters or exits the controls bounds
+  example: []
+  syntax:
+    content: public delegate void UIElement.OnMouseEnterExitEventArgs(UIElement sender, Vector2Int mouse, int frame)
+    parameters:
+    - id: sender
+      type: AbysmalCore.UI.UIElement
+      description: ''
+    - id: mouse
+      type: AbysmalCore.Vector2Int
+      description: ''
+    - id: frame
+      type: System.Int32
+      description: ''
+    content.vb: Public Delegate Sub UIElement.OnMouseEnterExitEventArgs(sender As UIElement, mouse As Vector2Int, frame As Integer)
+references:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+- uid: AbysmalCore.Vector2Int
+  commentId: T:AbysmalCore.Vector2Int
+  parent: AbysmalCore
+  href: AbysmalCore.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: AbysmalCore.Vector2Int
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  href: AbysmalCore.html
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

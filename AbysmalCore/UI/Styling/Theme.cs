@@ -9,14 +9,40 @@ namespace AbysmalCore.UI.Styling
     [DebugInfo("ui global style")]
     public struct Theme
     {
+        /// <summary>
+        /// Stylemap to use when no brushes specified
+        /// </summary>
         public StyleMap DefaultStyleMap;
+        /// <summary>
+        /// The middle color
+        /// </summary>
         public Color Layer;
+        /// <summary>
+        /// The base color
+        /// </summary>
         public Color Core;
+        /// <summary>
+        /// The accent color
+        /// </summary>
         public Color Accent;
+        /// <summary>
+        /// Color to use when drawing text
+        /// </summary>
         public Color Text;
 
+        /// <summary>
+        /// Creates a new theme
+        /// </summary>
         public Theme() { }
 
+        /// <summary>
+        /// Creates a new theme from 3 colors and a control style
+        /// </summary>
+        /// <param name="core"></param>The
+        /// <param name="layer"></param>
+        /// <param name="accent"></param>
+        /// <param name="text"></param>
+        /// <param name="style"></param>
         public Theme(Color core, Color layer, Color accent, Color text, StyleMap.ControlStyleType style = StyleMap.ControlStyleType.Rounded)
         {
             Core = core;
@@ -80,6 +106,14 @@ namespace AbysmalCore.UI.Styling
             };
         }
 
+        /// <summary>
+        /// Creates a new theme from 3 brushes and a control style
+        /// </summary>
+        /// <param name="core"></param>
+        /// <param name="layer"></param>
+        /// <param name="accent"></param>
+        /// <param name="text"></param>
+        /// <param name="style"></param>
         public Theme(IBrush core, IBrush layer, IBrush accent, IBrush text, StyleMap.ControlStyleType style = StyleMap.ControlStyleType.Rounded)
         {
             Core = core.Fallback();
@@ -143,6 +177,11 @@ namespace AbysmalCore.UI.Styling
             };
         }
 
+        /// <summary>
+        /// Dynamically creates a new theme from a single color
+        /// </summary>
+        /// <param name="c"></param>The color
+        /// <param name="text"></param>The color to use on text
         public Theme(Color c, Color text)
         {
             Text = text;

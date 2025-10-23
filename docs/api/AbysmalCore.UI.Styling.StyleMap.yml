@@ -1,0 +1,839 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.StyleMap
+  commentId: T:AbysmalCore.UI.Styling.StyleMap
+  id: StyleMap
+  parent: AbysmalCore.UI.Styling
+  children:
+  - AbysmalCore.UI.Styling.StyleMap.#ctor(System.Boolean)
+  - AbysmalCore.UI.Styling.StyleMap.Activated
+  - AbysmalCore.UI.Styling.StyleMap.Clicked
+  - AbysmalCore.UI.Styling.StyleMap.ControlStyle
+  - AbysmalCore.UI.Styling.StyleMap.Disabled
+  - AbysmalCore.UI.Styling.StyleMap.Hovered
+  - AbysmalCore.UI.Styling.StyleMap.HoveredActivated
+  - AbysmalCore.UI.Styling.StyleMap.HoveredDisabled
+  - AbysmalCore.UI.Styling.StyleMap.Normal
+  - AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]},AbysmalCore.UI.UIElement)
+  langs:
+  - csharp
+  - vb
+  name: StyleMap
+  nameWithType: StyleMap
+  fullName: AbysmalCore.UI.Styling.StyleMap
+  type: Struct
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: StyleMap
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 7
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Contains style information for a specific control states
+  example: []
+  syntax:
+    content: >-
+      [DebugInfo("control specific state styles", false)]
+
+      public struct StyleMap
+    content.vb: >-
+      <DebugInfo("control specific state styles", False)>
+
+      Public Structure StyleMap
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: AbysmalCore.Debugging.DebugInfoAttribute
+    ctor: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: control specific state styles
+    - type: System.Boolean
+      value: false
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyle
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.ControlStyle
+  id: ControlStyle
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: ControlStyle
+  nameWithType: StyleMap.ControlStyle
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyle
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ControlStyle
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 28
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: The style of the control
+  example: []
+  syntax:
+    content: public StyleMap.ControlStyleType ControlStyle
+    return:
+      type: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    content.vb: Public ControlStyle As StyleMap.ControlStyleType
+- uid: AbysmalCore.UI.Styling.StyleMap.Hovered
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Hovered
+  id: Hovered
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: Hovered
+  nameWithType: StyleMap.Hovered
+  fullName: AbysmalCore.UI.Styling.StyleMap.Hovered
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Hovered
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 32
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Style to use when the mouse is in the controls bounds
+  example: []
+  syntax:
+    content: public Style Hovered
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public Hovered As Style
+- uid: AbysmalCore.UI.Styling.StyleMap.Clicked
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Clicked
+  id: Clicked
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: Clicked
+  nameWithType: StyleMap.Clicked
+  fullName: AbysmalCore.UI.Styling.StyleMap.Clicked
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Clicked
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 36
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Style to use when the mouse is in the controls bounds and the left mouse button is down
+  example: []
+  syntax:
+    content: public Style Clicked
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public Clicked As Style
+- uid: AbysmalCore.UI.Styling.StyleMap.Normal
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Normal
+  id: Normal
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: StyleMap.Normal
+  fullName: AbysmalCore.UI.Styling.StyleMap.Normal
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Normal
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 40
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Style to use when no other styles are applicable
+  example: []
+  syntax:
+    content: public Style Normal
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public Normal As Style
+- uid: AbysmalCore.UI.Styling.StyleMap.Disabled
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Disabled
+  id: Disabled
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: StyleMap.Disabled
+  fullName: AbysmalCore.UI.Styling.StyleMap.Disabled
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Disabled
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 44
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Style to use when the control cannot be interacted with
+  example: []
+  syntax:
+    content: public Style Disabled
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public Disabled As Style
+- uid: AbysmalCore.UI.Styling.StyleMap.HoveredDisabled
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.HoveredDisabled
+  id: HoveredDisabled
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: HoveredDisabled
+  nameWithType: StyleMap.HoveredDisabled
+  fullName: AbysmalCore.UI.Styling.StyleMap.HoveredDisabled
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: HoveredDisabled
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 48
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Style to use when the control cannot be interacted with and the mouse is in the controls bounds
+  example: []
+  syntax:
+    content: public Style HoveredDisabled
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public HoveredDisabled As Style
+- uid: AbysmalCore.UI.Styling.StyleMap.Activated
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.Activated
+  id: Activated
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: Activated
+  nameWithType: StyleMap.Activated
+  fullName: AbysmalCore.UI.Styling.StyleMap.Activated
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Activated
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 52
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Style to used when focused
+  example: []
+  syntax:
+    content: public Style Activated
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public Activated As Style
+- uid: AbysmalCore.UI.Styling.StyleMap.HoveredActivated
+  commentId: F:AbysmalCore.UI.Styling.StyleMap.HoveredActivated
+  id: HoveredActivated
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: HoveredActivated
+  nameWithType: StyleMap.HoveredActivated
+  fullName: AbysmalCore.UI.Styling.StyleMap.HoveredActivated
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: HoveredActivated
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 56
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Style to use when focused and mouse is in the controls bounds
+  example: []
+  syntax:
+    content: public Style HoveredActivated
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public HoveredActivated As Style
+- uid: AbysmalCore.UI.Styling.StyleMap.#ctor(System.Boolean)
+  commentId: M:AbysmalCore.UI.Styling.StyleMap.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: StyleMap(bool)
+  nameWithType: StyleMap.StyleMap(bool)
+  fullName: AbysmalCore.UI.Styling.StyleMap.StyleMap(bool)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 62
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Creates a new style map
+  example: []
+  syntax:
+    content: public StyleMap(bool useGlobalTheme = false)
+    parameters:
+    - id: useGlobalTheme
+      type: System.Boolean
+      description: ''
+    content.vb: Public Sub New(useGlobalTheme As Boolean = False)
+  overload: AbysmalCore.UI.Styling.StyleMap.#ctor*
+  nameWithType.vb: StyleMap.New(Boolean)
+  fullName.vb: AbysmalCore.UI.Styling.StyleMap.New(Boolean)
+  name.vb: New(Boolean)
+- uid: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]},AbysmalCore.UI.UIElement)
+  commentId: M:AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]},AbysmalCore.UI.UIElement)
+  id: ValidateBrushes(System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]},AbysmalCore.UI.UIElement)
+  parent: AbysmalCore.UI.Styling.StyleMap
+  langs:
+  - csharp
+  - vb
+  name: ValidateBrushes(Dictionary<ControlStyleType, BrushType[]>, UIElement)
+  nameWithType: StyleMap.ValidateBrushes(Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]>, UIElement)
+  fullName: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary<AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType[]>, AbysmalCore.UI.UIElement)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/StyleMap.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ValidateBrushes
+    path: ../AbysmalCore/UI/Styling/StyleMap.cs
+    startLine: 93
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: Checks compatible brushes with the current ones
+  example: []
+  syntax:
+    content: public void ValidateBrushes(Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]> supported, UIElement control)
+    parameters:
+    - id: supported
+      type: System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]}
+      description: ''
+    - id: control
+      type: AbysmalCore.UI.UIElement
+      description: ''
+    content.vb: Public Sub ValidateBrushes(supported As Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType()), control As UIElement)
+  overload: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes*
+  nameWithType.vb: StyleMap.ValidateBrushes(Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType()), UIElement)
+  fullName.vb: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes(System.Collections.Generic.Dictionary(Of AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType()), AbysmalCore.UI.UIElement)
+  name.vb: ValidateBrushes(Dictionary(Of ControlStyleType, BrushType()), UIElement)
+references:
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  commentId: T:AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.StyleMap.html
+  name: StyleMap.ControlStyleType
+  nameWithType: StyleMap.ControlStyleType
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+- uid: AbysmalCore.UI.Styling.Style
+  commentId: T:AbysmalCore.UI.Styling.Style
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.Style.html
+  name: Style
+  nameWithType: Style
+  fullName: AbysmalCore.UI.Styling.Style
+- uid: AbysmalCore.UI.Window
+  commentId: T:AbysmalCore.UI.Window
+  href: AbysmalCore.UI.Window.html
+  name: Window
+  nameWithType: Window
+  fullName: AbysmalCore.UI.Window
+- uid: AbysmalCore.UI.Styling.StyleMap.#ctor*
+  commentId: Overload:AbysmalCore.UI.Styling.StyleMap.#ctor
+  href: AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap__ctor_System_Boolean_
+  name: StyleMap
+  nameWithType: StyleMap.StyleMap
+  fullName: AbysmalCore.UI.Styling.StyleMap.StyleMap
+  nameWithType.vb: StyleMap.New
+  fullName.vb: AbysmalCore.UI.Styling.StyleMap.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes*
+  commentId: Overload:AbysmalCore.UI.Styling.StyleMap.ValidateBrushes
+  href: AbysmalCore.UI.Styling.StyleMap.html#AbysmalCore_UI_Styling_StyleMap_ValidateBrushes_System_Collections_Generic_Dictionary_AbysmalCore_UI_Styling_StyleMap_ControlStyleType_AbysmalCore_UI_Styling_IBrush_BrushType____AbysmalCore_UI_UIElement_
+  name: ValidateBrushes
+  nameWithType: StyleMap.ValidateBrushes
+  fullName: AbysmalCore.UI.Styling.StyleMap.ValidateBrushes
+- uid: System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]}
+  commentId: T:System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]>
+  nameWithType: Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]>
+  fullName: System.Collections.Generic.Dictionary<AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType[]>
+  nameWithType.vb: Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType())
+  fullName.vb: System.Collections.Generic.Dictionary(Of AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType())
+  name.vb: Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType())
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  - name: (
+  - name: )
+  - name: )
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html

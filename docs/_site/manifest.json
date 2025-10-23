@@ -1,0 +1,732 @@
+{
+  "source_base_path": "X:/VS/repos/AbysmalCore/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.AbysmalConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.AbysmalConsole.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.AbysmalConsole",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.AbysmalConsole.yml\" sourcestartlinenumber=\"1\">Standard formatted console input and output handler</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Debugging.AbysmalDebug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Debugging.AbysmalDebug.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Debugging.AbysmalDebug",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Debugging.AbysmalDebug.yml\" sourcestartlinenumber=\"1\">Standard debugging class for logging messages, warnings and errors to the console</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.yml\" sourcestartlinenumber=\"1\">Determines what to do upon logging an important message</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Debugging.DebugInfoAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Debugging.DebugInfoAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Debugging.DebugInfoAttribute",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Debugging.DebugInfoAttribute.yml\" sourcestartlinenumber=\"1\">Attribute for adding debug information to classes like names and importance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Debugging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Debugging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Debugging",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Extensibility.AbysmalExtensibility",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Extensibility.AbysmalExtensibility.yml\" sourcestartlinenumber=\"1\">Compiler and wrapper initializer</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Extensibility.AbysmalExtensibilityClass",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Extensibility.AbysmalExtensibilityClass.yml\" sourcestartlinenumber=\"1\">A uniform wrapper for classes used in the Abysmal Extensibility Framework</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Extensibility.AbysmalExtensibilityMethod",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Extensibility.AbysmalExtensibilityMethod.yml\" sourcestartlinenumber=\"1\">Defines a method in the Abysmal Extensibility Framework</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Extensibility.AbysmalExtensibilityProperty",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Extensibility.AbysmalExtensibilityProperty.yml\" sourcestartlinenumber=\"1\">Defines a property or field in the Abysmal Extensibility Framework</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Extensibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Extensibility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Extensibility",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Controls.Button.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Controls.Button.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Controls.Button",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Controls.Button.yml\" sourcestartlinenumber=\"1\">A clickable button control</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Controls.Label.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Controls.Label.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Controls.Label",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Controls.Label.yml\" sourcestartlinenumber=\"1\">A simple text label control</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Controls.Panel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Controls.Panel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Controls.Panel",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Controls.Panel.yml\" sourcestartlinenumber=\"1\">A container panel control</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Controls.Picture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Controls.Picture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Controls.Picture",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Controls.Picture.yml\" sourcestartlinenumber=\"1\">A control for displaying a picture/image</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler.yml\" sourcestartlinenumber=\"1\">Delegate used when a toggle is clicked</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Controls.Toggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Controls.Toggle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Controls.Toggle",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Controls.Toggle.yml\" sourcestartlinenumber=\"1\">A button-like control with 2 states: on and off</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Controls.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Controls",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.DwmPInvokeHelper.MaterialType",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.DwmPInvokeHelper.MaterialType.yml\" sourcestartlinenumber=\"1\">Type of window material</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.DwmPInvokeHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.DwmPInvokeHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.DwmPInvokeHelper",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.DwmPInvokeHelper.yml\" sourcestartlinenumber=\"1\">Windows-platform specific window helper</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.ImageBrush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.ImageBrush.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes.ImageBrush",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Brushes.ImageBrush.yml\" sourcestartlinenumber=\"1\">Draws an image</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.yml\" sourcestartlinenumber=\"1\">The direction of the gradient</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes.LinearGradientBrush",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.yml\" sourcestartlinenumber=\"1\">Draws a 2-color linear gradient</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes.NineSliceBrush",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Brushes.NineSliceBrush.yml\" sourcestartlinenumber=\"1\">Draws a 9slice texture</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes.RadialGradientBrush",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Brushes.RadialGradientBrush.yml\" sourcestartlinenumber=\"1\">Draws a radial gradient</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes.ShaderBrush",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Brushes.ShaderBrush.yml\" sourcestartlinenumber=\"1\">Draws a shader</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.SolidBrush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.SolidBrush.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes.SolidBrush",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Brushes.SolidBrush.yml\" sourcestartlinenumber=\"1\">Draws a solid color</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Brushes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Brushes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Brushes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.IBrush.BrushType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.IBrush.BrushType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.IBrush.BrushType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.IBrush.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.IBrush.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.IBrush",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.IBrush.yml\" sourcestartlinenumber=\"1\">Represents an abstraction of a brush used for drawing UI elements</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Style.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Style.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Style",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Style.yml\" sourcestartlinenumber=\"1\">Contains style information for a specific control</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.StyleMap.ControlStyleType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.StyleMap.ControlStyleType",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.StyleMap.ControlStyleType.yml\" sourcestartlinenumber=\"1\">The shape style of the control</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.StyleMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.StyleMap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.StyleMap",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.StyleMap.yml\" sourcestartlinenumber=\"1\">Contains style information for a specific control states</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.Theme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.Theme.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling.Theme",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Styling.Theme.yml\" sourcestartlinenumber=\"1\">Represents a global theme for the user interface including palette colors and default styles</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Styling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Styling.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Styling",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.UIElement.OnClickedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.UIElement.OnClickedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.UIElement.OnClickedEventArgs",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.UIElement.OnClickedEventArgs.yml\" sourcestartlinenumber=\"1\">Delegate for when the control is clicked</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.UIElement.OnHoveredEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.UIElement.OnHoveredEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.UIElement.OnHoveredEventArgs",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.UIElement.OnHoveredEventArgs.yml\" sourcestartlinenumber=\"1\">Delegate for when the control is hovered over</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.yml\" sourcestartlinenumber=\"1\">Delegate used when the mouse enters or exits the controls bounds</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.UIElement.OnStateChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.UIElement.OnStateChangedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.UIElement.OnStateChangedEventArgs",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.UIElement.OnStateChangedEventArgs.yml\" sourcestartlinenumber=\"1\">The delegate to use when a property is changed</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.UIElement.StateChangeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.UIElement.StateChangeType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.UIElement.StateChangeType",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.UIElement.StateChangeType.yml\" sourcestartlinenumber=\"1\">The property that changed</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.UIElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.UIElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.UIElement",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.UIElement.yml\" sourcestartlinenumber=\"1\">Represents an abstraction of a user interface element</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.UserInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.UserInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.UserInterface",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.UserInterface.yml\" sourcestartlinenumber=\"1\">Contains methods and properties for managing the user interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Window.WindowState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Window.WindowState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Window.WindowState",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Window.WindowState.yml\" sourcestartlinenumber=\"1\">Represents the current view of the window</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.Window.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.Window.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI.Window",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.UI.Window.yml\" sourcestartlinenumber=\"1\">Contains methods and properties for managing the application window</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.UI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.UI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.Vector2Int.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.Vector2Int.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore.Vector2Int",
+      "Summary": "<p sourcefile=\"api/AbysmalCore.Vector2Int.yml\" sourcestartlinenumber=\"1\">Represents a 2D vector with integer components</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AbysmalCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AbysmalCore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AbysmalCore",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

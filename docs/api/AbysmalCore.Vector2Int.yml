@@ -1,0 +1,609 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.Vector2Int
+  commentId: T:AbysmalCore.Vector2Int
+  id: Vector2Int
+  parent: AbysmalCore
+  children:
+  - AbysmalCore.Vector2Int.#ctor(System.Int32)
+  - AbysmalCore.Vector2Int.#ctor(System.Int32,System.Int32)
+  - AbysmalCore.Vector2Int.#ctor(System.Numerics.Vector2)
+  - AbysmalCore.Vector2Int.#ctor(System.Single)
+  - AbysmalCore.Vector2Int.#ctor(System.Single,System.Single)
+  - AbysmalCore.Vector2Int.ToSys
+  - AbysmalCore.Vector2Int.X
+  - AbysmalCore.Vector2Int.Y
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: AbysmalCore.Vector2Int
+  type: Struct
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Vector2Int
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 7
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Represents a 2D vector with integer components
+  example: []
+  syntax:
+    content: public struct Vector2Int
+    content.vb: Public Structure Vector2Int
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: AbysmalCore.Vector2Int.X
+  commentId: F:AbysmalCore.Vector2Int.X
+  id: X
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Vector2Int.X
+  fullName: AbysmalCore.Vector2Int.X
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: X
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 12
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: The x axis
+  example: []
+  syntax:
+    content: public int X
+    return:
+      type: System.Int32
+    content.vb: Public X As Integer
+- uid: AbysmalCore.Vector2Int.Y
+  commentId: F:AbysmalCore.Vector2Int.Y
+  id: Y
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Vector2Int.Y
+  fullName: AbysmalCore.Vector2Int.Y
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Y
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 16
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: The y axis
+  example: []
+  syntax:
+    content: public int Y
+    return:
+      type: System.Int32
+    content.vb: Public Y As Integer
+- uid: AbysmalCore.Vector2Int.#ctor(System.Int32,System.Int32)
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int(int, int)
+  nameWithType: Vector2Int.Vector2Int(int, int)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 23
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Creates a new vector from 2 ints
+  example: []
+  syntax:
+    content: public Vector2Int(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: ''
+    - id: y
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(x As Integer, y As Integer)
+  overload: AbysmalCore.Vector2Int.#ctor*
+  nameWithType.vb: Vector2Int.New(Integer, Integer)
+  fullName.vb: AbysmalCore.Vector2Int.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Single,System.Single)
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int(float, float)
+  nameWithType: Vector2Int.Vector2Int(float, float)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 29
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Creates a new vector from 2 floats
+  example: []
+  syntax:
+    content: public Vector2Int(float x, float y)
+    parameters:
+    - id: x
+      type: System.Single
+      description: ''
+    - id: y
+      type: System.Single
+      description: ''
+    content.vb: Public Sub New(x As Single, y As Single)
+  overload: AbysmalCore.Vector2Int.#ctor*
+  nameWithType.vb: Vector2Int.New(Single, Single)
+  fullName.vb: AbysmalCore.Vector2Int.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Int32)
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int(int)
+  nameWithType: Vector2Int.Vector2Int(int)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(int)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 34
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Creates a new vector from 1 int
+  example: []
+  syntax:
+    content: public Vector2Int(int n)
+    parameters:
+    - id: n
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(n As Integer)
+  overload: AbysmalCore.Vector2Int.#ctor*
+  nameWithType.vb: Vector2Int.New(Integer)
+  fullName.vb: AbysmalCore.Vector2Int.New(Integer)
+  name.vb: New(Integer)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Single)
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int(float)
+  nameWithType: Vector2Int.Vector2Int(float)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(float)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 39
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Creates a new vector from 1 float
+  example: []
+  syntax:
+    content: public Vector2Int(float n)
+    parameters:
+    - id: n
+      type: System.Single
+      description: ''
+    content.vb: Public Sub New(n As Single)
+  overload: AbysmalCore.Vector2Int.#ctor*
+  nameWithType.vb: Vector2Int.New(Single)
+  fullName.vb: AbysmalCore.Vector2Int.New(Single)
+  name.vb: New(Single)
+- uid: AbysmalCore.Vector2Int.#ctor(System.Numerics.Vector2)
+  commentId: M:AbysmalCore.Vector2Int.#ctor(System.Numerics.Vector2)
+  id: '#ctor(System.Numerics.Vector2)'
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int(Vector2)
+  nameWithType: Vector2Int.Vector2Int(Vector2)
+  fullName: AbysmalCore.Vector2Int.Vector2Int(System.Numerics.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 44
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  summary: Creates a new vector from a <xref href="System.Numerics.Vector2" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public Vector2Int(Vector2 v)
+    parameters:
+    - id: v
+      type: System.Numerics.Vector2
+      description: ''
+    content.vb: Public Sub New(v As Vector2)
+  overload: AbysmalCore.Vector2Int.#ctor*
+  nameWithType.vb: Vector2Int.New(Vector2)
+  fullName.vb: AbysmalCore.Vector2Int.New(System.Numerics.Vector2)
+  name.vb: New(Vector2)
+- uid: AbysmalCore.Vector2Int.ToSys
+  commentId: M:AbysmalCore.Vector2Int.ToSys
+  id: ToSys
+  parent: AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: ToSys()
+  nameWithType: Vector2Int.ToSys()
+  fullName: AbysmalCore.Vector2Int.ToSys()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/Vector2Int.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ToSys
+    path: ../AbysmalCore/Vector2Int.cs
+    startLine: 48
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore
+  example: []
+  syntax:
+    content: public Vector2 ToSys()
+    return:
+      type: System.Numerics.Vector2
+    content.vb: Public Function ToSys() As Vector2
+  overload: AbysmalCore.Vector2Int.ToSys*
+references:
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  href: AbysmalCore.html
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AbysmalCore.Vector2Int.#ctor*
+  commentId: Overload:AbysmalCore.Vector2Int.#ctor
+  href: AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int__ctor_System_Int32_System_Int32_
+  name: Vector2Int
+  nameWithType: Vector2Int.Vector2Int
+  fullName: AbysmalCore.Vector2Int.Vector2Int
+  nameWithType.vb: Vector2Int.New
+  fullName.vb: AbysmalCore.Vector2Int.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Numerics.Vector2
+  commentId: T:System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.vector2
+  name: Vector2
+  nameWithType: Vector2
+  fullName: System.Numerics.Vector2
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: AbysmalCore.Vector2Int.ToSys*
+  commentId: Overload:AbysmalCore.Vector2Int.ToSys
+  href: AbysmalCore.Vector2Int.html#AbysmalCore_Vector2Int_ToSys
+  name: ToSys
+  nameWithType: Vector2Int.ToSys
+  fullName: AbysmalCore.Vector2Int.ToSys

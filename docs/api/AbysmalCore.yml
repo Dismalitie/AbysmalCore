@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  id: AbysmalCore
+  children:
+  - AbysmalCore.AbysmalConsole
+  - AbysmalCore.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore
+  type: Namespace
+  assemblies:
+  - AbysmalCore
+references:
+- uid: AbysmalCore.AbysmalConsole
+  commentId: T:AbysmalCore.AbysmalConsole
+  href: AbysmalCore.AbysmalConsole.html
+  name: AbysmalConsole
+  nameWithType: AbysmalConsole
+  fullName: AbysmalCore.AbysmalConsole
+- uid: AbysmalCore.Vector2Int
+  commentId: T:AbysmalCore.Vector2Int
+  parent: AbysmalCore
+  href: AbysmalCore.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: AbysmalCore.Vector2Int
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  href: AbysmalCore.html
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore

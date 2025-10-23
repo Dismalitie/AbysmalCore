@@ -1,0 +1,1696 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  id: UIElement
+  parent: AbysmalCore.UI
+  children:
+  - AbysmalCore.UI.UIElement.AddChild(AbysmalCore.UI.UIElement)
+  - AbysmalCore.UI.UIElement.Children
+  - AbysmalCore.UI.UIElement.Clicked
+  - AbysmalCore.UI.UIElement.CurrentStyle
+  - AbysmalCore.UI.UIElement.Disable
+  - AbysmalCore.UI.UIElement.Draw
+  - AbysmalCore.UI.UIElement.Enable
+  - AbysmalCore.UI.UIElement.Enabled
+  - AbysmalCore.UI.UIElement.GetChild(System.String)
+  - AbysmalCore.UI.UIElement.GetChildren
+  - AbysmalCore.UI.UIElement.Hide
+  - AbysmalCore.UI.UIElement.Hovered
+  - AbysmalCore.UI.UIElement.Name
+  - AbysmalCore.UI.UIElement.OnClicked
+  - AbysmalCore.UI.UIElement.OnHovered
+  - AbysmalCore.UI.UIElement.OnMouseEnter
+  - AbysmalCore.UI.UIElement.OnMouseExit
+  - AbysmalCore.UI.UIElement.OnStateChanged
+  - AbysmalCore.UI.UIElement.Position
+  - AbysmalCore.UI.UIElement.RemoveChild(AbysmalCore.UI.UIElement)
+  - AbysmalCore.UI.UIElement.RemoveChild(System.String)
+  - AbysmalCore.UI.UIElement.Show
+  - AbysmalCore.UI.UIElement.Size
+  - AbysmalCore.UI.UIElement.StyleMap
+  - AbysmalCore.UI.UIElement.SupportedBrushes
+  - AbysmalCore.UI.UIElement.Visible
+  - AbysmalCore.UI.UIElement._UseFallbackForUnsupportedBrushes
+  - AbysmalCore.UI.UIElement._draw
+  langs:
+  - csharp
+  - vb
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+  type: Class
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: UIElement
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 8
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Represents an abstraction of a user interface element
+  example: []
+  syntax:
+    content: public abstract class UIElement
+    content.vb: Public MustInherit Class UIElement
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - AbysmalCore.UI.Controls.Button
+  - AbysmalCore.UI.Controls.Label
+  - AbysmalCore.UI.Controls.Panel
+  - AbysmalCore.UI.Controls.Picture
+  - AbysmalCore.UI.Controls.Toggle
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AbysmalCore.UI.UIElement.Name
+  commentId: F:AbysmalCore.UI.UIElement.Name
+  id: Name
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UIElement.Name
+  fullName: AbysmalCore.UI.UIElement.Name
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Name
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 17
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Unique identifier of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> (used for retrieval with <xref href="AbysmalCore.UI.UIElement.GetChild(System.String)" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: public string Name
+    return:
+      type: System.String
+    content.vb: Public Name As String
+- uid: AbysmalCore.UI.UIElement.Position
+  commentId: F:AbysmalCore.UI.UIElement.Position
+  id: Position
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: UIElement.Position
+  fullName: AbysmalCore.UI.UIElement.Position
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Position
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 21
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Position of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> relative to the top left of its parent
+  example: []
+  syntax:
+    content: public Vector2Int Position
+    return:
+      type: AbysmalCore.Vector2Int
+    content.vb: Public Position As Vector2Int
+- uid: AbysmalCore.UI.UIElement.Size
+  commentId: F:AbysmalCore.UI.UIElement.Size
+  id: Size
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: UIElement.Size
+  fullName: AbysmalCore.UI.UIElement.Size
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Size
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 25
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Size of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> in pixels
+  example: []
+  syntax:
+    content: public Vector2Int Size
+    return:
+      type: AbysmalCore.Vector2Int
+    content.vb: Public Size As Vector2Int
+- uid: AbysmalCore.UI.UIElement.SupportedBrushes
+  commentId: F:AbysmalCore.UI.UIElement.SupportedBrushes
+  id: SupportedBrushes
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: SupportedBrushes
+  nameWithType: UIElement.SupportedBrushes
+  fullName: AbysmalCore.UI.UIElement.SupportedBrushes
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: SupportedBrushes
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 30
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Dictionary of supported brushes for each style type (used for validation)
+  example: []
+  syntax:
+    content: public Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]> SupportedBrushes
+    return:
+      type: System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]}
+    content.vb: Public SupportedBrushes As Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType())
+- uid: AbysmalCore.UI.UIElement._UseFallbackForUnsupportedBrushes
+  commentId: F:AbysmalCore.UI.UIElement._UseFallbackForUnsupportedBrushes
+  id: _UseFallbackForUnsupportedBrushes
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: _UseFallbackForUnsupportedBrushes
+  nameWithType: UIElement._UseFallbackForUnsupportedBrushes
+  fullName: AbysmalCore.UI.UIElement._UseFallbackForUnsupportedBrushes
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: _UseFallbackForUnsupportedBrushes
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 50
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: If true, unsupported brushes will use their fallback color instead of throwing an exception
+  example: []
+  syntax:
+    content: protected bool _UseFallbackForUnsupportedBrushes
+    return:
+      type: System.Boolean
+    content.vb: Protected _UseFallbackForUnsupportedBrushes As Boolean
+- uid: AbysmalCore.UI.UIElement.Children
+  commentId: P:AbysmalCore.UI.UIElement.Children
+  id: Children
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: UIElement.Children
+  fullName: AbysmalCore.UI.UIElement.Children
+  type: Property
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Children
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 55
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Child controls of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public List<UIElement> Children { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{AbysmalCore.UI.UIElement}
+    content.vb: Public ReadOnly Property Children As List(Of UIElement)
+  overload: AbysmalCore.UI.UIElement.Children*
+- uid: AbysmalCore.UI.UIElement.AddChild(AbysmalCore.UI.UIElement)
+  commentId: M:AbysmalCore.UI.UIElement.AddChild(AbysmalCore.UI.UIElement)
+  id: AddChild(AbysmalCore.UI.UIElement)
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: AddChild(UIElement)
+  nameWithType: UIElement.AddChild(UIElement)
+  fullName: AbysmalCore.UI.UIElement.AddChild(AbysmalCore.UI.UIElement)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: AddChild
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 64
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Adds a child <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void AddChild(UIElement element)
+    parameters:
+    - id: element
+      type: AbysmalCore.UI.UIElement
+      description: ''
+    content.vb: Public Sub AddChild(element As UIElement)
+  overload: AbysmalCore.UI.UIElement.AddChild*
+- uid: AbysmalCore.UI.UIElement.RemoveChild(AbysmalCore.UI.UIElement)
+  commentId: M:AbysmalCore.UI.UIElement.RemoveChild(AbysmalCore.UI.UIElement)
+  id: RemoveChild(AbysmalCore.UI.UIElement)
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: RemoveChild(UIElement)
+  nameWithType: UIElement.RemoveChild(UIElement)
+  fullName: AbysmalCore.UI.UIElement.RemoveChild(AbysmalCore.UI.UIElement)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: RemoveChild
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 73
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Removes a child <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void RemoveChild(UIElement element)
+    parameters:
+    - id: element
+      type: AbysmalCore.UI.UIElement
+      description: ''
+    content.vb: Public Sub RemoveChild(element As UIElement)
+  overload: AbysmalCore.UI.UIElement.RemoveChild*
+- uid: AbysmalCore.UI.UIElement.RemoveChild(System.String)
+  commentId: M:AbysmalCore.UI.UIElement.RemoveChild(System.String)
+  id: RemoveChild(System.String)
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: RemoveChild(string)
+  nameWithType: UIElement.RemoveChild(string)
+  fullName: AbysmalCore.UI.UIElement.RemoveChild(string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: RemoveChild
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 78
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Removes the first child <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> with the specified name
+  example: []
+  syntax:
+    content: public void RemoveChild(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    content.vb: Public Sub RemoveChild(name As String)
+  overload: AbysmalCore.UI.UIElement.RemoveChild*
+  nameWithType.vb: UIElement.RemoveChild(String)
+  fullName.vb: AbysmalCore.UI.UIElement.RemoveChild(String)
+  name.vb: RemoveChild(String)
+- uid: AbysmalCore.UI.UIElement.GetChild(System.String)
+  commentId: M:AbysmalCore.UI.UIElement.GetChild(System.String)
+  id: GetChild(System.String)
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: GetChild(string)
+  nameWithType: UIElement.GetChild(string)
+  fullName: AbysmalCore.UI.UIElement.GetChild(string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: GetChild
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 84
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Returns the first child <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> with the specified name
+  example: []
+  syntax:
+    content: public UIElement? GetChild(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: AbysmalCore.UI.UIElement
+      description: First instance of <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> with <code class="paramref">name</code>, else null
+    content.vb: Public Function GetChild(name As String) As UIElement
+  overload: AbysmalCore.UI.UIElement.GetChild*
+  nameWithType.vb: UIElement.GetChild(String)
+  fullName.vb: AbysmalCore.UI.UIElement.GetChild(String)
+  name.vb: GetChild(String)
+- uid: AbysmalCore.UI.UIElement.GetChildren
+  commentId: M:AbysmalCore.UI.UIElement.GetChildren
+  id: GetChildren
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: GetChildren()
+  nameWithType: UIElement.GetChildren()
+  fullName: AbysmalCore.UI.UIElement.GetChildren()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: GetChildren
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 93
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Returns every child <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public UIElement[] GetChildren()
+    return:
+      type: AbysmalCore.UI.UIElement[]
+      description: <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>[]
+    content.vb: Public Function GetChildren() As UIElement()
+  overload: AbysmalCore.UI.UIElement.GetChildren*
+- uid: AbysmalCore.UI.UIElement.Hovered
+  commentId: P:AbysmalCore.UI.UIElement.Hovered
+  id: Hovered
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Hovered
+  nameWithType: UIElement.Hovered
+  fullName: AbysmalCore.UI.UIElement.Hovered
+  type: Property
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Hovered
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 98
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Whether the mouse is currently hovering over this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public bool Hovered { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Hovered As Boolean
+  overload: AbysmalCore.UI.UIElement.Hovered*
+- uid: AbysmalCore.UI.UIElement.Clicked
+  commentId: P:AbysmalCore.UI.UIElement.Clicked
+  id: Clicked
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Clicked
+  nameWithType: UIElement.Clicked
+  fullName: AbysmalCore.UI.UIElement.Clicked
+  type: Property
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Clicked
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 121
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Determines whether the mouse is over this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> and the left mouse button is held down
+  example: []
+  syntax:
+    content: public bool Clicked { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Clicked As Boolean
+  overload: AbysmalCore.UI.UIElement.Clicked*
+- uid: AbysmalCore.UI.UIElement.OnClicked
+  commentId: E:AbysmalCore.UI.UIElement.OnClicked
+  id: OnClicked
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: OnClicked
+  nameWithType: UIElement.OnClicked
+  fullName: AbysmalCore.UI.UIElement.OnClicked
+  type: Event
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: OnClicked
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 182
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Fired when this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> is clicked
+  example: []
+  syntax:
+    content: public event UIElement.OnClickedEventArgs? OnClicked
+    return:
+      type: AbysmalCore.UI.UIElement.OnClickedEventArgs
+    content.vb: Public Event OnClicked As UIElement.OnClickedEventArgs
+- uid: AbysmalCore.UI.UIElement.OnStateChanged
+  commentId: E:AbysmalCore.UI.UIElement.OnStateChanged
+  id: OnStateChanged
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: OnStateChanged
+  nameWithType: UIElement.OnStateChanged
+  fullName: AbysmalCore.UI.UIElement.OnStateChanged
+  type: Event
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: OnStateChanged
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 186
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Fired when a state of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> changes
+  example: []
+  syntax:
+    content: public event UIElement.OnStateChangedEventArgs? OnStateChanged
+    return:
+      type: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+    content.vb: Public Event OnStateChanged As UIElement.OnStateChangedEventArgs
+- uid: AbysmalCore.UI.UIElement.OnHovered
+  commentId: E:AbysmalCore.UI.UIElement.OnHovered
+  id: OnHovered
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: OnHovered
+  nameWithType: UIElement.OnHovered
+  fullName: AbysmalCore.UI.UIElement.OnHovered
+  type: Event
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: OnHovered
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 190
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Fired once upon hovering over this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public event UIElement.OnHoveredEventArgs? OnHovered
+    return:
+      type: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+    content.vb: Public Event OnHovered As UIElement.OnHoveredEventArgs
+- uid: AbysmalCore.UI.UIElement.OnMouseEnter
+  commentId: E:AbysmalCore.UI.UIElement.OnMouseEnter
+  id: OnMouseEnter
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: OnMouseEnter
+  nameWithType: UIElement.OnMouseEnter
+  fullName: AbysmalCore.UI.UIElement.OnMouseEnter
+  type: Event
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: OnMouseEnter
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 202
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Fired once when the mouse enters the bounds of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public event UIElement.OnMouseEnterExitEventArgs? OnMouseEnter
+    return:
+      type: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+    content.vb: Public Event OnMouseEnter As UIElement.OnMouseEnterExitEventArgs
+- uid: AbysmalCore.UI.UIElement.OnMouseExit
+  commentId: E:AbysmalCore.UI.UIElement.OnMouseExit
+  id: OnMouseExit
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: OnMouseExit
+  nameWithType: UIElement.OnMouseExit
+  fullName: AbysmalCore.UI.UIElement.OnMouseExit
+  type: Event
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: OnMouseExit
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 206
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Fired once when the mouse exits the bounds of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public event UIElement.OnMouseEnterExitEventArgs? OnMouseExit
+    return:
+      type: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+    content.vb: Public Event OnMouseExit As UIElement.OnMouseEnterExitEventArgs
+- uid: AbysmalCore.UI.UIElement.Enabled
+  commentId: P:AbysmalCore.UI.UIElement.Enabled
+  id: Enabled
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: UIElement.Enabled
+  fullName: AbysmalCore.UI.UIElement.Enabled
+  type: Property
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Enabled
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 211
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Determines whether this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> is enabled (can be interacted with)
+  example: []
+  syntax:
+    content: public bool Enabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Enabled As Boolean
+  overload: AbysmalCore.UI.UIElement.Enabled*
+- uid: AbysmalCore.UI.UIElement.Visible
+  commentId: P:AbysmalCore.UI.UIElement.Visible
+  id: Visible
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: UIElement.Visible
+  fullName: AbysmalCore.UI.UIElement.Visible
+  type: Property
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Visible
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 228
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Determines whether this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> is visible (drawn)
+  example: []
+  syntax:
+    content: public bool Visible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Visible As Boolean
+  overload: AbysmalCore.UI.UIElement.Visible*
+- uid: AbysmalCore.UI.UIElement.StyleMap
+  commentId: F:AbysmalCore.UI.UIElement.StyleMap
+  id: StyleMap
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: StyleMap
+  nameWithType: UIElement.StyleMap
+  fullName: AbysmalCore.UI.UIElement.StyleMap
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: StyleMap
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 245
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Style map containing styles for different states of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public StyleMap StyleMap
+    return:
+      type: AbysmalCore.UI.Styling.StyleMap
+    content.vb: Public StyleMap As StyleMap
+- uid: AbysmalCore.UI.UIElement.CurrentStyle
+  commentId: P:AbysmalCore.UI.UIElement.CurrentStyle
+  id: CurrentStyle
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: CurrentStyle
+  nameWithType: UIElement.CurrentStyle
+  fullName: AbysmalCore.UI.UIElement.CurrentStyle
+  type: Property
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: CurrentStyle
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 252
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Returns the current <xref href="AbysmalCore.UI.Styling.Style" data-throw-if-not-resolved="false"></xref> based on the state of this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public Style CurrentStyle { get; }
+    parameters: []
+    return:
+      type: AbysmalCore.UI.Styling.Style
+    content.vb: Public ReadOnly Property CurrentStyle As Style
+  overload: AbysmalCore.UI.UIElement.CurrentStyle*
+- uid: AbysmalCore.UI.UIElement._draw
+  commentId: M:AbysmalCore.UI.UIElement._draw
+  id: _draw
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: _draw()
+  nameWithType: UIElement._draw()
+  fullName: AbysmalCore.UI.UIElement._draw()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: _draw
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 270
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Draws the actual control
+  example: []
+  syntax:
+    content: protected abstract void _draw()
+    content.vb: Protected MustOverride Sub _draw()
+  overload: AbysmalCore.UI.UIElement._draw*
+- uid: AbysmalCore.UI.UIElement.Draw
+  commentId: M:AbysmalCore.UI.UIElement.Draw
+  id: Draw
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Draw()
+  nameWithType: UIElement.Draw()
+  fullName: AbysmalCore.UI.UIElement.Draw()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Draw
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 274
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Draws this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref> and its children
+  example: []
+  syntax:
+    content: public void Draw()
+    content.vb: Public Sub Draw()
+  overload: AbysmalCore.UI.UIElement.Draw*
+- uid: AbysmalCore.UI.UIElement.Disable
+  commentId: M:AbysmalCore.UI.UIElement.Disable
+  id: Disable
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: UIElement.Disable()
+  fullName: AbysmalCore.UI.UIElement.Disable()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Disable
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 314
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Disables interaction with this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public virtual void Disable()
+    content.vb: Public Overridable Sub Disable()
+  overload: AbysmalCore.UI.UIElement.Disable*
+- uid: AbysmalCore.UI.UIElement.Enable
+  commentId: M:AbysmalCore.UI.UIElement.Enable
+  id: Enable
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Enable()
+  nameWithType: UIElement.Enable()
+  fullName: AbysmalCore.UI.UIElement.Enable()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Enable
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 318
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Enables interaction with this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public virtual void Enable()
+    content.vb: Public Overridable Sub Enable()
+  overload: AbysmalCore.UI.UIElement.Enable*
+- uid: AbysmalCore.UI.UIElement.Hide
+  commentId: M:AbysmalCore.UI.UIElement.Hide
+  id: Hide
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: UIElement.Hide()
+  fullName: AbysmalCore.UI.UIElement.Hide()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Hide
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 323
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Hides this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public virtual void Hide()
+    content.vb: Public Overridable Sub Hide()
+  overload: AbysmalCore.UI.UIElement.Hide*
+- uid: AbysmalCore.UI.UIElement.Show
+  commentId: M:AbysmalCore.UI.UIElement.Show
+  id: Show
+  parent: AbysmalCore.UI.UIElement
+  langs:
+  - csharp
+  - vb
+  name: Show()
+  nameWithType: UIElement.Show()
+  fullName: AbysmalCore.UI.UIElement.Show()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Show
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 327
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: Unhides this <xref href="AbysmalCore.UI.UIElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public virtual void Show()
+    content.vb: Public Overridable Sub Show()
+  overload: AbysmalCore.UI.UIElement.Show*
+references:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+- uid: AbysmalCore.UI.UIElement.GetChild(System.String)
+  commentId: M:AbysmalCore.UI.UIElement.GetChild(System.String)
+  parent: AbysmalCore.UI.UIElement
+  isExternal: true
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChild_System_String_
+  name: GetChild(string)
+  nameWithType: UIElement.GetChild(string)
+  fullName: AbysmalCore.UI.UIElement.GetChild(string)
+  nameWithType.vb: UIElement.GetChild(String)
+  fullName.vb: AbysmalCore.UI.UIElement.GetChild(String)
+  name.vb: GetChild(String)
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement.GetChild(System.String)
+    name: GetChild
+    href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChild_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement.GetChild(System.String)
+    name: GetChild
+    href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChild_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AbysmalCore.Vector2Int
+  commentId: T:AbysmalCore.Vector2Int
+  parent: AbysmalCore
+  href: AbysmalCore.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: AbysmalCore.Vector2Int
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  href: AbysmalCore.html
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore
+- uid: System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]}
+  commentId: T:System.Collections.Generic.Dictionary{AbysmalCore.UI.Styling.StyleMap.ControlStyleType,AbysmalCore.UI.Styling.IBrush.BrushType[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]>
+  nameWithType: Dictionary<StyleMap.ControlStyleType, IBrush.BrushType[]>
+  fullName: System.Collections.Generic.Dictionary<AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType[]>
+  nameWithType.vb: Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType())
+  fullName.vb: System.Collections.Generic.Dictionary(Of AbysmalCore.UI.Styling.StyleMap.ControlStyleType, AbysmalCore.UI.Styling.IBrush.BrushType())
+  name.vb: Dictionary(Of StyleMap.ControlStyleType, IBrush.BrushType())
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AbysmalCore.UI.UIElement.Children*
+  commentId: Overload:AbysmalCore.UI.UIElement.Children
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Children
+  name: Children
+  nameWithType: UIElement.Children
+  fullName: AbysmalCore.UI.UIElement.Children
+- uid: System.Collections.Generic.List{AbysmalCore.UI.UIElement}
+  commentId: T:System.Collections.Generic.List{AbysmalCore.UI.UIElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<UIElement>
+  nameWithType: List<UIElement>
+  fullName: System.Collections.Generic.List<AbysmalCore.UI.UIElement>
+  nameWithType.vb: List(Of UIElement)
+  fullName.vb: System.Collections.Generic.List(Of AbysmalCore.UI.UIElement)
+  name.vb: List(Of UIElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AbysmalCore.UI.UIElement.AddChild*
+  commentId: Overload:AbysmalCore.UI.UIElement.AddChild
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_AddChild_AbysmalCore_UI_UIElement_
+  name: AddChild
+  nameWithType: UIElement.AddChild
+  fullName: AbysmalCore.UI.UIElement.AddChild
+- uid: AbysmalCore.UI.UIElement.RemoveChild*
+  commentId: Overload:AbysmalCore.UI.UIElement.RemoveChild
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_RemoveChild_AbysmalCore_UI_UIElement_
+  name: RemoveChild
+  nameWithType: UIElement.RemoveChild
+  fullName: AbysmalCore.UI.UIElement.RemoveChild
+- uid: AbysmalCore.UI.UIElement.GetChild*
+  commentId: Overload:AbysmalCore.UI.UIElement.GetChild
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChild_System_String_
+  name: GetChild
+  nameWithType: UIElement.GetChild
+  fullName: AbysmalCore.UI.UIElement.GetChild
+- uid: AbysmalCore.UI.UIElement.GetChildren*
+  commentId: Overload:AbysmalCore.UI.UIElement.GetChildren
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_GetChildren
+  name: GetChildren
+  nameWithType: UIElement.GetChildren
+  fullName: AbysmalCore.UI.UIElement.GetChildren
+- uid: AbysmalCore.UI.UIElement[]
+  isExternal: true
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement[]
+  nameWithType: UIElement[]
+  fullName: AbysmalCore.UI.UIElement[]
+  nameWithType.vb: UIElement()
+  fullName.vb: AbysmalCore.UI.UIElement()
+  name.vb: UIElement()
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: (
+  - name: )
+- uid: AbysmalCore.UI.UIElement.Hovered*
+  commentId: Overload:AbysmalCore.UI.UIElement.Hovered
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Hovered
+  name: Hovered
+  nameWithType: UIElement.Hovered
+  fullName: AbysmalCore.UI.UIElement.Hovered
+- uid: AbysmalCore.UI.UIElement.Clicked*
+  commentId: Overload:AbysmalCore.UI.UIElement.Clicked
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Clicked
+  name: Clicked
+  nameWithType: UIElement.Clicked
+  fullName: AbysmalCore.UI.UIElement.Clicked
+- uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnClickedEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnClickedEventArgs
+  nameWithType: UIElement.OnClickedEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnClickedEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+    name: OnClickedEventArgs
+    href: AbysmalCore.UI.UIElement.OnClickedEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+    name: OnClickedEventArgs
+    href: AbysmalCore.UI.UIElement.OnClickedEventArgs.html
+- uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnStateChangedEventArgs
+  nameWithType: UIElement.OnStateChangedEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+    name: OnStateChangedEventArgs
+    href: AbysmalCore.UI.UIElement.OnStateChangedEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+    name: OnStateChangedEventArgs
+    href: AbysmalCore.UI.UIElement.OnStateChangedEventArgs.html
+- uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnHoveredEventArgs
+  nameWithType: UIElement.OnHoveredEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+    name: OnHoveredEventArgs
+    href: AbysmalCore.UI.UIElement.OnHoveredEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+    name: OnHoveredEventArgs
+    href: AbysmalCore.UI.UIElement.OnHoveredEventArgs.html
+- uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnMouseEnterExitEventArgs
+  nameWithType: UIElement.OnMouseEnterExitEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+    name: OnMouseEnterExitEventArgs
+    href: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+    name: OnMouseEnterExitEventArgs
+    href: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.html
+- uid: AbysmalCore.UI.UIElement.Enabled*
+  commentId: Overload:AbysmalCore.UI.UIElement.Enabled
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Enabled
+  name: Enabled
+  nameWithType: UIElement.Enabled
+  fullName: AbysmalCore.UI.UIElement.Enabled
+- uid: AbysmalCore.UI.UIElement.Visible*
+  commentId: Overload:AbysmalCore.UI.UIElement.Visible
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Visible
+  name: Visible
+  nameWithType: UIElement.Visible
+  fullName: AbysmalCore.UI.UIElement.Visible
+- uid: AbysmalCore.UI.Styling.StyleMap
+  commentId: T:AbysmalCore.UI.Styling.StyleMap
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.StyleMap.html
+  name: StyleMap
+  nameWithType: StyleMap
+  fullName: AbysmalCore.UI.Styling.StyleMap
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+- uid: AbysmalCore.UI.Styling.Style
+  commentId: T:AbysmalCore.UI.Styling.Style
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.Style.html
+  name: Style
+  nameWithType: Style
+  fullName: AbysmalCore.UI.Styling.Style
+- uid: AbysmalCore.UI.UIElement.CurrentStyle*
+  commentId: Overload:AbysmalCore.UI.UIElement.CurrentStyle
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_CurrentStyle
+  name: CurrentStyle
+  nameWithType: UIElement.CurrentStyle
+  fullName: AbysmalCore.UI.UIElement.CurrentStyle
+- uid: AbysmalCore.UI.UIElement._draw*
+  commentId: Overload:AbysmalCore.UI.UIElement._draw
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement__draw
+  name: _draw
+  nameWithType: UIElement._draw
+  fullName: AbysmalCore.UI.UIElement._draw
+- uid: AbysmalCore.UI.UIElement.Draw*
+  commentId: Overload:AbysmalCore.UI.UIElement.Draw
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Draw
+  name: Draw
+  nameWithType: UIElement.Draw
+  fullName: AbysmalCore.UI.UIElement.Draw
+- uid: AbysmalCore.UI.UIElement.Disable*
+  commentId: Overload:AbysmalCore.UI.UIElement.Disable
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Disable
+  name: Disable
+  nameWithType: UIElement.Disable
+  fullName: AbysmalCore.UI.UIElement.Disable
+- uid: AbysmalCore.UI.UIElement.Enable*
+  commentId: Overload:AbysmalCore.UI.UIElement.Enable
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Enable
+  name: Enable
+  nameWithType: UIElement.Enable
+  fullName: AbysmalCore.UI.UIElement.Enable
+- uid: AbysmalCore.UI.UIElement.Hide*
+  commentId: Overload:AbysmalCore.UI.UIElement.Hide
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Hide
+  name: Hide
+  nameWithType: UIElement.Hide
+  fullName: AbysmalCore.UI.UIElement.Hide
+- uid: AbysmalCore.UI.UIElement.Show*
+  commentId: Overload:AbysmalCore.UI.UIElement.Show
+  href: AbysmalCore.UI.UIElement.html#AbysmalCore_UI_UIElement_Show
+  name: Show
+  nameWithType: UIElement.Show
+  fullName: AbysmalCore.UI.UIElement.Show

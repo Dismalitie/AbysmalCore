@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  id: AbysmalCore.UI
+  children:
+  - AbysmalCore.UI.DwmPInvokeHelper
+  - AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  - AbysmalCore.UI.UIElement
+  - AbysmalCore.UI.UIElement.OnClickedEventArgs
+  - AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  - AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  - AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  - AbysmalCore.UI.UIElement.StateChangeType
+  - AbysmalCore.UI.UserInterface
+  - AbysmalCore.UI.Window
+  - AbysmalCore.UI.Window.WindowState
+  langs:
+  - csharp
+  - vb
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  type: Namespace
+  assemblies:
+  - AbysmalCore
+references:
+- uid: AbysmalCore.UI.DwmPInvokeHelper
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper
+  href: AbysmalCore.UI.DwmPInvokeHelper.html
+  name: DwmPInvokeHelper
+  nameWithType: DwmPInvokeHelper
+  fullName: AbysmalCore.UI.DwmPInvokeHelper
+- uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  commentId: T:AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.DwmPInvokeHelper.html
+  name: DwmPInvokeHelper.MaterialType
+  nameWithType: DwmPInvokeHelper.MaterialType
+  fullName: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+  spec.csharp:
+  - uid: AbysmalCore.UI.DwmPInvokeHelper
+    name: DwmPInvokeHelper
+    href: AbysmalCore.UI.DwmPInvokeHelper.html
+  - name: .
+  - uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+    name: MaterialType
+    href: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.DwmPInvokeHelper
+    name: DwmPInvokeHelper
+    href: AbysmalCore.UI.DwmPInvokeHelper.html
+  - name: .
+  - uid: AbysmalCore.UI.DwmPInvokeHelper.MaterialType
+    name: MaterialType
+    href: AbysmalCore.UI.DwmPInvokeHelper.MaterialType.html
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+- uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnClickedEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnClickedEventArgs
+  nameWithType: UIElement.OnClickedEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnClickedEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+    name: OnClickedEventArgs
+    href: AbysmalCore.UI.UIElement.OnClickedEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnClickedEventArgs
+    name: OnClickedEventArgs
+    href: AbysmalCore.UI.UIElement.OnClickedEventArgs.html
+- uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnHoveredEventArgs
+  nameWithType: UIElement.OnHoveredEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+    name: OnHoveredEventArgs
+    href: AbysmalCore.UI.UIElement.OnHoveredEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnHoveredEventArgs
+    name: OnHoveredEventArgs
+    href: AbysmalCore.UI.UIElement.OnHoveredEventArgs.html
+- uid: AbysmalCore.UI.UIElement.StateChangeType
+  commentId: T:AbysmalCore.UI.UIElement.StateChangeType
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.StateChangeType
+  nameWithType: UIElement.StateChangeType
+  fullName: AbysmalCore.UI.UIElement.StateChangeType
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.StateChangeType
+    name: StateChangeType
+    href: AbysmalCore.UI.UIElement.StateChangeType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.StateChangeType
+    name: StateChangeType
+    href: AbysmalCore.UI.UIElement.StateChangeType.html
+- uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnStateChangedEventArgs
+  nameWithType: UIElement.OnStateChangedEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+    name: OnStateChangedEventArgs
+    href: AbysmalCore.UI.UIElement.OnStateChangedEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+    name: OnStateChangedEventArgs
+    href: AbysmalCore.UI.UIElement.OnStateChangedEventArgs.html
+- uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.OnMouseEnterExitEventArgs
+  nameWithType: UIElement.OnMouseEnterExitEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+    name: OnMouseEnterExitEventArgs
+    href: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs
+    name: OnMouseEnterExitEventArgs
+    href: AbysmalCore.UI.UIElement.OnMouseEnterExitEventArgs.html
+- uid: AbysmalCore.UI.UserInterface
+  commentId: T:AbysmalCore.UI.UserInterface
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UserInterface.html
+  name: UserInterface
+  nameWithType: UserInterface
+  fullName: AbysmalCore.UI.UserInterface
+- uid: AbysmalCore.UI.Window
+  commentId: T:AbysmalCore.UI.Window
+  href: AbysmalCore.UI.Window.html
+  name: Window
+  nameWithType: Window
+  fullName: AbysmalCore.UI.Window
+- uid: AbysmalCore.UI.Window.WindowState
+  commentId: T:AbysmalCore.UI.Window.WindowState
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.Window.html
+  name: Window.WindowState
+  nameWithType: Window.WindowState
+  fullName: AbysmalCore.UI.Window.WindowState
+  spec.csharp:
+  - uid: AbysmalCore.UI.Window
+    name: Window
+    href: AbysmalCore.UI.Window.html
+  - name: .
+  - uid: AbysmalCore.UI.Window.WindowState
+    name: WindowState
+    href: AbysmalCore.UI.Window.WindowState.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Window
+    name: Window
+    href: AbysmalCore.UI.Window.html
+  - name: .
+  - uid: AbysmalCore.UI.Window.WindowState
+    name: WindowState
+    href: AbysmalCore.UI.Window.WindowState.html
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html

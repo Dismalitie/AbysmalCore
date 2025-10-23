@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  commentId: T:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  id: LinearGradientBrush.GradientDirection
+  parent: AbysmalCore.UI.Styling.Brushes
+  children:
+  - AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalLeft
+  - AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalRight
+  - AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Horizontal
+  - AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Vertical
+  langs:
+  - csharp
+  - vb
+  name: LinearGradientBrush.GradientDirection
+  nameWithType: LinearGradientBrush.GradientDirection
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  type: Enum
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: GradientDirection
+    path: ../AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+    startLine: 16
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: The direction of the gradient
+  example: []
+  syntax:
+    content: public enum LinearGradientBrush.GradientDirection
+    content.vb: Public Enum LinearGradientBrush.GradientDirection
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Vertical
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Vertical
+  id: Vertical
+  parent: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: LinearGradientBrush.GradientDirection.Vertical
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Vertical
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Vertical
+    path: ../AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+    startLine: 21
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws color 1 at the bottom, color 2 at the top
+  example: []
+  syntax:
+    content: Vertical = 0
+    return:
+      type: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Horizontal
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Horizontal
+  id: Horizontal
+  parent: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: LinearGradientBrush.GradientDirection.Horizontal
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.Horizontal
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Horizontal
+    path: ../AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+    startLine: 25
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws color 1 on the left, color 2 on the right
+  example: []
+  syntax:
+    content: Horizontal = 1
+    return:
+      type: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalRight
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalRight
+  id: DiagonalRight
+  parent: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  langs:
+  - csharp
+  - vb
+  name: DiagonalRight
+  nameWithType: LinearGradientBrush.GradientDirection.DiagonalRight
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalRight
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: DiagonalRight
+    path: ../AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+    startLine: 29
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws color 1 in the bottom left, color 2 in the top right
+  example: []
+  syntax:
+    content: DiagonalRight = 2
+    return:
+      type: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalLeft
+  commentId: F:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalLeft
+  id: DiagonalLeft
+  parent: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  langs:
+  - csharp
+  - vb
+  name: DiagonalLeft
+  nameWithType: LinearGradientBrush.GradientDirection.DiagonalLeft
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.DiagonalLeft
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: DiagonalLeft
+    path: ../AbysmalCore/UI/Styling/Brushes/LinearGradientBrush.cs
+    startLine: 33
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws color 1 in the top left, color 2 in the bottom right
+  example: []
+  syntax:
+    content: DiagonalLeft = 3
+    return:
+      type: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+references:
+- uid: AbysmalCore.UI.Styling.Brushes
+  commentId: N:AbysmalCore.UI.Styling.Brushes
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling.Brushes
+  nameWithType: AbysmalCore.UI.Styling.Brushes
+  fullName: AbysmalCore.UI.Styling.Brushes
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes
+    name: Brushes
+    href: AbysmalCore.UI.Styling.Brushes.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes
+    name: Brushes
+    href: AbysmalCore.UI.Styling.Brushes.html
+- uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  commentId: T:AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  parent: AbysmalCore.UI.Styling.Brushes
+  href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  name: LinearGradientBrush.GradientDirection
+  nameWithType: LinearGradientBrush.GradientDirection
+  fullName: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+    name: LinearGradientBrush
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+    name: GradientDirection
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush
+    name: LinearGradientBrush
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection
+    name: GradientDirection
+    href: AbysmalCore.UI.Styling.Brushes.LinearGradientBrush.GradientDirection.html

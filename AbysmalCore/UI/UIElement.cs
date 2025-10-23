@@ -124,7 +124,7 @@ namespace AbysmalCore.UI
             get => _clicked;
             set
             {
-                /// we do this so OnClicked on fires once
+                // we do this so OnClicked on fires once
                 if (_clicked != value && Enabled && Clicked)
                     OnClicked?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                 _clicked = value;
@@ -134,11 +134,49 @@ namespace AbysmalCore.UI
         }
         /// same here
         private bool _clicked;
-
+        /// <summary>
+        /// Delegate for when the control is clicked
+        /// </summary>
+        /// <param name="sender"></param>The control
+        /// <param name="mouse"></param>The mouse position
+        /// <param name="frame"></param>The current frame
         public delegate void OnClickedEventArgs(UIElement sender, Vector2Int mouse, int frame);
+        /// <summary>
+        /// Delegate for when the control is hovered over
+        /// </summary>
+        /// <param name="sender"></param>The control
+        /// <param name="mouse"></param>The mouse position
+        /// <param name="frame"></param>The current frame
         public delegate void OnHoveredEventArgs(UIElement sender, Vector2Int mouse, int frame);
-        public enum StateChangeType { Enabled, Visible, Hovered, Clicked }
-        public delegate void OnStateChangedEventArgs(UIElement sender, StateChangeType state, object newState);
+        /// <summary>
+        /// The property that changed
+        /// </summary>
+        public enum StateChangeType 
+        { 
+            /// <summary>
+            /// The enabled property
+            /// </summary>
+            Enabled, 
+            /// <summary>
+            /// The visibility property
+            /// </summary>
+            Visible,
+            /// <summary>
+            /// The hovered property
+            /// </summary>
+            Hovered, 
+            /// <summary>
+            /// The clicked property
+            /// </summary>
+            Clicked 
+        }
+        /// <summary>
+        /// The delegate to use when a property is changed
+        /// </summary>
+        /// <param name="sender"></param>The control
+        /// <param name="property"></param>The property changed
+        /// <param name="newState"></param>The new value
+        public delegate void OnStateChangedEventArgs(UIElement sender, StateChangeType property, object newState);
         /// <summary>
         /// Fired when this <see cref="UIElement"/> is clicked
         /// </summary>
@@ -152,6 +190,12 @@ namespace AbysmalCore.UI
         /// </summary>
         public event OnHoveredEventArgs? OnHovered;
 
+        /// <summary>
+        /// Delegate used when the mouse enters or exits the controls bounds
+        /// </summary>
+        /// <param name="sender"></param>The control
+        /// <param name="mouse"></param>The mouse position
+        /// <param name="frame"></param>The current frame
         public delegate void OnMouseEnterExitEventArgs(UIElement sender, Vector2Int mouse, int frame);
         /// <summary>
         /// Fired once when the mouse enters the bounds of this <see cref="UIElement"/>
@@ -177,7 +221,7 @@ namespace AbysmalCore.UI
                 }
             }
         }
-        public bool _enabled = true;
+        private bool _enabled = true;
 
         /// <summary>
         /// Determines whether this <see cref="UIElement"/> is visible (drawn)
@@ -221,6 +265,9 @@ namespace AbysmalCore.UI
             }
         }
 
+        /// <summary>
+        /// Draws the actual control
+        /// </summary>
         protected abstract void _draw();
         /// <summary>
         /// Draws this <see cref="UIElement"/> and its children
@@ -228,23 +275,23 @@ namespace AbysmalCore.UI
         public void Draw()
         {
             if (_UseFallbackForUnsupportedBrushes == false) StyleMap.ValidateBrushes(SupportedBrushes, this);
-            /// call the actual draw function
+            // call the actual draw function
             _draw();
 
-            /// now we draw the children
+            // now we draw the children
             foreach (UIElement element in Children)
             {
-                /// dont draw what we cant see
+                // dont draw what we cant see
                 if (!element.Visible) continue;
 
-                /// we need to keep children within the bounds of their parent
-                /// so it actually makes sense
+                // we need to keep children within the bounds of their parent
+                // so it actually makes sense
                 element.Position.X = Math.Clamp(element.Position.X, Position.X, Position.X + Size.X);
                 element.Position.Y = Math.Clamp(element.Position.Y, Position.Y, Position.Y + Size.Y);
                 element.Size.X = Math.Clamp(element.Size.X, 0, Size.X);
                 element.Size.Y = Math.Clamp(element.Size.Y, 0, Size.Y);
 
-                /// i just discoverd CollisionPointRec :(
+                // i just discoverd CollisionPointRec :(
                 bool x = false;
                 bool y = false;
                 if (GetMouseX() >= element.Position.X && GetMouseX() <= element.Position.X + element.Size.X) x = true;

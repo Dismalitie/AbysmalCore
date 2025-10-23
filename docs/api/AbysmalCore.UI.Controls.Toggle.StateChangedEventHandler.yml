@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  commentId: T:AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  id: Toggle.StateChangedEventHandler
+  parent: AbysmalCore.UI.Controls
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Toggle.StateChangedEventHandler
+  nameWithType: Toggle.StateChangedEventHandler
+  fullName: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: AbysmalCore/UI/Controls/Toggle.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: StateChangedEventHandler
+    path: ../AbysmalCore/UI/Controls/Toggle.cs
+    startLine: 18
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Controls
+  summary: Delegate used when a toggle is clicked
+  example: []
+  syntax:
+    content: public delegate void Toggle.StateChangedEventHandler(UIElement sender, bool state, Vector2Int mouse, int frame)
+    parameters:
+    - id: sender
+      type: AbysmalCore.UI.UIElement
+      description: ''
+    - id: state
+      type: System.Boolean
+      description: ''
+    - id: mouse
+      type: AbysmalCore.Vector2Int
+      description: ''
+    - id: frame
+      type: System.Int32
+      description: ''
+    content.vb: Public Delegate Sub Toggle.StateChangedEventHandler(sender As UIElement, state As Boolean, mouse As Vector2Int, frame As Integer)
+references:
+- uid: AbysmalCore.UI.Controls
+  commentId: N:AbysmalCore.UI.Controls
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Controls
+  nameWithType: AbysmalCore.UI.Controls
+  fullName: AbysmalCore.UI.Controls
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Controls
+    name: Controls
+    href: AbysmalCore.UI.Controls.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Controls
+    name: Controls
+    href: AbysmalCore.UI.Controls.html
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AbysmalCore.Vector2Int
+  commentId: T:AbysmalCore.Vector2Int
+  parent: AbysmalCore
+  href: AbysmalCore.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: AbysmalCore.Vector2Int
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  href: AbysmalCore.html
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore

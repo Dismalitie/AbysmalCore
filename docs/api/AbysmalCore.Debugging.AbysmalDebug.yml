@@ -1,0 +1,645 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.Debugging.AbysmalDebug
+  commentId: T:AbysmalCore.Debugging.AbysmalDebug
+  id: AbysmalDebug
+  parent: AbysmalCore.Debugging
+  children:
+  - AbysmalCore.Debugging.AbysmalDebug.Enabled
+  - AbysmalCore.Debugging.AbysmalDebug.Error(System.Object,System.String,System.Boolean)
+  - AbysmalCore.Debugging.AbysmalDebug.Log(System.Object,System.String,System.Boolean)
+  - AbysmalCore.Debugging.AbysmalDebug.Pause(System.Boolean,System.Boolean,System.String)
+  - AbysmalCore.Debugging.AbysmalDebug.Stop(System.Boolean,System.Boolean,System.String)
+  - AbysmalCore.Debugging.AbysmalDebug.Warn(System.Object,System.String)
+  - AbysmalCore.Debugging.AbysmalDebug.WriteLogs(System.String)
+  langs:
+  - csharp
+  - vb
+  name: AbysmalDebug
+  nameWithType: AbysmalDebug
+  fullName: AbysmalCore.Debugging.AbysmalDebug
+  type: Class
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: AbysmalDebug
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 7
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Standard debugging class for logging messages, warnings and errors to the console
+  example: []
+  syntax:
+    content: >-
+      [DebugInfo("standard debug lib", true)]
+
+      public class AbysmalDebug
+    content.vb: >-
+      <DebugInfo("standard debug lib", True)>
+
+      Public Class AbysmalDebug
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: AbysmalCore.Debugging.DebugInfoAttribute
+    ctor: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: standard debug lib
+    - type: System.Boolean
+      value: true
+- uid: AbysmalCore.Debugging.AbysmalDebug.Enabled
+  commentId: F:AbysmalCore.Debugging.AbysmalDebug.Enabled
+  id: Enabled
+  parent: AbysmalCore.Debugging.AbysmalDebug
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: AbysmalDebug.Enabled
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Enabled
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Enabled
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 13
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Determines whether to write logs to the console
+  example: []
+  syntax:
+    content: public static bool Enabled
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Enabled As Boolean
+- uid: AbysmalCore.Debugging.AbysmalDebug.WriteLogs(System.String)
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.WriteLogs(System.String)
+  id: WriteLogs(System.String)
+  parent: AbysmalCore.Debugging.AbysmalDebug
+  langs:
+  - csharp
+  - vb
+  name: WriteLogs(string)
+  nameWithType: AbysmalDebug.WriteLogs(string)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.WriteLogs(string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: WriteLogs
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 20
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Writes the current logs to a file
+  example: []
+  syntax:
+    content: public static void WriteLogs(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub WriteLogs(path As String)
+  overload: AbysmalCore.Debugging.AbysmalDebug.WriteLogs*
+  nameWithType.vb: AbysmalDebug.WriteLogs(String)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.WriteLogs(String)
+  name.vb: WriteLogs(String)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Error(System.Object,System.String,System.Boolean)
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Error(System.Object,System.String,System.Boolean)
+  id: Error(System.Object,System.String,System.Boolean)
+  parent: AbysmalCore.Debugging.AbysmalDebug
+  langs:
+  - csharp
+  - vb
+  name: Error(object, string, bool)
+  nameWithType: AbysmalDebug.Error(object, string, bool)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Error(object, string, bool)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Error
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 33
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Logs an error message to the console
+  example: []
+  syntax:
+    content: public static void Error(object @this, string msg, bool fatal = false)
+    parameters:
+    - id: this
+      type: System.Object
+      description: ''
+    - id: msg
+      type: System.String
+      description: ''
+    - id: fatal
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Sub [Error](this As Object, msg As String, fatal As Boolean = False)
+  overload: AbysmalCore.Debugging.AbysmalDebug.Error*
+  nameWithType.vb: AbysmalDebug.Error(Object, String, Boolean)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Error(Object, String, Boolean)
+  name.vb: Error(Object, String, Boolean)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Log(System.Object,System.String,System.Boolean)
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Log(System.Object,System.String,System.Boolean)
+  id: Log(System.Object,System.String,System.Boolean)
+  parent: AbysmalCore.Debugging.AbysmalDebug
+  langs:
+  - csharp
+  - vb
+  name: Log(object, string, bool)
+  nameWithType: AbysmalDebug.Log(object, string, bool)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Log(object, string, bool)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Log
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 54
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Logs a standard message to the console
+  example: []
+  syntax:
+    content: public static void Log(object @this, string msg, bool important = false)
+    parameters:
+    - id: this
+      type: System.Object
+      description: ''
+    - id: msg
+      type: System.String
+      description: ''
+    - id: important
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Sub Log(this As Object, msg As String, important As Boolean = False)
+  overload: AbysmalCore.Debugging.AbysmalDebug.Log*
+  nameWithType.vb: AbysmalDebug.Log(Object, String, Boolean)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Log(Object, String, Boolean)
+  name.vb: Log(Object, String, Boolean)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Warn(System.Object,System.String)
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Warn(System.Object,System.String)
+  id: Warn(System.Object,System.String)
+  parent: AbysmalCore.Debugging.AbysmalDebug
+  langs:
+  - csharp
+  - vb
+  name: Warn(object, string)
+  nameWithType: AbysmalDebug.Warn(object, string)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Warn(object, string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Warn
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 81
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Logs a standard warning to the console
+  example: []
+  syntax:
+    content: public static void Warn(object @this, string msg)
+    parameters:
+    - id: this
+      type: System.Object
+      description: ''
+    - id: msg
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub Warn(this As Object, msg As String)
+  overload: AbysmalCore.Debugging.AbysmalDebug.Warn*
+  nameWithType.vb: AbysmalDebug.Warn(Object, String)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Warn(Object, String)
+  name.vb: Warn(Object, String)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Pause(System.Boolean,System.Boolean,System.String)
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Pause(System.Boolean,System.Boolean,System.String)
+  id: Pause(System.Boolean,System.Boolean,System.String)
+  parent: AbysmalCore.Debugging.AbysmalDebug
+  langs:
+  - csharp
+  - vb
+  name: Pause(bool, bool, string)
+  nameWithType: AbysmalDebug.Pause(bool, bool, string)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Pause(bool, bool, string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Pause
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 100
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Pauses execution until a key is pressed if <code class="paramref">value</code> does not equal <code class="paramref">expected</code>
+  example: []
+  syntax:
+    content: public static void Pause(bool value = false, bool expected = true, string reason = "unconditional")
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: ''
+    - id: expected
+      type: System.Boolean
+      description: ''
+    - id: reason
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub Pause(value As Boolean = False, expected As Boolean = True, reason As String = "unconditional")
+  overload: AbysmalCore.Debugging.AbysmalDebug.Pause*
+  nameWithType.vb: AbysmalDebug.Pause(Boolean, Boolean, String)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Pause(Boolean, Boolean, String)
+  name.vb: Pause(Boolean, Boolean, String)
+- uid: AbysmalCore.Debugging.AbysmalDebug.Stop(System.Boolean,System.Boolean,System.String)
+  commentId: M:AbysmalCore.Debugging.AbysmalDebug.Stop(System.Boolean,System.Boolean,System.String)
+  id: Stop(System.Boolean,System.Boolean,System.String)
+  parent: AbysmalCore.Debugging.AbysmalDebug
+  langs:
+  - csharp
+  - vb
+  name: Stop(bool, bool, string)
+  nameWithType: AbysmalDebug.Stop(bool, bool, string)
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Stop(bool, bool, string)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/Debugging/AbysmalDebug.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Stop
+    path: ../AbysmalCore/Debugging/AbysmalDebug.cs
+    startLine: 122
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.Debugging
+  summary: Stops execution indefinitely if <code class="paramref">value</code> does not equal <code class="paramref">expected</code>
+  example: []
+  syntax:
+    content: public static void Stop(bool value = false, bool expected = true, string reason = "unconditional")
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: ''
+    - id: expected
+      type: System.Boolean
+      description: ''
+    - id: reason
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub [Stop](value As Boolean = False, expected As Boolean = True, reason As String = "unconditional")
+  overload: AbysmalCore.Debugging.AbysmalDebug.Stop*
+  nameWithType.vb: AbysmalDebug.Stop(Boolean, Boolean, String)
+  fullName.vb: AbysmalCore.Debugging.AbysmalDebug.Stop(Boolean, Boolean, String)
+  name.vb: Stop(Boolean, Boolean, String)
+references:
+- uid: AbysmalCore.Debugging
+  commentId: N:AbysmalCore.Debugging
+  href: AbysmalCore.html
+  name: AbysmalCore.Debugging
+  nameWithType: AbysmalCore.Debugging
+  fullName: AbysmalCore.Debugging
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Debugging
+    name: Debugging
+    href: AbysmalCore.Debugging.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Debugging
+    name: Debugging
+    href: AbysmalCore.Debugging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AbysmalCore.Debugging.AbysmalDebug.WriteLogs*
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.WriteLogs
+  href: AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_WriteLogs_System_String_
+  name: WriteLogs
+  nameWithType: AbysmalDebug.WriteLogs
+  fullName: AbysmalCore.Debugging.AbysmalDebug.WriteLogs
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AbysmalCore.Debugging.AbysmalDebug.Error*
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Error
+  href: AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Error_System_Object_System_String_System_Boolean_
+  name: Error
+  nameWithType: AbysmalDebug.Error
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Error
+- uid: AbysmalCore.Debugging.AbysmalDebug.Log*
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Log
+  href: AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Log_System_Object_System_String_System_Boolean_
+  name: Log
+  nameWithType: AbysmalDebug.Log
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Log
+- uid: AbysmalCore.Debugging.AbysmalDebug.Warn*
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Warn
+  href: AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Warn_System_Object_System_String_
+  name: Warn
+  nameWithType: AbysmalDebug.Warn
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Warn
+- uid: AbysmalCore.Debugging.AbysmalDebug.Pause*
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Pause
+  href: AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Pause_System_Boolean_System_Boolean_System_String_
+  name: Pause
+  nameWithType: AbysmalDebug.Pause
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Pause
+- uid: AbysmalCore.Debugging.AbysmalDebug.Stop*
+  commentId: Overload:AbysmalCore.Debugging.AbysmalDebug.Stop
+  href: AbysmalCore.Debugging.AbysmalDebug.html#AbysmalCore_Debugging_AbysmalDebug_Stop_System_Boolean_System_Boolean_System_String_
+  name: Stop
+  nameWithType: AbysmalDebug.Stop
+  fullName: AbysmalCore.Debugging.AbysmalDebug.Stop

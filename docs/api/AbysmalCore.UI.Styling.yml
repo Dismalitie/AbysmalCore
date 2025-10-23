@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  id: AbysmalCore.UI.Styling
+  children:
+  - AbysmalCore.UI.Styling.IBrush
+  - AbysmalCore.UI.Styling.IBrush.BrushType
+  - AbysmalCore.UI.Styling.Style
+  - AbysmalCore.UI.Styling.StyleMap
+  - AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  - AbysmalCore.UI.Styling.Theme
+  langs:
+  - csharp
+  - vb
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  type: Namespace
+  assemblies:
+  - AbysmalCore
+references:
+- uid: AbysmalCore.UI.Styling.IBrush
+  commentId: T:AbysmalCore.UI.Styling.IBrush
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.IBrush.html
+  name: IBrush
+  nameWithType: IBrush
+  fullName: AbysmalCore.UI.Styling.IBrush
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType
+  commentId: T:AbysmalCore.UI.Styling.IBrush.BrushType
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.IBrush.html
+  name: IBrush.BrushType
+  nameWithType: IBrush.BrushType
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+- uid: AbysmalCore.UI.Styling.Style
+  commentId: T:AbysmalCore.UI.Styling.Style
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.Style.html
+  name: Style
+  nameWithType: Style
+  fullName: AbysmalCore.UI.Styling.Style
+- uid: AbysmalCore.UI.Styling.StyleMap
+  commentId: T:AbysmalCore.UI.Styling.StyleMap
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.StyleMap.html
+  name: StyleMap
+  nameWithType: StyleMap
+  fullName: AbysmalCore.UI.Styling.StyleMap
+- uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  commentId: T:AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.StyleMap.html
+  name: StyleMap.ControlStyleType
+  nameWithType: StyleMap.ControlStyleType
+  fullName: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.StyleMap
+    name: StyleMap
+    href: AbysmalCore.UI.Styling.StyleMap.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.StyleMap.ControlStyleType
+    name: ControlStyleType
+    href: AbysmalCore.UI.Styling.StyleMap.ControlStyleType.html
+- uid: AbysmalCore.UI.Styling.Theme
+  commentId: T:AbysmalCore.UI.Styling.Theme
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.Theme.html
+  name: Theme
+  nameWithType: Theme
+  fullName: AbysmalCore.UI.Styling.Theme
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html

@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  commentId: T:AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  id: UIElement.OnStateChangedEventArgs
+  parent: AbysmalCore.UI
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: UIElement.OnStateChangedEventArgs
+  nameWithType: UIElement.OnStateChangedEventArgs
+  fullName: AbysmalCore.UI.UIElement.OnStateChangedEventArgs
+  type: Delegate
+  source:
+    remote:
+      path: AbysmalCore/UI/UIElement.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: OnStateChangedEventArgs
+    path: ../AbysmalCore/UI/UIElement.cs
+    startLine: 178
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI
+  summary: The delegate to use when a property is changed
+  example: []
+  syntax:
+    content: public delegate void UIElement.OnStateChangedEventArgs(UIElement sender, UIElement.StateChangeType property, object newState)
+    parameters:
+    - id: sender
+      type: AbysmalCore.UI.UIElement
+      description: ''
+    - id: property
+      type: AbysmalCore.UI.UIElement.StateChangeType
+      description: ''
+    - id: newState
+      type: System.Object
+      description: ''
+    content.vb: Public Delegate Sub UIElement.OnStateChangedEventArgs(sender As UIElement, [property] As UIElement.StateChangeType, newState As Object)
+references:
+- uid: AbysmalCore.UI
+  commentId: N:AbysmalCore.UI
+  href: AbysmalCore.html
+  name: AbysmalCore.UI
+  nameWithType: AbysmalCore.UI
+  fullName: AbysmalCore.UI
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+- uid: AbysmalCore.UI.UIElement
+  commentId: T:AbysmalCore.UI.UIElement
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement
+  nameWithType: UIElement
+  fullName: AbysmalCore.UI.UIElement
+- uid: AbysmalCore.UI.UIElement.StateChangeType
+  commentId: T:AbysmalCore.UI.UIElement.StateChangeType
+  parent: AbysmalCore.UI
+  href: AbysmalCore.UI.UIElement.html
+  name: UIElement.StateChangeType
+  nameWithType: UIElement.StateChangeType
+  fullName: AbysmalCore.UI.UIElement.StateChangeType
+  spec.csharp:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.StateChangeType
+    name: StateChangeType
+    href: AbysmalCore.UI.UIElement.StateChangeType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.UIElement
+    name: UIElement
+    href: AbysmalCore.UI.UIElement.html
+  - name: .
+  - uid: AbysmalCore.UI.UIElement.StateChangeType
+    name: StateChangeType
+    href: AbysmalCore.UI.UIElement.StateChangeType.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

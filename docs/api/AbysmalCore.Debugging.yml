@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.Debugging
+  commentId: N:AbysmalCore.Debugging
+  id: AbysmalCore.Debugging
+  children:
+  - AbysmalCore.Debugging.AbysmalDebug
+  - AbysmalCore.Debugging.DebugInfoAttribute
+  - AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  langs:
+  - csharp
+  - vb
+  name: AbysmalCore.Debugging
+  nameWithType: AbysmalCore.Debugging
+  fullName: AbysmalCore.Debugging
+  type: Namespace
+  assemblies:
+  - AbysmalCore
+references:
+- uid: AbysmalCore.Debugging.AbysmalDebug
+  commentId: T:AbysmalCore.Debugging.AbysmalDebug
+  href: AbysmalCore.Debugging.AbysmalDebug.html
+  name: AbysmalDebug
+  nameWithType: AbysmalDebug
+  fullName: AbysmalCore.Debugging.AbysmalDebug
+- uid: AbysmalCore.Debugging.DebugInfoAttribute
+  commentId: T:AbysmalCore.Debugging.DebugInfoAttribute
+  parent: AbysmalCore.Debugging
+  href: AbysmalCore.Debugging.DebugInfoAttribute.html
+  name: DebugInfoAttribute
+  nameWithType: DebugInfoAttribute
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute
+- uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  commentId: T:AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  parent: AbysmalCore.Debugging
+  href: AbysmalCore.Debugging.DebugInfoAttribute.html
+  name: DebugInfoAttribute.ImportanceActionType
+  nameWithType: DebugInfoAttribute.ImportanceActionType
+  fullName: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+  spec.csharp:
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute
+    name: DebugInfoAttribute
+    href: AbysmalCore.Debugging.DebugInfoAttribute.html
+  - name: .
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+    name: ImportanceActionType
+    href: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html
+  spec.vb:
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute
+    name: DebugInfoAttribute
+    href: AbysmalCore.Debugging.DebugInfoAttribute.html
+  - name: .
+  - uid: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType
+    name: ImportanceActionType
+    href: AbysmalCore.Debugging.DebugInfoAttribute.ImportanceActionType.html
+- uid: AbysmalCore.Debugging
+  commentId: N:AbysmalCore.Debugging
+  href: AbysmalCore.html
+  name: AbysmalCore.Debugging
+  nameWithType: AbysmalCore.Debugging
+  fullName: AbysmalCore.Debugging
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Debugging
+    name: Debugging
+    href: AbysmalCore.Debugging.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.Debugging
+    name: Debugging
+    href: AbysmalCore.Debugging.html

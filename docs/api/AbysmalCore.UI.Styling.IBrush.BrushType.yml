@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType
+  commentId: T:AbysmalCore.UI.Styling.IBrush.BrushType
+  id: IBrush.BrushType
+  parent: AbysmalCore.UI.Styling
+  children:
+  - AbysmalCore.UI.Styling.IBrush.BrushType.ImageBrush
+  - AbysmalCore.UI.Styling.IBrush.BrushType.LinearGradientBrush
+  - AbysmalCore.UI.Styling.IBrush.BrushType.NineSliceBrush
+  - AbysmalCore.UI.Styling.IBrush.BrushType.RadialGradientBrush
+  - AbysmalCore.UI.Styling.IBrush.BrushType.ShaderBrush
+  - AbysmalCore.UI.Styling.IBrush.BrushType.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: IBrush.BrushType
+  nameWithType: IBrush.BrushType
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType
+  type: Enum
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/IBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: BrushType
+    path: ../AbysmalCore/UI/Styling/IBrush.cs
+    startLine: 11
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  example: []
+  syntax:
+    content: public enum IBrush.BrushType
+    content.vb: Public Enum IBrush.BrushType
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.ImageBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.ImageBrush
+  id: ImageBrush
+  parent: AbysmalCore.UI.Styling.IBrush.BrushType
+  langs:
+  - csharp
+  - vb
+  name: ImageBrush
+  nameWithType: IBrush.BrushType.ImageBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.ImageBrush
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/IBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ImageBrush
+    path: ../AbysmalCore/UI/Styling/IBrush.cs
+    startLine: 16
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A brush that draws an image
+  example: []
+  syntax:
+    content: ImageBrush = 0
+    return:
+      type: AbysmalCore.UI.Styling.IBrush.BrushType
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.LinearGradientBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.LinearGradientBrush
+  id: LinearGradientBrush
+  parent: AbysmalCore.UI.Styling.IBrush.BrushType
+  langs:
+  - csharp
+  - vb
+  name: LinearGradientBrush
+  nameWithType: IBrush.BrushType.LinearGradientBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.LinearGradientBrush
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/IBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: LinearGradientBrush
+    path: ../AbysmalCore/UI/Styling/IBrush.cs
+    startLine: 20
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A brush that draws a 2-color linear gradient
+  example: []
+  syntax:
+    content: LinearGradientBrush = 1
+    return:
+      type: AbysmalCore.UI.Styling.IBrush.BrushType
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.RadialGradientBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.RadialGradientBrush
+  id: RadialGradientBrush
+  parent: AbysmalCore.UI.Styling.IBrush.BrushType
+  langs:
+  - csharp
+  - vb
+  name: RadialGradientBrush
+  nameWithType: IBrush.BrushType.RadialGradientBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.RadialGradientBrush
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/IBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: RadialGradientBrush
+    path: ../AbysmalCore/UI/Styling/IBrush.cs
+    startLine: 24
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A brush that draws a 2-color radial gradient
+  example: []
+  syntax:
+    content: RadialGradientBrush = 2
+    return:
+      type: AbysmalCore.UI.Styling.IBrush.BrushType
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.ShaderBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.ShaderBrush
+  id: ShaderBrush
+  parent: AbysmalCore.UI.Styling.IBrush.BrushType
+  langs:
+  - csharp
+  - vb
+  name: ShaderBrush
+  nameWithType: IBrush.BrushType.ShaderBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.ShaderBrush
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/IBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: ShaderBrush
+    path: ../AbysmalCore/UI/Styling/IBrush.cs
+    startLine: 28
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A brush that draws a shader
+  example: []
+  syntax:
+    content: ShaderBrush = 3
+    return:
+      type: AbysmalCore.UI.Styling.IBrush.BrushType
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.SolidBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.SolidBrush
+  id: SolidBrush
+  parent: AbysmalCore.UI.Styling.IBrush.BrushType
+  langs:
+  - csharp
+  - vb
+  name: SolidBrush
+  nameWithType: IBrush.BrushType.SolidBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.SolidBrush
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/IBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: SolidBrush
+    path: ../AbysmalCore/UI/Styling/IBrush.cs
+    startLine: 32
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A brush that draws a solid color
+  example: []
+  syntax:
+    content: SolidBrush = 4
+    return:
+      type: AbysmalCore.UI.Styling.IBrush.BrushType
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType.NineSliceBrush
+  commentId: F:AbysmalCore.UI.Styling.IBrush.BrushType.NineSliceBrush
+  id: NineSliceBrush
+  parent: AbysmalCore.UI.Styling.IBrush.BrushType
+  langs:
+  - csharp
+  - vb
+  name: NineSliceBrush
+  nameWithType: IBrush.BrushType.NineSliceBrush
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType.NineSliceBrush
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/IBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: NineSliceBrush
+    path: ../AbysmalCore/UI/Styling/IBrush.cs
+    startLine: 36
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling
+  summary: A brush that draws a 9slice texture
+  example: []
+  syntax:
+    content: NineSliceBrush = 5
+    return:
+      type: AbysmalCore.UI.Styling.IBrush.BrushType
+references:
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType
+  commentId: T:AbysmalCore.UI.Styling.IBrush.BrushType
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.IBrush.html
+  name: IBrush.BrushType
+  nameWithType: IBrush.BrushType
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html

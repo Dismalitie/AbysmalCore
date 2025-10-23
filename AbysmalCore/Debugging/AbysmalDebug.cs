@@ -8,6 +8,9 @@ namespace AbysmalCore.Debugging
     [DebugInfo("standard debug lib", true)]
     public class AbysmalDebug
     {
+        /// <summary>
+        /// Determines whether to write logs to the console
+        /// </summary>
         public static bool Enabled = true;
         private static AbysmalConsole _c = new();
 

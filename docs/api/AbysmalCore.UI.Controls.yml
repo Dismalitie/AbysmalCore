@@ -1,0 +1,105 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Controls
+  commentId: N:AbysmalCore.UI.Controls
+  id: AbysmalCore.UI.Controls
+  children:
+  - AbysmalCore.UI.Controls.Button
+  - AbysmalCore.UI.Controls.Label
+  - AbysmalCore.UI.Controls.Panel
+  - AbysmalCore.UI.Controls.Picture
+  - AbysmalCore.UI.Controls.Toggle
+  - AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: AbysmalCore.UI.Controls
+  nameWithType: AbysmalCore.UI.Controls
+  fullName: AbysmalCore.UI.Controls
+  type: Namespace
+  assemblies:
+  - AbysmalCore
+references:
+- uid: AbysmalCore.UI.Controls.Button
+  commentId: T:AbysmalCore.UI.Controls.Button
+  href: AbysmalCore.UI.Controls.Button.html
+  name: Button
+  nameWithType: Button
+  fullName: AbysmalCore.UI.Controls.Button
+- uid: AbysmalCore.UI.Controls.Label
+  commentId: T:AbysmalCore.UI.Controls.Label
+  href: AbysmalCore.UI.Controls.Label.html
+  name: Label
+  nameWithType: Label
+  fullName: AbysmalCore.UI.Controls.Label
+- uid: AbysmalCore.UI.Controls.Panel
+  commentId: T:AbysmalCore.UI.Controls.Panel
+  href: AbysmalCore.UI.Controls.Panel.html
+  name: Panel
+  nameWithType: Panel
+  fullName: AbysmalCore.UI.Controls.Panel
+- uid: AbysmalCore.UI.Controls.Picture
+  commentId: T:AbysmalCore.UI.Controls.Picture
+  href: AbysmalCore.UI.Controls.Picture.html
+  name: Picture
+  nameWithType: Picture
+  fullName: AbysmalCore.UI.Controls.Picture
+- uid: AbysmalCore.UI.Controls.Toggle
+  commentId: T:AbysmalCore.UI.Controls.Toggle
+  href: AbysmalCore.UI.Controls.Toggle.html
+  name: Toggle
+  nameWithType: Toggle
+  fullName: AbysmalCore.UI.Controls.Toggle
+- uid: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  commentId: T:AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  parent: AbysmalCore.UI.Controls
+  href: AbysmalCore.UI.Controls.Toggle.html
+  name: Toggle.StateChangedEventHandler
+  nameWithType: Toggle.StateChangedEventHandler
+  fullName: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+  spec.csharp:
+  - uid: AbysmalCore.UI.Controls.Toggle
+    name: Toggle
+    href: AbysmalCore.UI.Controls.Toggle.html
+  - name: .
+  - uid: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+    name: StateChangedEventHandler
+    href: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Controls.Toggle
+    name: Toggle
+    href: AbysmalCore.UI.Controls.Toggle.html
+  - name: .
+  - uid: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler
+    name: StateChangedEventHandler
+    href: AbysmalCore.UI.Controls.Toggle.StateChangedEventHandler.html
+- uid: AbysmalCore.UI.Controls
+  commentId: N:AbysmalCore.UI.Controls
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Controls
+  nameWithType: AbysmalCore.UI.Controls
+  fullName: AbysmalCore.UI.Controls
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Controls
+    name: Controls
+    href: AbysmalCore.UI.Controls.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Controls
+    name: Controls
+    href: AbysmalCore.UI.Controls.html

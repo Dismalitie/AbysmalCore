@@ -1,0 +1,922 @@
+### YamlMime:ManagedReference
+items:
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  commentId: T:AbysmalCore.UI.Styling.Brushes.SolidBrush
+  id: SolidBrush
+  parent: AbysmalCore.UI.Styling.Brushes
+  children:
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor(Raylib_cs.Color)
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush.Color
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  - AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  langs:
+  - csharp
+  - vb
+  name: SolidBrush
+  nameWithType: SolidBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  type: Class
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: SolidBrush
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 7
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws a solid color
+  example: []
+  syntax:
+    content: >-
+      [DebugInfo("brush", false)]
+
+      public class SolidBrush : IBrush
+    content.vb: >-
+      <DebugInfo("brush", False)>
+
+      Public Class SolidBrush Implements IBrush
+  inheritance:
+  - System.Object
+  implements:
+  - AbysmalCore.UI.Styling.IBrush
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: AbysmalCore.Debugging.DebugInfoAttribute
+    ctor: AbysmalCore.Debugging.DebugInfoAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: brush
+    - type: System.Boolean
+      value: false
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  commentId: P:AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  id: Type
+  parent: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: SolidBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  type: Property
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Type
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 11
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: The type of brush
+  example: []
+  syntax:
+    content: public IBrush.BrushType Type { get; }
+    parameters: []
+    return:
+      type: AbysmalCore.UI.Styling.IBrush.BrushType
+    content.vb: Public ReadOnly Property Type As IBrush.BrushType
+  overload: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type*
+  implements:
+  - AbysmalCore.UI.Styling.IBrush.Type
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Color
+  commentId: F:AbysmalCore.UI.Styling.Brushes.SolidBrush.Color
+  id: Color
+  parent: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: SolidBrush.Color
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Color
+  type: Field
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Color
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 16
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Color to draw
+  example: []
+  syntax:
+    content: public Color Color
+    return:
+      type: Raylib_cs.Color
+    content.vb: Public Color As Color
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor(Raylib_cs.Color)
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor(Raylib_cs.Color)
+  id: '#ctor(Raylib_cs.Color)'
+  parent: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: SolidBrush(Color)
+  nameWithType: SolidBrush.SolidBrush(Color)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.SolidBrush(Raylib_cs.Color)
+  type: Constructor
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: .ctor
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 21
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Creates a new solid color brush
+  example: []
+  syntax:
+    content: public SolidBrush(Color color)
+    parameters:
+    - id: color
+      type: Raylib_cs.Color
+      description: ''
+    content.vb: Public Sub New(color As Color)
+  overload: AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor*
+  nameWithType.vb: SolidBrush.New(Color)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.New(Raylib_cs.Color)
+  name.vb: New(Color)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  id: DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  parent: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  nameWithType: SolidBrush.DrawRectangle(Vector2Int, Vector2Int)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: DrawRectangle
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 24
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws a rectangle
+  example: []
+  syntax:
+    content: public void DrawRectangle(Vector2Int position, Vector2Int size)
+    parameters:
+    - id: position
+      type: AbysmalCore.Vector2Int
+      description: ''
+    - id: size
+      type: AbysmalCore.Vector2Int
+      description: ''
+    content.vb: Public Sub DrawRectangle(position As Vector2Int, size As Vector2Int)
+  overload: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle*
+  implements:
+  - AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  id: DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  parent: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType: SolidBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: DrawRectangleRounded
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 28
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws a rectangle with rounded corners
+  example: []
+  syntax:
+    content: public void DrawRectangleRounded(Vector2Int position, Vector2Int size, int radius)
+    parameters:
+    - id: position
+      type: AbysmalCore.Vector2Int
+      description: ''
+    - id: size
+      type: AbysmalCore.Vector2Int
+      description: ''
+    - id: radius
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub DrawRectangleRounded(position As Vector2Int, size As Vector2Int, radius As Integer)
+  overload: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded*
+  implements:
+  - AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  nameWithType.vb: SolidBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  id: DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  parent: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: DrawText(Font, string, Vector2Int, int)
+  nameWithType: SolidBrush.DrawText(Font, string, Vector2Int, int)
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: DrawText
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 32
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  summary: Draws text
+  example: []
+  syntax:
+    content: public void DrawText(Font font, string text, Vector2Int position, int fontSize)
+    parameters:
+    - id: font
+      type: Raylib_cs.Font
+      description: ''
+    - id: text
+      type: System.String
+      description: ''
+    - id: position
+      type: AbysmalCore.Vector2Int
+      description: ''
+    - id: fontSize
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub DrawText(font As Font, text As String, position As Vector2Int, fontSize As Integer)
+  overload: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText*
+  implements:
+  - AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  nameWithType.vb: SolidBrush.DrawText(Font, String, Vector2Int, Integer)
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  commentId: M:AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  id: Fallback
+  parent: AbysmalCore.UI.Styling.Brushes.SolidBrush
+  langs:
+  - csharp
+  - vb
+  name: Fallback()
+  nameWithType: SolidBrush.Fallback()
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback()
+  type: Method
+  source:
+    remote:
+      path: AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+      branch: master
+      repo: https://github.com/Dismalitie/AbysmalCore.git
+    id: Fallback
+    path: ../AbysmalCore/UI/Styling/Brushes/SolidBrush.cs
+    startLine: 38
+  assemblies:
+  - AbysmalCore
+  namespace: AbysmalCore.UI.Styling.Brushes
+  example: []
+  syntax:
+    content: public Color Fallback()
+    return:
+      type: Raylib_cs.Color
+    content.vb: Public Function Fallback() As Color
+  overload: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback*
+  implements:
+  - AbysmalCore.UI.Styling.IBrush.Fallback
+references:
+- uid: AbysmalCore.UI.Styling.Brushes
+  commentId: N:AbysmalCore.UI.Styling.Brushes
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling.Brushes
+  nameWithType: AbysmalCore.UI.Styling.Brushes
+  fullName: AbysmalCore.UI.Styling.Brushes
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes
+    name: Brushes
+    href: AbysmalCore.UI.Styling.Brushes.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.Brushes
+    name: Brushes
+    href: AbysmalCore.UI.Styling.Brushes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AbysmalCore.UI.Styling.IBrush
+  commentId: T:AbysmalCore.UI.Styling.IBrush
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.IBrush.html
+  name: IBrush
+  nameWithType: IBrush
+  fullName: AbysmalCore.UI.Styling.IBrush
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AbysmalCore.UI.Styling
+  commentId: N:AbysmalCore.UI.Styling
+  href: AbysmalCore.html
+  name: AbysmalCore.UI.Styling
+  nameWithType: AbysmalCore.UI.Styling
+  fullName: AbysmalCore.UI.Styling
+  spec.csharp:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+  spec.vb:
+  - uid: AbysmalCore
+    name: AbysmalCore
+    href: AbysmalCore.html
+  - name: .
+  - uid: AbysmalCore.UI
+    name: UI
+    href: AbysmalCore.UI.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling
+    name: Styling
+    href: AbysmalCore.UI.Styling.html
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type*
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+  href: AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_Type
+  name: Type
+  nameWithType: SolidBrush.Type
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Type
+- uid: AbysmalCore.UI.Styling.IBrush.Type
+  commentId: P:AbysmalCore.UI.Styling.IBrush.Type
+  parent: AbysmalCore.UI.Styling.IBrush
+  href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Type
+  name: Type
+  nameWithType: IBrush.Type
+  fullName: AbysmalCore.UI.Styling.IBrush.Type
+- uid: AbysmalCore.UI.Styling.IBrush.BrushType
+  commentId: T:AbysmalCore.UI.Styling.IBrush.BrushType
+  parent: AbysmalCore.UI.Styling
+  href: AbysmalCore.UI.Styling.IBrush.html
+  name: IBrush.BrushType
+  nameWithType: IBrush.BrushType
+  fullName: AbysmalCore.UI.Styling.IBrush.BrushType
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush
+    name: IBrush
+    href: AbysmalCore.UI.Styling.IBrush.html
+  - name: .
+  - uid: AbysmalCore.UI.Styling.IBrush.BrushType
+    name: BrushType
+    href: AbysmalCore.UI.Styling.IBrush.BrushType.html
+- uid: Raylib_cs.Color
+  commentId: T:Raylib_cs.Color
+  parent: Raylib_cs
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Raylib_cs.Color
+- uid: Raylib_cs
+  commentId: N:Raylib_cs
+  isExternal: true
+  name: Raylib_cs
+  nameWithType: Raylib_cs
+  fullName: Raylib_cs
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor*
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.#ctor
+  href: AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush__ctor_Raylib_cs_Color_
+  name: SolidBrush
+  nameWithType: SolidBrush.SolidBrush
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.SolidBrush
+  nameWithType.vb: SolidBrush.New
+  fullName.vb: AbysmalCore.UI.Styling.Brushes.SolidBrush.New
+  name.vb: New
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle*
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle
+  href: AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  name: DrawRectangle
+  nameWithType: SolidBrush.DrawRectangle
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangle
+- uid: AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  commentId: M:AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+  parent: AbysmalCore.UI.Styling.IBrush
+  href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  name: DrawRectangle(Vector2Int, Vector2Int)
+  nameWithType: IBrush.DrawRectangle(Vector2Int, Vector2Int)
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int)
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+    name: DrawRectangle
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  - name: (
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: )
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush.DrawRectangle(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int)
+    name: DrawRectangle
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangle_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_
+  - name: (
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: )
+- uid: AbysmalCore.Vector2Int
+  commentId: T:AbysmalCore.Vector2Int
+  parent: AbysmalCore
+  href: AbysmalCore.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: AbysmalCore.Vector2Int
+- uid: AbysmalCore
+  commentId: N:AbysmalCore
+  href: AbysmalCore.html
+  name: AbysmalCore
+  nameWithType: AbysmalCore
+  fullName: AbysmalCore
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded*
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded
+  href: AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  name: DrawRectangleRounded
+  nameWithType: SolidBrush.DrawRectangleRounded
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawRectangleRounded
+- uid: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  commentId: M:AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+  parent: AbysmalCore.UI.Styling.IBrush
+  isExternal: true
+  href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  name: DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  nameWithType: IBrush.DrawRectangleRounded(Vector2Int, Vector2Int, int)
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, int)
+  nameWithType.vb: IBrush.DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  fullName.vb: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int, AbysmalCore.Vector2Int, Integer)
+  name.vb: DrawRectangleRounded(Vector2Int, Vector2Int, Integer)
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+    name: DrawRectangleRounded
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  - name: (
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush.DrawRectangleRounded(AbysmalCore.Vector2Int,AbysmalCore.Vector2Int,System.Int32)
+    name: DrawRectangleRounded
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawRectangleRounded_AbysmalCore_Vector2Int_AbysmalCore_Vector2Int_System_Int32_
+  - name: (
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText*
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText
+  href: AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  name: DrawText
+  nameWithType: SolidBrush.DrawText
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.DrawText
+- uid: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  commentId: M:AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+  parent: AbysmalCore.UI.Styling.IBrush
+  isExternal: true
+  href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  name: DrawText(Font, string, Vector2Int, int)
+  nameWithType: IBrush.DrawText(Font, string, Vector2Int, int)
+  fullName: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font, string, AbysmalCore.Vector2Int, int)
+  nameWithType.vb: IBrush.DrawText(Font, String, Vector2Int, Integer)
+  fullName.vb: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font, String, AbysmalCore.Vector2Int, Integer)
+  name.vb: DrawText(Font, String, Vector2Int, Integer)
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+    name: DrawText
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  - name: (
+  - uid: Raylib_cs.Font
+    name: Font
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush.DrawText(Raylib_cs.Font,System.String,AbysmalCore.Vector2Int,System.Int32)
+    name: DrawText
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_DrawText_Raylib_cs_Font_System_String_AbysmalCore_Vector2Int_System_Int32_
+  - name: (
+  - uid: Raylib_cs.Font
+    name: Font
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: AbysmalCore.Vector2Int
+    name: Vector2Int
+    href: AbysmalCore.Vector2Int.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Raylib_cs.Font
+  commentId: T:Raylib_cs.Font
+  parent: Raylib_cs
+  isExternal: true
+  name: Font
+  nameWithType: Font
+  fullName: Raylib_cs.Font
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback*
+  commentId: Overload:AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+  href: AbysmalCore.UI.Styling.Brushes.SolidBrush.html#AbysmalCore_UI_Styling_Brushes_SolidBrush_Fallback
+  name: Fallback
+  nameWithType: SolidBrush.Fallback
+  fullName: AbysmalCore.UI.Styling.Brushes.SolidBrush.Fallback
+- uid: AbysmalCore.UI.Styling.IBrush.Fallback
+  commentId: M:AbysmalCore.UI.Styling.IBrush.Fallback
+  parent: AbysmalCore.UI.Styling.IBrush
+  href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Fallback
+  name: Fallback()
+  nameWithType: IBrush.Fallback()
+  fullName: AbysmalCore.UI.Styling.IBrush.Fallback()
+  spec.csharp:
+  - uid: AbysmalCore.UI.Styling.IBrush.Fallback
+    name: Fallback
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Fallback
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AbysmalCore.UI.Styling.IBrush.Fallback
+    name: Fallback
+    href: AbysmalCore.UI.Styling.IBrush.html#AbysmalCore_UI_Styling_IBrush_Fallback
+  - name: (
+  - name: )
