@@ -7,7 +7,7 @@ namespace AbysmalCore.Extensibility
     /// Defines a property or field in the Abysmal Extensibility Framework
     /// </summary>
     [DebugInfo("abysmal extensibility framework property", false)]
-    public class AbysmalExtensibilityProperty
+    public class UniformProperty
     {
         private enum propertyType
         {
@@ -81,7 +81,7 @@ namespace AbysmalCore.Extensibility
         /// </summary>
         /// <param name="pi">The PropertyInfo to wrap</param>
         /// <param name="instance">The instance of the underlying class</param>
-        public AbysmalExtensibilityProperty(PropertyInfo pi, object instance)
+        public UniformProperty(PropertyInfo pi, object instance)
         {
             _type = propertyType.property;
             _instance = instance;
@@ -96,7 +96,7 @@ namespace AbysmalCore.Extensibility
         /// </summary>
         /// <param name="fi">The FieldInfo to wrap</param>
         /// <param name="instance">The instance of the underlying class</param>
-        public AbysmalExtensibilityProperty(FieldInfo fi, object instance)
+        public UniformProperty(FieldInfo fi, object instance)
         {
             if (fi.IsPublic) _type = propertyType.field;
             else _type = propertyType.privateMember;
@@ -113,7 +113,7 @@ namespace AbysmalCore.Extensibility
     /// Defines a method in the Abysmal Extensibility Framework
     /// </summary>
     [DebugInfo("abysmal extensibility framework method", false)]
-    public class AbysmalExtensibilityMethod
+    public class UniformMethod
     {
         private MethodInfo _info;
         private object _instance;
@@ -136,7 +136,7 @@ namespace AbysmalCore.Extensibility
         /// </summary>
         /// <param name="mi">The MethodInfo to wrap</param>
         /// <param name="instance">The instance of the underlying class</param>
-        public AbysmalExtensibilityMethod(MethodInfo mi, object instance)
+        public UniformMethod(MethodInfo mi, object instance)
         {
             _info = mi;
             _instance = instance;
@@ -186,30 +186,30 @@ namespace AbysmalCore.Extensibility
     }
 
     /// <summary>
-    /// A uniform wrapper for classes used in the Abysmal Extensibility Framework
+    /// A uniform wrapper for classes used defined in reflected assemblies
     /// </summary>
     [DebugInfo("abysmal extensibility framework class", false)]
-    public class AbysmalExtensibilityClass
+    public class UniformClass
     {
         /// <summary>
         /// Properties of the class
         /// </summary>
-        public Dictionary<string, AbysmalExtensibilityProperty> Properties { get; }
+        public Dictionary<string, UniformProperty> Properties { get; }
         /// <summary>
         /// Methods of the class
         /// </summary>
-        public Dictionary<string, AbysmalExtensibilityMethod> Methods { get; }
+        public Dictionary<string, UniformMethod> Methods { get; }
         /// <summary>
         /// The instance of the underlying class
         /// </summary>
         public object Instance { get; }
 
         /// <summary>
-        /// Creates a new AbysmalExtensibilityClass wrapping the specified type
+        /// Creates a new ExtensibilityClass wrapping the specified type
         /// </summary>
         /// <param name="t">The type to wrap</param>
         /// <param name="getPrivate">Whether to include private members</param>
-        public AbysmalExtensibilityClass(Type t, bool getPrivate = false)
+        public UniformClass(Type t, bool getPrivate = false)
         {
             Properties = new();
             Methods = new();
@@ -236,11 +236,11 @@ namespace AbysmalCore.Extensibility
         }
 
         /// <summary>
-        /// Creates a new AbysmalExtensibilityClass wrapping the specified instance
+        /// Creates a new ExtensibilityClass wrapping the specified instance
         /// </summary>
         /// <param name="instance">The instance to wrap</param>
         /// <param name="getPrivate">Whether to include private members</param>
-        public AbysmalExtensibilityClass(object instance, bool getPrivate = false)
+        public UniformClass(object instance, bool getPrivate = false)
         {
             Properties = new();
             Methods = new();
@@ -276,9 +276,40 @@ namespace AbysmalCore.Extensibility
         /// </summary>
         /// <param name="name">The name of the property</param>
         public bool HasProperty(string name) => Properties.ContainsKey(name);
+
+        /// <summary>
+        /// Returns the method defined in this class with <paramref name="name"/>
+        /// </summary>
+        /// <param name="name">The name of the method</param>
+        /// <returns>null if method undefined</returns>
+        public UniformMethod? GetMethod(string name)
+        {
+            if (HasMethod(name)) return Methods[name];
+            else return null;
+        }
+        /// <summary>
+        /// Returns the method defined in this class with <paramref name="name"/>
+        /// </summary>
+        /// <param name="name">The name of the method</param>
+        /// <returns>null if method undefined</returns>
+        public UniformProperty? GetProperty(string name)
+        {
+            if (HasProperty(name)) return Properties[name];
+            else return null;
+        }
+
         /// <summary>
         /// Instantiates a new instance of the underlying class
         /// </summary>
         public object New() => Activator.CreateInstance(Instance.GetType())!;
+        /// <summary>
+        /// Returns an instance of this class that is derived from an interface or abstraction (<typeparamref name="T"/>)
+        /// </summary>
+        /// <typeparam name="T">Interface or abstract class type</typeparam>
+        public T ToUniform<T>()
+        {
+            Type? type = Instance.GetType()!;
+            return (T)Activator.CreateInstance(type)!;
+        }
     }
 }

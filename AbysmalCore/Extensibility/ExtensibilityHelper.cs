@@ -12,7 +12,7 @@ namespace AbysmalCore.Extensibility
     /// Compiler and wrapper initializer
     /// </summary>
     [DebugInfo("abysmal extensibility framework", false)]
-    public class AbysmalExtensibility
+    public class ExtensibilityHelper
     {
         /// <summary>
         /// Compiles C# source code into an assembly
@@ -29,7 +29,7 @@ namespace AbysmalCore.Extensibility
                 .Select(a => MetadataReference.CreateFromFile(a.Location))
                 .ToList();
 
-            AbysmalDebug.Log(new AbysmalExtensibility(), $"Compiling assembly <anonymous>.{assemblyName} with {references.Count} references");
+            AbysmalDebug.Log(new ExtensibilityHelper(), $"Compiling assembly <anonymous>.{assemblyName} with {references.Count} references");
             Stopwatch sw = Stopwatch.StartNew();
             CSharpCompilation compilation = CSharpCompilation.Create(
                 assemblyName,
@@ -41,10 +41,10 @@ namespace AbysmalCore.Extensibility
             using MemoryStream ms = new();
             EmitResult result = compilation.Emit(ms);
             sw.Stop();
-            AbysmalDebug.Log(new AbysmalExtensibility(), $"Compilation {(result.Success ? "succeeded" : "failed")} for assembly <anonymous>.{assemblyName} in {sw.ElapsedMilliseconds}ms");
+            AbysmalDebug.Log(new ExtensibilityHelper(), $"Compilation {(result.Success ? "succeeded" : "failed")} for assembly <anonymous>.{assemblyName} in {sw.ElapsedMilliseconds}ms");
 
             if (!result.Success)
-                AbysmalDebug.Error(new AbysmalExtensibility(), "Compilation failed.", true);
+                AbysmalDebug.Error(new ExtensibilityHelper(), "Compilation failed.", true);
 
             // go to beginning of stream
             ms.Seek(0, SeekOrigin.Begin);
@@ -56,27 +56,10 @@ namespace AbysmalCore.Extensibility
         }
 
         /// <summary>
-        /// Returns an instance of a class from a compiled assembly that is matched to an interface or abstract class
+        /// Encapsulates assembly <paramref name="asm"/> into a new <see cref="UniformAssembly"/>
         /// </summary>
-        /// <typeparam name="T">Interface or abstract class type</typeparam>
-        /// <param name="asm">The host assembly</param>
-        /// <param name="cls">The class name to instantiate</param>
-        public static T GetUniformClass<T>(Assembly asm, string cls)
-        {
-            Type? type = asm.GetType(cls)!;
-            return (T)Activator.CreateInstance(type)!;
-        }
-
-        /// <summary>
-        /// Returns an ExtensibilityClass instance for uniform access to methods and properties of a class in a compiled assembly
-        /// </summary>
-        /// <param name="asm">The host assembly</param>
-        /// <param name="cls">The class name to instantiate</param>
-        /// <param name="getPrivate">Whether to include private members</param>
-        public static AbysmalExtensibilityClass GetClass(Assembly asm, string cls, bool getPrivate = false)
-        {
-            Type? type = asm.GetType(cls)!;
-            return new(type, getPrivate);
-        }
+        /// <param name="asm">The assembly to encapsulate</param>
+        /// <param name="getPrivate">Determines whether to expose private items in the assembly</param>
+        public static UniformAssembly LoadAssembly(Assembly asm, bool getPrivate = false) => new(asm, getPrivate);
     }
 }
