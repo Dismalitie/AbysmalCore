@@ -3,7 +3,7 @@ _layout: landing
 ---
 
 <div align="center">
-  <img width="512" height="512" alt="AbysmalCore Icon" src="https://github.com/user-attachments/assets/c357199a-6b0e-47b7-8f1a-0747b0d9e89f" />
+  <img width="512" height="512" alt="AbysmalCore Icon" src="https://github.com/Dismalitie/AbysmalCore/blob/master/images/abysmalcore.png?raw=true" />
 </div>
 
 # AbysmalCore
@@ -13,7 +13,7 @@ AbysmalCore is the standard library with utilities, debugging suite and GUI syst
 ---
 
 <div align="center">
-  <img width="256" height="256" alt="AbysmalCore.Extensibility" src="https://github.com/user-attachments/assets/c44aba67-47bc-4dea-8d0f-5102d3096308" />
+  <img width="256" height="256" alt="AbysmalCore.Extensibility" src="https://github.com/Dismalitie/AbysmalCore/blob/master/images/extensibility.png?raw=true" />
 </div>
 
 # `AbysmalCore.Extensibility`
@@ -42,7 +42,7 @@ if (asm.HasClass("Tests.ExtensibilityTest"))
 ---
 
 <div align="center">
-  <img width="256" height="256" alt="AbysmalCore.Debugging" src="https://github.com/user-attachments/assets/c5cf3611-4706-4c91-a724-4118096512d1" />
+  <img width="256" height="256" alt="AbysmalCore.Debugging" src="https://github.com/Dismalitie/AbysmalCore/blob/master/images/debugging.png?raw=true" />
 </div>
 
 # `AbysmalCore.Debugging`
@@ -64,7 +64,7 @@ AbysmalDebug.Log(this, $"Generated base color {core} from {c}");
 ---
 
 <div align="center">
-  <img width="256" height="256" alt="AbysmalCore.UI" src="https://github.com/user-attachments/assets/355b0a53-cf0e-4ce4-b298-29f79f934774" />
+  <img width="256" height="256" alt="AbysmalCore.UI" src="https://github.com/Dismalitie/AbysmalCore/blob/master/images/ui.png?raw=true" />
 </div>
 
 # `AbysmalCore.UI`
