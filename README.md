@@ -46,4 +46,14 @@ AbysmalDebug.Log(testClass.New(), output, true);
 
 This map outlines the public **static** methods and properties for the primary debugging class, `AbysmalDebug`.
 
+## Example
 
+```cs
+int layerDivisor = 3;
+int coreDivisor = 5;
+
+Color layer = new(c.R / layerDivisor, c.G / layerDivisor, c.B / layerDivisor);
+AbysmalDebug.Log(this, $"Generated layer color {layer} from {c}");
+Color core = new(c.R / coreDivisor, c.G / coreDivisor, c.B / coreDivisor);
+AbysmalDebug.Log(this, $"Generated base color {core} from {c}");
+```
