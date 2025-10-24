@@ -59,7 +59,7 @@ namespace AbysmalCore.UI.Styling
         /// <summary>
         /// Creates a new style map
         /// </summary>
-        /// <param name="useGlobalTheme"></param>Whether to use the <see cref="Window"/>'s theme
+        /// <param name="useGlobalTheme">Whether to use the <see cref="Window"/>'s theme</param>
         public StyleMap(bool useGlobalTheme = false)
         {
             if (useGlobalTheme)
@@ -89,8 +89,8 @@ namespace AbysmalCore.UI.Styling
         /// <summary>
         /// Checks compatible brushes with the current ones
         /// </summary>
-        /// <param name="supported"></param>List of supported brush types
-        /// <param name="control"></param>Control to validate against
+        /// <param name="supported">List of supported brush types</param>
+        /// <param name="control">Control to validate against</param>
         public void ValidateBrushes(Dictionary<ControlStyleType, IBrush.BrushType[]> supported, UIElement control)
         {
             Hovered?.ValidateBrushes(supported[ControlStyle], control);

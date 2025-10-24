@@ -65,8 +65,8 @@ namespace AbysmalCore.UI
                 unsafe
                 {
                     IntPtr hwnd = (nint)GetWindowHandle();
-                    DwmPInvokeHelper.SetNonClientColor(hwnd, c.R, c.G, c.B);
-                    DwmPInvokeHelper.SetNonClientTextColor(hwnd, t.R, t.G, t.B);
+                    DwmPInvokeHelper.SetNonClientColor(hwnd, (c.R, c.G, c.B));
+                    DwmPInvokeHelper.SetNonClientTextColor(hwnd, (t.R, t.G, t.B));
                 }
                 _bg = c;
                 _gTheme = value;
@@ -77,10 +77,10 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Creates a window
         /// </summary>
-        /// <param name="size"></param>The size
-        /// <param name="title"></param>The caption in the titlebar
-        /// <param name="theme"></param>The defualt theme
-        /// <param name="resizeable"></param>Whether the window is resizable
+        /// <param name="size">The size</param>
+        /// <param name="title">The caption in the titlebar</param>
+        /// <param name="theme">The defualt theme</param>
+        /// <param name="resizeable">Whether the window is resizable</param>
         public Window(Vector2Int size, string title, Theme? theme = null, bool resizeable = true)
         {
             // we could make window methods static since you can only have
@@ -102,8 +102,8 @@ namespace AbysmalCore.UI
                 // update window colors manually since it doesnt do
                 // it automatically on the first set
                 IntPtr hwnd = (nint)GetWindowHandle();
-                DwmPInvokeHelper.SetNonClientColor(hwnd, c.R, c.G, c.B);
-                DwmPInvokeHelper.SetNonClientTextColor(hwnd, t.R, t.G, t.B);
+                DwmPInvokeHelper.SetNonClientColor(hwnd, (c.R, c.G, c.B));
+                DwmPInvokeHelper.SetNonClientTextColor(hwnd, (t.R, t.G, t.B));
             }
         }
 
@@ -178,8 +178,8 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Draws and sets the window icon using the provided lambda function
         /// </summary>
-        /// <param name="sz"></param>Size of the icon
-        /// <param name="draw"></param>Lamba function that draws the icon
+        /// <param name="sz">Size of the icon</param>
+        /// <param name="draw">Lamba function that draws the icon</param>
         public void SetIcon(Vector2Int sz, Func<object?> draw)
         {
             RenderTexture2D rt = LoadRenderTexture(sz.X, sz.Y);
@@ -208,7 +208,7 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Initializes the window loop with the provided <see cref="UserInterface"/>
         /// </summary>
-        /// <param name="ui"></param>User interface to draw
+        /// <param name="ui">User interface to draw</param>
         public void Init(UserInterface ui)
         {
             _ui = ui;
@@ -251,7 +251,7 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Updates the user interface to draw in the window loop
         /// </summary>
-        /// <param name="ui"></param>User Interface instance
+        /// <param name="ui">User Interface instance</param>
         public void SetUI(UserInterface ui) => _ui = ui;
     }
 }

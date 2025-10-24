@@ -31,9 +31,9 @@ namespace AbysmalCore.UI.Styling.Brushes
         /// <summary>
         /// Creates a new radial gradient brush
         /// </summary>
-        /// <param name="blending"></param>How much to blend the colors
-        /// <param name="inner"></param>The inner color
-        /// <param name="outer"></param>The outer color
+        /// <param name="blending">How much to blend the colors</param>
+        /// <param name="inner">The inner color</param>
+        /// <param name="outer">The outer color</param>
         public RadialGradientBrush(float blending, Color inner, Color outer)
         {
             Blending = blending;

@@ -14,16 +14,18 @@ namespace AbysmalCore.UI
         /// </summary>
         public List<UIElement> Elements { get; private set; }
 
-        /// objects like tex2d, rendertextures, images
-        /// in this list will be unloaded upon exiting
-        /// 
+        // objects like tex2d, rendertextures, images
+        // in this list will be unloaded upon exiting
         /// <summary>
-        /// A list of objects to unload when the window is closed. Should be
+        /// A list of objects to unload when the window is closed
+        /// </summary>
+        /// <remarks>
+        /// Should be:
         /// <see cref="Texture2D"/>,
         /// <see cref="RenderTexture2D"/>,
         /// <see cref="Image"/> or
         /// <see cref="Shader"/>
-        /// </summary>
+        /// </remarks>
         public static List<object> UnloadList = new();
 
         /// <summary>
@@ -31,8 +33,7 @@ namespace AbysmalCore.UI
         /// </summary>
         public static int Frame { get; private set; }
 
-        /// ease of access
-        /// 
+        // ease of access
         /// <summary>
         /// Represents the current mouse position (not relative to any element)
         /// </summary>
@@ -41,7 +42,7 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Creates a new user interface
         /// </summary>
-        /// <param name="elements"></param>Inital children
+        /// <param name="elements">Inital children</param>
         public UserInterface(List<UIElement>? elements = null)
         {
             //Instance = this; 
@@ -52,19 +53,19 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Removes a <see cref="UIElement"/> from the GUI
         /// </summary>
-        /// <param name="element"></param>Instance of the element to remove
+        /// <param name="element">Instance of the element to remove</param>
         public void RemoveElement(UIElement element) => Elements.Remove(element);
 
         /// <summary>
         /// Removes the first <see cref="UIElement"/> with the specified name from the GUI
         /// </summary>
-        /// <param name="name"></param>Name of the element to remove
+        /// <param name="name">Name of the element to remove</param>
         public void RemoveElement(string name) => Elements.RemoveAll(c => c.Name == name);
 
         /// <summary>
         /// Returns the first <see cref="UIElement"/> with the specified name from the GUI
         /// </summary>
-        /// <param name="name"></param>Name of the element to retrieve
+        /// <param name="name">Name of the element to retrieve</param>
         /// <returns>First instance of <see cref="UIElement"/> with <paramref name="name"/>, else null</returns>
         public UIElement? GetElement(string name)
         {
@@ -75,13 +76,12 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Returns every <see cref="UIElement"/> in the GUI
         /// </summary>
-        /// <returns><see cref="UIElement"/>[]</returns>
         public UIElement[] GetElements() => Elements.ToArray();
 
         /// <summary>
         /// Adds a <see cref="UIElement"/> to the GUI
         /// </summary>
-        /// <param name="element"></param>Instance of the element to add
+        /// <param name="element">Instance of the element to add</param>
         public void AddElement(UIElement element) => Elements.Add(element);
 
         /// <summary>

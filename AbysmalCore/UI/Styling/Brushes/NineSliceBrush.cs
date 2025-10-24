@@ -25,8 +25,8 @@ namespace AbysmalCore.UI.Styling.Brushes
         /// <summary>
         /// Creates a new nine slice brush
         /// </summary>
-        /// <param name="texture"></param>
-        /// <param name="nineSlice"></param>
+        /// <param name="texture">9slice texture</param>
+        /// <param name="nineSlice">Info to use in drawing</param>
         public NineSliceBrush(Image texture, NPatchInfo nineSlice)
         {
             Texture = texture;

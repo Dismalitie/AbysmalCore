@@ -79,8 +79,8 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Creates a new AbysmalExtensibilityProperty wrapping the specified PropertyInfo
         /// </summary>
-        /// <param name="pi"></param>The PropertyInfo to wrap
-        /// <param name="instance"></param>The instance of the underlying class
+        /// <param name="pi">The PropertyInfo to wrap</param>
+        /// <param name="instance">The instance of the underlying class</param>
         public AbysmalExtensibilityProperty(PropertyInfo pi, object instance)
         {
             _type = propertyType.property;
@@ -94,8 +94,8 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Creates a new AbysmalExtensibilityProperty wrapping the specified FieldInfo
         /// </summary>
-        /// <param name="fi"></param>The FieldInfo to wrap
-        /// <param name="instance"></param>The instance of the underlying class
+        /// <param name="fi">The FieldInfo to wrap</param>
+        /// <param name="instance">The instance of the underlying class</param>
         public AbysmalExtensibilityProperty(FieldInfo fi, object instance)
         {
             if (fi.IsPublic) _type = propertyType.field;
@@ -134,8 +134,8 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Creates a new AbysmalExtensibilityMethod wrapping the specified MethodInfo
         /// </summary>
-        /// <param name="mi"></param>The MethodInfo to wrap
-        /// <param name="instance"></param>The instance of the underlying class
+        /// <param name="mi">The MethodInfo to wrap</param>
+        /// <param name="instance">The instance of the underlying class</param>
         public AbysmalExtensibilityMethod(MethodInfo mi, object instance)
         {
             _info = mi;
@@ -149,13 +149,13 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Returns the type of the parameter at the specified index
         /// </summary>
-        /// <param name="index"></param>The index of the parameter
+        /// <param name="index">The index of the parameter</param>
         public Type GetParameterType(int index) => _info.GetParameters()[index].ParameterType;
 
         /// <summary>
         /// Executes the method with the specified arguments
         /// </summary>
-        /// <param name="args"></param>The arguments to pass to the method
+        /// <param name="args">The arguments to pass to the method</param>
         public object? Invoke(params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments");
@@ -164,20 +164,20 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Invokes the method with the specified arguments and converts the result to the specified type
         /// </summary>
-        /// <typeparam name="T"></typeparam>The type to convert the result to
-        /// <param name="args"></param>Arguments to pass to the method
+        /// <typeparam name="T">The type to convert the result to</typeparam>
+        /// <param name="args">Arguments to pass to the method</param>
         /// <returns></returns>
         public T Invoke<T>(params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments and converting to {typeof(T).FullName}");
-            return (T)_info.Invoke(_instance, args);
+            return (T)_info.Invoke(_instance, args)!;
         }
         /// <summary>
         /// Invokes the method with the specified arguments and converts the result using the provided converter function
         /// </summary>
-        /// <typeparam name="T"></typeparam>The type to convert the result to
-        /// <param name="converter"></param>Lambda function to convert the result
-        /// <param name="args"></param>Arguments to pass to the method
+        /// <typeparam name="T">The type to convert the result to</typeparam>
+        /// <param name="converter">Lambda function to convert the result</param>
+        /// <param name="args">Arguments to pass to the method</param>
         public T Invoke<T>(Func<object?, T> converter, params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments and converting to {typeof(T).FullName} using custom converter");
@@ -207,8 +207,8 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Creates a new AbysmalExtensibilityClass wrapping the specified type
         /// </summary>
-        /// <param name="t"></param>The type to wrap
-        /// <param name="getPrivate"></param>Whether to include private members
+        /// <param name="t">The type to wrap</param>
+        /// <param name="getPrivate">Whether to include private members</param>
         public AbysmalExtensibilityClass(Type t, bool getPrivate = false)
         {
             Properties = new();
@@ -238,8 +238,8 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Creates a new AbysmalExtensibilityClass wrapping the specified instance
         /// </summary>
-        /// <param name="instance"></param>The instance to wrap
-        /// <param name="getPrivate"></param>Whether to include private members
+        /// <param name="instance">The instance to wrap</param>
+        /// <param name="getPrivate">Whether to include private members</param>
         public AbysmalExtensibilityClass(object instance, bool getPrivate = false)
         {
             Properties = new();
@@ -269,19 +269,16 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Returns whether the class has a method with the specified name
         /// </summary>
-        /// <param name="name"></param>The name of the method
-        /// <returns></returns>
+        /// <param name="name">The name of the method</param>
         public bool HasMethod(string name) => Methods.ContainsKey(name);
         /// <summary>
         /// Returns whether the class has a property with the specified name
         /// </summary>
-        /// <param name="name"></param>The name of the property
-        /// <returns></returns>
+        /// <param name="name">The name of the property</param>
         public bool HasProperty(string name) => Properties.ContainsKey(name);
         /// <summary>
         /// Instantiates a new instance of the underlying class
         /// </summary>
-        /// <returns></returns>
         public object New() => Activator.CreateInstance(Instance.GetType())!;
     }
 }

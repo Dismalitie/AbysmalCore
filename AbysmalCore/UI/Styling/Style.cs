@@ -37,8 +37,8 @@ namespace AbysmalCore.UI.Styling
         /// <summary>
         /// Checks if the brushes used in this style are supported by the given control
         /// </summary>
-        /// <param name="supported"></param>Array of supported brush types
-        /// <param name="control"></param>Control to validate against
+        /// <param name="supported">Array of supported brush types</param>
+        /// <param name="control">Control to validate against</param>
         public void ValidateBrushes(IBrush.BrushType[] supported, UIElement control)
         {
             if (!supported.Contains(BorderColor.Type))

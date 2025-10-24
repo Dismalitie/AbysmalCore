@@ -19,9 +19,9 @@ namespace AbysmalCore.UI.Styling.Brushes
         /// <summary>
         /// Creates a new shader brush
         /// </summary>
-        /// <param name="fragPath"></param>Filepath to the fragment shader
-        /// <param name="vertPath"></param>Filepath to the vertex shader
-        /// <param name="color"></param>The backup color
+        /// <param name="fragPath">Filepath to the fragment shader</param>
+        /// <param name="vertPath">Filepath to the vertex shader</param>
+        /// <param name="color">The backup color</param>
         public ShaderBrush(string fragPath, string vertPath, Color color)
         {
             Shader = LoadShader(vertPath, fragPath);
@@ -33,17 +33,16 @@ namespace AbysmalCore.UI.Styling.Brushes
         /// <summary>
         /// Gets a shader uniform's location
         /// </summary>
-        /// <param name="name"></param>The name of the uniform
-        /// <returns></returns>
+        /// <param name="name">The name of the uniform</param>
         public int GetShaderUniform(string name) => GetShaderLocation(Shader, name);
 
         /// <summary>
         /// Sets a shader uniform
         /// </summary>
-        /// <typeparam name="T"></typeparam>Uniform type
-        /// <param name="loc"></param>The location (<see cref="GetShaderUniform(string)"/>)
-        /// <param name="value"></param>The value to set it to
-        /// <param name="type"></param>The type of uniform
+        /// <typeparam name="T">Uniform type</typeparam>
+        /// <param name="loc">The location (<see cref="GetShaderUniform(string)"/>)</param>
+        /// <param name="value">The value to set it to</param>
+        /// <param name="type">The type of uniform</param>
         public void SetShaderValue<T>(int loc, T value, ShaderUniformDataType type) where T : unmanaged =>
              Raylib.SetShaderValue(Shader, loc, value, type);
 

@@ -18,7 +18,7 @@ namespace AbysmalCore.UI.Styling.Brushes
         /// <summary>
         /// Creates a new solid color brush
         /// </summary>
-        /// <param name="color"></param>The color of the brush
+        /// <param name="color">The color of the brush</param>
         public SolidBrush(Color color) => Color = color;
 
         /// <inheritdoc/>
@@ -33,9 +33,10 @@ namespace AbysmalCore.UI.Styling.Brushes
         public void DrawText(Font font, string text, Vector2Int position, int fontSize) =>
                     DrawTextEx(font, text, position.ToSys(), fontSize, 3f, Color);
 
-        /// this is actually redundant since every style supports
-        /// solid colors but we do it to satisfy the compiler as
-        /// it is abstractly derived from IBrush
+        // this is actually redundant since every style supports
+        // solid colors but we do it to satisfy the compiler as
+        // it is abstractly derived from IBrush
+        /// <inheritdoc/>
         public Color Fallback() => Color;
     }
 }

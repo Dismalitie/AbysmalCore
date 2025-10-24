@@ -8,10 +8,9 @@ namespace AbysmalCore.UI
     /// </summary>
     public abstract class UIElement
     {
-        /// default name is * because when
-        /// using GetChild you can do
-        /// GetChild("*")
-        /// 
+        // default name is * because when
+        // using GetChild you can do
+        // GetChild("*")
         /// <summary>
         /// Unique identifier of this <see cref="UIElement"/> (used for retrieval with <see cref="GetChild(string)"/>)
         /// </summary>
@@ -61,7 +60,7 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Adds a child <see cref="UIElement"/>
         /// </summary>
-        /// <param name="element"></param>Instance of the element to add
+        /// <param name="element">Instance of the element to add</param>
         public void AddChild(UIElement element)
         {
             element.Position = new(element.Position.X + Position.X, element.Position.Y + Position.Y);
@@ -70,17 +69,17 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Removes a child <see cref="UIElement"/>
         /// </summary>
-        /// <param name="element"></param>Instance of the element to remove
+        /// <param name="element">Instance of the element to remove</param>
         public void RemoveChild(UIElement element) => _children.Remove(element);
         /// <summary>
         /// Removes the first child <see cref="UIElement"/> with the specified name
         /// </summary>
-        /// <param name="name"></param>Name of the element to remove
+        /// <param name="name">Name of the element to remove</param>
         public void RemoveChild(string name) => _children.RemoveAll(c => c.Name == name);
         /// <summary>
         /// Returns the first child <see cref="UIElement"/> with the specified name
         /// </summary>
-        /// <param name="name"></param>Name of the element to retrieve
+        /// <param name="name">Name of the element to retrieve</param>
         /// <returns>First instance of <see cref="UIElement"/> with <paramref name="name"/>, else null</returns>
         public UIElement? GetChild(string name)
         {
@@ -113,8 +112,8 @@ namespace AbysmalCore.UI
                 }
             }
         }
-        /// mirror to prevent recursive setting
-        /// which crashes the stack
+        // mirror to prevent recursive setting
+        // which crashes the stack
         private bool _hovered = false;
         /// <summary>
         /// Determines whether the mouse is over this <see cref="UIElement"/> and the left mouse button is held down
@@ -132,21 +131,21 @@ namespace AbysmalCore.UI
                 if (value != Clicked) OnStateChanged?.Invoke(this, StateChangeType.Clicked, value);
             }
         }
-        /// same here
+        // same here
         private bool _clicked;
         /// <summary>
         /// Delegate for when the control is clicked
         /// </summary>
-        /// <param name="sender"></param>The control
-        /// <param name="mouse"></param>The mouse position
-        /// <param name="frame"></param>The current frame
+        /// <param name="sender">The control</param>
+        /// <param name="mouse">The mouse position</param>
+        /// <param name="frame">The current frame</param>
         public delegate void OnClickedEventArgs(UIElement sender, Vector2Int mouse, int frame);
         /// <summary>
         /// Delegate for when the control is hovered over
         /// </summary>
-        /// <param name="sender"></param>The control
-        /// <param name="mouse"></param>The mouse position
-        /// <param name="frame"></param>The current frame
+        /// <param name="sender">The control</param>
+        /// <param name="mouse">The mouse position</param>
+        /// <param name="frame">The current frame</param>
         public delegate void OnHoveredEventArgs(UIElement sender, Vector2Int mouse, int frame);
         /// <summary>
         /// The property that changed
@@ -173,9 +172,9 @@ namespace AbysmalCore.UI
         /// <summary>
         /// The delegate to use when a property is changed
         /// </summary>
-        /// <param name="sender"></param>The control
-        /// <param name="property"></param>The property changed
-        /// <param name="newState"></param>The new value
+        /// <param name="sender">The control</param>
+        /// <param name="property">The property changed</param>
+        /// <param name="newState">The new value</param>
         public delegate void OnStateChangedEventArgs(UIElement sender, StateChangeType property, object newState);
         /// <summary>
         /// Fired when this <see cref="UIElement"/> is clicked
@@ -193,9 +192,9 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Delegate used when the mouse enters or exits the controls bounds
         /// </summary>
-        /// <param name="sender"></param>The control
-        /// <param name="mouse"></param>The mouse position
-        /// <param name="frame"></param>The current frame
+        /// <param name="sender">The control</param>
+        /// <param name="mouse">The mouse position</param>
+        /// <param name="frame">The current frame</param>
         public delegate void OnMouseEnterExitEventArgs(UIElement sender, Vector2Int mouse, int frame);
         /// <summary>
         /// Fired once when the mouse enters the bounds of this <see cref="UIElement"/>
@@ -244,9 +243,8 @@ namespace AbysmalCore.UI
         /// Style map containing styles for different states of this <see cref="UIElement"/>
         /// </summary>
         public StyleMap StyleMap = new();
-        /// dynamic accessor to make drawing
-        /// a fucktonne easier
-        /// 
+        // dynamic accessor to make drawing
+        // a fucktonne easier
         /// <summary>
         /// Returns the current <see cref="Style"/> based on the state of this <see cref="UIElement"/>
         /// </summary>

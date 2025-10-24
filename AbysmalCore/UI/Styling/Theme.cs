@@ -38,7 +38,7 @@ namespace AbysmalCore.UI.Styling
         /// <summary>
         /// Creates a new theme from 3 colors and a control style
         /// </summary>
-        /// <param name="core"></param>The
+        /// <param name="core"></param>
         /// <param name="layer"></param>
         /// <param name="accent"></param>
         /// <param name="text"></param>
@@ -180,8 +180,8 @@ namespace AbysmalCore.UI.Styling
         /// <summary>
         /// Dynamically creates a new theme from a single color
         /// </summary>
-        /// <param name="c"></param>The color
-        /// <param name="text"></param>The color to use on text
+        /// <param name="c">The color</param>
+        /// <param name="text">The color to use on text</param>
         public Theme(Color c, Color text)
         {
             Text = text;

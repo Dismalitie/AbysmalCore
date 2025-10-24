@@ -22,8 +22,8 @@ namespace AbysmalCore.UI.Controls
         /// <summary>
         /// Creates a new Picture control
         /// </summary>
-        /// <param name="image"></param>The image to draw
-        /// <param name="tint"></param>Whether to tint the image
+        /// <param name="image">The image to draw</param>
+        /// <param name="tint">Whether to tint the image</param>
         public Picture(Image image, bool tint = false)
         {
             Image = image;

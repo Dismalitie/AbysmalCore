@@ -50,9 +50,9 @@ namespace AbysmalCore.UI.Styling.Brushes
         /// <summary>
         /// Creates a new linear gradient brush
         /// </summary>
-        /// <param name="direction"></param>The direction to draw the colors
-        /// <param name="c1"></param>The first color
-        /// <param name="c2"></param>The second color
+        /// <param name="direction">The direction to draw the colors</param>
+        /// <param name="c1">The first color</param>
+        /// <param name="c2">The second color</param>
         public LinearGradientBrush(GradientDirection direction, Color c1, Color c2)
         {
             Direction = direction;

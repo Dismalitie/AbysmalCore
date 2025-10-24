@@ -30,15 +30,15 @@ namespace AbysmalCore
         /// <summary>
         /// Writes the console output buffer to a file
         /// </summary>
-        /// <param name="path"></param>
+        /// <param name="path">Output filepath</param>
         public void WriteOutput(string path) => File.WriteAllText(path, GetOutput());
 
         /// <summary>
         /// Writes a colored string to the console
         /// </summary>
-        /// <param name="s"></param>The text to write
-        /// <param name="fore"></param>The foreground color
-        /// <param name="back"></param>The background color (optional; uses current color if null)
+        /// <param name="s">The text to write</param>
+        /// <param name="fore">The foreground color</param>
+        /// <param name="back">The background color (optional; uses current color if null)</param>
         public void WriteColor(string s, ConsoleColor fore, ConsoleColor? back = null)
         {
             ConsoleColor oldFore = Console.ForegroundColor;
@@ -55,7 +55,7 @@ namespace AbysmalCore
         /// <summary>
         /// Writes multiple colors in the same string to the console
         /// </summary>
-        /// <param name="colors"></param>Tuple array of - string, foreground color, background color (optional; uses current color if null)
+        /// <param name="colors">Tuple array of (string, foreground color, background color) (optional; uses current color if null)</param>
         public void WriteColors((string s, ConsoleColor fore, ConsoleColor? back)[] colors)
         {
             foreach (var c in colors)
@@ -65,9 +65,9 @@ namespace AbysmalCore
         /// <summary>
         /// Writes a colored string to the console with a newline
         /// </summary>
-        /// <param name="s"></param>
-        /// <param name="fore"></param>
-        /// <param name="back"></param>
+        /// <param name="s">The text to write</param>
+        /// <param name="fore">The foreground color</param>
+        /// <param name="back">The background color (optional; uses current color if null)</param>
         public void WriteColorLn(string s, ConsoleColor fore, ConsoleColor? back = null)
         {
             ConsoleColor oldFore = Console.ForegroundColor;
@@ -84,7 +84,7 @@ namespace AbysmalCore
         /// <summary>
         /// Writes multiple single-colored lines to the console
         /// </summary>
-        /// <param name="lines"></param>Tuple array of - string, foreground color, background color (optional; uses current color if null)
+        /// <param name="lines">Tuple array of (string, foreground color, background color) (optional; uses current color if null)</param>
         public void WriteColorLns((string s, ConsoleColor fore, ConsoleColor? back)[] lines)
         {
             foreach (var ln in lines)
@@ -131,9 +131,9 @@ namespace AbysmalCore
         /// Asks the user for input and converts it to the specified type
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="msg"></param>The prompt message
-        /// <param name="type"></param>The string representation of the type (optional; defaults to typeof(T).Name.ToLower())
-        /// <param name="converter"></param>An optional converter function to convert the string input to type T
+        /// <param name="msg">The prompt message</param>
+        /// <param name="type">The string representation of the type (optional; defaults to typeof(T).Name.ToLower())</param>
+        /// <param name="converter">An optional converter function to convert the string input to type T</param>
         public T? Prompt<T>(string msg, string? type = null, Func<string, T>? converter = null)
         {
             type ??= typeof(T).Name.ToLower();

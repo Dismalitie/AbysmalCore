@@ -58,8 +58,8 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Sets the material of a window background
         /// </summary>
-        /// <param name="hWnd"></param>The window handle
-        /// <param name="material"></param>The material to use
+        /// <param name="hWnd">The window handle</param>
+        /// <param name="material">The material to use</param>
         public static void SetMaterial(IntPtr hWnd, MaterialType material)
         {
             int n = (int)material;
@@ -74,11 +74,9 @@ namespace AbysmalCore.UI
         /// <summary>
         /// Sets the color of the titlebar
         /// </summary>
-        /// <param name="hWnd"></param>The window handle
-        /// <param name="r"></param>The red channel
-        /// <param name="g"></param>The green channel
-        /// <param name="b"></param>The blue channel
-        public static void SetNonClientColor(IntPtr hWnd, int r, int g, int b)
+        /// <param name="hWnd">The window handle</param>
+        /// <param name="c">The color</param>
+        public static void SetNonClientColor(IntPtr hWnd, (int r, int g, int b) c)
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
@@ -86,7 +84,7 @@ namespace AbysmalCore.UI
                 return;
             }
 
-            int colorRef = ColorToCOLORREF(new Color(r,g,b));
+            int colorRef = ColorToCOLORREF(new Color(c.r,c.g,c.b));
             uint sizeOfInt = (uint)Marshal.SizeOf(typeof(int));
 
             DwmSetWindowAttribute(
@@ -100,10 +98,8 @@ namespace AbysmalCore.UI
         /// Sets the text of the titlebar caption
         /// </summary>
         /// <param name="hWnd"></param>The window handle
-        /// <param name="r"></param>The red channel
-        /// <param name="g"></param>The green channel
-        /// <param name="b"></param>The blue channel
-        public static void SetNonClientTextColor(IntPtr hWnd, int r, int g, int b)
+        /// <param name="c">The color</param>
+        public static void SetNonClientTextColor(IntPtr hWnd, (int r, int g, int b) c)
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
@@ -111,7 +107,7 @@ namespace AbysmalCore.UI
                 return;
             }
 
-            int colorRef = ColorToCOLORREF(new Color(r, g, b));
+            int colorRef = ColorToCOLORREF(new Color(c.r, c.g, c.b));
             uint sizeOfInt = (uint)Marshal.SizeOf(typeof(int));
 
             DwmSetWindowAttribute(
@@ -125,10 +121,8 @@ namespace AbysmalCore.UI
         /// Sets the color of the window border
         /// </summary>
         /// <param name="hWnd"></param>The window handle
-        /// <param name="r"></param>The red channel
-        /// <param name="g"></param>The green channel
-        /// <param name="b"></param>The blue channel
-        public static void SetBorderColor(IntPtr hWnd, int r, int g, int b)
+        /// <param name="c">The color</param>
+        public static void SetBorderColor(IntPtr hWnd, (int r, int g, int b) c)
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
@@ -136,7 +130,7 @@ namespace AbysmalCore.UI
                 return;
             }
 
-            int colorRef = ColorToCOLORREF(new Color(r, g, b));
+            int colorRef = ColorToCOLORREF(new Color(c.r, c.g, c.b));
             uint sizeOfInt = (uint)Marshal.SizeOf(typeof(int));
 
             DwmSetWindowAttribute(

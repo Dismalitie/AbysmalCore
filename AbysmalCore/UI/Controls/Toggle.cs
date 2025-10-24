@@ -35,9 +35,9 @@ namespace AbysmalCore.UI.Controls
                 OnToggleStateChanged?.Invoke(this, _state, UserInterface.Mouse, UserInterface.Frame);
             }
         }
-        /// use a mirror here because we update the value
-        /// in State's set accessor, and if we re-set the
-        /// value without this mirror, we blow up the stack
+        // use a mirror here because we update the value
+        // in State's set accessor, and if we re-set the
+        // value without this mirror, we blow up the stack
         private bool _state;
 
         /// <summary>
@@ -52,11 +52,11 @@ namespace AbysmalCore.UI.Controls
         /// <summary>
         /// Creates a new toggle
         /// </summary>
-        /// <param name="position"></param>The position relative to the top left corner of the client area
-        /// <param name="size"></param>The size
-        /// <param name="state"></param>The default state
-        /// <param name="label"></param>Optional label text
-        /// <param name="fontSize"></param>Size of the optional label
+        /// <param name="position">The position relative to the top left corner of the client area</param>
+        /// <param name="size">The size</param>
+        /// <param name="state">The default state</param>
+        /// <param name="label">Optional label text</param>
+        /// <param name="fontSize">Size of the optional label</param>
         public Toggle(Vector2Int position, Vector2Int size, bool state = false, string label = "", int fontSize = 18)
         {
             Position = position;

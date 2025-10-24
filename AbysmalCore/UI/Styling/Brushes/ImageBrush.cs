@@ -21,8 +21,8 @@ namespace AbysmalCore.UI.Styling.Brushes
         /// <summary>
         /// Creates a new image brush
         /// </summary>
-        /// <param name="img"></param>The image to draw
-        /// <param name="color"></param>The fallback color
+        /// <param name="img">The image to draw</param>
+        /// <param name="color">The fallback color</param>
         public ImageBrush(Image img, Color? color = null)
         {
             Image = img;

@@ -17,7 +17,7 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Compiles C# source code into an assembly
         /// </summary>
-        /// <param name="src"></param>Source code to compile
+        /// <param name="src">Source code to compile</param>
         public static Assembly CompileAssembly(string src)
         {
             SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(src);
@@ -58,9 +58,9 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Returns an instance of a class from a compiled assembly that is matched to an interface or abstract class
         /// </summary>
-        /// <typeparam name="T"></typeparam>Interface or abstract class type
-        /// <param name="asm"></param>The host assembly
-        /// <param name="cls"></param>The class name to instantiate
+        /// <typeparam name="T">Interface or abstract class type</typeparam>
+        /// <param name="asm">The host assembly</param>
+        /// <param name="cls">The class name to instantiate</param>
         public static T GetUniformClass<T>(Assembly asm, string cls)
         {
             Type? type = asm.GetType(cls)!;
@@ -70,9 +70,9 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Returns an ExtensibilityClass instance for uniform access to methods and properties of a class in a compiled assembly
         /// </summary>
-        /// <param name="asm"></param>The host assembly
-        /// <param name="cls"></param>The class name to instantiate
-        /// <param name="getPrivate"></param>Whether to include private members
+        /// <param name="asm">The host assembly</param>
+        /// <param name="cls">The class name to instantiate</param>
+        /// <param name="getPrivate">Whether to include private members</param>
         public static AbysmalExtensibilityClass GetClass(Assembly asm, string cls, bool getPrivate = false)
         {
             Type? type = asm.GetType(cls)!;

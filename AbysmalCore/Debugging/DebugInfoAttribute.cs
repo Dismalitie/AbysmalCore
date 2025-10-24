@@ -38,8 +38,8 @@
         /// <summary>
         /// Adds debug info to a class
         /// </summary>
-        /// <param name="desc"></param>A description
-        /// <param name="important"></param>Whether messages originating from this class are important
+        /// <param name="desc">A description</param>
+        /// <param name="important">Whether messages originating from this class are important</param>
         public DebugInfoAttribute(string desc, bool important = false)
         {
             Description = desc;

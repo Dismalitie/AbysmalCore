@@ -17,7 +17,7 @@ namespace AbysmalCore.Debugging
         /// <summary>
         /// Writes the current logs to a file
         /// </summary>
-        /// <param name="path"></param>Path to write logs to
+        /// <param name="path">Path to write logs to</param>
         public static void WriteLogs(string path)
         {
             Log(new AbysmalDebug(), $"Writing logs to {path}");
@@ -28,9 +28,9 @@ namespace AbysmalCore.Debugging
         /// <summary>
         /// Logs an error message to the console
         /// </summary>
-        /// <param name="this"></param>Instance of the calling class
-        /// <param name="msg"></param>Message to log
-        /// <param name="fatal"></param>Determines whether to throw an exception after logging
+        /// <param name="this">Instance of the calling class</param>
+        /// <param name="msg">Message to log</param>
+        /// <param name="fatal">Determines whether to throw an exception after logging</param>
         public static void Error(object @this, string msg, bool fatal = false)
         {
             if (!Enabled) return;
@@ -49,9 +49,9 @@ namespace AbysmalCore.Debugging
         /// <summary>
         /// Logs a standard message to the console
         /// </summary>
-        /// <param name="this"></param>Instance of the calling class
-        /// <param name="msg"></param>Message to log
-        /// <param name="important"></param>Whether to highlight this message in the output
+        /// <param name="this">Instance of the calling class</param>
+        /// <param name="msg">Message to log</param>
+        /// <param name="important">Whether to highlight this message in the output</param>
         public static void Log(object @this, string msg, bool important = false)
         {
             if (!Enabled) return;
@@ -77,8 +77,8 @@ namespace AbysmalCore.Debugging
         /// <summary>
         /// Logs a standard warning to the console
         /// </summary>
-        /// <param name="this"></param>Instance of the calling class
-        /// <param name="msg"></param>Message to log
+        /// <param name="this">Instance of the calling class</param>
+        /// <param name="msg">Message to log</param>
         public static void Warn(object @this, string msg)
         {
             if (!Enabled) return;
@@ -95,9 +95,9 @@ namespace AbysmalCore.Debugging
         /// <summary>
         /// Pauses execution until a key is pressed if <paramref name="value"/> does not equal <paramref name="expected"/>
         /// </summary>
-        /// <param name="value"></param>The value to check
-        /// <param name="expected"></param>The expected value
-        /// <param name="reason"></param>The pause reason
+        /// <param name="value">The value to check</param>
+        /// <param name="expected">The expected value</param>
+        /// <param name="reason">The pause reason</param>
         public static void Pause(bool value = false, bool expected = true, string reason = "unconditional")
         {
             if (!Enabled) return;
@@ -117,9 +117,9 @@ namespace AbysmalCore.Debugging
         /// <summary>
         /// Stops execution indefinitely if <paramref name="value"/> does not equal <paramref name="expected"/>
         /// </summary>
-        /// <param name="value"></param>The value to check
-        /// <param name="expected"></param>The expected value
-        /// <param name="reason"></param>The reason for stopping
+        /// <param name="value">The value to check</param>
+        /// <param name="expected">The expected value</param>
+        /// <param name="reason">The reason for stopping</param>
         public static void Stop(bool value = false, bool expected = true, string reason = "unconditional")
         {
             if (!Enabled) return;

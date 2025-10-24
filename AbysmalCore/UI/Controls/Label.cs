@@ -20,9 +20,9 @@ namespace AbysmalCore.UI.Controls
         /// <summary>
         /// Creates a label
         /// </summary>
-        /// <param name="text"></param>The text to draw
-        /// <param name="position"></param>The position relative to the top left corner of the client area
-        /// <param name="fontSize"></param>The size of the text
+        /// <param name="text">The text to draw</param>
+        /// <param name="position">The position relative to the top left corner of the client area</param>
+        /// <param name="fontSize">The size of the text</param>
         public Label(string text, Vector2Int position, int fontSize = 20)
         {
             Text = text;

@@ -21,10 +21,10 @@ namespace AbysmalCore.UI.Controls
         /// <summary>
         /// Creates a new button
         /// </summary>
-        /// <param name="text"></param>The text to display
-        /// <param name="position"></param>The button position
-        /// <param name="size"></param>The button size
-        /// <param name="fontSize"></param>The text size
+        /// <param name="text">The text to display</param>
+        /// <param name="position">The button position</param>
+        /// <param name="size">The button size</param>
+        /// <param name="fontSize">The text size</param>
         public Button(string text, Vector2Int position, Vector2Int? size = null, int fontSize = 20)
         {
             Text = text;
