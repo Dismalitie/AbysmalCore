@@ -17,7 +17,7 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Compiles C# source code into an assembly
         /// </summary>
-        /// <param name="src"></param>Source code to compile
+        /// <param name="src">Source code to compile</param>
         public static Assembly CompileAssembly(string src)
         {
             SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(src);
