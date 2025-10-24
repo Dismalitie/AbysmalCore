@@ -44,7 +44,7 @@ AbysmalDebug.Log(testClass.New(), output, true);
 
 # AbysmalCore.Debugging
 
-This map outlines the public **static** methods and properties for the primary debugging class, `AbysmalDebug`.
+A standardized, opinionated formatter for console logging and error throwing.
 
 ## Example
 
