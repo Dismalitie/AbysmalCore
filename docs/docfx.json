@@ -32,10 +32,7 @@
       }
     ],
     "output": "_site",
-    "template": [
-      "default",
-      "modern"
-    ],
+    "template":["default","templates/minimal"]
     "globalMetadata": {
       "_appName": "AbysmalCore",
       "_appTitle": "AbysmalCore",
