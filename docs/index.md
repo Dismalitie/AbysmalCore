@@ -7,6 +7,7 @@ _layout: landing
 </div>
 
 # AbysmalCore
+
 AbysmalCore is the standard library with utilities, debugging suite and GUI system that all my future apps will use.
 
 ---
