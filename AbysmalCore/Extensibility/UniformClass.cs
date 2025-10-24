@@ -306,7 +306,7 @@ namespace AbysmalCore.Extensibility
         /// Returns an instance of this class that is derived from an interface or abstraction (<typeparamref name="T"/>)
         /// </summary>
         /// <typeparam name="T">Interface or abstract class type</typeparam>
-        public T ToUniform<T>()
+        public T DeriveFrom<T>()
         {
             Type? type = Instance.GetType()!;
             return (T)Activator.CreateInstance(type)!;
