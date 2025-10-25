@@ -1,3 +1,7 @@
+<div align="center">
+  <img width="256" height="256" alt="AbysmalCore.Extensibility" src="https://github.com/Dismalitie/AbysmalCore/blob/master/images/debugging.png?raw=true" />
+</div>
+
 # Getting Started with AbysmalCore Debugging
 
 `AbysmalDebug` provides a simply formatted interface to quickly log, warn, error and pause or stop. This guide will tell you how to use the `DebugInfoAttribute` and the `AbysmalDebug` methods.
