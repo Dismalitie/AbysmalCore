@@ -7,7 +7,7 @@ internal class Program
 
     private static void Main(string[] args)
     {
-        UserInterface ui = ExtensibilityTest.GetUserInterface(w);
+        UserInterface ui = ThemeGenTest.GetUserInterface(w);
         w.Init(ui);
     }
 }

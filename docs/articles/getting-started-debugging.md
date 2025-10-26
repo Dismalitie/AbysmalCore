@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="256" height="256" alt="AbysmalCore.Extensibility" src="https://github.com/Dismalitie/AbysmalCore/blob/master/images/debugging.png?raw=true" />
+  <img width="256" height="256" alt="AbysmalCore.Debugging" src="https://github.com/Dismalitie/AbysmalCore/blob/master/images/debugging.png?raw=true" />
 </div>
 
 # Getting Started with AbysmalCore Debugging

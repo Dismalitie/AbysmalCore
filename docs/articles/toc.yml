@@ -2,3 +2,5 @@
   href: getting-started-extensibility.md
 - name: Getting Started with AbysmalCore Debugging
   href: getting-started-debugging.md
+- name: Getting Started with AbysmalCore UI
+  href: getting-started-gui.md
