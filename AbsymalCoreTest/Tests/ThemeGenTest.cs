@@ -11,7 +11,7 @@ namespace AbsymalCoreTest.Tests
         private static Window? w;
         private static UserInterface ui = new();
 
-        public static UserInterface GetUserInterface(Window ctx, Dictionary<string, object>? args)
+        public static UserInterface GetUserInterface(Window ctx, Dictionary<string, object>? args = null)
         {
             w = ctx;
 

@@ -8,7 +8,7 @@ namespace AbsymalCoreTest.Tests
 {
     internal class ExtensibilityTest : ITest
     {
-        public static UserInterface GetUserInterface(Window ctx, Dictionary<string, object>? args)
+        public static UserInterface GetUserInterface(Window ctx, Dictionary<string, object>? args = null)
         {
             args ??= new()
             {
