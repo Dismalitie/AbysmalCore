@@ -20,6 +20,10 @@ namespace AbysmalCore.Extensibility
         /// </summary>
         /// <remarks>Key is the name of the class</remarks>
         public Dictionary<string, UniformClass> Classes { get; } = new();
+        /// <summary>
+        /// The name of the assembly
+        /// </summary>
+        public string Name { get; }
 
         /// <summary>
         /// Creates a new uniform assembly
@@ -27,12 +31,13 @@ namespace AbysmalCore.Extensibility
         public UniformAssembly(Assembly asm, bool getPrivate = false)
         {
             _assembly = asm;
+            Name = asm.GetName().Name ?? asm.FullName ?? asm.GetName().FullName;
 
             Type[] t = getPrivate ? asm.GetTypes() : asm.GetExportedTypes();
             foreach (Type cls in t)
             {
                 string? name = cls.FullName ?? cls.Name;
-                Classes.Add(name, new(cls, getPrivate));
+                if (cls.IsClass) Classes.Add(name, new(cls, getPrivate));
             }
         }
 

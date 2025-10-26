@@ -191,6 +191,8 @@ namespace AbysmalCore.Extensibility
     [DebugInfo("abysmal extensibility framework class", false)]
     public class UniformClass
     {
+        private Type _t;
+
         /// <summary>
         /// Properties of the class
         /// </summary>
@@ -205,6 +207,23 @@ namespace AbysmalCore.Extensibility
         public object Instance { get; }
 
         /// <summary>
+        /// The name of the class
+        /// </summary>
+        public string Name { get => _t.Name; }
+        /// <summary>
+        /// Whether the class was marked with the private keyword
+        /// </summary>
+        public bool IsPrivate { get => _t.IsNestedPrivate; }
+        /// <summary>
+        /// Whether the class was marked with the internal keyword
+        /// </summary>
+        public bool IsInternal { get => !_t.IsNested && !_t.IsPublic; }
+        /// <summary>
+        /// Whether the class was marked with the sealed keyword
+        /// </summary>
+        public bool IsSealed { get =>  _t.IsSealed; }
+
+        /// <summary>
         /// Creates a new ExtensibilityClass wrapping the specified type
         /// </summary>
         /// <param name="t">The type to wrap</param>
@@ -214,6 +233,7 @@ namespace AbysmalCore.Extensibility
             Properties = new();
             Methods = new();
             Instance = Activator.CreateInstance(t)!;
+            _t = t;
 
             // always search for public instance members
             BindingFlags flag = BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static;
@@ -245,6 +265,7 @@ namespace AbysmalCore.Extensibility
             Properties = new();
             Methods = new();
             Instance = instance;
+            _t = instance.GetType();
 
             // always search for public instance members
             BindingFlags flag = BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static;

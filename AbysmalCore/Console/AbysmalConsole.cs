@@ -1,6 +1,6 @@
 ﻿using AbysmalCore.Debugging;
 
-namespace AbysmalCore
+namespace AbysmalCore.Console
 {
     /// <summary>
     /// Standard formatted console input and output handler
@@ -25,13 +25,41 @@ namespace AbysmalCore
         public void Clear()
         {
             _output.Clear();
-            Console.Clear();
+            System.Console.Clear();
         }
         /// <summary>
         /// Writes the console output buffer to a file
         /// </summary>
         /// <param name="path">Output filepath</param>
         public void WriteOutput(string path) => File.WriteAllText(path, GetOutput());
+
+        /// <summary>
+        /// Writes an unstyled string to the console
+        /// </summary>
+        /// <param name="s">String to write</param>
+        public void WriteLn(string s)
+        {
+            _output.Add(s);
+            System.Console.WriteLine(s);
+        }
+        /// <summary>
+        /// Writes an empty line
+        /// </summary>
+        public void WriteLn()
+        {
+            _output.Add("\n");
+            System.Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Writes string to the console without an ending newline
+        /// </summary>
+        /// <param name="s">String to write</param>
+        public void Write(string s)
+        {
+            _output.Add(s);
+            System.Console.Write(s);
+        } 
 
         /// <summary>
         /// Writes a colored string to the console
@@ -41,13 +69,13 @@ namespace AbysmalCore
         /// <param name="back">The background color (optional; uses current color if null)</param>
         public void WriteColor(string s, ConsoleColor fore, ConsoleColor? back = null)
         {
-            ConsoleColor oldFore = Console.ForegroundColor;
-            ConsoleColor oldBack = Console.BackgroundColor;
-            Console.ForegroundColor = fore;
-            Console.BackgroundColor = back ?? Console.BackgroundColor;
-            Console.Write(s);
-            Console.ForegroundColor = oldFore;
-            Console.BackgroundColor = oldBack;
+            ConsoleColor oldFore = System.Console.ForegroundColor;
+            ConsoleColor oldBack = System.Console.BackgroundColor;
+            System.Console.ForegroundColor = fore;
+            System.Console.BackgroundColor = back ?? System.Console.BackgroundColor;
+            System.Console.Write(s);
+            System.Console.ForegroundColor = oldFore;
+            System.Console.BackgroundColor = oldBack;
 
             _output.Add(s);
         }
@@ -70,13 +98,13 @@ namespace AbysmalCore
         /// <param name="back">The background color (optional; uses current color if null)</param>
         public void WriteColorLn(string s, ConsoleColor fore, ConsoleColor? back = null)
         {
-            ConsoleColor oldFore = Console.ForegroundColor;
-            ConsoleColor oldBack = Console.BackgroundColor;
-            Console.ForegroundColor = fore;
-            Console.BackgroundColor = back ?? Console.BackgroundColor;
-            Console.WriteLine(s);
-            Console.ForegroundColor = oldFore;
-            Console.BackgroundColor = oldBack;
+            ConsoleColor oldFore = System.Console.ForegroundColor;
+            ConsoleColor oldBack = System.Console.BackgroundColor;
+            System.Console.ForegroundColor = fore;
+            System.Console.BackgroundColor = back ?? System.Console.BackgroundColor;
+            System.Console.WriteLine(s);
+            System.Console.ForegroundColor = oldFore;
+            System.Console.BackgroundColor = oldBack;
 
             _output.Add(s);
         }
@@ -99,7 +127,7 @@ namespace AbysmalCore
         public bool? Ask(string msg)
         {
             WriteColors([
-                (msg + " ", Console.ForegroundColor, null),
+                (msg + " ", System.Console.ForegroundColor, null),
                 ("(", ConsoleColor.DarkGray, null),
                 ("y", ConsoleColor.Green, null),
                 ("/", ConsoleColor.DarkGray, null),
@@ -107,14 +135,14 @@ namespace AbysmalCore
                 (")", ConsoleColor.DarkGray, null)
             ]);
 
-            Console.Write("\n> ");
-            ConsoleKeyInfo keyInf = Console.ReadKey();
+            System.Console.Write("\n> ");
+            ConsoleKeyInfo keyInf = System.Console.ReadKey();
 
             // normalize it
             char k = keyInf.KeyChar.ToString().ToLower()[0];
             _output.Add($"\n> {k}");
 
-            Console.WriteLine(); // new line after input
+            System.Console.WriteLine(); // new line after input
 
             switch (k)
             {
@@ -139,17 +167,17 @@ namespace AbysmalCore
             type ??= typeof(T).Name.ToLower();
 
             WriteColors([
-                (msg + " ", Console.ForegroundColor, null),
+                (msg + " ", System.Console.ForegroundColor, null),
                 ("(", ConsoleColor.DarkGray, null),
                 (type, ConsoleColor.White, null),
                 (")", ConsoleColor.DarkGray, null)
             ]);
 
-            Console.Write("\n> ");
-            string response = Console.ReadLine() ?? "";
+            System.Console.Write("\n> ");
+            string response = System.Console.ReadLine() ?? "";
             _output.Add($"\n> {response}");
 
-            Console.WriteLine(); // new line after input
+            System.Console.WriteLine(); // new line after input
 
             if (response == "") return default;
 
