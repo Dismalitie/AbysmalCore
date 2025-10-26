@@ -15,6 +15,11 @@ namespace AbysmalCore.Debugging
         private static AbysmalConsole _c = new();
 
         /// <summary>
+        /// Gets the underlying <see cref="AbysmalConsole"/> instance
+        /// </summary>
+        public static AbysmalConsole Console { get =>  _c; }
+
+        /// <summary>
         /// Writes the current logs to a file
         /// </summary>
         /// <param name="path">Path to write logs to</param>
@@ -109,9 +114,40 @@ namespace AbysmalCore.Debugging
                     ("(press any key to continue)", ConsoleColor.Yellow, null)
                 ]);
 
-                Console.ReadKey();
+                System.Console.ReadKey();
                 _c.WriteColorLn("[Debug] Execution resumed", ConsoleColor.Yellow);
             }
+        }
+
+        /// <summary>
+        /// Pauses execution until a key is pressed if <paramref name="value"/> does not equal <paramref name="expected"/>
+        /// </summary>
+        /// <param name="value">The object to check</param>
+        /// <param name="expected">The expected object</param>
+        /// <param name="reason">The pause reason</param>
+        /// <remarks>
+        /// Uses the default <see cref="object.Equals(object?, object?)"/> equality comparison
+        /// </remarks>
+        public static void Pause(object? value, object? expected, string reason = "unconditional")
+        {
+            if (!Enabled) return;
+            if (!Equals(value, expected)) Pause(reason: reason);
+        }
+
+        /// <summary>
+        /// Pauses execution until a key is pressed if <paramref name="value"/> does not equal <paramref name="expected"/>
+        /// </summary>
+        /// <param name="value">The object to check</param>
+        /// <param name="expected">The expected object</param>
+        /// <param name="comparer">A custom lambda function that takes both objects</param>
+        /// <param name="reason">The pause reason</param>
+        /// <remarks>
+        /// Uses the default <see cref="object.Equals(object?, object?)"/> equality comparison
+        /// </remarks>
+        public static void Pause(object? value, object? expected, Func<object?, object?, bool> comparer, string reason = "unconditional")
+        {
+            if (!Enabled) return;
+            if (comparer(value, expected) == false) Pause(reason: reason);
         }
 
         /// <summary>
@@ -129,6 +165,37 @@ namespace AbysmalCore.Debugging
                 _c.WriteColorLn($"[Debug] Execution stopped ({reason})", ConsoleColor.Red);
                 while (true) { }
             }
+        }
+
+        /// <summary>
+        /// Stops execution indefinitely if <paramref name="value"/> does not equal <paramref name="expected"/>
+        /// </summary>
+        /// <param name="value">The object to check</param>
+        /// <param name="expected">The expected object</param>
+        /// <param name="reason">The reason for stopping</param>
+        /// <remarks>
+        /// Uses the default <see cref="object.Equals(object?, object?)"/> equality comparison
+        /// </remarks>
+        public static void Stop(object? value, object? expected, string reason = "unconditional")
+        {
+            if (!Enabled) return;
+            if (!Equals(value, expected)) Stop(reason: reason);
+        }
+
+        /// <summary>
+        /// Stops execution indefinitely if <paramref name="value"/> does not equal <paramref name="expected"/> using a custom comparer
+        /// </summary>
+        /// <param name="value">The object to check</param>
+        /// <param name="expected">The expected object</param>
+        /// <param name="comparer">A custom lambda function that takes both objects</param>
+        /// <param name="reason">The reason for stopping</param>
+        /// <remarks>
+        /// Evaluates equality based on <paramref name="comparer"/>'s return
+        /// </remarks>
+        public static void Stop(object? value, object? expected, Func<object?, object?, bool> comparer, string reason = "unconditional")
+        {
+            if (!Enabled) return;
+            if (comparer(value, expected) == false) Stop(reason: reason);
         }
     }
 }

@@ -4,6 +4,6 @@ namespace AbsymalCoreTest
 {
     internal interface ITest
     {
-        public static abstract UserInterface GetUserInterface(Window ctx, params string[]? args);
+        public static abstract UserInterface GetUserInterface(Window ctx, Dictionary<string, object>? args);
     }
 }

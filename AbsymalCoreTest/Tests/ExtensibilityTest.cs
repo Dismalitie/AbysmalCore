@@ -8,13 +8,18 @@ namespace AbsymalCoreTest.Tests
 {
     internal class ExtensibilityTest : ITest
     {
-        public static UserInterface GetUserInterface(Window ctx, params string[]? args)
+        public static UserInterface GetUserInterface(Window ctx, Dictionary<string, object>? args)
         {
-            // for some reason args is never null even though its nullable?
-            if (args!.Length == 0) args = ["Tests.ExtensibilityTest", "TestWith1Arg", "Hello!"];
-            string className = args[0];
-            string methodName = args[1];
-            string input = args[2];
+            args ??= new()
+            {
+                ["class"] = "Tests.ExtensibilityTest",
+                ["method"] = "TestWith1Arg",
+                ["input"] = "Hello!",
+            };
+
+            string className = (string)args["class"];
+            string methodName = (string)args["method"];
+            string input = (string)args["input"];
 
             string code = @"
 namespace Tests
