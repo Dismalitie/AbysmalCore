@@ -8,7 +8,7 @@ namespace AbysmalCore.UI
     /// Contains methods and properties for managing the application window
     /// </summary>
     [DebugInfo("window instance")]
-    public class Window : INotifyPropertyChanged
+    public class Window : INotifyPropertyChanged, IDisposable
     {
         /// <summary>
         /// Size of the window in pixels
@@ -211,6 +211,20 @@ namespace AbysmalCore.UI
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        // objects like tex2d, rendertextures, images
+        // in this list will be unloaded upon exiting
+        /// <summary>
+        /// A list of objects to unload when the window is closed
+        /// </summary>
+        /// <remarks>
+        /// Should be:
+        /// <see cref="Texture2D"/>,
+        /// <see cref="RenderTexture2D"/>,
+        /// <see cref="Image"/> or
+        /// <see cref="Shader"/>
+        /// </remarks>
+        public static List<object> UnloadList = new();
+
         /// <summary>
         /// Initializes the window loop with the provided <see cref="UserInterface"/>
         /// </summary>
@@ -228,8 +242,28 @@ namespace AbysmalCore.UI
                 EndDrawing();
             }
 
-            // unload the gpu and cpu stuff here before exiting
-            foreach (object obj in UserInterface.UnloadList)
+            Dispose();
+        }
+
+        /// <summary>
+        /// Updates the user interface to draw in the window loop
+        /// </summary>
+        /// <param name="ui">User Interface instance</param>
+        public void SetUI(UserInterface ui)
+        {
+            // we can dispose the current resources
+            // because they will just be generated again
+            // upon setting
+            Dispose();
+            _ui = ui;
+        }
+
+        /// <summary>
+        /// Unloads GPU allocated resources
+        /// </summary>
+        public void Dispose()
+        {
+            foreach (object obj in UnloadList)
             {
                 AbysmalDebug.Log(this, $"Freeing {obj.GetType().Name} from memory");
 
@@ -253,11 +287,5 @@ namespace AbysmalCore.UI
                 }
             }
         }
-
-        /// <summary>
-        /// Updates the user interface to draw in the window loop
-        /// </summary>
-        /// <param name="ui">User Interface instance</param>
-        public void SetUI(UserInterface ui) => _ui = ui;
     }
 }

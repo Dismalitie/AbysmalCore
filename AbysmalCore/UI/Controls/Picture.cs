@@ -30,7 +30,7 @@ namespace AbysmalCore.UI.Controls
             Image = image;
             _tex = LoadTextureFromImage(Image);
             Tint = tint;
-            UserInterface.UnloadList.Add(_tex);
+            Window.UnloadList.Add(_tex);
 
             SupportedBrushes = new()
             {

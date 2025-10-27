@@ -14,20 +14,6 @@ namespace AbysmalCore.UI
         /// </summary>
         public List<UIElement> Elements { get; private set; }
 
-        // objects like tex2d, rendertextures, images
-        // in this list will be unloaded upon exiting
-        /// <summary>
-        /// A list of objects to unload when the window is closed
-        /// </summary>
-        /// <remarks>
-        /// Should be:
-        /// <see cref="Texture2D"/>,
-        /// <see cref="RenderTexture2D"/>,
-        /// <see cref="Image"/> or
-        /// <see cref="Shader"/>
-        /// </remarks>
-        public static List<object> UnloadList = new();
-
         /// <summary>
         /// Keeps track of the number of times <see cref="DrawUI"/> has been called
         /// </summary>

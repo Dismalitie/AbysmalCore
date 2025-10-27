@@ -52,7 +52,7 @@ namespace AbysmalCore.UI.Styling.Brushes
                 srcHeight = img.Height;
 
                 gradient = LoadTextureFromImage(img);
-                UserInterface.UnloadList.Add(gradient);
+                Window.UnloadList.Add(gradient);
             }
 
             // we keep track of the source width and height

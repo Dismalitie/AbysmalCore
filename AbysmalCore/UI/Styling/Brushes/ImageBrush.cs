@@ -35,7 +35,7 @@ namespace AbysmalCore.UI.Styling.Brushes
             tex = LoadTextureFromImage(Image);
             // texture2ds are stored on the gpu, so we
             // have to unload them upon exiting
-            UserInterface.UnloadList.Add(tex);
+            Window.UnloadList.Add(tex);
         }
 
         /// <inheritdoc/>

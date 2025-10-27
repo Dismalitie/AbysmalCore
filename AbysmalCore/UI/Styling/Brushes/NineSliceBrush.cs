@@ -37,7 +37,7 @@ namespace AbysmalCore.UI.Styling.Brushes
 
             tex = LoadTextureFromImage(Texture);
             // tex2ds on gpu, unload
-            UserInterface.UnloadList.Add(tex);
+            Window.UnloadList.Add(tex);
         }
 
         /// <inheritdoc/>
