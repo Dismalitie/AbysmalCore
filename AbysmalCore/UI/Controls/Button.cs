@@ -1,5 +1,6 @@
 ﻿using AbysmalCore.Debugging;
 using AbysmalCore.UI.Styling;
+using System.ComponentModel;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -7,7 +8,7 @@ namespace AbysmalCore.UI.Controls
     /// A clickable button control
     /// </summary>
     [DebugInfo("button control")]
-    public class Button : UIElement
+    public class Button : UIElement, INotifyPropertyChanged
     {
         /// <summary>
         /// The text in the button

@@ -6,40 +6,56 @@ namespace AbysmalCore.Console
     /// Standard formatted console input and output handler
     /// </summary>
     [DebugInfo("standard fmtd output and input")]
-    public class AbysmalConsole
+    public class AbysmalConsole : IDisposable
     {
-        private List<string> _output;
+        private bool _disposed = false;
+        private Stream stdo;
 
         /// <summary>
         /// Creates a new AbysmalConsole instance
         /// </summary>
-        public AbysmalConsole() => _output = new();
+        public AbysmalConsole()
+        {
+            stdo = System.Console.OpenStandardOutput();
+        }
 
         /// <summary>
-        /// Returns console messages and inputs created and recieved by this instance
+        /// Returns content read from the console's standard output
         /// </summary>
-        public string GetOutput() => string.Join("", _output);
+        public string GetOutput()
+        {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
+            StreamReader sr = new(stdo);
+            string s = sr.ReadToEnd();
+            sr.Dispose();
+            return s;
+        }
         /// <summary>
         /// Clears the console output buffer and the console screen
         /// </summary>
         public void Clear()
         {
-            _output.Clear();
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
             System.Console.Clear();
         }
         /// <summary>
         /// Writes the console output buffer to a file
         /// </summary>
         /// <param name="path">Output filepath</param>
-        public void WriteOutput(string path) => File.WriteAllText(path, GetOutput());
+        public void WriteOutput(string path)
+        {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+            File.WriteAllText(path, GetOutput());
+        }
 
         /// <summary>
-        /// Writes an unstyled string to the console
+        /// Writes an unstyled string to the console ending with a new line
         /// </summary>
         /// <param name="s">String to write</param>
         public void WriteLn(string s)
         {
-            _output.Add(s);
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
             System.Console.WriteLine(s);
         }
         /// <summary>
@@ -47,19 +63,18 @@ namespace AbysmalCore.Console
         /// </summary>
         public void WriteLn()
         {
-            _output.Add("\n");
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
             System.Console.WriteLine();
         }
-
         /// <summary>
         /// Writes string to the console without an ending newline
         /// </summary>
         /// <param name="s">String to write</param>
         public void Write(string s)
         {
-            _output.Add(s);
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
             System.Console.Write(s);
-        } 
+        }
 
         /// <summary>
         /// Writes a colored string to the console
@@ -69,6 +84,8 @@ namespace AbysmalCore.Console
         /// <param name="back">The background color (optional; uses current color if null)</param>
         public void WriteColor(string s, ConsoleColor fore, ConsoleColor? back = null)
         {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
             ConsoleColor oldFore = System.Console.ForegroundColor;
             ConsoleColor oldBack = System.Console.BackgroundColor;
             System.Console.ForegroundColor = fore;
@@ -76,8 +93,6 @@ namespace AbysmalCore.Console
             System.Console.Write(s);
             System.Console.ForegroundColor = oldFore;
             System.Console.BackgroundColor = oldBack;
-
-            _output.Add(s);
         }
 
         /// <summary>
@@ -86,6 +101,8 @@ namespace AbysmalCore.Console
         /// <param name="colors">Tuple array of (string, foreground color, background color) (optional; uses current color if null)</param>
         public void WriteColors((string s, ConsoleColor fore, ConsoleColor? back)[] colors)
         {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
             foreach (var c in colors)
                 WriteColor(c.s, c.fore, c.back);
         }
@@ -98,6 +115,8 @@ namespace AbysmalCore.Console
         /// <param name="back">The background color (optional; uses current color if null)</param>
         public void WriteColorLn(string s, ConsoleColor fore, ConsoleColor? back = null)
         {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
             ConsoleColor oldFore = System.Console.ForegroundColor;
             ConsoleColor oldBack = System.Console.BackgroundColor;
             System.Console.ForegroundColor = fore;
@@ -105,8 +124,6 @@ namespace AbysmalCore.Console
             System.Console.WriteLine(s);
             System.Console.ForegroundColor = oldFore;
             System.Console.BackgroundColor = oldBack;
-
-            _output.Add(s);
         }
 
         /// <summary>
@@ -115,6 +132,8 @@ namespace AbysmalCore.Console
         /// <param name="lines">Tuple array of (string, foreground color, background color) (optional; uses current color if null)</param>
         public void WriteColorLns((string s, ConsoleColor fore, ConsoleColor? back)[] lines)
         {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
             foreach (var ln in lines)
                 WriteColorLn(ln.s, ln.fore, ln.back);
         }
@@ -126,6 +145,8 @@ namespace AbysmalCore.Console
         /// <returns>null if key is not y/n</returns>
         public bool? Ask(string msg)
         {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
             WriteColors([
                 (msg + " ", System.Console.ForegroundColor, null),
                 ("(", ConsoleColor.DarkGray, null),
@@ -140,7 +161,6 @@ namespace AbysmalCore.Console
 
             // normalize it
             char k = keyInf.KeyChar.ToString().ToLower()[0];
-            _output.Add($"\n> {k}");
 
             System.Console.WriteLine(); // new line after input
 
@@ -164,6 +184,8 @@ namespace AbysmalCore.Console
         /// <param name="converter">An optional converter function to convert the string input to type T</param>
         public T? Prompt<T>(string msg, string? type = null, Func<string, T>? converter = null)
         {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
             type ??= typeof(T).Name.ToLower();
 
             WriteColors([
@@ -175,7 +197,6 @@ namespace AbysmalCore.Console
 
             System.Console.Write("\n> ");
             string response = System.Console.ReadLine() ?? "";
-            _output.Add($"\n> {response}");
 
             System.Console.WriteLine(); // new line after input
 
@@ -183,6 +204,17 @@ namespace AbysmalCore.Console
 
             if (converter != null) return converter(response);
             else return (T)Convert.ChangeType(response, typeof(T));
+        }
+
+        /// <summary>
+        /// Releases the console's standard output stream and makes this instance unusable
+        /// </summary>
+        public void Dispose()
+        {
+            if (_disposed) throw new ObjectDisposedException(GetType().Name);
+
+            _disposed = true;
+            stdo.Dispose();
         }
     }
 }

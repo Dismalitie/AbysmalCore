@@ -42,6 +42,9 @@ if (asm.HasClass("Tests.ExtensibilityTest"))
 }
 ```
 
+> [!TIP]
+> There is a guide available on how to use `AbysmalCore.Extensibility` [here](https://dismalitie.github.io/AbysmalCore/articles/getting-started-extensibility.html)
+
 ---
 
 <div align="center">
@@ -63,6 +66,9 @@ AbysmalDebug.Log(this, $"Generated layer color {layer} from {c}");
 Color core = new(c.R / coreDivisor, c.G / coreDivisor, c.B / coreDivisor);
 AbysmalDebug.Log(this, $"Generated base color {core} from {c}");
 ```
+
+> [!TIP]
+> There is a guide available on how to use `AbysmalCore.Debugging` [here](https://dismalitie.github.io/AbysmalCore/articles/getting-started-debugging.html)
 
 ---
 
@@ -96,3 +102,6 @@ ui.GetElement("btn")?.OnClicked += (UIElement sender, Vector2Int mouse, int fram
 
 w.Init(ui);
 ```
+
+> [!TIP]
+> There is a guide available on how to use `AbysmalCore.UI` [here](https://dismalitie.github.io/AbysmalCore/articles/getting-started-gui.html)

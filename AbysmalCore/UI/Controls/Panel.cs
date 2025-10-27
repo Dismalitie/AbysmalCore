@@ -1,5 +1,6 @@
 ﻿using AbysmalCore.Debugging;
 using AbysmalCore.UI.Styling;
+using System.ComponentModel;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -7,7 +8,7 @@ namespace AbysmalCore.UI.Controls
     /// A container panel control
     /// </summary>
     [DebugInfo("panel control")]
-    public class Panel : UIElement
+    public class Panel : UIElement, INotifyPropertyChanged
     {
         /// <summary>
         /// Creates a panel

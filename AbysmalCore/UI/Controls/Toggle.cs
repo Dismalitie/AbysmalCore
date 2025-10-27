@@ -1,5 +1,6 @@
 ﻿using AbysmalCore.Debugging;
 using AbysmalCore.UI.Styling;
+using System.ComponentModel;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -7,7 +8,7 @@ namespace AbysmalCore.UI.Controls
     /// A button-like control with 2 states: on and off
     /// </summary>
     [DebugInfo("toggle control")]
-    public class Toggle : UIElement
+    public class Toggle : UIElement, INotifyPropertyChanged
     {
         /// <summary>
         /// Delegate used when a toggle is clicked

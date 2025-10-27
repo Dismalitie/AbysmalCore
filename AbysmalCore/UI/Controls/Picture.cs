@@ -1,5 +1,6 @@
 ﻿using AbysmalCore.Debugging;
 using AbysmalCore.UI.Styling;
+using System.ComponentModel;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -7,7 +8,7 @@ namespace AbysmalCore.UI.Controls
     /// A control for displaying a picture/image
     /// </summary>
     [DebugInfo("picture control")]
-    public class Picture : UIElement
+    public class Picture : UIElement, INotifyPropertyChanged
     {
         /// <summary>
         /// The image to draw

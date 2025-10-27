@@ -1,5 +1,6 @@
 ﻿using AbysmalCore.Debugging;
 using AbysmalCore.UI.Styling;
+using System.ComponentModel;
 
 namespace AbysmalCore.UI
 {
@@ -7,7 +8,7 @@ namespace AbysmalCore.UI
     /// Contains methods and properties for managing the application window
     /// </summary>
     [DebugInfo("window instance")]
-    public class Window
+    public class Window : INotifyPropertyChanged
     {
         /// <summary>
         /// Size of the window in pixels
@@ -204,6 +205,11 @@ namespace AbysmalCore.UI
 
         private static Color? _bg = GlobalTheme.Core;
         private static UserInterface? _ui;
+        /// <summary>
+        /// Fires when a property of this <see cref="Window"/> changes
+        /// </summary>
+
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         /// <summary>
         /// Initializes the window loop with the provided <see cref="UserInterface"/>

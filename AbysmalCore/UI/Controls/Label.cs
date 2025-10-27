@@ -1,4 +1,5 @@
 ﻿using AbysmalCore.Debugging;
+using System.ComponentModel;
 
 namespace AbysmalCore.UI.Controls
 {
@@ -6,7 +7,7 @@ namespace AbysmalCore.UI.Controls
     /// A simple text label control
     /// </summary>
     [DebugInfo("label control")]
-    public class Label : UIElement
+    public class Label : UIElement, INotifyPropertyChanged
     {
         /// <summary>
         /// The text to draw

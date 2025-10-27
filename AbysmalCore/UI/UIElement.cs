@@ -1,4 +1,5 @@
 ﻿using AbysmalCore.UI.Styling;
+using System.ComponentModel;
 using System.Xml.Linq;
 
 namespace AbysmalCore.UI
@@ -6,7 +7,7 @@ namespace AbysmalCore.UI
     /// <summary>
     /// Represents an abstraction of a user interface element
     /// </summary>
-    public abstract class UIElement
+    public abstract class UIElement : INotifyPropertyChanged
     {
         // default name is * because when
         // using GetChild you can do
@@ -107,8 +108,6 @@ namespace AbysmalCore.UI
                     else OnMouseExit?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
 
                     _hovered = value;
-
-                    OnStateChanged?.Invoke(this, StateChangeType.Hovered, value);
                 }
             }
         }
@@ -127,8 +126,6 @@ namespace AbysmalCore.UI
                 if (_clicked != value && Enabled && Clicked)
                     OnClicked?.Invoke(this, UserInterface.Mouse, UserInterface.Frame);
                 _clicked = value;
-
-                if (value != Clicked) OnStateChanged?.Invoke(this, StateChangeType.Clicked, value);
             }
         }
         // same here
@@ -170,20 +167,9 @@ namespace AbysmalCore.UI
             Clicked 
         }
         /// <summary>
-        /// The delegate to use when a property is changed
-        /// </summary>
-        /// <param name="sender">The control</param>
-        /// <param name="property">The property changed</param>
-        /// <param name="newState">The new value</param>
-        public delegate void OnStateChangedEventArgs(UIElement sender, StateChangeType property, object newState);
-        /// <summary>
         /// Fired when this <see cref="UIElement"/> is clicked
         /// </summary>
         public event OnClickedEventArgs? OnClicked;
-        /// <summary>
-        /// Fired when a state of this <see cref="UIElement"/> changes
-        /// </summary>
-        public event OnStateChangedEventArgs? OnStateChanged;
         /// <summary>
         /// Fired once upon hovering over this <see cref="UIElement"/>
         /// </summary>
@@ -204,6 +190,10 @@ namespace AbysmalCore.UI
         /// Fired once when the mouse exits the bounds of this <see cref="UIElement"/>
         /// </summary>
         public event OnMouseEnterExitEventArgs? OnMouseExit;
+        /// <summary>
+        /// Fired when an element of this <see cref="UIElement"/> changes
+        /// </summary>
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         /// <summary>
         /// Determines whether this <see cref="UIElement"/> is enabled (can be interacted with)
@@ -213,11 +203,7 @@ namespace AbysmalCore.UI
             get => _enabled;
             set
             {
-                if (_enabled != value)
-                {
-                    _enabled = value;
-                    OnStateChanged?.Invoke(this, StateChangeType.Enabled, value);
-                }
+                if (_enabled != value) _enabled = value;
             }
         }
         private bool _enabled = true;
@@ -230,11 +216,7 @@ namespace AbysmalCore.UI
             get => _visible;
             set
             {
-                if (_visible != value)
-                {
-                    _visible = value;
-                    OnStateChanged?.Invoke(this, StateChangeType.Visible, value);
-                }
+                if (_visible != value) _visible = value;
             }
         }
         private bool _visible = true;
