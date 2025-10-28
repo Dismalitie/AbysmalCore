@@ -205,11 +205,12 @@ namespace AbysmalCore.UI
 
         private static Color? _bg = GlobalTheme.Core;
         private static UserInterface? _ui;
+#pragma warning disable CS0067
         /// <summary>
-        /// Fires when a property of this <see cref="Window"/> changes
+        /// Fired when an element of this <see cref="Window"/> changes
         /// </summary>
-
         public event PropertyChangedEventHandler? PropertyChanged;
+#pragma warning restore CS0067
 
         // objects like tex2d, rendertextures, images
         // in this list will be unloaded upon exiting
@@ -242,6 +243,7 @@ namespace AbysmalCore.UI
                 EndDrawing();
             }
 
+            // dispose here because we are exiting
             Dispose();
         }
 

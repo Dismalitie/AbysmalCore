@@ -20,6 +20,29 @@ namespace AbysmalCore.Console
         }
 
         /// <summary>
+        /// Writes a formatted swatch list of <paramref name="colors"/>
+        /// </summary>
+        /// <param name="colors">The colors to write</param>
+        /// <remarks>
+        /// Format: <c>[ ███ ███ ███ ]</c>
+        /// </remarks>
+        public static void WriteSwatches(params ConsoleColor[] colors)
+        {
+            string colCube = "███ ";
+            List<(string s, ConsoleColor fore, ConsoleColor? back)> cols = new()
+            {
+                ("[ ", ConsoleColor.DarkGray, null),
+            };
+
+            foreach (ConsoleColor c in colors) cols.Add((colCube, c, null));
+            cols.Add(("]", ConsoleColor.DarkGray, null));
+
+            AbysmalConsole console = new();
+            console.WriteColors(cols.ToArray());
+            console.Dispose();
+        }
+
+        /// <summary>
         /// Returns content read from the console's standard output
         /// </summary>
         public string GetOutput()

@@ -190,10 +190,12 @@ namespace AbysmalCore.UI
         /// Fired once when the mouse exits the bounds of this <see cref="UIElement"/>
         /// </summary>
         public event OnMouseEnterExitEventArgs? OnMouseExit;
+#pragma warning disable CS0067
         /// <summary>
         /// Fired when an element of this <see cref="UIElement"/> changes
         /// </summary>
         public event PropertyChangedEventHandler? PropertyChanged;
+#pragma warning restore CS0067
 
         /// <summary>
         /// Determines whether this <see cref="UIElement"/> is enabled (can be interacted with)
