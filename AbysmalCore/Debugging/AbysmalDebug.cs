@@ -37,11 +37,13 @@ namespace AbysmalCore.Debugging
         /// <param name="this">Instance of the calling class</param>
         /// <param name="msg">Message to log</param>
         /// <param name="fatal">Determines whether to throw an exception after logging</param>
-        public static void Error(object @this, string msg, bool fatal = false)
+        /// <param name="isType">Whether <paramref name="this"/> is a <see cref="Type"/></param>
+        public static void Error(object @this, string msg, bool fatal = false, bool isType = false)
         {
             if (!Enabled) return;
 
             Type t = @this.GetType();
+            if (isType) t = (Type)@this;
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
@@ -58,11 +60,13 @@ namespace AbysmalCore.Debugging
         /// <param name="this">Instance of the calling class</param>
         /// <param name="msg">Message to log</param>
         /// <param name="important">Whether to highlight this message in the output</param>
-        public static void Log(object @this, string msg, bool important = false)
+        /// <param name="isType">Whether <paramref name="this"/> is a <see cref="Type"/></param>
+        public static void Log(object @this, string msg, bool important = false, bool isType = false)
         {
             if (!Enabled) return;
 
             Type t = @this.GetType();
+            if (isType) t = (Type)@this;
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             ConsoleColor cc = ConsoleColor.DarkGray;
@@ -85,11 +89,13 @@ namespace AbysmalCore.Debugging
         /// </summary>
         /// <param name="this">Instance of the calling class</param>
         /// <param name="msg">Message to log</param>
-        public static void Warn(object @this, string msg)
+        /// <param name="isType">Whether <paramref name="this"/> is a <see cref="Type"/></param>
+        public static void Warn(object @this, string msg, bool isType = false)
         {
             if (!Enabled) return;
 
             Type t = @this.GetType();
+            if (isType) t = (Type)@this;
             DebugInfoAttribute? info = t.GetCustomAttribute<DebugInfoAttribute>();
 
             string message = $"[{DateTime.Now.ToString()}][{t.Name}] (!) {msg.Replace("{name}", t.Name)}";
