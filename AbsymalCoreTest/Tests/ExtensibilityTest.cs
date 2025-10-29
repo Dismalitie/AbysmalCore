@@ -41,7 +41,7 @@ namespace Tests
             UserInterface ui = new();
 
             // ----- test bit -----
-            Assembly testAssembly = ExtensibilityHelper.CompileAssembly(code);
+            Assembly testAssembly = ExtensibilityHelper.CompileAssemblyFromString(code);
             var asm = new UniformAssembly(testAssembly, true);
 
             if (asm.HasClass(className))

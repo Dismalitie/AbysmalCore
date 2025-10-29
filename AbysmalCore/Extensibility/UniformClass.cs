@@ -204,16 +204,23 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// The instance of the underlying class
         /// </summary>
-        public object Instance { get; }
+        /// <remarks>
+        /// May be null if class is abstract
+        /// </remarks>
+        public object? Instance { get; }
 
         /// <summary>
         /// The name of the class
         /// </summary>
-        public string Name { get => _t.Name; }
+        public string Name { get => _t.FullName ?? _t.Name; }
         /// <summary>
         /// Whether the class was marked with the private keyword
         /// </summary>
         public bool IsPrivate { get => _t.IsNestedPrivate; }
+        /// <summary>
+        /// Whether the class was marked with the abstract keyword
+        /// </summary>
+        public bool IsAbstract { get => _t.IsAbstract; }
         /// <summary>
         /// Whether the class was marked with the internal keyword
         /// </summary>
@@ -232,7 +239,7 @@ namespace AbysmalCore.Extensibility
         {
             Properties = new();
             Methods = new();
-            Instance = Activator.CreateInstance(t)!;
+            if (!t.IsAbstract) Instance = Activator.CreateInstance(t)!;
             _t = t;
 
             // always search for public instance members
@@ -242,17 +249,21 @@ namespace AbysmalCore.Extensibility
             if (getPrivate)
                 flag |= BindingFlags.NonPublic;
 
-            foreach (PropertyInfo pi in Instance.GetType().GetProperties(flag))
-                Properties[pi.Name] = new(pi, Instance);
-            AbysmalDebug.Log(this, $"Found {Properties.Count} properties in class {Instance.GetType().FullName}");
+            if (Instance != null)
+            {
+                foreach (PropertyInfo pi in Instance!.GetType().GetProperties(flag))
+                    Properties[pi.Name] = new(pi, Instance);
+                AbysmalDebug.Log(this, $"Found {Properties.Count} properties in class {Instance.GetType().FullName}");
 
-            foreach (FieldInfo fi in Instance.GetType().GetFields(flag)) 
-                Properties[fi.Name] = new(fi, Instance);
-            AbysmalDebug.Log(this, $"Found {Properties.Count} properties (including fields) in class {Instance.GetType().FullName}");
+                foreach (FieldInfo fi in Instance!.GetType().GetFields(flag))
+                    Properties[fi.Name] = new(fi, Instance);
+                AbysmalDebug.Log(this, $"Found {Properties.Count} properties (including fields) in class {Instance.GetType().FullName}");
 
-            foreach (MethodInfo mi in Instance.GetType().GetMethods(flag))
-                Methods[mi.Name] = new(mi, Instance);
-            AbysmalDebug.Log(this, $"Found {Methods.Count} methods in class {Instance.GetType().FullName}");
+                foreach (MethodInfo mi in Instance!.GetType().GetMethods(flag))
+                    Methods[mi.Name] = new(mi, Instance);
+                AbysmalDebug.Log(this, $"Found {Methods.Count} methods in class {Instance.GetType().FullName}");
+            }
+            else AbysmalDebug.Log(this, $"Instance {Name} was null, likely abstract, no methods or properties were indexed");
         }
 
         /// <summary>

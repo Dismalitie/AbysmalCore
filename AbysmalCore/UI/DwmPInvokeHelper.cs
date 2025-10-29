@@ -1,4 +1,5 @@
-﻿using AbysmalCore.Debugging;
+﻿using AbysmalCore.Components;
+using AbysmalCore.Debugging;
 using System.Runtime.InteropServices;
 
 namespace AbysmalCore.UI
@@ -7,7 +8,7 @@ namespace AbysmalCore.UI
     /// Windows-platform specific window helper
     /// </summary>
     [DebugInfo("windows dwm api helper", true)]
-    public class DwmPInvokeHelper
+    public class DwmPInvokeHelper : InstantiableComponent<DwmPInvokeHelper>
     {
         private enum DWMWINDOWATTRIBUTE : uint
         {
@@ -67,7 +68,7 @@ namespace AbysmalCore.UI
 
             if (hresult != 0)
             {
-                AbysmalDebug.Warn(new DwmPInvokeHelper(), $"Failed to set material type {material} on hwnd {hWnd}, error code: {hresult}");
+                AbysmalDebug.Warn(_this, $"Failed to set material type {material} on hwnd {hWnd}, error code: {hresult}");
             }
         }
 
@@ -80,7 +81,7 @@ namespace AbysmalCore.UI
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
-                AbysmalDebug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionColor), aborted");
+                AbysmalDebug.Warn(_this, "Called windows specific func (SetCaptionColor), aborted");
                 return;
             }
 
@@ -103,7 +104,7 @@ namespace AbysmalCore.UI
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
-                AbysmalDebug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetCaptionTextColor), aborted");
+                AbysmalDebug.Warn(_this, "Called windows specific func (SetCaptionTextColor), aborted");
                 return;
             }
 
@@ -126,7 +127,7 @@ namespace AbysmalCore.UI
         {
             if (Environment.OSVersion.Platform != PlatformID.Win32NT)
             {
-                AbysmalDebug.Warn(new DwmPInvokeHelper(), "Called windows specific func (SetBorderColor), aborted");
+                AbysmalDebug.Warn(_this, "Called windows specific func (SetBorderColor), aborted");
                 return;
             }
 

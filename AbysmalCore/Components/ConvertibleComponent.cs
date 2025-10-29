@@ -3,7 +3,7 @@
     /// <summary>
     /// Adds base methods to allow type conversion
     /// </summary>
-    public interface IConvertible
+    public interface ConvertibleComponent
     {
         /// <summary>
         /// Converts this instance into type <typeparamref name="T"/>
