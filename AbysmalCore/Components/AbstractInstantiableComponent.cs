@@ -28,6 +28,7 @@ namespace AbysmalCore.Components
         {
             get
             {
+                Stopwatch sw = Stopwatch.StartNew();
                 Type oType = typeof(T);
                 if (!oType.IsAbstract)
                     AbysmalDebug.Warn(oType, $"Class is not abstract, unnessecary overhead; Use {nameof(InstantiableComponent<object>)} instead", true);
@@ -92,6 +93,9 @@ namespace AbysmalCore.Components
                         // potential failures for complex or internal attribs
                     }
                 }
+
+                sw.Stop();
+                AbysmalDebug.Log(oType, sw.ElapsedMilliseconds.ToString(), true, true);
 
                 return typeBuilder.CreateType();
             }
