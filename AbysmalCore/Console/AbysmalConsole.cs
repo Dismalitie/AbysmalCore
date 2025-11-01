@@ -1,4 +1,6 @@
-﻿using AbysmalCore.Debugging;
+﻿using AbysmalCore.Components;
+using AbysmalCore.Debugging;
+using System.Diagnostics;
 
 namespace AbysmalCore.Console
 {
@@ -6,7 +8,7 @@ namespace AbysmalCore.Console
     /// Standard formatted console input and output handler
     /// </summary>
     [DebugInfo("standard fmtd output and input")]
-    public class AbysmalConsole : IDisposable
+    public class AbysmalConsole : InstantiableComponent<AbysmalConsole>, IDisposable
     {
         private bool _disposed = false;
         private Stream stdo;
@@ -227,6 +229,29 @@ namespace AbysmalCore.Console
 
             if (converter != null) return converter(response);
             else return (T)Convert.ChangeType(response, typeof(T));
+        }
+
+        /// <summary>
+        /// Runs a command in the standard shell and returns the output
+        /// </summary>
+        /// <param name="command">Command to execute</param>
+        /// <param name="workingDir">Sets the working directory to run the command from</param>
+        public static string Run(string command, string workingDir = ".\\")
+        {
+            AbysmalDebug.Log(_this, $"Running command: {command}");
+
+            Process proc = Process.Start(new ProcessStartInfo()
+            {
+                FileName = "C:\\Windows\\System32\\cmd.exe",
+                Arguments = $"/c {command}",
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                CreateNoWindow = true,
+                WorkingDirectory = Path.GetFullPath(workingDir),
+            })!;
+            proc.WaitForExit();
+
+            return proc.StandardOutput.ReadToEnd();
         }
 
         /// <summary>
