@@ -24,7 +24,7 @@ namespace AbysmalCore.Components
         /// <summary>
         /// Returns a new instance of this class
         /// </summary>
-        public static object _this
+        protected static object _this
         {
             get
             {
