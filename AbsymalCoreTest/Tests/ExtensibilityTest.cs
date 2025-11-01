@@ -2,6 +2,7 @@
 using AbysmalCore.Extensibility;
 using AbysmalCore.UI;
 using AbysmalCore.UI.Controls;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Reflection;
 
 namespace AbsymalCoreTest.Tests
@@ -41,7 +42,13 @@ namespace Tests
             UserInterface ui = new();
 
             // ----- test bit -----
-            Assembly testAssembly = ExtensibilityHelper.CompileAssemblyFromString(code);
+            string[] logs;
+            Assembly? testAssembly = ExtensibilityHelper.CompileAssemblyFromString(code, out logs);
+            if (testAssembly == null)
+            {
+                AbysmalDebug.Stop(reason: "compilation failed");
+                throw new Exception();
+            }
             var asm = new UniformAssembly(testAssembly, true);
 
             if (asm.HasClass(className))

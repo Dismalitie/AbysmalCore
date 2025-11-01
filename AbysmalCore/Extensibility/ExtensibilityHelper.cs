@@ -19,7 +19,9 @@ namespace AbysmalCore.Extensibility
         /// Compiles C# source code into an assembly
         /// </summary>
         /// <param name="src">Source code to compile</param>
-        public static Assembly CompileAssemblyFromString(string src)
+        /// <param name="diagnostics">List of warnings and errors produced during compilation</param>
+        /// <returns>null if compilation failed, see <paramref name="diagnostics"/></returns>
+        public static Assembly? CompileAssemblyFromString(string src, out string[] diagnostics)
         {
             SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(src);
             string assemblyName = Path.GetRandomFileName();
@@ -44,8 +46,13 @@ namespace AbysmalCore.Extensibility
             sw.Stop();
             AbysmalDebug.Log(_this, $"Compilation {(result.Success ? "succeeded" : "failed")} for assembly <anonymous>.{assemblyName} in {sw.ElapsedMilliseconds}ms");
 
+            diagnostics = result.Diagnostics.Select(d => $"[{d.Severity}][{d.Id}] {d.GetMessage()}").ToArray();
+
             if (!result.Success)
-                AbysmalDebug.Error(_this, "Compilation failed.", true);
+            {
+                AbysmalDebug.Error(_this, $"Compilation failed for assembly <anonymous>.{assemblyName}");
+                return null;
+            }
 
             // go to beginning of stream
             ms.Seek(0, SeekOrigin.Begin);
@@ -85,16 +92,20 @@ namespace AbysmalCore.Extensibility
         /// </summary>
         /// <param name="path">The filepath of the assembly</param>
         /// <param name="type">The way to read the file</param>
-        /// <returns></returns>
-        public static Assembly CompileAssemblyFromFile(string path, AssemblyFileType type)
+        /// <param name="diagnostics">List of warnings and errors produced during compilation</param>
+        public static Assembly? CompileAssemblyFromFile(string path, AssemblyFileType type, out string[] diagnostics)
         {
             if (type == AssemblyFileType.Source)
             {
                 string file = File.ReadAllText(path);
-                return CompileAssemblyFromString(path);
+                return CompileAssemblyFromString(path, out diagnostics);
             }
             // the only 2 options left is exe and dll, which both use the same loader
-            else return Assembly.LoadFrom(path);
+            else
+            {
+                diagnostics = Array.Empty<string>();
+                return Assembly.LoadFrom(path);
+            }
         }
 
         /// <summary>

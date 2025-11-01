@@ -51,7 +51,7 @@ namespace AbysmalCore.Debugging
 
             _c.WriteColorLn(message, ConsoleColor.Red);
 
-            if (fatal) throw new Exception();
+            if (fatal) throw new Exception(message);
         }
 
         /// <summary>
