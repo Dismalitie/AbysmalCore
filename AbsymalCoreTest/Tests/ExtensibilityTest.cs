@@ -56,8 +56,9 @@ namespace Tests
                 var cls = asm.GetClass(className)!;
                 string? output = null;
 
+                Exception? ex;
                 if (cls.HasMethod(methodName))
-                    output = cls.GetMethod(methodName)!.Invoke<string>(input);
+                    output = cls.GetMethod(methodName)!.Invoke<string>(out ex, input);
 
                 AbysmalDebug.Log(cls, output ?? "error!", true);
             }

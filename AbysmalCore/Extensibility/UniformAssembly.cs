@@ -75,7 +75,8 @@ namespace AbysmalCore.Extensibility
 
             UniformMethod method = new(_assembly.EntryPoint, _assembly);
             // exclamation mark here because if its null its fine
-            output = method.Invoke(args!);
+            Exception? ex;
+            output = method.Invoke(out ex, args!);
             return true;
         }
     }

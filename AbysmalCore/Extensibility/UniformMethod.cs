@@ -54,22 +54,41 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Executes the method with the specified arguments
         /// </summary>
+        /// <param name="errHandler">An output for the exception if one occurs</param>
         /// <param name="args">The arguments to pass to the method</param>
-        public object? Invoke(params object[] args)
+        public object? Invoke(out Exception? errHandler, params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments");
-            return _info.Invoke(_instance, args);
+            try
+            {
+                errHandler = null;
+                return _info.Invoke(_instance, args);
+            }
+            catch (Exception ex)
+            {
+                errHandler = ex;
+                return null;
+            }
         }
         /// <summary>
         /// Invokes the method with the specified arguments and converts the result to the specified type
         /// </summary>
         /// <typeparam name="T">The type to convert the result to</typeparam>
         /// <param name="args">Arguments to pass to the method</param>
-        /// <returns></returns>
-        public T Invoke<T>(params object[] args)
+        /// <param name="errHandler">An output for the exception if one occurs</param>
+        public T? Invoke<T>(out Exception? errHandler, params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments and converting to {typeof(T).FullName}");
-            return (T)_info.Invoke(_instance, args)!;
+            try
+            {
+                errHandler = null;
+                return (T)_info.Invoke(_instance, args)!;
+            }
+            catch (Exception ex)
+            {
+                errHandler = ex;
+                return default;
+            }
         }
         /// <summary>
         /// Invokes the method with the specified arguments and converts the result using the provided converter function
@@ -77,10 +96,20 @@ namespace AbysmalCore.Extensibility
         /// <typeparam name="T">The type to convert the result to</typeparam>
         /// <param name="converter">Lambda function to convert the result</param>
         /// <param name="args">Arguments to pass to the method</param>
-        public T Invoke<T>(Func<object?, T> converter, params object[] args)
+        /// <param name="errHandler">An output for the exception if one occurs</param>
+        public T? Invoke<T>(out Exception? errHandler, Func<object?, T> converter, params object[] args)
         {
             AbysmalDebug.Log(this, $"Invoking method {Name} with {args.Length} arguments and converting to {typeof(T).FullName} using custom converter");
-            return converter(_info.Invoke(_instance, args));
+            try
+            {
+                errHandler = null;
+                return converter(_info.Invoke(_instance, args));
+            }
+            catch (Exception ex)
+            {
+                errHandler = ex;
+                return default;
+            }
         }
     }
 }
