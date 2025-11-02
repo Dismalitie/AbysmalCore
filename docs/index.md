@@ -27,16 +27,22 @@ A clean and uniform framework for runtime compilation and reflection of C# sourc
 
 ```cs
 // compile the assembly and get the test class
-Assembly testAssembly = ExtensibilityHelper.CompileAssembly(File.ReadAllText(".\\ExtensibilityTest.cs"));
+string[] logs;
+Assembly? testAssembly = ExtensibilityHelper.CompileAssemblyFromString(code, out logs);
+if (testAssembly == null)
+{
+    AbysmalDebug.Stop(reason: "compilation failed");
+    throw new Exception();
+}
 var asm = new UniformAssembly(testAssembly, true);
 
-if (asm.HasClass("Tests.ExtensibilityTest"))
+if (asm.HasClass(className))
 {
-    var cls = asm.GetClass("Tests.ExtensibilityTest")!;
+    var cls = asm.GetClass(className)!;
     string? output = null;
 
-    if (cls.HasMethod("TestWith1Arg")) 
-        output = cls.GetMethod("TestWith1Arg")!.Invoke<string>("Hello!");
+    if (cls.HasMethod(methodName))
+        output = cls.GetMethod(methodName)!.Invoke<string>(input);
 
     AbysmalDebug.Log(cls, output ?? "error!", true);
 }

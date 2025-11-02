@@ -23,7 +23,7 @@ The `ExtensibilityHelper` class is your starting point for turning raw C\# sourc
 
 ### Step 1: Compiling Source Code
 
-Use `ExtensibilityHelper.CompileAssembly` to compile a string of C\# code into a standard `System.Reflection.Assembly`.
+Use `ExtensibilityHelper.CompileAssemblyFromString` to compile a string of C\# code into a standard `System.Reflection.Assembly`.
 
 ```cs
 using System.Reflection;
@@ -41,7 +41,7 @@ namespace MyExtension
 """;
 
 // internally we use CSharp.CodeAnalysis to compile
-Assembly compiledAssembly = ExtensibilityHelper.CompileAssembly(sourceCode);
+Assembly compiledAssembly = ExtensibilityHelper.CompileAssemblyFromString(sourceCode);
 ```
 
 -----
