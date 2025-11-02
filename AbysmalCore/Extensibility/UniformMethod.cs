@@ -64,6 +64,11 @@ namespace AbysmalCore.Extensibility
                 errHandler = null;
                 return _info.Invoke(_instance, args);
             }
+            catch (TargetInvocationException ex)
+            {
+                errHandler = ex.InnerException;
+                return null;
+            }
             catch (Exception ex)
             {
                 errHandler = ex;
@@ -83,6 +88,11 @@ namespace AbysmalCore.Extensibility
             {
                 errHandler = null;
                 return (T)_info.Invoke(_instance, args)!;
+            }
+            catch (TargetInvocationException ex)
+            {
+                errHandler = ex.InnerException;
+                return default;
             }
             catch (Exception ex)
             {
@@ -104,6 +114,11 @@ namespace AbysmalCore.Extensibility
             {
                 errHandler = null;
                 return converter(_info.Invoke(_instance, args));
+            }
+            catch (TargetInvocationException ex)
+            {
+                errHandler = ex.InnerException;
+                return default;
             }
             catch (Exception ex)
             {
