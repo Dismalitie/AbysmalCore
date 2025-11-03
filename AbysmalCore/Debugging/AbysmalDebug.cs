@@ -1,5 +1,6 @@
 ﻿using AbysmalCore.Console;
 using System.Reflection;
+using System.Xml.Linq;
 
 namespace AbysmalCore.Debugging
 {
@@ -30,6 +31,15 @@ namespace AbysmalCore.Debugging
 
             File.WriteAllText(path, _c.GetOutput());
         }
+
+        /// <summary>
+        /// Sets an optional sub-category source when logging
+        /// </summary>
+        public static void SetLogRegion(string name) => _c.WriteColorLn($"<--#-- Log region start, subsource: {name}", ConsoleColor.Green);
+        /// <summary>
+        /// Removes the sub-category
+        /// </summary>
+        public static void UnsetLogRegion() => _c.WriteColorLn($"<--x-- Log region end", ConsoleColor.Green);
 
         /// <summary>
         /// Logs an error message to the console
