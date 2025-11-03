@@ -19,7 +19,7 @@ namespace AbysmalCore.Components
     /// 20ms to 60ms. Use sparingly.
     /// </remarks>
     /// <typeparam name="T">The type to spoof</typeparam>
-    public class AbstractInstantiableComponent<T> where T : class
+    public abstract class AbstractInstantiableComponent<T> where T : class
     {
         /// <summary>
         /// Returns a new instance of this class

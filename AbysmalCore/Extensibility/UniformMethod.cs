@@ -15,6 +15,10 @@ namespace AbysmalCore.Extensibility
     public class UniformMethod
     {
         private MethodInfo _info;
+        /// <summary>
+        /// Returns the encapsulated <see cref="MethodInfo"/>
+        /// </summary>
+        public MethodInfo GetMethodInfo() => _info;
         private object _instance;
 
         /// <summary>

@@ -22,6 +22,14 @@ namespace AbysmalCore.Extensibility
         }
 
         private object _info;
+        /// <summary>
+        /// Returns the encapsulated <see cref="PropertyInfo"/> or <see cref="FieldInfo"/>
+        /// </summary>
+        public object GetPropertyInfo()
+        {
+            if (_type == propertyType.property) return (PropertyInfo)_info;
+            else return (FieldInfo)_info;
+        }
         private object _instance;
         private propertyType _type;
 

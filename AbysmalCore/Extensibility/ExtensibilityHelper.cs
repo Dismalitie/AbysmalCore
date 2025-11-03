@@ -20,17 +20,24 @@ namespace AbysmalCore.Extensibility
         /// </summary>
         /// <param name="src">Source code to compile</param>
         /// <param name="diagnostics">List of warnings and errors produced during compilation</param>
+        /// <param name="assemblies">Array of string references to assembly references</param>
+        /// <param name="deriveHost">Whether to inherit the currently loaded assemblies of this <see cref="AppDomain"/></param>
         /// <returns>null if compilation failed, see <paramref name="diagnostics"/></returns>
-        public static Assembly? CompileAssemblyFromString(string src, out string[] diagnostics)
+        public static Assembly? CompileAssemblyFromString(string src, out string[] diagnostics, string[]? assemblies = null, bool deriveHost = true)
         {
             SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(src);
             string assemblyName = Path.GetRandomFileName();
 
             // get references from host assembly
-            List<PortableExecutableReference> references = AppDomain.CurrentDomain.GetAssemblies()
+            List<PortableExecutableReference> references = new();
+            if (deriveHost) references = AppDomain.CurrentDomain.GetAssemblies()
                 .Where(a => !a.IsDynamic && !string.IsNullOrEmpty(a.Location))
                 .Select(a => MetadataReference.CreateFromFile(a.Location))
                 .ToList();
+            if (assemblies != null)
+                references = (List<PortableExecutableReference>)references
+                    .Concat(assemblies
+                    .Select(a => MetadataReference.CreateFromFile(Path.GetFullPath(a))));
 
             AbysmalDebug.Log(_this, $"Compiling assembly <anonymous>.{assemblyName} with {references.Count} references");
             Stopwatch sw = Stopwatch.StartNew();
@@ -38,7 +45,7 @@ namespace AbysmalCore.Extensibility
                 assemblyName,
                 [syntaxTree],
                 references,
-                new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
+                new CSharpCompilationOptions(OutputKind.ConsoleApplication));
 
             // compile to memory stream
             using MemoryStream ms = new();
@@ -93,12 +100,14 @@ namespace AbysmalCore.Extensibility
         /// <param name="path">The filepath of the assembly</param>
         /// <param name="type">The way to read the file</param>
         /// <param name="diagnostics">List of warnings and errors produced during compilation</param>
-        public static Assembly? CompileAssemblyFromFile(string path, AssemblyFileType type, out string[] diagnostics)
+        /// <param name="assemblies">Array of string references to assembly references</param>
+        /// <param name="deriveHost">Whether to inherit the currently loaded assemblies of this <see cref="AppDomain"/></param>
+        public static Assembly? CompileAssemblyFromFile(string path, AssemblyFileType type, out string[] diagnostics, string[]? assemblies = null, bool deriveHost = true)
         {
             if (type == AssemblyFileType.Source)
             {
                 string file = File.ReadAllText(path);
-                return CompileAssemblyFromString(path, out diagnostics);
+                return CompileAssemblyFromString(path, out diagnostics, assemblies, deriveHost);
             }
             // the only 2 options left is exe and dll, which both use the same loader
             else
