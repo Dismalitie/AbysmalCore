@@ -1,5 +1,4 @@
 ﻿using AbsymalCoreTest.Tests;
-using AbysmalCore.Debugging.Analyzers;
 using AbysmalCore.UI;
 
 internal class Program
@@ -9,7 +8,7 @@ internal class Program
     private static void Main(string[] args)
     {
         // uncomment to test NullCheckAnalyzer
-        new NullCheckAnalyzerTest();
+        //new NullCheckAnalyzerTest().EmitLogs();
         UserInterface ui = ThemeGenTest.GetUserInterface(w);
         w.Init(ui);
     }
