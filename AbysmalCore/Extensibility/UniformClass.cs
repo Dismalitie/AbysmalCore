@@ -151,14 +151,14 @@ namespace AbysmalCore.Extensibility
         /// <summary>
         /// Instantiates a new instance of the underlying class
         /// </summary>
-        public object New() => Activator.CreateInstance(Instance.GetType())!;
+        public object New() => Activator.CreateInstance(Instance!.GetType())!;
         /// <summary>
         /// Returns an instance of this class that is derived from an interface or abstraction (<typeparamref name="T"/>)
         /// </summary>
         /// <typeparam name="T">Interface or abstract class type</typeparam>
         public T DeriveFrom<T>()
         {
-            Type? type = Instance.GetType()!;
+            Type? type = Instance!.GetType()!;
             return (T)Activator.CreateInstance(type)!;
         }
     }

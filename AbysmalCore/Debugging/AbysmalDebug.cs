@@ -35,11 +35,11 @@ namespace AbysmalCore.Debugging
         /// <summary>
         /// Sets an optional sub-category source when logging
         /// </summary>
-        public static void SetLogRegion(string name) => _c.WriteColorLn($"<--#-- Log region start, subsource: {name}", ConsoleColor.Green);
+        public static void SetLogRegion(string name) => _c.WriteColorLn($"<--[+]-- Log region start, subsource: {name}", ConsoleColor.Green);
         /// <summary>
         /// Removes the sub-category
         /// </summary>
-        public static void UnsetLogRegion() => _c.WriteColorLn($"<--x-- Log region end", ConsoleColor.Green);
+        public static void UnsetLogRegion() => _c.WriteColorLn($"<--[X]-- Log region end", ConsoleColor.Green);
 
         /// <summary>
         /// Logs an error message to the console
