@@ -3,7 +3,7 @@
 
 namespace AbsymalCoreTest.Tests
 {
-    internal class NullValueAnalyzerTest
+    internal class TestClass
     {
         public static object? StaticNullableReturn() => null;
         public object? NullableReturn() => null;

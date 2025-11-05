@@ -11,8 +11,8 @@ internal class Program
      {
         // uncomment to test NullCheckAnalyzer
         //new NullCheckAnalyzerTest().EmitLogs();
-        Analyzer<NullValueAnalyzerTest, MemberOutputAnalyzer>.AnalyzeMembers();
-        Analyzer<NullValueAnalyzerTest, MemberOutputAnalyzer>.Emit();
+        Analyzer<TestClass, MemberOutputAnalyzer>.AnalyzeMembers();
+        Analyzer<TestClass, MemberOutputAnalyzer>.Emit();
         UserInterface ui = ThemeGenTest.GetUserInterface(w);
         w.Init(ui);
     }
